@@ -1,0 +1,38 @@
+{
+  "id": "p6-004",
+  "part": 6,
+  "skill": "reading",
+  "title": "Part 6 – Texte à trous : maintenance du réseau",
+  "instructions": "Lisez la note de service et choisissez le mot ou le groupe de mots qui convient pour chaque numéro.",
+  "passage": "Subject: Scheduled Network Maintenance\n\nDear team,\n\nPlease be informed that our network {{1}} undergo scheduled maintenance this Friday evening, from 8 p.m. to midnight.\n\nDuring this time, access to email, the shared drive, and the company website {{2}} be temporarily unavailable.\n\n{{3}}, we recommend saving any important files before 8 p.m. on Friday.\n\nWe apologize for any inconvenience this may cause and appreciate your {{4}}.",
+  "questions": [
+    {
+      "id": "p6-004-q1",
+      "blank": 1,
+      "choices": ["will", "would", "is", "was"],
+      "answer": 0,
+      "explanation": "La maintenance est programmée pour \"this Friday evening\" : futur, \"will undergo\"."
+    },
+    {
+      "id": "p6-004-q2",
+      "blank": 2,
+      "choices": ["will", "would", "can", "could"],
+      "answer": 0,
+      "explanation": "Futur passif : \"will be temporarily unavailable\"."
+    },
+    {
+      "id": "p6-004-q3",
+      "blank": 3,
+      "choices": ["Therefore", "However", "Although", "Unless"],
+      "answer": 0,
+      "explanation": "La recommandation est une conséquence logique de l'indisponibilité annoncée : \"Therefore\"."
+    },
+    {
+      "id": "p6-004-q4",
+      "blank": 4,
+      "choices": ["understanding", "understand", "understood", "understands"],
+      "answer": 0,
+      "explanation": "Expression figée : \"appreciate your understanding\" (nom après \"your\")."
+    }
+  ]
+}

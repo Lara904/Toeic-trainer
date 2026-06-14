@@ -1,0 +1,44 @@
+{
+  "id": "p5-002",
+  "part": 5,
+  "skill": "reading",
+  "title": "Part 5 – Phrases à compléter : ressources humaines",
+  "instructions": "Choisissez le mot ou le groupe de mots qui complète correctement chaque phrase.",
+  "questions": [
+    {
+      "id": "p5-002-q1",
+      "sentence": "All new employees ____ to complete an orientation program during their first week.",
+      "choices": ["is required", "are required", "required", "requiring"],
+      "answer": 1,
+      "explanation": "\"Employees\" est pluriel, il faut donc l'accord au pluriel : \"are required\"."
+    },
+    {
+      "id": "p5-002-q2",
+      "sentence": "Ms. Alvarez will retire ____ the end of this fiscal year.",
+      "choices": ["at", "in", "on", "into"],
+      "answer": 0,
+      "explanation": "Expression figée : \"at the end of\"."
+    },
+    {
+      "id": "p5-002-q3",
+      "sentence": "The HR department is responsible ____ processing all employment contracts.",
+      "choices": ["of", "for", "with", "to"],
+      "answer": 1,
+      "explanation": "Collocation : \"responsible for\"."
+    },
+    {
+      "id": "p5-002-q4",
+      "sentence": "Employees who wish to apply for the position ____ submit their resume by Friday.",
+      "choices": ["must", "musts", "musting", "must to"],
+      "answer": 0,
+      "explanation": "\"Must\" est un modal : il ne prend jamais de -s et n'est jamais suivi de \"to\"."
+    },
+    {
+      "id": "p5-002-q5",
+      "sentence": "The new policy applies to ____ employees, regardless of department.",
+      "choices": ["all", "every", "each one", "whole"],
+      "answer": 0,
+      "explanation": "\"All\" + nom pluriel (\"all employees\"). \"Every\" exigerait un nom au singulier (\"every employee\")."
+    }
+  ]
+}

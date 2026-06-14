@@ -1,0 +1,69 @@
+{
+  "id": "p8-003",
+  "part": 8,
+  "skill": "reading",
+  "title": "Part 8 – Passages multiples : fin d'essai d'un logiciel",
+  "instructions": "Lisez les deux documents, puis répondez aux questions en faisant le lien entre eux.",
+  "passages": [
+    {
+      "label": "E-mail du fournisseur",
+      "text": "From: CloudDesk Solutions\nTo: Amir Hassan, IT Manager\nSubject: Your Free Trial is Ending Soon\n\nDear Mr. Hassan,\n\nYour 30-day free trial of CloudDesk Pro will end on April 20th. To continue using all premium features, including unlimited storage and priority support, please upgrade to a paid plan before this date.\n\nThe Standard plan costs $8 per user per month, while the Premium plan costs $15 per user per month and includes advanced security features.\n\nIf you do not upgrade, your account will automatically switch to the Basic (free) plan, which has a 5 GB storage limit per user.\n\nTo upgrade, simply log in to your account and click 'Manage Subscription'.\n\nBest regards,\nCloudDesk Solutions"
+    },
+    {
+      "label": "E-mail interne d'Amir Hassan",
+      "text": "From: Amir Hassan\nTo: Department Managers\nSubject: Re: CloudDesk Subscription Decision\n\nHi all,\n\nAfter reviewing our usage over the past month, our 40 employees have used an average of 12 GB of storage each, well above the free plan's limit.\n\nGiven our security requirements for client data, I recommend we go with the plan that includes advanced security features, even though it costs more per user.\n\nI'll process the upgrade by April 18th to avoid any service interruption. Let me know if you have any concerns before then."
+    }
+  ],
+  "questions": [
+    {
+      "id": "p8-003-q1",
+      "prompt": "What will happen if Amir does not upgrade before April 20th?",
+      "choices": [
+        "The account will be deleted",
+        "The account will switch to the free Basic plan",
+        "The price will double",
+        "The trial will be extended automatically"
+      ],
+      "answer": 1,
+      "explanation": "\"If you do not upgrade, your account will automatically switch to the Basic (free) plan\"."
+    },
+    {
+      "id": "p8-003-q2",
+      "prompt": "How much storage does the free Basic plan offer per user?",
+      "choices": ["5 GB", "8 GB", "12 GB", "15 GB"],
+      "answer": 0,
+      "explanation": "\"the Basic (free) plan, which has a 5 GB storage limit per user\"."
+    },
+    {
+      "id": "p8-003-q3",
+      "prompt": "Why is the Basic plan not suitable for the company, according to Amir's email?",
+      "choices": [
+        "It is too expensive",
+        "Employees use more storage than the plan allows",
+        "It does not support mobile devices",
+        "It requires a yearly contract"
+      ],
+      "answer": 1,
+      "explanation": "Les employés utilisent en moyenne 12 Go chacun, bien plus que la limite de 5 Go du plan gratuit."
+    },
+    {
+      "id": "p8-003-q4",
+      "prompt": "Which plan does Amir recommend, and why?",
+      "choices": [
+        "The Standard plan, because it is cheaper",
+        "The Premium plan, because of its advanced security features",
+        "The Basic plan, because it is free",
+        "No plan, because the trial should be cancelled"
+      ],
+      "answer": 1,
+      "explanation": "Il recommande le plan incluant les fonctionnalités de sécurité avancées (le Premium), malgré son coût plus élevé."
+    },
+    {
+      "id": "p8-003-q5",
+      "prompt": "By what date does Amir plan to process the upgrade?",
+      "choices": ["April 18th", "April 20th", "April 25th", "May 1st"],
+      "answer": 0,
+      "explanation": "\"I'll process the upgrade by April 18th to avoid any service interruption\"."
+    }
+  ]
+}

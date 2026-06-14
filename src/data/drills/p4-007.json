@@ -1,0 +1,46 @@
+{
+  "id": "p4-007",
+  "part": 4,
+  "skill": "listening",
+  "title": "Part 4 – Exposé : rappel de rendez-vous médical",
+  "instructions": "Écoutez le message, puis répondez aux trois questions.",
+  "audioText": "Hello, this message is for patients with an appointment at Sunrise Medical Center this week. This is a reminder that your annual check-up is scheduled, and we ask that you arrive fifteen minutes early to complete some paperwork. Please bring a list of any medications you are currently taking, as well as your insurance card. If you need to reschedule your appointment, please call us at least twenty-four hours in advance, since late cancellations may result in a fee. Our office is located on the second floor of the Riverside Building, and parking is available in the lot behind the building. We look forward to seeing you soon.",
+  "questions": [
+    {
+      "id": "p4-007-q1",
+      "prompt": "What is the purpose of this message?",
+      "choices": [
+        "To confirm a delivery",
+        "To remind patients about an appointment",
+        "To announce a new doctor",
+        "To advertise a health insurance plan"
+      ],
+      "answer": 1,
+      "explanation": "Le message rappelle aux patients leur rendez-vous de bilan de santé annuel."
+    },
+    {
+      "id": "p4-007-q2",
+      "prompt": "What should patients bring to their appointment?",
+      "choices": [
+        "A doctor's referral",
+        "A list of medications and an insurance card",
+        "A copy of their ID only",
+        "Payment in cash"
+      ],
+      "answer": 1,
+      "explanation": "\"Please bring a list of any medications you are currently taking, as well as your insurance card\"."
+    },
+    {
+      "id": "p4-007-q3",
+      "prompt": "What happens if a patient cancels late?",
+      "choices": [
+        "Nothing",
+        "They may be charged a fee",
+        "They lose their insurance coverage",
+        "They must wait a month for a new appointment"
+      ],
+      "answer": 1,
+      "explanation": "\"late cancellations may result in a fee\"."
+    }
+  ]
+}

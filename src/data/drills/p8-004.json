@@ -1,0 +1,64 @@
+{
+  "id": "p8-004",
+  "part": 8,
+  "skill": "reading",
+  "title": "Part 8 – Passages multiples : facture et rappel de paiement",
+  "instructions": "Lisez les deux documents, puis répondez aux questions en faisant le lien entre eux.",
+  "passages": [
+    {
+      "label": "Facture",
+      "text": "INVOICE\nFrom: Apex Office Supplies\nTo: Bright Solutions Inc.\nInvoice Number: AOS-3342\nDate: March 1st\nPayment Due: March 31st\n\nItems:\n- 10 boxes of printer paper: $120.00\n- 5 office chairs: $750.00\n- 20 ink cartridges: $300.00\n\nSubtotal: $1,170.00\nDelivery fee: $30.00\nTotal Due: $1,200.00\n\nPayment Terms: Net 30 days. A late fee of 2% will be applied for payments received after the due date."
+    },
+    {
+      "label": "E-mail de rappel",
+      "text": "From: Apex Office Supplies - Accounts\nTo: Bright Solutions Inc. - Accounts Payable\nSubject: Reminder: Invoice AOS-3342 Due Soon\n\nDear Accounts Team,\n\nThis is a friendly reminder that invoice AOS-3342, for a total of $1,200.00, is due on March 31st. As of today, we have not yet received payment.\n\nIf payment has already been sent, please disregard this message and let us know the payment reference number so we can update our records.\n\nIf you have any questions about the invoice, including the itemized charges, please contact us before the due date to avoid a late fee."
+    }
+  ],
+  "questions": [
+    {
+      "id": "p8-004-q1",
+      "prompt": "What is the total amount due on invoice AOS-3342?",
+      "choices": ["$1,170.00", "$1,200.00", "$1,230.00", "$30.00"],
+      "answer": 1,
+      "explanation": "\"Total Due: $1,200.00\", confirmé dans l'e-mail de rappel."
+    },
+    {
+      "id": "p8-004-q2",
+      "prompt": "How many office chairs were ordered?",
+      "choices": ["5", "10", "20", "30"],
+      "answer": 0,
+      "explanation": "\"5 office chairs: $750.00\"."
+    },
+    {
+      "id": "p8-004-q3",
+      "prompt": "What happens if payment is received after March 31st?",
+      "choices": [
+        "The order will be cancelled",
+        "A 2% late fee will be applied",
+        "The items will be returned",
+        "The company will receive a discount"
+      ],
+      "answer": 1,
+      "explanation": "\"A late fee of 2% will be applied for payments received after the due date\"."
+    },
+    {
+      "id": "p8-004-q4",
+      "prompt": "What does the reminder email ask Bright Solutions to do if they already paid?",
+      "choices": [
+        "Ignore the invoice completely",
+        "Provide the payment reference number",
+        "Send a new payment immediately",
+        "Cancel the invoice"
+      ],
+      "answer": 1,
+      "explanation": "\"please disregard this message and let us know the payment reference number\"."
+    },
+    {
+      "id": "p8-004-q5",
+      "prompt": "What is the payment term mentioned on the invoice?",
+      "choices": ["Net 15 days", "Net 30 days", "Net 60 days", "Due on receipt"],
+      "answer": 1,
+      "explanation": "\"Payment Terms: Net 30 days\"."
+    }
+  ]
+}

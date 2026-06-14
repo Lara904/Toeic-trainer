@@ -1,0 +1,52 @@
+{
+  "id": "train-p8-001",
+  "part": 8,
+  "type": "training",
+  "skill": "reading",
+  "title": "Part 8 – Entraînement 1 : RH & entreprise",
+  "instructions": "Lisez les deux documents de chaque exercice et répondez aux questions.",
+  "items": [
+    {
+      "id": "t8-001-set01",
+      "passages": [
+        { "label": "Offre d'emploi", "text": "Position: Senior Account Manager\nCompany: Luminos Media\nSalary: €52,000–€62,000\nLocation: Lyon, France (with occasional travel)\n\nLuminos Media is seeking an experienced Senior Account Manager to manage a portfolio of key client accounts and drive revenue growth.\n\nRequirements:\n— Minimum 4 years in account management or B2B sales\n— Fluency in French and English\n— Experience with CRM software\n— A valid driving licence\n\nApplications close: March 31st\nTo apply: email cv@luminosmedia.fr" },
+        { "label": "E-mail de candidature", "text": "From: Isabelle Renard\nTo: cv@luminosmedia.fr\nSubject: Application — Senior Account Manager\n\nDear Hiring Team,\n\nI am writing to apply for the Senior Account Manager position. I have six years of experience in B2B sales, the last three of which I spent managing a portfolio of 25 enterprise accounts at MarketPro Solutions.\n\nI am fully bilingual in French and English and have been using Salesforce daily for the past four years. I hold a valid driving licence.\n\nI believe my experience exceeds the requirements listed and I would welcome the opportunity to discuss my profile in more detail.\n\nBest regards,\nIsabelle Renard" }
+      ],
+      "questions": [
+        { "id": "t8-001-s01-q1", "prompt": "What is the minimum experience required for the role?", "choices": ["Two years", "Three years", "Four years", "Six years"], "answer": 2, "explanation": "\"Minimum 4 years in account management or B2B sales\"." },
+        { "id": "t8-001-s01-q2", "prompt": "How many years of experience does Isabelle have?", "choices": ["Three", "Four", "Five", "Six"], "answer": 3, "explanation": "\"I have six years of experience in B2B sales\"." },
+        { "id": "t8-001-s01-q3", "prompt": "What CRM software does Isabelle use?", "choices": ["HubSpot", "Zoho", "Salesforce", "Pipedrive"], "answer": 2, "explanation": "\"I have been using Salesforce daily for the past four years\"." },
+        { "id": "t8-001-s01-q4", "prompt": "Does Isabelle meet all the stated requirements?", "choices": ["No — she lacks a driving licence", "No — she is not bilingual", "Yes — she meets or exceeds all requirements", "No — she has no CRM experience"], "answer": 2, "explanation": "She has 6 years B2B (>4), is bilingual, uses Salesforce, and has a driving licence — all requirements met." },
+        { "id": "t8-001-s01-q5", "prompt": "When does the application window close?", "choices": ["March 15th", "March 31st", "April 15th", "April 30th"], "answer": 1, "explanation": "\"Applications close: March 31st\"." }
+      ]
+    },
+    {
+      "id": "t8-001-set02",
+      "passages": [
+        { "label": "Règlement intérieur (extrait)", "text": "Section 4 — Remote Work\n\nEmployees may work remotely up to two days per week upon written approval from their line manager.\n\nRemote work requests must be submitted at least one week in advance using Form RW-01, available on the HR portal. Requests will be reviewed within three working days.\n\nEmployees working remotely must:\n— Be reachable by phone and email during core hours (9 a.m.–5 p.m.)\n— Maintain a professional environment free from distraction\n— Attend all mandatory on-site meetings in person\n\nThe company reserves the right to withdraw remote work privileges in cases of misconduct or performance issues." },
+        { "label": "E-mail d'un employé", "text": "From: Tom Bradley\nTo: Sarah Okonkwo (HR)\nSubject: Remote Work Request — Week of June 10th\n\nHi Sarah,\n\nI'd like to request remote working on Tuesday and Wednesday of the week of June 10th. I have already spoken to my manager, David Lee, who has verbally agreed.\n\nI know I need to submit Form RW-01 — could you remind me where I can find it? I can't seem to locate it on the portal.\n\nAlso, I wanted to flag that on Wednesday I have a dentist appointment at 11 a.m. I'll be back at my desk (remotely) by noon. Will that cause any issue?\n\nThanks,\nTom" }
+      ],
+      "questions": [
+        { "id": "t8-001-s02-q1", "prompt": "How many remote working days per week are employees allowed?", "choices": ["One", "Two", "Three", "Five"], "answer": 1, "explanation": "\"Employees may work remotely up to two days per week\"." },
+        { "id": "t8-001-s02-q2", "prompt": "How far in advance must requests be submitted?", "choices": ["Two days", "Three days", "Five days", "One week"], "answer": 3, "explanation": "\"must be submitted at least one week in advance\"." },
+        { "id": "t8-001-s02-q3", "prompt": "What has Tom's manager already done?", "choices": ["Submitted Form RW-01", "Verbally approved the request", "Emailed HR on Tom's behalf", "Confirmed the dates in writing"], "answer": 1, "explanation": "\"I have already spoken to my manager, David Lee, who has verbally agreed\"." },
+        { "id": "t8-001-s02-q4", "prompt": "Where should Tom find Form RW-01?", "choices": ["In his email inbox", "On the company intranet", "On the HR portal", "From his line manager"], "answer": 2, "explanation": "\"Form RW-01, available on the HR portal\"." },
+        { "id": "t8-001-s02-q5", "prompt": "What concern does Tom raise about Wednesday?", "choices": ["He has a mandatory on-site meeting", "He will be unavailable in the afternoon", "He has a dentist appointment at 11 a.m.", "He does not have a suitable home office"], "answer": 2, "explanation": "\"on Wednesday I have a dentist appointment at 11 a.m.\"" }
+      ]
+    },
+    {
+      "id": "t8-001-set03",
+      "passages": [
+        { "label": "Annonce de poste interne", "text": "Internal Vacancy: Training Coordinator\nDepartment: Learning & Development\nReports to: Head of HR\nContract: Permanent, full-time\n\nWe are looking for an organised and enthusiastic Training Coordinator to join the L&D team. The role involves scheduling and administering training programmes, liaising with external trainers, and maintaining training records.\n\nEligibility: Open to all permanent staff who have completed their probationary period.\nDeadline to apply: Friday, May 16th\nTo apply: Send a one-page expression of interest to l&d@company.com" },
+        { "label": "Réponse d'un candidat interne", "text": "From: Rachel Voss\nTo: l&d@company.com\nSubject: Expression of Interest — Training Coordinator\n\nDear L&D Team,\n\nI am writing to express my interest in the Training Coordinator role. I joined the company as a Customer Service Representative eighteen months ago and completed my probationary period within three months.\n\nIn my current role, I frequently coordinate internal knowledge-sharing sessions and have developed strong organisational skills. I believe this role would allow me to contribute more directly to staff development.\n\nPlease find my one-page expression of interest attached.\n\nKind regards,\nRachel Voss" }
+      ],
+      "questions": [
+        { "id": "t8-001-s03-q1", "prompt": "Who is eligible to apply for this position?", "choices": ["External candidates only", "All employees regardless of contract type", "Permanent staff who have completed their probationary period", "Managers and team leaders only"], "answer": 2, "explanation": "\"Open to all permanent staff who have completed their probationary period\"." },
+        { "id": "t8-001-s03-q2", "prompt": "What is the application deadline?", "choices": ["May 9th", "May 16th", "May 23rd", "May 30th"], "answer": 1, "explanation": "\"Deadline to apply: Friday, May 16th\"." },
+        { "id": "t8-001-s03-q3", "prompt": "Is Rachel eligible to apply?", "choices": ["No — she has not completed her probationary period", "No — she is not a permanent employee", "Yes — she is permanent and has passed her probation", "It is unclear from the information given"], "answer": 2, "explanation": "She joined 18 months ago and \"completed my probationary period within three months\" — she is eligible." },
+        { "id": "t8-001-s03-q4", "prompt": "What does Rachel say she does in her current role?", "choices": ["She trains new customer service staff", "She coordinates internal knowledge-sharing sessions", "She manages the L&D budget", "She liaises with external trainers"], "answer": 1, "explanation": "\"I frequently coordinate internal knowledge-sharing sessions\"." },
+        { "id": "t8-001-s03-q5", "prompt": "What was Rachel's original role at the company?", "choices": ["HR Assistant", "Training Coordinator", "Customer Service Representative", "L&D Specialist"], "answer": 2, "explanation": "\"I joined the company as a Customer Service Representative eighteen months ago\"." }
+      ]
+    }
+  ]
+}

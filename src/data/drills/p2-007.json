@@ -1,0 +1,20 @@
+{
+  "id": "p2-007",
+  "part": 2,
+  "skill": "listening",
+  "title": "Part 2 – Question-Réponse : l'invitation à dîner",
+  "instructions": "Écoutez la question et les trois réponses possibles. Choisissez la réponse la plus appropriée.",
+  "audioText": "Would you like to join us for dinner after the conference? (A) I already had lunch. (B) Sure, that sounds great. (C) The conference starts at nine.",
+  "questions": [
+    {
+      "id": "p2-007-q1",
+      "choices": [
+        "I already had lunch.",
+        "Sure, that sounds great.",
+        "The conference starts at nine."
+      ],
+      "answer": 1,
+      "explanation": "\"Would you like to...?\" est une invitation. (B) accepte l'invitation de façon appropriée. (A) parle du déjeuner, pas du dîner, et (C) répond à une question d'horaire."
+    }
+  ]
+}

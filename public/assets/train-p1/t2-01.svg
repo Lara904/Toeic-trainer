@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <rect width="400" height="280" fill="#e8eaf6"/>
+  <rect x="0" y="240" width="400" height="40" fill="#c8c8d0"/>
+  <!-- hall d'hôtel : sol -->
+  <rect x="0" y="210" width="400" height="32" fill="#eceff1"/>
+  <!-- comptoir arrière-plan -->
+  <rect x="0" y="80"  width="400" height="130" fill="#f5f5f5"/>
+  <rect x="0" y="130" width="400" height="80"  fill="#eeeeee"/>
+  <!-- logo hôtel -->
+  <rect x="30" y="90" width="80" height="30" rx="4" fill="#1565c0"/>
+  <text x="70" y="110" font-family="Arial" font-size="13" fill="#fff" text-anchor="middle">HOTEL</text>
+  <!-- homme en costume avec valise -->
+  <circle cx="220" cy="108" r="24" fill="#ffb74d"/>
+  <ellipse cx="220" cy="86"  rx="24" ry="12" fill="#263238"/>
+  <rect x="200" y="132" width="40" height="65" rx="8" fill="#263238"/>
+  <rect x="180" y="146" width="20" height="40" rx="7" fill="#263238"/>
+  <!-- bras droit tirant valise -->
+  <line x1="240" y1="148" x2="268" y2="162" stroke="#ffb74d" stroke-width="9" stroke-linecap="round"/>
+  <!-- valise à roulettes -->
+  <rect x="268" y="160" width="44" height="52" rx="5" fill="#546e7a"/>
+  <rect x="274" y="156" width="6"  height="12" rx="2" fill="#78909c"/>
+  <rect x="288" y="156" width="6"  height="12" rx="2" fill="#78909c"/>
+  <line x1="278" y1="156" x2="290" y2="156" stroke="#78909c" stroke-width="3"/>
+  <circle cx="275" cy="214" r="7" fill="#37474f"/>
+  <circle cx="305" cy="214" r="7" fill="#37474f"/>
+  <!-- jambes -->
+  <rect x="203" y="197" width="16" height="18" rx="4" fill="#1a237e"/>
+  <rect x="221" y="197" width="16" height="18" rx="4" fill="#1a237e"/>
+</svg>

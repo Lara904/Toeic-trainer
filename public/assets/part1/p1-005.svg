@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Des personnes attendant sur un quai de gare, en regardant un panneau d'affichage des départs, un train à l'arrière-plan">
+  <rect width="400" height="300" fill="#f1f5f9"/>
+  <rect x="0" y="60" width="400" height="100" fill="#94a3b8"/>
+  <rect x="20" y="70" width="80" height="40" fill="#ffffff" opacity="0.6"/>
+  <rect x="120" y="70" width="80" height="40" fill="#ffffff" opacity="0.6"/>
+  <rect x="220" y="70" width="80" height="40" fill="#ffffff" opacity="0.6"/>
+  <rect x="320" y="70" width="60" height="40" fill="#ffffff" opacity="0.6"/>
+  <rect x="0" y="160" width="400" height="100" fill="#e2e8f0"/>
+  <rect x="150" y="40" width="100" height="30" rx="3" fill="#1e293b"/>
+  <rect x="160" y="48" width="80" height="14" fill="#22c55e"/>
+  <circle cx="200" cy="220" r="20" fill="#fbbf24"/>
+  <rect x="184" y="240" width="32" height="40" rx="6" fill="#1e3a8a"/>
+  <circle cx="270" cy="220" r="20" fill="#f59e0b"/>
+  <rect x="254" y="240" width="32" height="40" rx="6" fill="#16a34a"/>
+</svg>

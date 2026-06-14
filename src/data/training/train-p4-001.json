@@ -1,0 +1,100 @@
+{
+  "id": "train-p4-001",
+  "part": 4,
+  "type": "training",
+  "skill": "listening",
+  "title": "Part 4 – Entraînement 1 : exposés RH & entreprise",
+  "instructions": "Écoutez chaque exposé, puis répondez aux trois questions.",
+  "items": [
+    {
+      "id": "t4-001-e01",
+      "audioText": "Good morning, everyone. I'm pleased to announce that as of the first of next month, the company will be offering a new parental leave policy. Both primary and secondary caregivers will be entitled to paid leave, with primary caregivers receiving up to twenty weeks at full pay, and secondary caregivers receiving four weeks. This applies to all permanent employees who have been with the company for at least one year. Applications should be submitted to HR at least eight weeks before the expected start of leave. Full details are available on the intranet.",
+      "questions": [
+        { "id": "t4-001-e01-q1", "prompt": "What is being announced?", "choices": ["A new recruitment drive", "A new parental leave policy", "A change in annual leave entitlement", "A new flexible work arrangement"], "answer": 1, "explanation": "\"the company will be offering a new parental leave policy\"." },
+        { "id": "t4-001-e01-q2", "prompt": "How many weeks of paid leave do primary caregivers receive?", "choices": ["Four weeks", "Eight weeks", "Twelve weeks", "Twenty weeks"], "answer": 3, "explanation": "\"primary caregivers receiving up to twenty weeks at full pay\"." },
+        { "id": "t4-001-e01-q3", "prompt": "How far in advance must applications be submitted?", "choices": ["Two weeks", "Four weeks", "Eight weeks", "Twelve weeks"], "answer": 2, "explanation": "\"Applications should be submitted to HR at least eight weeks before the expected start of leave\"." }
+      ]
+    },
+    {
+      "id": "t4-001-e02",
+      "audioText": "Hello, this message is for all staff in the sales department. As a reminder, the annual performance bonuses will be calculated based on your individual target achievement for this calendar year. Those who reach one hundred percent of their target will receive a bonus equivalent to ten percent of their annual salary. Those exceeding one hundred and twenty percent will receive fifteen percent. The final figures will be confirmed by the finance team in January, and bonuses will be paid with the February payroll. If you have any questions about how your targets were set, please speak with your line manager.",
+      "questions": [
+        { "id": "t4-001-e02-q1", "prompt": "What is the message about?", "choices": ["A change in the commission structure", "The annual performance bonus calculation", "A new sales target for next year", "A promotion announcement"], "answer": 1, "explanation": "\"the annual performance bonuses will be calculated based on your individual target achievement\"." },
+        { "id": "t4-001-e02-q2", "prompt": "What bonus percentage is given for exceeding 120% of the target?", "choices": ["Ten percent", "Twelve percent", "Fifteen percent", "Twenty percent"], "answer": 2, "explanation": "\"Those exceeding one hundred and twenty percent will receive fifteen percent\"." },
+        { "id": "t4-001-e02-q3", "prompt": "When will the bonuses be paid?", "choices": ["In December", "In January", "With the February payroll", "In March"], "answer": 2, "explanation": "\"bonuses will be paid with the February payroll\"." }
+      ]
+    },
+    {
+      "id": "t4-001-e03",
+      "audioText": "Attention all employees. This is a reminder that the annual workplace safety training is mandatory for all staff and must be completed by the thirty-first of this month. The training is available online through the learning portal and takes approximately one hour. Those who have already completed it in the past twelve months are exempt. Please note that line managers are responsible for ensuring their team members complete the training on time. Any employee who fails to complete it by the deadline may not be permitted to work on site until they do so.",
+      "questions": [
+        { "id": "t4-001-e03-q1", "prompt": "What is the announcement about?", "choices": ["A new workplace safety regulation", "Mandatory annual safety training", "An emergency evacuation drill", "A new health and safety officer"], "answer": 1, "explanation": "\"the annual workplace safety training is mandatory for all staff\"." },
+        { "id": "t4-001-e03-q2", "prompt": "Who is exempt from the training?", "choices": ["Part-time employees", "Employees who completed it in the past twelve months", "Managers only", "New hires joining this month"], "answer": 1, "explanation": "\"Those who have already completed it in the past twelve months are exempt\"." },
+        { "id": "t4-001-e03-q3", "prompt": "What may happen to employees who miss the deadline?", "choices": ["They will receive a formal warning", "They will be asked to work from home", "They may not be permitted to work on site", "They will lose part of their bonus"], "answer": 2, "explanation": "\"Any employee who fails to complete it by the deadline may not be permitted to work on site until they do so\"." }
+      ]
+    },
+    {
+      "id": "t4-001-e04",
+      "audioText": "Good afternoon. I'd like to take a few minutes to introduce our new Head of Talent Acquisition, Ms. Priya Mehta, who joins us from a leading consultancy firm where she spent eight years building award-winning hiring programmes. Priya will be overseeing all recruitment across our five offices and will be implementing a new candidate experience strategy aimed at reducing our time-to-hire by thirty percent. She's based in our London headquarters but will visit each office at least once a quarter. Please join me in welcoming Priya to the team.",
+      "questions": [
+        { "id": "t4-001-e04-q1", "prompt": "Who is being introduced?", "choices": ["The new Chief HR Officer", "The new Head of Talent Acquisition", "The new Regional Sales Manager", "The new Head of Learning and Development"], "answer": 1, "explanation": "\"I'd like to take a few minutes to introduce our new Head of Talent Acquisition, Ms. Priya Mehta\"." },
+        { "id": "t4-001-e04-q2", "prompt": "What is Priya's main goal?", "choices": ["Expanding the company to new markets", "Reducing the time-to-hire by thirty percent", "Improving employee retention rates", "Restructuring the HR department"], "answer": 1, "explanation": "\"reducing our time-to-hire by thirty percent\"." },
+        { "id": "t4-001-e04-q3", "prompt": "How often will Priya visit each office?", "choices": ["Once a month", "Every two months", "At least once a quarter", "Twice a year"], "answer": 2, "explanation": "\"will visit each office at least once a quarter\"." }
+      ]
+    },
+    {
+      "id": "t4-001-e05",
+      "audioText": "This is an important message from the facilities team. Due to essential maintenance work on the air conditioning system, the fifth floor will be temporarily unavailable this Thursday from eight a.m. to six p.m. Employees based on the fifth floor should plan to work from another floor or from home for the day. Hot-desking spaces are available on floors two and three — please book through the intranet to ensure availability. The maintenance team apologises for the inconvenience and will work as quickly as possible to complete the work.",
+      "questions": [
+        { "id": "t4-001-e05-q1", "prompt": "Why will the fifth floor be unavailable on Thursday?", "choices": ["A fire safety inspection", "Maintenance work on the air conditioning", "Renovation of the open-plan area", "Installation of new equipment"], "answer": 1, "explanation": "\"essential maintenance work on the air conditioning system\"." },
+        { "id": "t4-001-e05-q2", "prompt": "Where can employees hot-desk on Thursday?", "choices": ["Floors one and four", "Floors two and three", "Floors four and six", "The ground floor lobby"], "answer": 1, "explanation": "\"Hot-desking spaces are available on floors two and three\"." },
+        { "id": "t4-001-e05-q3", "prompt": "How should employees book a hot-desk?", "choices": ["By calling the facilities team", "By emailing their manager", "Through the intranet", "On a first-come, first-served basis"], "answer": 2, "explanation": "\"please book through the intranet to ensure availability\"." }
+      ]
+    },
+    {
+      "id": "t4-001-e06",
+      "audioText": "Good morning, team. As we wrap up the first half of the year, I want to share some highlights. We've grown our client base by eighteen percent, launched two new product lines, and reduced operational costs by twelve percent — all while maintaining our highest-ever customer satisfaction score of ninety-two percent. These results reflect the hard work of every person in this room. Looking ahead, our focus for the second half will be on expanding into two new markets in Southeast Asia. More details will follow in next week's strategy briefing. Thank you all.",
+      "questions": [
+        { "id": "t4-001-e06-q1", "prompt": "What is the speaker mainly doing?", "choices": ["Announcing a new company acquisition", "Sharing first-half performance highlights", "Introducing a new leadership team", "Presenting a budget for approval"], "answer": 1, "explanation": "\"As we wrap up the first half of the year, I want to share some highlights\"." },
+        { "id": "t4-001-e06-q2", "prompt": "What was the customer satisfaction score?", "choices": ["Eighty-eight percent", "Ninety percent", "Ninety-two percent", "Ninety-five percent"], "answer": 2, "explanation": "\"highest-ever customer satisfaction score of ninety-two percent\"." },
+        { "id": "t4-001-e06-q3", "prompt": "What is the main focus for the second half of the year?", "choices": ["Launching three new products", "Hiring fifty new employees", "Expanding into two new markets in Southeast Asia", "Reducing operational costs further"], "answer": 2, "explanation": "\"expanding into two new markets in Southeast Asia\"." }
+      ]
+    },
+    {
+      "id": "t4-001-e07",
+      "audioText": "Hi everyone, this is a quick update from the IT security team. We've recently seen an increase in phishing emails targeting company accounts. These emails often appear to come from trusted sources and may ask you to click a link or provide login credentials. If you receive a suspicious email, do not click any links or attachments. Instead, report it immediately using the 'Report Phishing' button in your email client, or forward it to security at company dot com. We will never ask for your password by email. Stay vigilant and thank you for helping keep our systems safe.",
+      "questions": [
+        { "id": "t4-001-e07-q1", "prompt": "What is the security team warning about?", "choices": ["A virus affecting company computers", "An increase in phishing emails", "Unauthorised access to the office building", "Data being stored incorrectly"], "answer": 1, "explanation": "\"We've recently seen an increase in phishing emails targeting company accounts\"." },
+        { "id": "t4-001-e07-q2", "prompt": "What should employees do if they receive a suspicious email?", "choices": ["Delete it and say nothing", "Reply to confirm it's phishing", "Click the link to investigate", "Report it using the Report Phishing button"], "answer": 3, "explanation": "\"report it immediately using the 'Report Phishing' button in your email client\"." },
+        { "id": "t4-001-e07-q3", "prompt": "What does the IT team clarify about passwords?", "choices": ["Passwords must be changed every month", "Passwords should be shared with IT only", "They will never ask for a password by email", "Passwords are managed automatically by the system"], "answer": 2, "explanation": "\"We will never ask for your password by email\"." }
+      ]
+    },
+    {
+      "id": "t4-001-e08",
+      "audioText": "This message is from the learning and development team. We're excited to launch our new mentoring programme next quarter. All employees at manager level and above are invited to volunteer as mentors. Mentees — those being mentored — can be any employee who has been with the company for at least six months and wants to develop their career. Pairs will meet for one hour per month for a period of six months. To express your interest as a mentor or mentee, please complete the short registration form on the learning portal by the end of next week.",
+      "questions": [
+        { "id": "t4-001-e08-q1", "prompt": "What programme is being launched?", "choices": ["A graduate recruitment scheme", "A leadership training course", "A mentoring programme", "A job shadowing initiative"], "answer": 2, "explanation": "\"We're excited to launch our new mentoring programme next quarter\"." },
+        { "id": "t4-001-e08-q2", "prompt": "Who can volunteer as a mentor?", "choices": ["Any employee", "Employees with more than five years at the company", "Employees at manager level and above", "Employees in the HR department only"], "answer": 2, "explanation": "\"All employees at manager level and above are invited to volunteer as mentors\"." },
+        { "id": "t4-001-e08-q3", "prompt": "How often do pairs meet?", "choices": ["Once a week", "Twice a month", "Once a month", "Every two months"], "answer": 2, "explanation": "\"Pairs will meet for one hour per month for a period of six months\"." }
+      ]
+    },
+    {
+      "id": "t4-001-e09",
+      "audioText": "Good afternoon, this is an announcement from the catering team. Starting Monday, the staff cafeteria will offer a new meal deal available from noon to two p.m. For seven euros fifty, you can choose a main dish, a side, and a drink. There will be four main dishes to choose from each day, including at least one vegetarian option. The meal deal replaces the previous à la carte pricing and represents a saving of up to thirty percent for most customers. The cafeteria will continue to offer hot drinks and snacks throughout the day at standard prices.",
+      "questions": [
+        { "id": "t4-001-e09-q1", "prompt": "What is being introduced on Monday?", "choices": ["Extended cafeteria opening hours", "A new meal deal in the staff cafeteria", "A new catering company", "A subsidised breakfast programme"], "answer": 1, "explanation": "\"the staff cafeteria will offer a new meal deal\"." },
+        { "id": "t4-001-e09-q2", "prompt": "What does the meal deal include?", "choices": ["A main dish and a dessert", "A starter, main, and drink", "A main dish, a side, and a drink", "Two main dishes and a drink"], "answer": 2, "explanation": "\"you can choose a main dish, a side, and a drink\"." },
+        { "id": "t4-001-e09-q3", "prompt": "How much can customers save compared to previous pricing?", "choices": ["Up to ten percent", "Up to twenty percent", "Up to thirty percent", "Up to forty percent"], "answer": 2, "explanation": "\"a saving of up to thirty percent for most customers\"." }
+      ]
+    },
+    {
+      "id": "t4-001-e10",
+      "audioText": "Hello, this is a message for all team leaders. As part of our commitment to continuous improvement, we will be rolling out quarterly employee engagement surveys starting next month. These surveys are anonymous and take approximately ten minutes to complete. Your role as a team leader is to encourage participation and to hold a team meeting within two weeks of receiving the results to discuss findings and agree on action points. The surveys will be sent directly to employees by email. Response rates will be tracked by department. We're aiming for a minimum of eighty percent participation company-wide.",
+      "questions": [
+        { "id": "t4-001-e10-q1", "prompt": "What is being introduced next month?", "choices": ["Monthly team briefings", "Quarterly employee engagement surveys", "Annual 360-degree feedback", "Biannual performance reviews"], "answer": 1, "explanation": "\"we will be rolling out quarterly employee engagement surveys starting next month\"." },
+        { "id": "t4-001-e10-q2", "prompt": "What should team leaders do after receiving the results?", "choices": ["Submit them to HR for analysis", "Share them only with senior management", "Hold a team meeting within two weeks", "Archive them for end-of-year review"], "answer": 2, "explanation": "\"hold a team meeting within two weeks of receiving the results to discuss findings\"." },
+        { "id": "t4-001-e10-q3", "prompt": "What participation rate is the company aiming for?", "choices": ["Sixty percent", "Seventy percent", "Seventy-five percent", "Eighty percent"], "answer": 3, "explanation": "\"We're aiming for a minimum of eighty percent participation company-wide\"." }
+      ]
+    }
+  ]
+}

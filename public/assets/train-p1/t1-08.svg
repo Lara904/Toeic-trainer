@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <rect width="400" height="280" fill="#fff3e0"/>
+  <rect x="0" y="240" width="400" height="40" fill="#e0e0e0"/>
+  <!-- couloir : mur du fond -->
+  <rect x="130" y="0" width="140" height="240" fill="#eceff1"/>
+  <!-- porte -->
+  <rect x="165" y="80" width="70" height="160" rx="4" fill="#d4e6f1" stroke="#90a4ae" stroke-width="2"/>
+  <circle cx="168" cy="160" r="5" fill="#78909c"/>
+  <!-- femme gauche avec enveloppe -->
+  <circle cx="105" cy="100" r="22" fill="#ffb74d"/>
+  <ellipse cx="105" cy="80" rx="22" ry="11" fill="#4a148c"/>
+  <rect x="85" y="122" width="40" height="58" rx="8" fill="#6a1b9a"/>
+  <rect x="65" y="136" width="20" height="38" rx="6" fill="#6a1b9a"/>
+  <rect x="125" y="136" width="20" height="38" rx="6" fill="#6a1b9a"/>
+  <!-- enveloppe dans main droite -->
+  <rect x="143" y="148" width="38" height="26" rx="3" fill="#fff" stroke="#90a4ae" stroke-width="1.5"/>
+  <line x1="143" y1="148" x2="162" y2="161" stroke="#cfd8dc" stroke-width="1.5"/>
+  <line x1="181" y1="148" x2="162" y2="161" stroke="#cfd8dc" stroke-width="1.5"/>
+  <!-- bras droit tendant l'enveloppe -->
+  <line x1="125" y1="148" x2="143" y2="158" stroke="#ffb74d" stroke-width="9" stroke-linecap="round"/>
+  <!-- femme droite qui reçoit -->
+  <circle cx="290" cy="100" r="22" fill="#ffcc80"/>
+  <ellipse cx="290" cy="80" rx="22" ry="11" fill="#880e4f"/>
+  <rect x="270" y="122" width="40" height="58" rx="8" fill="#c62828"/>
+  <rect x="250" y="136" width="20" height="38" rx="6" fill="#c62828"/>
+  <rect x="310" y="136" width="20" height="38" rx="6" fill="#c62828"/>
+  <!-- bras gauche recevant l'enveloppe -->
+  <line x1="250" y1="148" x2="184" y2="160" stroke="#ffcc80" stroke-width="9" stroke-linecap="round"/>
+</svg>

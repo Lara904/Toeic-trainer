@@ -1,0 +1,46 @@
+{
+  "id": "p3-006",
+  "part": 3,
+  "skill": "listening",
+  "title": "Part 3 – Conversation : organiser un dîner client",
+  "instructions": "Écoutez la conversation, puis répondez aux trois questions.",
+  "audioText": "Woman: Have you booked a restaurant for the client dinner on Thursday? Man: Yes, I made a reservation at La Provence for seven o'clock, for six people. Woman: Great. Do you know if they have a private room? Mr. Bennett mentioned he'd like to discuss some contract details during dinner. Man: I'm not sure, but I'll call them this afternoon to ask. If they don't have one, I can look for another restaurant nearby. Woman: Thanks. Also, could you check if they can accommodate a vegetarian guest? One of our clients doesn't eat meat. Man: I'll mention that when I call. I'll let you know what they say by the end of the day.",
+  "questions": [
+    {
+      "id": "p3-006-q1",
+      "prompt": "What has the man already done?",
+      "choices": [
+        "Cancelled a reservation",
+        "Booked a restaurant for Thursday",
+        "Ordered food for the office",
+        "Sent invitations to clients"
+      ],
+      "answer": 1,
+      "explanation": "Il confirme avoir réservé une table à La Provence pour jeudi à 19h, pour six personnes."
+    },
+    {
+      "id": "p3-006-q2",
+      "prompt": "What does the woman ask the man to find out?",
+      "choices": [
+        "The restaurant's address",
+        "Whether there is a private room",
+        "The price of the menu",
+        "The restaurant's opening hours"
+      ],
+      "answer": 1,
+      "explanation": "Elle demande s'il sait si le restaurant dispose d'un salon privé pour discuter du contrat."
+    },
+    {
+      "id": "p3-006-q3",
+      "prompt": "What special request does the woman mention?",
+      "choices": [
+        "A wheelchair-accessible entrance",
+        "A vegetarian option for a guest",
+        "A parking space for clients",
+        "A live music performance"
+      ],
+      "answer": 1,
+      "explanation": "Elle demande de vérifier si le restaurant peut proposer une option végétarienne pour un client."
+    }
+  ]
+}

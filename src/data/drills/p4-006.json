@@ -1,0 +1,36 @@
+{
+  "id": "p4-006",
+  "part": 4,
+  "skill": "listening",
+  "title": "Part 4 – Exposé : visite guidée du musée",
+  "instructions": "Écoutez l'exposé, puis répondez aux trois questions.",
+  "audioText": "Good morning, and welcome to the City History Museum. My name is Claire, and I'll be your guide for today's one-hour tour. We'll begin in the main hall, where you'll see exhibits about the city's early industries, and then move upstairs to the section on modern art, which opened just last month. Please feel free to take photos, but flash photography is not allowed in the modern art section, as it can damage some of the paintings. If at any point you'd like to take a break, the café on the ground floor is open until five o'clock. At the end of the tour, there will be time for questions, and you're welcome to explore the gift shop before you leave.",
+  "questions": [
+    {
+      "id": "p4-006-q1",
+      "prompt": "How long will the tour last?",
+      "choices": ["Thirty minutes", "One hour", "Two hours", "All day"],
+      "answer": 1,
+      "explanation": "\"I'll be your guide for today's one-hour tour\"."
+    },
+    {
+      "id": "p4-006-q2",
+      "prompt": "What is not allowed in the modern art section?",
+      "choices": ["Talking", "Flash photography", "Eating", "Sitting down"],
+      "answer": 1,
+      "explanation": "\"flash photography is not allowed in the modern art section, as it can damage some of the paintings\"."
+    },
+    {
+      "id": "p4-006-q3",
+      "prompt": "What can visitors do at the end of the tour?",
+      "choices": [
+        "Get a refund",
+        "Ask questions and visit the gift shop",
+        "Meet the artists",
+        "Take a guided bus tour"
+      ],
+      "answer": 1,
+      "explanation": "\"there will be time for questions, and you're welcome to explore the gift shop before you leave\"."
+    }
+  ]
+}

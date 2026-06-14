@@ -1,0 +1,46 @@
+{
+  "id": "p4-002",
+  "part": 4,
+  "skill": "listening",
+  "title": "Part 4 – Exposé : mise à jour logicielle",
+  "instructions": "Écoutez l'exposé, puis répondez aux trois questions.",
+  "audioText": "Good morning, everyone, and thank you for joining this training session. Today, we'll be introducing the new version of our internal messaging platform, ConnectPro. This update includes a redesigned interface, faster file sharing, and an improved search function that lets you find old conversations in seconds. The update will be installed automatically on your computers tonight, so please save and close all your files before you leave the office. Tomorrow morning, you'll see a short tutorial pop up the first time you open the app. If you run into any issues after the update, please contact the IT support desk by email rather than by phone, as we expect a high volume of calls.",
+  "questions": [
+    {
+      "id": "p4-002-q1",
+      "prompt": "What is the talk mainly about?",
+      "choices": [
+        "A new company holiday schedule",
+        "An update to a messaging platform",
+        "A change in office location",
+        "A new hiring policy"
+      ],
+      "answer": 1,
+      "explanation": "Le speaker présente la nouvelle version de la plateforme de messagerie interne ConnectPro."
+    },
+    {
+      "id": "p4-002-q2",
+      "prompt": "What should employees do before leaving the office?",
+      "choices": [
+        "Update their passwords",
+        "Save and close all their files",
+        "Attend a meeting with IT",
+        "Print their documents"
+      ],
+      "answer": 1,
+      "explanation": "\"please save and close all your files before you leave the office\"."
+    },
+    {
+      "id": "p4-002-q3",
+      "prompt": "How should employees contact IT support if they have problems?",
+      "choices": [
+        "By phone",
+        "By email",
+        "In person",
+        "Through the tutorial"
+      ],
+      "answer": 1,
+      "explanation": "\"please contact the IT support desk by email rather than by phone\"."
+    }
+  ]
+}

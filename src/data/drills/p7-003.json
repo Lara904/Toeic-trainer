@@ -1,0 +1,58 @@
+{
+  "id": "p7-003",
+  "part": 7,
+  "skill": "reading",
+  "title": "Part 7 – Passage unique : offre d'emploi interne",
+  "instructions": "Lisez l'annonce, puis répondez aux questions.",
+  "passage": "Internal Job Posting\n\nPosition: Senior Project Coordinator\nDepartment: Operations\nLocation: Headquarters, 3rd Floor\n\nWe are looking for an experienced Project Coordinator to join the Operations team. The successful candidate will be responsible for managing project timelines, coordinating with multiple departments, and preparing weekly progress reports for senior management.\n\nRequirements:\n- At least three years of experience in project coordination\n- Strong organizational and communication skills\n- Proficiency in project management software\n\nThis is an internal posting, open only to current employees who have completed at least one year with the company. Interested candidates should submit their updated resume and a short cover letter to the HR department by next Friday. Selected candidates will be contacted for an interview within two weeks of the application deadline.",
+  "questions": [
+    {
+      "id": "p7-003-q1",
+      "prompt": "What is the purpose of this posting?",
+      "choices": [
+        "To advertise a job to the public",
+        "To announce an internal position opening",
+        "To introduce a new department",
+        "To request a budget increase"
+      ],
+      "answer": 1,
+      "explanation": "Le texte précise : \"This is an internal posting, open only to current employees\"."
+    },
+    {
+      "id": "p7-003-q2",
+      "prompt": "What is one of the responsibilities of the position?",
+      "choices": [
+        "Hiring new employees",
+        "Preparing weekly progress reports",
+        "Managing the company's finances",
+        "Designing marketing materials"
+      ],
+      "answer": 1,
+      "explanation": "\"preparing weekly progress reports for senior management\"."
+    },
+    {
+      "id": "p7-003-q3",
+      "prompt": "Who is eligible to apply for this position?",
+      "choices": [
+        "Anyone with a university degree",
+        "Current employees with at least one year at the company",
+        "Only managers",
+        "External candidates only"
+      ],
+      "answer": 1,
+      "explanation": "\"open only to current employees who have completed at least one year with the company\"."
+    },
+    {
+      "id": "p7-003-q4",
+      "prompt": "What should interested candidates submit?",
+      "choices": [
+        "A video presentation",
+        "A resume and a cover letter",
+        "A reference letter from their manager",
+        "A completed training certificate"
+      ],
+      "answer": 1,
+      "explanation": "\"submit their updated resume and a short cover letter to the HR department\"."
+    }
+  ]
+}

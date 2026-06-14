@@ -1,0 +1,28 @@
+{
+  "id": "vocab-finance",
+  "title": "Finance & Budget",
+  "icon": "💰",
+  "description": "Comptabilité, investissements, facturation",
+  "cards": [
+    {"en":"invoice","fr":"facture","example":"Please send the invoice by end of day."},
+    {"en":"budget","fr":"budget","example":"The marketing budget was increased by ten percent."},
+    {"en":"revenue","fr":"chiffre d'affaires / recettes","example":"Annual revenue reached five million euros."},
+    {"en":"expenditure","fr":"dépenses","example":"All expenditure must be approved in advance."},
+    {"en":"profit margin","fr":"marge bénéficiaire","example":"The profit margin improved in Q3."},
+    {"en":"cash flow","fr":"trésorerie / flux de trésorerie","example":"Positive cash flow is essential for growth."},
+    {"en":"tax","fr":"impôt / taxe","example":"All companies must pay corporate tax."},
+    {"en":"reimbursement","fr":"remboursement","example":"Submit receipts for expense reimbursement."},
+    {"en":"quarterly","fr":"trimestriel","example":"Quarterly results will be published next week."},
+    {"en":"forecast","fr":"prévision","example":"The forecast shows a five percent growth."},
+    {"en":"audit","fr":"audit","example":"An external audit is scheduled for November."},
+    {"en":"asset","fr":"actif (comptable)","example":"The company's assets include machinery and property."},
+    {"en":"liability","fr":"passif / dette","example":"All liabilities must be listed in the balance sheet."},
+    {"en":"overhead","fr":"frais généraux","example":"Overheads include rent, utilities, and salaries."},
+    {"en":"subsidy","fr":"subvention","example":"The government offered a subsidy to small businesses."},
+    {"en":"interest rate","fr":"taux d'intérêt","example":"The interest rate is fixed at three percent."},
+    {"en":"fiscal year","fr":"exercice fiscal","example":"Our fiscal year ends in March."},
+    {"en":"balance sheet","fr":"bilan comptable","example":"The balance sheet shows the company's financial position."},
+    {"en":"accounts payable","fr":"comptes fournisseurs","example":"Accounts payable are settled within thirty days."},
+    {"en":"accounts receivable","fr":"comptes clients","example":"Accounts receivable have increased this quarter."}
+  ]
+}

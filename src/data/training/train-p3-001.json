@@ -1,0 +1,100 @@
+{
+  "id": "train-p3-001",
+  "part": 3,
+  "type": "training",
+  "skill": "listening",
+  "title": "Part 3 – Entraînement 1 : conversations RH & entreprise",
+  "instructions": "Écoutez chaque conversation, puis répondez aux trois questions.",
+  "items": [
+    {
+      "id": "t3-001-c01",
+      "audioText": "Woman: I heard there's an opening in the product development team. Do you know if it's been posted internally yet? Man: Yes, it went up on the intranet this morning. The deadline to apply is next Friday. Woman: Great, I've been wanting to move into that department for a while. Do I need my manager's approval to apply? Man: You don't need approval to apply, but if you get an interview, you're expected to inform your current manager.",
+      "questions": [
+        { "id": "t3-001-c01-q1", "prompt": "What is the woman interested in?", "choices": ["A promotion in her current team", "An opening in the product development team", "A transfer to another office", "A new management position"], "answer": 1, "explanation": "\"I heard there's an opening in the product development team\" — elle veut postuler à ce poste." },
+        { "id": "t3-001-c01-q2", "prompt": "When is the application deadline?", "choices": ["This Wednesday", "Next Monday", "Next Friday", "End of the month"], "answer": 2, "explanation": "\"The deadline to apply is next Friday\"." },
+        { "id": "t3-001-c01-q3", "prompt": "What must the woman do if she gets an interview?", "choices": ["Submit a written request to HR", "Get her manager's signature", "Inform her current manager", "Complete a skills assessment first"], "answer": 2, "explanation": "\"if you get an interview, you're expected to inform your current manager\"." }
+      ]
+    },
+    {
+      "id": "t3-001-c02",
+      "audioText": "Man: The new flexible working hours policy starts next month. Have you read the details? Woman: I skimmed through it. Basically we can start anywhere between seven and ten, right? Man: Exactly. And finish between four and seven accordingly. The only requirement is being available for core hours, which are ten to four. Woman: That works perfectly for me. I'll start at seven to avoid the rush hour.",
+      "questions": [
+        { "id": "t3-001-c02-q1", "prompt": "What are the speakers discussing?", "choices": ["A new holiday policy", "A flexible working hours policy", "Remote work guidelines", "An office relocation plan"], "answer": 1, "explanation": "\"The new flexible working hours policy starts next month\"." },
+        { "id": "t3-001-c02-q2", "prompt": "What are the mandatory core hours?", "choices": ["Seven to four", "Nine to five", "Ten to four", "Eight to six"], "answer": 2, "explanation": "\"The only requirement is being available for core hours, which are ten to four\"." },
+        { "id": "t3-001-c02-q3", "prompt": "What does the woman plan to do?", "choices": ["Start at ten to finish early", "Ask for an exception to the policy", "Start at seven to avoid rush hour", "Work from home on some days"], "answer": 2, "explanation": "\"I'll start at seven to avoid the rush hour\"." }
+      ]
+    },
+    {
+      "id": "t3-001-c03",
+      "audioText": "Woman: I wanted to talk to you about James. He's been late three times this week and his reports have been incomplete. Man: I noticed that too. Has anything changed in his personal situation recently? Woman: I'm not sure. Maybe we should have a one-on-one to check in before taking any formal action. Man: Agreed. Let's keep it informal for now and give him the chance to explain. I'll set up a meeting with him tomorrow morning.",
+      "questions": [
+        { "id": "t3-001-c03-q1", "prompt": "What problem are the speakers discussing?", "choices": ["A client complaint about James", "James's repeated lateness and incomplete work", "James's request for a transfer", "A conflict between James and a colleague"], "answer": 1, "explanation": "\"He's been late three times this week and his reports have been incomplete\"." },
+        { "id": "t3-001-c03-q2", "prompt": "What does the woman suggest doing first?", "choices": ["Issuing a formal warning", "Dismissing James immediately", "Having an informal one-on-one with James", "Reporting the issue to HR"], "answer": 2, "explanation": "\"Maybe we should have a one-on-one to check in before taking any formal action\"." },
+        { "id": "t3-001-c03-q3", "prompt": "What will the man do next?", "choices": ["Write a performance review", "Set up a meeting with James tomorrow", "Contact James's previous employer", "Assign James to a different project"], "answer": 1, "explanation": "\"I'll set up a meeting with him tomorrow morning\"." }
+      ]
+    },
+    {
+      "id": "t3-001-c04",
+      "audioText": "Man: We need to hire two more data analysts before the end of the quarter. Have you contacted the recruitment agency? Woman: Yes, I reached out to them yesterday. They said they can have a shortlist ready within ten days. Man: That's a bit slow. Can we also post the roles on our careers page in parallel? Woman: Already done. I published both listings this morning with a three-week application window.",
+      "questions": [
+        { "id": "t3-001-c04-q1", "prompt": "What does the company need to do?", "choices": ["Promote two existing employees", "Hire two data analysts before the end of the quarter", "Restructure the IT department", "Partner with a new recruitment agency"], "answer": 1, "explanation": "\"We need to hire two more data analysts before the end of the quarter\"." },
+        { "id": "t3-001-c04-q2", "prompt": "How long will it take the agency to prepare a shortlist?", "choices": ["Three days", "Five days", "Ten days", "Two weeks"], "answer": 2, "explanation": "\"They said they can have a shortlist ready within ten days\"." },
+        { "id": "t3-001-c04-q3", "prompt": "What did the woman already do this morning?", "choices": ["Called the agency to speed up the process", "Published two job listings on the careers page", "Sent the job descriptions by email", "Interviewed the first candidate"], "answer": 1, "explanation": "\"I published both listings this morning with a three-week application window\"." }
+      ]
+    },
+    {
+      "id": "t3-001-c05",
+      "audioText": "Woman: The orientation session for the new hires is tomorrow at nine. Is everything ready? Man: Almost. I've printed the welcome packs and booked the training room, but I still need to set up the laptops. Woman: How many laptops are you missing? Man: Three of them haven't been configured yet. IT said they'd have them ready by five this evening. Woman: Good. Make sure they're in the room before nine tomorrow.",
+      "questions": [
+        { "id": "t3-001-c05-q1", "prompt": "When is the orientation session?", "choices": ["This afternoon at five", "Tomorrow at nine", "Tomorrow at noon", "Next Monday"], "answer": 1, "explanation": "\"The orientation session for the new hires is tomorrow at nine\"." },
+        { "id": "t3-001-c05-q2", "prompt": "What still needs to be done?", "choices": ["Book the training room", "Print the welcome packs", "Configure three laptops", "Send the agenda to the new hires"], "answer": 2, "explanation": "\"Three of them haven't been configured yet\"." },
+        { "id": "t3-001-c05-q3", "prompt": "When will IT have the laptops ready?", "choices": ["By noon today", "By five this evening", "By eight tomorrow morning", "By the end of the week"], "answer": 1, "explanation": "\"IT said they'd have them ready by five this evening\"." }
+      ]
+    },
+    {
+      "id": "t3-001-c06",
+      "audioText": "Man: I'm finalising the agenda for the all-hands meeting next week. Should we include a Q&A session? Woman: Definitely. Employees always appreciate having a chance to ask questions directly. How long are you planning for the whole meeting? Man: About ninety minutes. I was thinking sixty minutes for presentations and thirty for Q&A. Woman: That sounds right. Just make sure someone is moderating the Q&A so it stays on track.",
+      "questions": [
+        { "id": "t3-001-c06-q1", "prompt": "What is the man working on?", "choices": ["A training schedule", "A performance review template", "The agenda for an all-hands meeting", "A Q&A session script"], "answer": 2, "explanation": "\"I'm finalising the agenda for the all-hands meeting next week\"." },
+        { "id": "t3-001-c06-q2", "prompt": "How long is the Q&A session planned to last?", "choices": ["Fifteen minutes", "Twenty minutes", "Thirty minutes", "Sixty minutes"], "answer": 2, "explanation": "\"thirty for Q&A\"." },
+        { "id": "t3-001-c06-q3", "prompt": "What does the woman recommend for the Q&A?", "choices": ["Limiting it to written questions only", "Having someone moderate it", "Sending questions in advance", "Recording it for absent employees"], "answer": 1, "explanation": "\"Just make sure someone is moderating the Q&A so it stays on track\"." }
+      ]
+    },
+    {
+      "id": "t3-001-c07",
+      "audioText": "Woman: I've just come out of the salary review meeting. I think we should adjust the pay scales for the junior analysts — they're below market rate. Man: By how much, roughly? Woman: Around eight to ten percent on average. If we don't act, we risk losing people to competitors. Man: I agree. Let's draft a proposal and present it to the CFO by the end of the month. We'll need payroll data to support it.",
+      "questions": [
+        { "id": "t3-001-c07-q1", "prompt": "What does the woman want to adjust?", "choices": ["The recruitment budget", "The pay scales for junior analysts", "The bonus policy for managers", "The overtime rates for all staff"], "answer": 1, "explanation": "\"we should adjust the pay scales for the junior analysts\"." },
+        { "id": "t3-001-c07-q2", "prompt": "By how much are salaries below market rate?", "choices": ["Three to five percent", "Eight to ten percent", "Fifteen percent", "Twenty percent"], "answer": 1, "explanation": "\"Around eight to ten percent on average\"." },
+        { "id": "t3-001-c07-q3", "prompt": "What do they plan to do next?", "choices": ["Ask HR to freeze all salaries", "Request approval from all department heads", "Draft a proposal to present to the CFO", "Conduct exit interviews with junior analysts"], "answer": 2, "explanation": "\"Let's draft a proposal and present it to the CFO by the end of the month\"." }
+      ]
+    },
+    {
+      "id": "t3-001-c08",
+      "audioText": "Man: Are you coming to the team-building event on Saturday? Woman: I wasn't planning to — is it mandatory? Man: It's not mandatory, but the manager mentioned it would be good for team morale. It's at the Go-Kart track near the city centre. Woman: A Go-Kart track? That actually sounds fun. I'll try to make it. What time does it start? Man: Ten in the morning. There'll be lunch provided afterwards.",
+      "questions": [
+        { "id": "t3-001-c08-q1", "prompt": "What kind of event is being discussed?", "choices": ["A company conference", "A team-building event", "A product launch", "A charity fundraiser"], "answer": 1, "explanation": "\"Are you coming to the team-building event on Saturday?\"" },
+        { "id": "t3-001-c08-q2", "prompt": "Where will the event take place?", "choices": ["At the company headquarters", "At a park near the office", "At a Go-Kart track near the city centre", "At a restaurant downtown"], "answer": 2, "explanation": "\"It's at the Go-Kart track near the city centre\"." },
+        { "id": "t3-001-c08-q3", "prompt": "What will happen after the main activity?", "choices": ["A manager's speech", "Lunch will be provided", "A raffle draw", "A visit to a partner company"], "answer": 1, "explanation": "\"There'll be lunch provided afterwards\"." }
+      ]
+    },
+    {
+      "id": "t3-001-c09",
+      "audioText": "Woman: The exit interview for Mrs. Fontaine is scheduled for this afternoon. Have you prepared the questions? Man: Yes, I've got the standard form. Do you want to sit in on it? Woman: No, I think she'll be more candid if it's just you. Make sure you ask about her reasons for leaving and whether there's anything the company could have done differently. Man: Of course. I'll write up a summary report and send it to you by tomorrow.",
+      "questions": [
+        { "id": "t3-001-c09-q1", "prompt": "What kind of interview is scheduled?", "choices": ["A job interview", "A performance review", "An exit interview", "A client meeting"], "answer": 2, "explanation": "\"The exit interview for Mrs. Fontaine is scheduled for this afternoon\"." },
+        { "id": "t3-001-c09-q2", "prompt": "Why does the woman not want to attend?", "choices": ["She has another meeting at the same time", "She thinks Mrs. Fontaine will be more candid without her", "She already spoke with Mrs. Fontaine last week", "She doesn't conduct exit interviews"], "answer": 1, "explanation": "\"I think she'll be more candid if it's just you\"." },
+        { "id": "t3-001-c09-q3", "prompt": "What will the man do after the interview?", "choices": ["Call HR directly", "File the standard form in the archive", "Write a summary report and send it by tomorrow", "Schedule a follow-up call with Mrs. Fontaine"], "answer": 2, "explanation": "\"I'll write up a summary report and send it to you by tomorrow\"." }
+      ]
+    },
+    {
+      "id": "t3-001-c10",
+      "audioText": "Man: The company is rolling out a new HR software platform next quarter. Have you been trained on it yet? Woman: I attended the introductory webinar last week. It looks quite intuitive, but the payroll module is complex. Man: I heard they're offering on-site training sessions next month. I'd recommend signing up for those. Woman: Good idea. Do you know if they cover the payroll module specifically? Man: I believe there's a dedicated half-day session just for payroll.",
+      "questions": [
+        { "id": "t3-001-c10-q1", "prompt": "What is being rolled out next quarter?", "choices": ["A new employee benefits plan", "A new HR software platform", "A new remote working policy", "A new payroll tax regulation"], "answer": 1, "explanation": "\"The company is rolling out a new HR software platform next quarter\"." },
+        { "id": "t3-001-c10-q2", "prompt": "Which part of the software does the woman find complex?", "choices": ["The recruitment module", "The time-tracking feature", "The reporting dashboard", "The payroll module"], "answer": 3, "explanation": "\"the payroll module is complex\"." },
+        { "id": "t3-001-c10-q3", "prompt": "What does the man say about the payroll training?", "choices": ["It is only available online", "There is a dedicated half-day session for it", "It has already been completed", "It will be covered in a one-hour webinar"], "answer": 1, "explanation": "\"there's a dedicated half-day session just for payroll\"." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.partTag,
+.skillTag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+}
+
+.partTag {
+  background-color: #e0e7ff;
+  color: var(--color-primary);
+}
+
+.skillTag {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.title {
+  font-size: 1.05rem;
+}
+
+.questionCount,
+.lastScore {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.lastScore {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.cta {
+  margin-top: 0.25rem;
+  align-self: flex-start;
+  background-color: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.cta:hover,
+.cta:focus-visible {
+  background-color: var(--color-primary-light);
+}

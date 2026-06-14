@@ -1,0 +1,20 @@
+{
+  "id": "p2-004",
+  "part": 2,
+  "skill": "listening",
+  "title": "Part 2 – Question-Réponse : l'e-mail de réunion",
+  "instructions": "Écoutez la question et les trois réponses possibles. Choisissez la réponse la plus appropriée.",
+  "audioText": "Did you receive the email I sent about tomorrow's meeting? (A) Yes, I read it this morning. (B) It's the third door on the right. (C) No, I haven't started yet.",
+  "questions": [
+    {
+      "id": "p2-004-q1",
+      "choices": [
+        "Yes, I read it this morning.",
+        "It's the third door on the right.",
+        "No, I haven't started yet."
+      ],
+      "answer": 0,
+      "explanation": "La question est une question fermée (oui/non) sur la réception d'un e-mail. (A) répond par oui et donne un détail. (B) répond à une question de localisation, (C) répond à une question sur l'avancement d'une tâche."
+    }
+  ]
+}

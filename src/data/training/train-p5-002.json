@@ -1,0 +1,20 @@
+{
+  "id": "train-p5-002",
+  "part": 5,
+  "type": "training",
+  "skill": "reading",
+  "title": "Part 5 – Entraînement 2 : prépositions & conjonctions",
+  "instructions": "Choisissez le mot ou le groupe de mots qui complète correctement chaque phrase.",
+  "items": [
+    { "id": "t5-002-q01", "sentence": "The conference will be held ____ the Grand Hotel on the fourteenth of March.", "choices": ["at", "in", "on", "by"], "answer": 0, "explanation": "\"at\" + lieu précis (hôtel, adresse, lieu d'événement) : \"at the Grand Hotel\"." },
+    { "id": "t5-002-q02", "sentence": "We've been working on this project ____ almost six months now.", "choices": ["since", "for", "during", "while"], "answer": 1, "explanation": "\"for\" + durée (six months) avec present perfect." },
+    { "id": "t5-002-q03", "sentence": "The package was delivered ____ noon, just as requested.", "choices": ["by", "until", "since", "during"], "answer": 0, "explanation": "\"by noon\" = avant midi au plus tard (limite temporelle)." },
+    { "id": "t5-002-q04", "sentence": "The CEO resigned ____ pressure from the board of directors.", "choices": ["under", "below", "beneath", "with"], "answer": 0, "explanation": "Expression figée : \"under pressure\"." },
+    { "id": "t5-002-q05", "sentence": "Please complete the form and return it ____ the attached envelope.", "choices": ["in", "with", "on", "inside"], "answer": 0, "explanation": "\"in the attached envelope\" : préposition correcte pour \"dans l'enveloppe ci-jointe\"." },
+    { "id": "t5-002-q06", "sentence": "The meeting was productive, ____ it ran thirty minutes longer than planned.", "choices": ["although", "because", "so", "since"], "answer": 0, "explanation": "Contraste entre un résultat positif et un inconvénient : \"although\"." },
+    { "id": "t5-002-q07", "sentence": "Sales have declined ____ the new competitor entered the market.", "choices": ["since", "for", "during", "by"], "answer": 0, "explanation": "\"since\" + point de départ d'une situation avec present perfect : \"since the competitor entered\"." },
+    { "id": "t5-002-q08", "sentence": "She was promoted ____ her outstanding results over the past year.", "choices": ["due to", "despite", "unless", "whereas"], "answer": 0, "explanation": "\"due to\" + groupe nominal exprime la cause." },
+    { "id": "t5-002-q09", "sentence": "The office will remain open ____ the bank holiday, as previously announced.", "choices": ["during", "while", "throughout", "despite"], "answer": 0, "explanation": "\"during\" + nom d'une période : \"during the bank holiday\"." },
+    { "id": "t5-002-q10", "sentence": "We will proceed ____ your approval has been received.", "choices": ["once", "unless", "despite", "although"], "answer": 0, "explanation": "\"once\" introduit une condition préalable : \"proceed once approval has been received\"." }
+  ]
+}

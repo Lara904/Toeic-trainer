@@ -1,0 +1,58 @@
+{
+  "id": "p7-007",
+  "part": 7,
+  "skill": "reading",
+  "title": "Part 7 – Passage unique : conseils pour un espace de travail sain",
+  "instructions": "Lisez l'article, puis répondez aux questions.",
+  "passage": "Tips for a Healthier Workspace\n\nMany employees spend most of their day sitting at a desk, which can lead to discomfort and long-term health issues if proper habits aren't followed.\n\nFirst, make sure your chair height allows your feet to rest flat on the floor, with your knees at roughly the same height as your hips. Your computer screen should be at eye level, about an arm's length away, to avoid neck strain.\n\nIt's also recommended to take a short break every hour. Standing up, stretching, or walking for just a few minutes can improve circulation and reduce muscle tension.\n\nFinally, keep frequently used items, such as your phone or notepad, within easy reach to avoid repeated twisting or stretching movements. If you experience ongoing pain or discomfort, consider speaking with the HR department about an ergonomic assessment of your workstation.",
+  "questions": [
+    {
+      "id": "p7-007-q1",
+      "prompt": "What is the main purpose of this article?",
+      "choices": [
+        "To promote a new office chair",
+        "To give advice on maintaining a healthy workspace",
+        "To announce a change in office hours",
+        "To advertise a fitness program"
+      ],
+      "answer": 1,
+      "explanation": "L'article donne des conseils pratiques pour aménager un poste de travail sain."
+    },
+    {
+      "id": "p7-007-q2",
+      "prompt": "Where should the computer screen be positioned?",
+      "choices": [
+        "Below eye level",
+        "At eye level, about an arm's length away",
+        "As close as possible to the keyboard",
+        "Behind the keyboard"
+      ],
+      "answer": 1,
+      "explanation": "\"Your computer screen should be at eye level, about an arm's length away\"."
+    },
+    {
+      "id": "p7-007-q3",
+      "prompt": "What is recommended every hour?",
+      "choices": [
+        "Eating a snack",
+        "Taking a short break to move around",
+        "Cleaning the desk",
+        "Checking emails"
+      ],
+      "answer": 1,
+      "explanation": "\"It's also recommended to take a short break every hour\"."
+    },
+    {
+      "id": "p7-007-q4",
+      "prompt": "Who should employees contact for an ergonomic assessment?",
+      "choices": [
+        "Their manager",
+        "The IT department",
+        "The HR department",
+        "A personal doctor"
+      ],
+      "answer": 2,
+      "explanation": "\"consider speaking with the HR department about an ergonomic assessment of your workstation\"."
+    }
+  ]
+}

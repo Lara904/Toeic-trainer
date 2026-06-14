@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Un homme assis à un bureau, en visioconférence sur son ordinateur portable, avec un casque sur les oreilles">
+  <rect width="400" height="300" fill="#f1f5f9"/>
+  <rect x="0" y="220" width="400" height="80" fill="#cbd5e1"/>
+  <rect x="140" y="120" width="120" height="80" rx="3" fill="#1e293b"/>
+  <rect x="148" y="128" width="104" height="60" fill="#38bdf8"/>
+  <circle cx="200" cy="150" r="14" fill="#fde68a"/>
+  <rect x="186" y="164" width="28" height="18" rx="4" fill="#94a3b8"/>
+  <rect x="120" y="200" width="160" height="14" rx="3" fill="#475569"/>
+  <circle cx="200" cy="250" r="24" fill="#fbbf24"/>
+  <path d="M178 234 a22 22 0 0 1 44 0" fill="none" stroke="#1e293b" stroke-width="4"/>
+  <rect x="172" y="232" width="10" height="14" rx="3" fill="#1e293b"/>
+  <rect x="218" y="232" width="10" height="14" rx="3" fill="#1e293b"/>
+  <rect x="180" y="260" width="40" height="40" fill="#16a34a"/>
+</svg>

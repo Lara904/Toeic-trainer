@@ -1,0 +1,44 @@
+{
+  "id": "p5-003",
+  "part": 5,
+  "skill": "reading",
+  "title": "Part 5 – Phrases à compléter : ressources humaines (2)",
+  "instructions": "Choisissez le mot ou le groupe de mots qui complète correctement chaque phrase.",
+  "questions": [
+    {
+      "id": "p5-003-q1",
+      "sentence": "The company offers a generous severance package to employees who are ____ due to restructuring.",
+      "choices": ["lay off", "laid off", "laying off", "lays off"],
+      "answer": 1,
+      "explanation": "\"laid off\" est le participe passé utilisé après \"are\" (voix passive) pour décrire des employés licenciés."
+    },
+    {
+      "id": "p5-003-q2",
+      "sentence": "Before signing the contract, please read each clause ____.",
+      "choices": ["careful", "carefully", "care", "caring"],
+      "answer": 1,
+      "explanation": "\"carefully\" est un adverbe qui modifie le verbe \"read\"."
+    },
+    {
+      "id": "p5-003-q3",
+      "sentence": "Employees must give at least two weeks' notice ____ resigning from their position.",
+      "choices": ["before", "after", "since", "during"],
+      "answer": 0,
+      "explanation": "\"before\" + gérondif (\"before resigning\") indique l'antériorité par rapport au départ."
+    },
+    {
+      "id": "p5-003-q4",
+      "sentence": "All employee files ____ confidentially by the HR department.",
+      "choices": ["are kept", "keep", "keeping", "kept"],
+      "answer": 0,
+      "explanation": "Sujet pluriel \"files\" + voix passive au présent = \"are kept\"."
+    },
+    {
+      "id": "p5-003-q5",
+      "sentence": "____ the new policy is announced, employees should continue following the current guidelines.",
+      "choices": ["Until", "During", "While", "For"],
+      "answer": 0,
+      "explanation": "\"Until\" introduit une limite temporelle : \"jusqu'à ce que la nouvelle politique soit annoncée\"."
+    }
+  ]
+}

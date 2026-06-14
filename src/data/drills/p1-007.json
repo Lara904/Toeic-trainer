@@ -1,0 +1,25 @@
+{
+  "id": "p1-007",
+  "part": 1,
+  "skill": "listening",
+  "title": "Part 1 – Description de photo : au restaurant",
+  "instructions": "Regardez l'image. Écoutez les quatre propositions et choisissez celle qui décrit le mieux la photo.",
+  "image": {
+    "src": "/assets/part1/p1-007.svg",
+    "alt": "Deux personnes assises à une table de restaurant, consultant des menus, avec des assiettes et des verres sur la table"
+  },
+  "audioText": "Look at the picture marked number one in your test book. (A) The people are cooking a meal. (B) The people are looking at menus at a restaurant. (C) The people are washing dishes. (D) The people are paying at a cash register.",
+  "questions": [
+    {
+      "id": "p1-007-q1",
+      "choices": [
+        "The people are cooking a meal.",
+        "The people are looking at menus at a restaurant.",
+        "The people are washing dishes.",
+        "The people are paying at a cash register."
+      ],
+      "answer": 1,
+      "explanation": "Les deux personnes sont assises à une table de restaurant avec des menus, des assiettes et des verres : c'est la proposition (B)."
+    }
+  ]
+}

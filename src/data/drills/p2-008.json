@@ -1,0 +1,20 @@
+{
+  "id": "p2-008",
+  "part": 2,
+  "skill": "listening",
+  "title": "Part 2 – Question-Réponse : la réunion reportée",
+  "instructions": "Écoutez la question et les trois réponses possibles. Choisissez la réponse la plus appropriée.",
+  "audioText": "Why was the meeting rescheduled? (A) Mr. Lopez is feeling unwell today. (B) It's scheduled for next week. (C) I'll send you the agenda.",
+  "questions": [
+    {
+      "id": "p2-008-q1",
+      "choices": [
+        "Mr. Lopez is feeling unwell today.",
+        "It's scheduled for next week.",
+        "I'll send you the agenda."
+      ],
+      "answer": 0,
+      "explanation": "\"Why\" demande une raison. (A) donne une raison (maladie). (B) répond plutôt à \"When\", et (C) ne répond pas à la cause du report."
+    }
+  ]
+}

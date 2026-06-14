@@ -1,0 +1,25 @@
+{
+  "id": "p1-005",
+  "part": 1,
+  "skill": "listening",
+  "title": "Part 1 – Description de photo : le quai de gare",
+  "instructions": "Regardez l'image. Écoutez les quatre propositions et choisissez celle qui décrit le mieux la photo.",
+  "image": {
+    "src": "/assets/part1/p1-005.svg",
+    "alt": "Des personnes attendant sur un quai de gare, en regardant un panneau d'affichage des départs, un train à l'arrière-plan"
+  },
+  "audioText": "Look at the picture marked number one in your test book. (A) The people are boarding a bus. (B) The people are waiting on a train platform. (C) The people are crossing a street. (D) The people are riding bicycles.",
+  "questions": [
+    {
+      "id": "p1-005-q1",
+      "choices": [
+        "The people are boarding a bus.",
+        "The people are waiting on a train platform.",
+        "The people are crossing a street.",
+        "The people are riding bicycles."
+      ],
+      "answer": 1,
+      "explanation": "L'image montre des personnes debout sur un quai, avec un panneau d'affichage et un train : c'est la proposition (B), pas un bus ou un vélo."
+    }
+  ]
+}

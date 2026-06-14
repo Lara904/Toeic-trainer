@@ -1,0 +1,74 @@
+/* ─── TOKENS ────────────────────────────────────────────────────────────────── */
+:root {
+  --color-primary:       #1e3a8a;
+  --color-primary-light: #3b82f6;
+  --color-accent:        #f59e0b;
+  --color-success:       #16a34a;
+  --color-error:         #dc2626;
+  --color-bg:            #f8fafc;
+  --color-surface:       #ffffff;
+  --color-text:          #0f172a;
+  --color-text-muted:    #64748b;
+  --color-border:        #e2e8f0;
+  --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --radius: 12px;
+  --shadow: 0 2px 10px rgba(15, 23, 42, 0.08);
+  /* safe-area pour encoches (iPhone notch, Android punch-hole) */
+  --safe-top:    env(safe-area-inset-top,    0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left:   env(safe-area-inset-left,   0px);
+  --safe-right:  env(safe-area-inset-right,  0px);
+}
+
+/* ─── RESET ─────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  /* empêche le zoom auto sur input iOS */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+html, body, #root { min-height: 100%; }
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.55;
+  /* laisse de la place en bas pour la home bar iOS/Android */
+  padding-bottom: var(--safe-bottom);
+}
+
+a { color: var(--color-primary-light); }
+button { font-family: inherit; cursor: pointer; }
+
+/* ─── LAYOUT PRINCIPAL ───────────────────────────────────────────────────────── */
+.app-main {
+  max-width: 860px;
+  margin: 0 auto;
+  /* horizontal : respect des encoches latérales */
+  padding: 1rem max(1rem, var(--safe-left)) 2rem max(1rem, var(--safe-right));
+}
+
+@media (min-width: 768px) {
+  .app-main { padding: 2rem 1.5rem 3rem; }
+}
+
+/* ─── UTILITAIRES ────────────────────────────────────────────────────────────── */
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+/* réduit les animations pour les utilisateurs qui le demandent */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* ─── TYPO MOBILE ────────────────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  body { font-size: 15px; }
+  h1   { font-size: 1.35rem; }
+  h2   { font-size: 1.1rem; }
+}

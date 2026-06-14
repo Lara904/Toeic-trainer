@@ -1,0 +1,28 @@
+{
+  "id": "vocab-communication",
+  "title": "Communication & Technologies",
+  "icon": "💬",
+  "description": "E-mails, réunions, outils numériques",
+  "cards": [
+    {"en":"agenda","fr":"ordre du jour","example":"Please review the agenda before the meeting."},
+    {"en":"minutes","fr":"compte rendu (de réunion)","example":"The minutes will be circulated by tomorrow."},
+    {"en":"conference call","fr":"réunion téléphonique","example":"We have a conference call at three o'clock."},
+    {"en":"broadband","fr":"haut débit","example":"The office upgraded to broadband last month."},
+    {"en":"attachment","fr":"pièce jointe","example":"Please find the report in the attachment."},
+    {"en":"bandwidth","fr":"bande passante","example":"Large video files use a lot of bandwidth."},
+    {"en":"backup","fr":"sauvegarde","example":"Always make a backup of your files."},
+    {"en":"firewall","fr":"pare-feu","example":"The firewall blocks unauthorised access."},
+    {"en":"encryption","fr":"chiffrement","example":"All data is protected by encryption."},
+    {"en":"helpdesk","fr":"assistance technique","example":"Contact the helpdesk for any IT issues."},
+    {"en":"webinar","fr":"séminaire en ligne","example":"The training will be delivered as a webinar."},
+    {"en":"template","fr":"modèle (document)","example":"Use the company template for all reports."},
+    {"en":"deadline","fr":"date limite / échéance","example":"The submission deadline is Friday at noon."},
+    {"en":"cc (carbon copy)","fr":"copie (e-mail)","example":"Please cc me on all client emails."},
+    {"en":"feedback","fr":"retour / commentaire","example":"We welcome feedback from all participants."},
+    {"en":"follow up","fr":"faire un suivi","example":"I will follow up with the client tomorrow."},
+    {"en":"roll out","fr":"déployer / lancer","example":"The new software will be rolled out next quarter."},
+    {"en":"downtime","fr":"temps d'arrêt (système)","example":"Planned downtime is scheduled for Sunday night."},
+    {"en":"interface","fr":"interface","example":"The new interface is more user-friendly."},
+    {"en":"update","fr":"mise à jour / informer","example":"Please update the spreadsheet daily."}
+  ]
+}

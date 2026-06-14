@@ -1,0 +1,38 @@
+{
+  "id": "p6-005",
+  "part": 6,
+  "skill": "reading",
+  "title": "Part 6 – Texte à trous : rapport financier trimestriel",
+  "instructions": "Lisez la note et choisissez le mot ou le groupe de mots qui convient pour chaque numéro.",
+  "passage": "To: Department Heads\nFrom: Finance Office\nSubject: Q3 Financial Report\n\nThe Q3 financial report {{1}} now available on the shared drive for your review.\n\nPlease note that overall revenue increased by eight percent compared to Q2, {{2}} expenses also rose slightly due to higher shipping costs.\n\n{{3}} you have any questions about the figures in your department's section, please contact the finance team before Friday.\n\nA meeting will be held next week to discuss the report {{4}} detail.",
+  "questions": [
+    {
+      "id": "p6-005-q1",
+      "blank": 1,
+      "choices": ["is", "are", "was", "were"],
+      "answer": 0,
+      "explanation": "Sujet singulier \"The Q3 financial report\" : \"is now available\"."
+    },
+    {
+      "id": "p6-005-q2",
+      "blank": 2,
+      "choices": ["although", "because", "so", "and"],
+      "answer": 0,
+      "explanation": "Idée de contraste : les revenus ont augmenté bien que les dépenses aient aussi augmenté : \"although\"."
+    },
+    {
+      "id": "p6-005-q3",
+      "blank": 3,
+      "choices": ["If", "Unless", "Despite", "Although"],
+      "answer": 0,
+      "explanation": "Structure conditionnelle introduisant une instruction : \"If you have any questions...\"."
+    },
+    {
+      "id": "p6-005-q4",
+      "blank": 4,
+      "choices": ["in", "on", "at", "by"],
+      "answer": 0,
+      "explanation": "Expression figée : \"in detail\"."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "vocab-health",
+  "title": "Santé & Divertissement",
+  "icon": "🏥",
+  "description": "Médecine, assurance, loisirs professionnels",
+  "cards": [
+    {"en":"prescription","fr":"ordonnance","example":"You need a prescription to get this medication."},
+    {"en":"claim","fr":"demande de remboursement","example":"Submit your insurance claim within thirty days."},
+    {"en":"coverage","fr":"couverture (assurance)","example":"Your policy provides full dental coverage."},
+    {"en":"deductible","fr":"franchise (assurance)","example":"The deductible is two hundred euros per year."},
+    {"en":"wellness","fr":"bien-être (santé)","example":"The company offers a wellness programme."},
+    {"en":"diagnosis","fr":"diagnostic","example":"The doctor gave a diagnosis after the tests."},
+    {"en":"referral","fr":"orientation (médicale)","example":"You need a referral to see a specialist."},
+    {"en":"screening","fr":"dépistage","example":"Annual health screenings are provided free of charge."},
+    {"en":"sick leave","fr":"congé maladie","example":"She is on sick leave for two weeks."},
+    {"en":"premium","fr":"prime d'assurance","example":"The monthly premium increased this year."},
+    {"en":"venue","fr":"lieu (d'événement)","example":"The conference venue holds five hundred people."},
+    {"en":"catering","fr":"restauration / traiteur","example":"Catering is provided at all company events."},
+    {"en":"keynote","fr":"discours principal","example":"The keynote will be delivered by the CEO."},
+    {"en":"banquet","fr":"banquet","example":"A banquet is planned for the final evening."},
+    {"en":"exhibit","fr":"exposer / exposition","example":"The company will exhibit at the trade fair."},
+    {"en":"hospitality","fr":"accueil / hospitality","example":"The hospitality desk is near gate seven."},
+    {"en":"itinerary (event)","fr":"programme (événement)","example":"The event itinerary was sent to all guests."},
+    {"en":"sponsor","fr":"commanditaire / sponsoriser","example":"Three companies sponsored the annual gala."},
+    {"en":"registration","fr":"inscription","example":"Online registration closes on the fifteenth."},
+    {"en":"entertainment","fr":"divertissement","example":"Live entertainment will follow the dinner."}
+  ]
+}

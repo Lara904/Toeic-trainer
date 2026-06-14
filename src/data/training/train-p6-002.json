@@ -1,0 +1,110 @@
+{
+  "id": "train-p6-002",
+  "part": 6,
+  "type": "training",
+  "skill": "reading",
+  "title": "Part 6 – Entraînement 2 : notes de service & annonces",
+  "instructions": "Lisez chaque texte et choisissez le mot ou groupe de mots qui convient pour chaque numéro.",
+  "items": [
+    {
+      "id": "t6-002-t01",
+      "passage": "To: All Staff\nFrom: Facilities Management\nSubject: Lift Maintenance\n\nPlease be informed that Lift B will be {{1}} of service on Wednesday from eight a.m. to four p.m. for routine maintenance.\n\nDuring this time, please use Lift A or the staircase. We apologise for {{2}} inconvenience.\n\nEmployees {{3}} mobility difficulties are encouraged to inform reception in advance so that {{4}} arrangements can be made.",
+      "questions": [
+        { "blank": 1, "choices": ["out", "off", "away", "outside"], "answer": 0, "explanation": "\"out of service\" = hors service. Expression figée." },
+        { "blank": 2, "choices": ["any", "the", "this", "such"], "answer": 0, "explanation": "\"We apologise for any inconvenience\" : formule standard." },
+        { "blank": 3, "choices": ["with", "having", "who have", "of"], "answer": 2, "explanation": "\"Employees who have mobility difficulties\" : pronom relatif avec proposition complète." },
+        { "blank": 4, "choices": ["suitable", "suitably", "suitability", "suited"], "answer": 0, "explanation": "Adjectif devant \"arrangements\" : \"suitable arrangements\"." }
+      ]
+    },
+    {
+      "id": "t6-002-t02",
+      "passage": "INTERNAL NOTICE\n\nThe staff parking lot will be {{1}} to all employees starting Monday, as construction work on the adjacent building has reduced the available spaces by half.\n\nEmployees are encouraged to use public transport or cycle to work. Those who cycle {{2}} use the secure bike storage in the basement, which has recently been expanded.\n\n{{3}} employees are entitled to park on site, priority will be given to those travelling more than fifteen kilometres. A revised parking permit system {{4}} introduced by the end of next week.",
+      "questions": [
+        { "blank": 1, "choices": ["restricted", "restricting", "restriction", "restrict"], "answer": 0, "explanation": "Adjectif passif : \"will be restricted to all employees\" = accessible à un nombre limité." },
+        { "blank": 2, "choices": ["may", "must", "should", "can"], "answer": 0, "explanation": "\"may use\" = sont autorisés à utiliser (permission)." },
+        { "blank": 3, "choices": ["Where", "If", "Until", "Although"], "answer": 1, "explanation": "\"If employees are entitled to park\" : condition introduisant une règle d'exception." },
+        { "blank": 4, "choices": ["will be", "is being", "was", "has been"], "answer": 0, "explanation": "Futur passif : \"will be introduced by the end of next week\"." }
+      ]
+    },
+    {
+      "id": "t6-002-t03",
+      "passage": "MEMORANDUM\n\nTo: Department Heads\nFrom: Operations Director\nRe: Q3 Performance Review\n\nThis memo serves as a reminder that Q3 performance data {{1}} to the operations team no later than the fifth of October.\n\nDepartment heads {{2}} ensure that all figures are verified and consistent with the accounting records before submission.\n\n{{3}}, a summary presentation of no more than ten slides is required for each department. These presentations {{4}} shared with the executive committee on October tenth.",
+      "questions": [
+        { "blank": 1, "choices": ["must be submitted", "must submit", "submitting", "submitted"], "answer": 0, "explanation": "Voix passive modale : \"must be submitted\"." },
+        { "blank": 2, "choices": ["are responsible for ensuring", "responsible to ensure", "are responsible to", "ensure responsibility"], "answer": 0, "explanation": "\"are responsible for\" + gérondif : collocation correcte." },
+        { "blank": 3, "choices": ["In addition", "Instead", "Despite this", "Unless"], "answer": 0, "explanation": "\"In addition\" = de plus, pour ajouter une exigence supplémentaire." },
+        { "blank": 4, "choices": ["will be", "are", "were", "would have been"], "answer": 0, "explanation": "Futur passif : \"will be shared with the executive committee\"." }
+      ]
+    },
+    {
+      "id": "t6-002-t04",
+      "passage": "ANNOUNCEMENT: Annual Company Picnic\n\nWe are {{1}} to announce that this year's annual company picnic will take place on Saturday, August ninth, at Riverside Park.\n\nThe event will run from noon {{2}} five p.m. and is open to all employees and their families. Food, drinks, and activities for children will be {{3}}.\n\nTo help us plan catering, please register by July twenty-fifth using the link {{4}} this announcement. We look forward to seeing you there!",
+      "questions": [
+        { "blank": 1, "choices": ["delighted", "delight", "delightful", "delighting"], "answer": 0, "explanation": "\"We are delighted to announce\" : adjectif dans une formule d'annonce positive." },
+        { "blank": 2, "choices": ["until", "to", "through", "from"], "answer": 0, "explanation": "\"from noon until five p.m.\" : \"until\" marque la limite de fin." },
+        { "blank": 3, "choices": ["provided", "providing", "provide", "provision"], "answer": 0, "explanation": "\"will be provided\" : futur passif." },
+        { "blank": 4, "choices": ["below", "above", "beside", "alongside"], "answer": 0, "explanation": "\"the link below this announcement\" = le lien ci-dessous." }
+      ]
+    },
+    {
+      "id": "t6-002-t05",
+      "passage": "To: All Sales Representatives\nFrom: Regional Sales Manager\nSubject: New Client Visit Protocol\n\nEffective immediately, all client visits {{1}} be pre-approved by the regional manager at least forty-eight hours in advance.\n\nRepresentatives are {{2}} to bring a printed agenda to every client meeting and to submit a visit report within twenty-four hours of the meeting's conclusion.\n\nThis protocol has been introduced {{3}} improve client relationship management and ensure consistency {{4}} all regional teams.",
+      "questions": [
+        { "blank": 1, "choices": ["must", "should", "might", "would"], "answer": 0, "explanation": "Obligation forte introduite par une nouvelle politique : \"must be pre-approved\"." },
+        { "blank": 2, "choices": ["required", "requiring", "requirement", "require"], "answer": 0, "explanation": "\"Representatives are required to\" : voix passive + infinitif." },
+        { "blank": 3, "choices": ["to", "in order to", "so as to", "for"], "answer": 2, "explanation": "\"so as to\" = dans le but de (but explicite). \"For\" ne peut pas introduire un infinitif." },
+        { "blank": 4, "choices": ["across", "between", "among", "through"], "answer": 0, "explanation": "\"consistency across all regional teams\" = cohérence à travers toutes les équipes." }
+      ]
+    },
+    {
+      "id": "t6-002-t06",
+      "passage": "NOTICE: Updated Password Policy\n\nThe IT department would like to inform all staff of the following changes to our password security policy, {{1}} immediately:\n\nAll passwords must be at least twelve characters long and {{2}} a combination of uppercase letters, numbers, and symbols. Passwords must be changed every ninety days. The system will {{3}} prompt you to create a new password when your current one is about to expire.\n\nDo not share your password with anyone, including IT staff. If you suspect your account {{4}} compromised, contact the helpdesk immediately.",
+      "questions": [
+        { "blank": 1, "choices": ["effective", "effectively", "effects", "effecting"], "answer": 0, "explanation": "\"effective immediately\" = en vigueur immédiatement. Adjectif dans une formule de politique." },
+        { "blank": 2, "choices": ["include", "including", "must include", "included"], "answer": 2, "explanation": "Obligation parallèle à \"must be at least twelve characters\" : \"must include a combination\"." },
+        { "blank": 3, "choices": ["automatically", "automatic", "automate", "automation"], "answer": 0, "explanation": "Adverbe pour modifier \"prompt\" : \"will automatically prompt you\"." },
+        { "blank": 4, "choices": ["has been", "is", "was", "had been"], "answer": 0, "explanation": "Present perfect pour une situation récente avec conséquence présente : \"has been compromised\"." }
+      ]
+    },
+    {
+      "id": "t6-002-t07",
+      "passage": "To: Finance Team\nFrom: CFO\nSubject: End-of-Year Closing Schedule\n\nAs we approach the end of the fiscal year, I would like to remind everyone of the key deadlines for the year-end closing process.\n\nAll outstanding invoices {{1}} approved and entered into the system by December twenty-eighth. The books will be officially closed on December thirty-first, after {{2}} no further entries will be accepted.\n\nA closing meeting has been scheduled for January third {{3}} review the final figures. Attendance is mandatory for all members of the finance team. {{4}} questions about the process, please speak with your line manager.",
+      "questions": [
+        { "blank": 1, "choices": ["must be", "are", "should", "have been"], "answer": 0, "explanation": "Obligation avec délai précis : \"must be approved and entered\"." },
+        { "blank": 2, "choices": ["which", "that", "when", "where"], "answer": 0, "explanation": "\"after which\" = après quoi (pronom relatif pour relier deux clauses)." },
+        { "blank": 3, "choices": ["to", "for", "in order", "so that"], "answer": 0, "explanation": "\"scheduled for January third to review\" : infinitif de but après date." },
+        { "blank": 4, "choices": ["For any", "If any", "Should any", "Any"], "answer": 0, "explanation": "\"For any questions\" = pour toute question. Formule de clôture standard." }
+      ]
+    },
+    {
+      "id": "t6-002-t08",
+      "passage": "HR NOTICE: Dress Code Reminder\n\nThis is a reminder to all staff regarding our company dress code policy.\n\nBusiness casual attire is required Monday through Thursday. On Fridays, employees {{1}} to wear casual clothing, provided it remains neat and professional.\n\nClothing with offensive slogans or imagery is not {{2}} at any time. Employees meeting with clients or external partners {{3}} ensure they are dressed to a business formal standard, regardless of the day of the week.\n\n{{4}} you are unsure whether an outfit is appropriate, please consult the full dress code policy on the intranet.",
+      "questions": [
+        { "blank": 1, "choices": ["are permitted", "permit", "are permitting", "permitted"], "answer": 0, "explanation": "\"are permitted to wear\" : voix passive + infinitif pour exprimer la permission." },
+        { "blank": 2, "choices": ["permitted", "allowing", "allowed", "acceptable"], "answer": 3, "explanation": "\"not acceptable at any time\" : adjectif approprié pour une règle générale." },
+        { "blank": 3, "choices": ["should", "could", "might", "may"], "answer": 0, "explanation": "Recommandation forte : \"should ensure\"." },
+        { "blank": 4, "choices": ["If", "Unless", "Even if", "When"], "answer": 0, "explanation": "\"If you are unsure\" : condition hypothétique simple." }
+      ]
+    },
+    {
+      "id": "t6-002-t09",
+      "passage": "NOTICE: Cafeteria Renovation\n\nPlease be advised that the staff cafeteria will be closed for renovation {{1}} July seventh to July twenty-first.\n\n{{2}} this period, hot meals will be available from a food truck parked in the courtyard from eleven-thirty a.m. to one-thirty p.m. A selection of sandwiches and snacks will also be {{3}} from the vending machines, which have been restocked for this purpose.\n\nWe thank you for your {{4}} and look forward to welcoming you to the newly renovated cafeteria.",
+      "questions": [
+        { "blank": 1, "choices": ["from", "between", "during", "since"], "answer": 0, "explanation": "\"from... to...\" = du... au... Préposition de début dans un intervalle." },
+        { "blank": 2, "choices": ["During", "While", "For", "Throughout"], "answer": 0, "explanation": "\"During this period\" = pendant cette période (+ nom)." },
+        { "blank": 3, "choices": ["available", "availing", "availability", "availed"], "answer": 0, "explanation": "\"will be available\" : adjectif passif au futur." },
+        { "blank": 4, "choices": ["patience", "understanding", "cooperation", "support"], "answer": 2, "explanation": "\"Thank you for your patience\" ou \"cooperation\" sont tous deux corrects, mais \"cooperation\" est le plus logique dans une note opérationnelle sur une fermeture temporaire." }
+      ]
+    },
+    {
+      "id": "t6-002-t10",
+      "passage": "To: Project Team\nFrom: Project Manager\nSubject: Risk Assessment Update\n\nFollowing our meeting on Tuesday, I would like to {{1}} the key risks identified and the actions agreed upon.\n\nThe primary risk remains the supplier delay, which {{2}} push back the final delivery date by up to two weeks. To mitigate this, we have contacted two alternative suppliers, whose quotes are currently {{3}} reviewed.\n\n{{4}} any new risks are identified by team members before our next meeting, please report them using the risk log on the project portal.",
+      "questions": [
+        { "blank": 1, "choices": ["summarise", "summary", "summarising", "summarised"], "answer": 0, "explanation": "\"I would like to summarise\" : infinitif après \"would like to\"." },
+        { "blank": 2, "choices": ["could", "will", "must", "shall"], "answer": 0, "explanation": "\"could push back\" : possibilité conditionnelle (risque potentiel)." },
+        { "blank": 3, "choices": ["being", "been", "be", "are"], "answer": 0, "explanation": "\"are currently being reviewed\" : présent continu passif." },
+        { "blank": 4, "choices": ["If", "Should", "Unless", "Whenever"], "answer": 1, "explanation": "\"Should any new risks be identified\" : conditionnel formel inversé sans \"if\"." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "p7-005",
+  "part": 7,
+  "skill": "reading",
+  "title": "Part 7 – Passage unique : politique de livraison",
+  "instructions": "Lisez le texte, puis répondez aux questions.",
+  "passage": "Shipping & Delivery Information - GreenBox Deliveries\n\nStandard delivery takes 3 to 5 business days and costs $5.99 for orders under $50. Orders over $50 qualify for free standard delivery.\n\nExpress delivery is available for an additional $12.99 and guarantees delivery within 1 to 2 business days. Express orders placed before 2 p.m. on weekdays will be processed the same day.\n\nPlease note that we do not deliver on weekends or public holidays. If your delivery date falls on one of these days, your package will arrive on the next business day.\n\nIf your package has not arrived within the expected timeframe, please contact our customer service team with your order number. We recommend waiting at least one extra business day before reporting a delay, as delivery estimates can occasionally vary.",
+  "questions": [
+    {
+      "id": "p7-005-q1",
+      "prompt": "How can a customer qualify for free standard delivery?",
+      "choices": [
+        "By signing up for a membership",
+        "By placing an order over $50",
+        "By choosing express delivery",
+        "By ordering on a weekday"
+      ],
+      "answer": 1,
+      "explanation": "\"Orders over $50 qualify for free standard delivery\"."
+    },
+    {
+      "id": "p7-005-q2",
+      "prompt": "What is required for an express order to be processed the same day?",
+      "choices": [
+        "It must be placed before 2 p.m. on a weekday",
+        "It must be over $100",
+        "It must include a signature",
+        "It must be picked up in store"
+      ],
+      "answer": 0,
+      "explanation": "\"Express orders placed before 2 p.m. on weekdays will be processed the same day\"."
+    },
+    {
+      "id": "p7-005-q3",
+      "prompt": "What happens if a delivery date falls on a public holiday?",
+      "choices": [
+        "The order is cancelled",
+        "The package arrives on the next business day",
+        "The customer receives a refund",
+        "The delivery fee is waived"
+      ],
+      "answer": 1,
+      "explanation": "\"your package will arrive on the next business day\"."
+    },
+    {
+      "id": "p7-005-q4",
+      "prompt": "What does the company recommend before reporting a delay?",
+      "choices": [
+        "Cancelling the order",
+        "Waiting at least one extra business day",
+        "Contacting the delivery driver directly",
+        "Requesting express delivery for free"
+      ],
+      "answer": 1,
+      "explanation": "\"We recommend waiting at least one extra business day before reporting a delay\"."
+    }
+  ]
+}

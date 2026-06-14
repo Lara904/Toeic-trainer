@@ -1,0 +1,46 @@
+{
+  "id": "p4-005",
+  "part": 4,
+  "skill": "listening",
+  "title": "Part 4 – Exposé : annonce d'embarquement retardé",
+  "instructions": "Écoutez l'annonce, puis répondez aux trois questions.",
+  "audioText": "Attention, passengers waiting for flight 482 to Vancouver. We apologize for the delay. Due to heavy traffic on the runway, boarding will now begin at three forty-five instead of three fifteen. We thank you for your patience. While you wait, please remember that the gate area has limited seating, so priority will be given to passengers traveling with small children or those who need extra time to board. Once boarding begins, we will call passengers by zone, starting with zone one. Please have your boarding pass and identification ready. Again, we apologize for the inconvenience and look forward to having you on board shortly.",
+  "questions": [
+    {
+      "id": "p4-005-q1",
+      "prompt": "What is the announcement about?",
+      "choices": [
+        "A flight cancellation",
+        "A delayed boarding time",
+        "A gate change",
+        "A baggage problem"
+      ],
+      "answer": 1,
+      "explanation": "\"boarding will now begin at three forty-five instead of three fifteen\"."
+    },
+    {
+      "id": "p4-005-q2",
+      "prompt": "Why was the flight delayed?",
+      "choices": [
+        "Bad weather",
+        "Heavy traffic on the runway",
+        "A mechanical issue",
+        "A staff shortage"
+      ],
+      "answer": 1,
+      "explanation": "\"Due to heavy traffic on the runway\"."
+    },
+    {
+      "id": "p4-005-q3",
+      "prompt": "Who will be given priority during boarding?",
+      "choices": [
+        "Frequent flyers",
+        "Passengers in zone one only",
+        "Passengers with small children or who need extra time",
+        "Passengers with carry-on luggage only"
+      ],
+      "answer": 2,
+      "explanation": "\"priority will be given to passengers traveling with small children or those who need extra time to board\"."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "train-p8-002",
+  "part": 8,
+  "type": "training",
+  "skill": "reading",
+  "title": "Part 8 – Entraînement 2 : finance & transport",
+  "instructions": "Lisez les deux documents de chaque exercice et répondez aux questions.",
+  "items": [
+    {
+      "id": "t8-002-set01",
+      "passages": [
+        { "label": "Bon de commande", "text": "PURCHASE ORDER\nPO Number: PO-20241107\nDate: November 7th\nFrom: Brightfield Ltd, 12 West Quay, Cork\nTo: OfficeNow Supplies, 44 Trade Road, Dublin\n\nItems ordered:\n— 5 x ergonomic chairs @ €180 each = €900\n— 2 x height-adjustable desks @ €320 each = €640\n— 10 x monitor stands @ €45 each = €450\n\nSubtotal: €1,990\nVAT (23%): €457.70\nTotal: €2,447.70\n\nDelivery requested by: November 20th\nPayment terms: Net 30" },
+        { "label": "E-mail de confirmation fournisseur", "text": "From: OfficeNow Supplies\nTo: Brightfield Ltd\nSubject: Order Confirmation — PO-20241107\n\nDear Brightfield Team,\n\nThank you for your order. We are pleased to confirm that all items are in stock and will be dispatched on November 14th, with expected delivery by November 18th — within your requested timeframe.\n\nPlease note that the monitor stands come in packs of 5, so we will be dispatching 2 packs (10 units) as ordered.\n\nInvoice will be issued upon dispatch. Payment is due within 30 days of invoice date, in line with your stated terms.\n\nKind regards,\nOfficeNow Supplies" }
+      ],
+      "questions": [
+        { "id": "t8-002-s01-q1", "prompt": "What is the total amount including VAT?", "choices": ["€1,990.00", "€2,447.70", "€457.70", "€2,000.00"], "answer": 1, "explanation": "\"Total: €2,447.70\"." },
+        { "id": "t8-002-s01-q2", "prompt": "By when did Brightfield request delivery?", "choices": ["November 7th", "November 14th", "November 18th", "November 20th"], "answer": 3, "explanation": "\"Delivery requested by: November 20th\"." },
+        { "id": "t8-002-s01-q3", "prompt": "When will the order actually be delivered?", "choices": ["November 14th", "November 18th", "November 20th", "November 30th"], "answer": 1, "explanation": "\"expected delivery by November 18th\"." },
+        { "id": "t8-002-s01-q4", "prompt": "How are the monitor stands packaged?", "choices": ["Individually", "In packs of 2", "In packs of 5", "In packs of 10"], "answer": 2, "explanation": "\"the monitor stands come in packs of 5\"." },
+        { "id": "t8-002-s01-q5", "prompt": "When is payment due?", "choices": ["On delivery", "Within 14 days of invoice", "Within 30 days of invoice", "Within 60 days of invoice"], "answer": 2, "explanation": "\"Payment is due within 30 days of invoice date\" / \"Payment terms: Net 30\"." }
+      ]
+    },
+    {
+      "id": "t8-002-set02",
+      "passages": [
+        { "label": "Billet de train électronique", "text": "ELECTRONIC TICKET — InterRail Express\nBooking Reference: IRE-449821\n\nPassenger: Mr. James Calloway\nFrom: Paris Gare du Nord\nTo: Brussels-Midi\nDeparture: Friday, September 6th — 08:17\nArrival: Friday, September 6th — 09:47\nClass: Business\nSeat: Car 3, Seat 22A (window)\nPrice paid: €114.00\n\nChanges and cancellations: Free of charge up to 24 hours before departure. Changes within 24 hours incur a €25 fee. No refund for cancellations within 2 hours of departure." },
+        { "label": "E-mail d'un collègue", "text": "From: Anna Morel\nTo: James Calloway\nSubject: Meeting update — Brussels\n\nHi James,\n\nJust a heads-up: the client has pushed the meeting back by two hours — it now starts at 12:30 p.m. instead of 10:30 a.m.\n\nYour current train gets in at 9:47 a.m., so you would still arrive well in advance. However, if you prefer to take a later train, there's one at 10:45 a.m. arriving at 12:15 p.m., which would be cutting it quite fine.\n\nLet me know what you decide — I'll book lunch nearby for around 2 p.m.\n\nAnna" }
+      ],
+      "questions": [
+        { "id": "t8-002-s02-q1", "prompt": "What class is Mr. Calloway's ticket?", "choices": ["Economy", "Standard", "Business", "First Class"], "answer": 2, "explanation": "\"Class: Business\"." },
+        { "id": "t8-002-s02-q2", "prompt": "What is the fee for changes made within 24 hours of departure?", "choices": ["Free", "€10", "€25", "€50"], "answer": 2, "explanation": "\"Changes within 24 hours incur a €25 fee\"." },
+        { "id": "t8-002-s02-q3", "prompt": "What change has been made to the meeting?", "choices": ["It has been cancelled", "It has been moved to a different location", "It has been pushed back by two hours", "It now starts at 10:30 a.m. as planned"], "answer": 2, "explanation": "\"the client has pushed the meeting back by two hours — it now starts at 12:30 p.m.\"" },
+        { "id": "t8-002-s02-q4", "prompt": "If James takes the 10:45 a.m. train, when does it arrive?", "choices": ["11:30 a.m.", "12:00 p.m.", "12:15 p.m.", "12:30 p.m."], "answer": 2, "explanation": "\"there's one at 10:45 a.m. arriving at 12:15 p.m.\"" },
+        { "id": "t8-002-s02-q5", "prompt": "What has Anna planned for around 2 p.m.?", "choices": ["A second client meeting", "A taxi to the airport", "Lunch nearby", "A video call with the Brussels team"], "answer": 2, "explanation": "\"I'll book lunch nearby for around 2 p.m.\"" }
+      ]
+    },
+    {
+      "id": "t8-002-set03",
+      "passages": [
+        { "label": "Relevé de frais de voyage", "text": "TRAVEL EXPENSE CLAIM\nEmployee: Nadia Osei\nDepartment: Business Development\nTrip: Client Visit — Amsterdam\nDates: October 8th–9th\n\nExpenses:\n— Return flights (economy): €218\n— Hotel (1 night): €145\n— Taxi (airport to hotel): €34\n— Client dinner (3 guests + Nadia): €187\n— Business breakfast: €22\n\nTotal claimed: €606\n\nNote: Hotel rate is within policy limit (€160/night). Client dinner pre-approved by Head of BD on October 5th." },
+        { "label": "E-mail du département finance", "text": "From: Finance Team\nTo: Nadia Osei\nSubject: Expense Claim — October Trip\n\nHi Nadia,\n\nWe've reviewed your expense claim for the Amsterdam trip and have a couple of queries.\n\n1. The taxi receipt shows €34, but our policy requires a written explanation for taxi fares above €30. Could you add a brief note?\n\n2. The client dinner receipt shows €187 for 4 people. Could you confirm the names and roles of the three clients?\n\nOnce we receive this information, we'll process the full claim. In the meantime, we have approved and processed €419 (all items except the taxi and client dinner).\n\nThanks,\nFinance Team" }
+      ],
+      "questions": [
+        { "id": "t8-002-s03-q1", "prompt": "How many nights did Nadia stay in Amsterdam?", "choices": ["One", "Two", "Three", "Not specified"], "answer": 0, "explanation": "\"Hotel (1 night): €145\"." },
+        { "id": "t8-002-s03-q2", "prompt": "Who pre-approved the client dinner?", "choices": ["The Finance Team", "Nadia's line manager", "The Head of Business Development", "The client"], "answer": 2, "explanation": "\"Client dinner pre-approved by Head of BD on October 5th\"." },
+        { "id": "t8-002-s03-q3", "prompt": "Why is the taxi fare being queried?", "choices": ["It was not paid by Nadia", "It exceeds €30 and requires a written explanation", "Taxis are not covered by company policy", "The receipt is missing"], "answer": 1, "explanation": "\"our policy requires a written explanation for taxi fares above €30\"." },
+        { "id": "t8-002-s03-q4", "prompt": "How much has already been approved and processed?", "choices": ["€187", "€406", "€419", "€606"], "answer": 2, "explanation": "\"we have approved and processed €419 (all items except the taxi and client dinner)\"." },
+        { "id": "t8-002-s03-q5", "prompt": "How many people attended the client dinner in total?", "choices": ["Two", "Three", "Four", "Five"], "answer": 2, "explanation": "\"Client dinner (3 guests + Nadia)\" = 4 people total." }
+      ]
+    }
+  ]
+}

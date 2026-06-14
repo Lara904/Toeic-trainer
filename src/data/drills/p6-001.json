@@ -1,0 +1,38 @@
+{
+  "id": "p6-001",
+  "part": 6,
+  "skill": "reading",
+  "title": "Part 6 – Texte à trous : note de service",
+  "instructions": "Lisez la note de service et choisissez le mot ou le groupe de mots qui convient pour chaque numéro.",
+  "passage": "To: All Staff\nFrom: Human Resources\nSubject: Office Renovation\n\nWe are pleased to announce that the renovation of the third floor will begin on June 20th. During this period, employees who normally work on that floor {{1}} be relocated to temporary desks on the second floor.\n\n{{2}}, please remove all personal belongings from your current desk by June 18th.\n\nThe renovation is expected to improve lighting and add more meeting spaces. {{3}}, the new layout will include a quiet zone for focused work.\n\nWe appreciate your patience during this transition. If you have any concerns, please {{4}} to contact the HR department directly.",
+  "questions": [
+    {
+      "id": "p6-001-q1",
+      "blank": 1,
+      "choices": ["will", "would", "were", "are"],
+      "answer": 0,
+      "explanation": "La phrase décrit un événement futur (\"will begin on June 20th\"), il faut donc \"will be relocated\" (futur passif)."
+    },
+    {
+      "id": "p6-001-q2",
+      "blank": 2,
+      "choices": ["Therefore", "However", "For example", "In addition"],
+      "answer": 0,
+      "explanation": "Le déménagement est la cause, le rangement des affaires en est la conséquence : \"Therefore\" introduit une conséquence logique."
+    },
+    {
+      "id": "p6-001-q3",
+      "blank": 3,
+      "choices": ["In addition", "On the other hand", "Instead", "Unless"],
+      "answer": 0,
+      "explanation": "On ajoute une information supplémentaire positive (un nouvel avantage de la rénovation) : \"In addition\"."
+    },
+    {
+      "id": "p6-001-q4",
+      "blank": 4,
+      "choices": ["feel free", "feeling free", "felt free", "feels free"],
+      "answer": 0,
+      "explanation": "Expression figée : \"please feel free to contact...\"."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <rect width="400" height="280" fill="#f3e5f5"/>
+  <rect x="0" y="245" width="400" height="35" fill="#d7ccc8"/>
+  <!-- écran blanc (mur) -->
+  <rect x="20" y="30" width="200" height="140" rx="5" fill="#fff" stroke="#b0bec5" stroke-width="3"/>
+  <!-- image projetée -->
+  <rect x="30" y="40"  width="180" height="120" fill="#e3f2fd"/>
+  <rect x="50" y="80"  width="60"  height="40"  fill="#1565c0" opacity="0.5"/>
+  <rect x="130" y="60" width="60"  height="60"  fill="#e53935" opacity="0.4"/>
+  <!-- projecteur sur trépied -->
+  <rect x="300" y="55" width="70" height="45" rx="6" fill="#455a64"/>
+  <circle cx="312" cy="78" r="14" fill="#263238"/>
+  <circle cx="312" cy="78" r="8"  fill="#37474f"/>
+  <!-- faisceau lumineux -->
+  <polygon points="315,80 220,45 220,145" fill="#fffde7" opacity="0.35"/>
+  <!-- trépied -->
+  <line x1="335" y1="100" x2="315" y2="235" stroke="#546e7a" stroke-width="5" stroke-linecap="round"/>
+  <line x1="335" y1="100" x2="330" y2="235" stroke="#546e7a" stroke-width="5" stroke-linecap="round"/>
+  <line x1="335" y1="100" x2="355" y2="235" stroke="#546e7a" stroke-width="5" stroke-linecap="round"/>
+  <!-- femme installant le projecteur -->
+  <circle cx="275" cy="95" r="22" fill="#ffcc80"/>
+  <ellipse cx="275" cy="75" rx="22" ry="11" fill="#880e4f"/>
+  <rect x="255" y="117" width="40" height="60" rx="8" fill="#ad1457"/>
+  <!-- bras droit touchant le projecteur -->
+  <line x1="295" y1="130" x2="310" y2="100" stroke="#ffcc80" stroke-width="9" stroke-linecap="round"/>
+  <!-- bras gauche -->
+  <line x1="255" y1="130" x2="238" y2="148" stroke="#ffcc80" stroke-width="9" stroke-linecap="round"/>
+</svg>

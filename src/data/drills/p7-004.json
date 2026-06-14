@@ -1,0 +1,53 @@
+{
+  "id": "p7-004",
+  "part": 7,
+  "skill": "reading",
+  "title": "Part 7 – Passage unique : FAQ d'une application",
+  "instructions": "Lisez la foire aux questions, puis répondez aux questions.",
+  "passage": "Frequently Asked Questions - TeamSync App\n\nQ: How do I reset my password?\nA: Click on 'Forgot Password' on the login screen. You will receive an email with a link to create a new password. This link expires after 24 hours.\n\nQ: Can I use TeamSync on my phone?\nA: Yes, TeamSync is available for both iOS and Android. Simply download the app from your device's app store and log in with your company email address.\n\nQ: Why can't I see some of my colleagues' calendars?\nA: Calendar visibility depends on each user's privacy settings. If you need access to a colleague's calendar, ask them to change their settings or contact your administrator.\n\nQ: Who do I contact if I find a bug?\nA: Please report any issues through the 'Help' menu inside the app. Our support team usually responds within one business day.",
+  "questions": [
+    {
+      "id": "p7-004-q1",
+      "prompt": "What is this document mainly about?",
+      "choices": [
+        "Instructions for installing a printer",
+        "Common questions about an app called TeamSync",
+        "A list of upcoming software updates",
+        "A company's privacy policy"
+      ],
+      "answer": 1,
+      "explanation": "Le document est une FAQ consacrée à l'application TeamSync."
+    },
+    {
+      "id": "p7-004-q2",
+      "prompt": "How long is the password reset link valid?",
+      "choices": ["1 hour", "24 hours", "48 hours", "7 days"],
+      "answer": 1,
+      "explanation": "\"This link expires after 24 hours\"."
+    },
+    {
+      "id": "p7-004-q3",
+      "prompt": "Why might someone not be able to see a colleague's calendar?",
+      "choices": [
+        "The app is not updated",
+        "The colleague's privacy settings restrict access",
+        "The colleague deleted their account",
+        "The calendar feature is disabled company-wide"
+      ],
+      "answer": 1,
+      "explanation": "\"Calendar visibility depends on each user's privacy settings\"."
+    },
+    {
+      "id": "p7-004-q4",
+      "prompt": "How should users report a bug?",
+      "choices": [
+        "By calling the support team",
+        "Through the 'Help' menu in the app",
+        "By emailing the IT department",
+        "By posting on the company forum"
+      ],
+      "answer": 1,
+      "explanation": "\"Please report any issues through the 'Help' menu inside the app\"."
+    }
+  ]
+}

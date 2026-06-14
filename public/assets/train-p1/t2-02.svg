@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <rect width="400" height="280" fill="#e8eaf6"/>
+  <!-- fuselage avion -->
+  <ellipse cx="200" cy="155" rx="190" ry="95" fill="#cfd8dc"/>
+  <!-- hublot -->
+  <ellipse cx="320" cy="130" rx="34" ry="45" fill="#81d4fa" stroke="#90a4ae" stroke-width="3"/>
+  <!-- rangée de sièges -->
+  <rect x="50" y="120" width="50" height="95" rx="8" fill="#eceff1" stroke="#b0bec5" stroke-width="1.5"/>
+  <rect x="115" y="120" width="50" height="95" rx="8" fill="#eceff1" stroke="#b0bec5" stroke-width="1.5"/>
+  <!-- femme assise côté hublot -->
+  <circle cx="140" cy="100" r="22" fill="#ffcc80"/>
+  <ellipse cx="140" cy="80" rx="22" ry="11" fill="#880e4f"/>
+  <rect x="118" y="118" width="44" height="55" rx="8" fill="#c62828"/>
+  <!-- jambes -->
+  <rect x="120" y="168" width="18" height="12" rx="4" fill="#4a148c"/>
+  <rect x="142" y="168" width="18" height="12" rx="4" fill="#4a148c"/>
+  <!-- document dans les mains -->
+  <rect x="82" y="135" width="36" height="48" rx="3" fill="#fff" stroke="#90a4ae" stroke-width="1.5"/>
+  <line x1="88" y1="148" x2="111" y2="148" stroke="#546e7a" stroke-width="1.5"/>
+  <line x1="88" y1="158" x2="111" y2="158" stroke="#546e7a" stroke-width="1.5"/>
+  <line x1="88" y1="168" x2="105" y2="168" stroke="#546e7a" stroke-width="1.5"/>
+  <!-- bras gauche tenant document -->
+  <line x1="118" y1="142" x2="118" y2="152" stroke="#ffcc80" stroke-width="8" stroke-linecap="round"/>
+  <!-- bras droit -->
+  <line x1="162" y1="142" x2="175" y2="155" stroke="#ffcc80" stroke-width="8" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,44 @@
+{
+  "id": "p5-004",
+  "part": 5,
+  "skill": "reading",
+  "title": "Part 5 – Phrases à compléter : communication & technologies",
+  "instructions": "Choisissez le mot ou le groupe de mots qui complète correctement chaque phrase.",
+  "questions": [
+    {
+      "id": "p5-004-q1",
+      "sentence": "The presentation slides ____ to all attendees before the meeting begins.",
+      "choices": ["will send", "will be sent", "sends", "sent"],
+      "answer": 1,
+      "explanation": "Les diapositives ne s'envoient pas elles-mêmes : voix passive au futur, \"will be sent\"."
+    },
+    {
+      "id": "p5-004-q2",
+      "sentence": "Please let me know ____ you receive the email with the meeting link.",
+      "choices": ["as soon as", "as long as", "even though", "unless"],
+      "answer": 0,
+      "explanation": "\"as soon as\" = dès que, exprime l'immédiateté souhaitée."
+    },
+    {
+      "id": "p5-004-q3",
+      "sentence": "The new video conferencing software is easier to use ____ the old one.",
+      "choices": ["than", "that", "as", "so"],
+      "answer": 0,
+      "explanation": "Comparatif (\"easier...\") suivi de \"than\"."
+    },
+    {
+      "id": "p5-004-q4",
+      "sentence": "Our IT team is currently ____ a problem with the company's Wi-Fi network.",
+      "choices": ["look into", "looking into", "looks into", "looked into"],
+      "answer": 1,
+      "explanation": "Présent continu après \"is currently\" : \"is...looking into\"."
+    },
+    {
+      "id": "p5-004-q5",
+      "sentence": "If you ____ any technical issues during the webinar, please contact support immediately.",
+      "choices": ["experience", "experiences", "experienced", "will experience"],
+      "answer": 0,
+      "explanation": "Dans une instruction conditionnelle, le présent simple s'utilise après \"if\" : \"If you experience...\"."
+    }
+  ]
+}

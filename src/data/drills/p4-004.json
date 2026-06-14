@@ -1,0 +1,46 @@
+{
+  "id": "p4-004",
+  "part": 4,
+  "skill": "listening",
+  "title": "Part 4 – Exposé : changement d'horaire d'une conférence téléphonique",
+  "instructions": "Écoutez le message, puis répondez aux trois questions.",
+  "audioText": "Hi, this is a message for the marketing team. This is to confirm that the conference call with our partners in Tokyo has been moved from three o'clock to five o'clock this afternoon, due to a scheduling conflict on their side. The dial-in number and access code remain the same as in the original invitation. Please make sure to test your headset before the call, since we had some audio issues during the last meeting. If you're unable to attend at the new time, please let me know as soon as possible so I can send you the meeting notes afterward. Thanks, and talk to you all later.",
+  "questions": [
+    {
+      "id": "p4-004-q1",
+      "prompt": "What is the purpose of this message?",
+      "choices": [
+        "To cancel a meeting",
+        "To announce a change in meeting time",
+        "To introduce a new team member",
+        "To request a budget approval"
+      ],
+      "answer": 1,
+      "explanation": "Le message annonce que la conférence téléphonique a été déplacée de 15h à 17h."
+    },
+    {
+      "id": "p4-004-q2",
+      "prompt": "Why was the meeting time changed?",
+      "choices": [
+        "A technical problem",
+        "A scheduling conflict with the Tokyo partners",
+        "A holiday in Tokyo",
+        "A request from the marketing team"
+      ],
+      "answer": 1,
+      "explanation": "\"due to a scheduling conflict on their side\" (les partenaires de Tokyo)."
+    },
+    {
+      "id": "p4-004-q3",
+      "prompt": "What does the speaker ask people to do before the call?",
+      "choices": [
+        "Print the agenda",
+        "Test their headset",
+        "Arrive early",
+        "Bring a laptop"
+      ],
+      "answer": 1,
+      "explanation": "\"Please make sure to test your headset before the call\"."
+    }
+  ]
+}

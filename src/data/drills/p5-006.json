@@ -1,0 +1,44 @@
+{
+  "id": "p5-006",
+  "part": 5,
+  "skill": "reading",
+  "title": "Part 5 – Phrases à compléter : divertissement",
+  "instructions": "Choisissez le mot ou le groupe de mots qui complète correctement chaque phrase.",
+  "questions": [
+    {
+      "id": "p5-006-q1",
+      "sentence": "The restaurant is fully booked ____ Saturday evening.",
+      "choices": ["on", "at", "in", "for"],
+      "answer": 0,
+      "explanation": "Préposition utilisée avec un jour de la semaine : \"on Saturday\"."
+    },
+    {
+      "id": "p5-006-q2",
+      "sentence": "We ____ to the new Italian restaurant downtown last weekend.",
+      "choices": ["went", "go", "have gone", "were going"],
+      "answer": 0,
+      "explanation": "\"last weekend\" est un indicateur de prétérit : \"went\"."
+    },
+    {
+      "id": "p5-006-q3",
+      "sentence": "The concert tickets sold out ____ a few hours.",
+      "choices": ["in", "on", "at", "for"],
+      "answer": 0,
+      "explanation": "\"in + durée\" indique le temps nécessaire pour qu'une action se produise : \"sold out in a few hours\"."
+    },
+    {
+      "id": "p5-006-q4",
+      "sentence": "Guests are kindly asked ____ their phones during the performance.",
+      "choices": ["to silence", "silencing", "silence", "silenced"],
+      "answer": 0,
+      "explanation": "\"ask someone to + verbe à l'infinitif\"."
+    },
+    {
+      "id": "p5-006-q5",
+      "sentence": "The hotel offers a discount ____ guests who book directly through their website.",
+      "choices": ["to", "of", "by", "from"],
+      "answer": 0,
+      "explanation": "Collocation : \"offer something to someone\"."
+    }
+  ]
+}

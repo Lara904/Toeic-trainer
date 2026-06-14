@@ -1,0 +1,25 @@
+{
+  "id": "p1-003",
+  "part": 1,
+  "skill": "listening",
+  "title": "Part 1 – Description de photo : la poignée de main",
+  "instructions": "Regardez l'image. Écoutez les quatre propositions et choisissez celle qui décrit le mieux la photo.",
+  "image": {
+    "src": "/assets/part1/p1-003.svg",
+    "alt": "Deux personnes se serrant la main au-dessus d'un bureau avec des documents"
+  },
+  "audioText": "Look at the picture marked number one in your test book. (A) The people are signing a contract. (B) The people are shaking hands. (C) The people are eating lunch. (D) The people are leaving the office.",
+  "questions": [
+    {
+      "id": "p1-003-q1",
+      "choices": [
+        "The people are signing a contract.",
+        "The people are shaking hands.",
+        "The people are eating lunch.",
+        "The people are leaving the office."
+      ],
+      "answer": 1,
+      "explanation": "Sur l'image, les deux personnes se serrent la main au-dessus du bureau : c'est la proposition (B). (A) suppose qu'elles écrivent sur un document, ce qui n'est pas visible."
+    }
+  ]
+}

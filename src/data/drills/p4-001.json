@@ -1,0 +1,46 @@
+{
+  "id": "p4-001",
+  "part": 4,
+  "skill": "listening",
+  "title": "Part 4 – Annonce : maintenance des ascenseurs",
+  "instructions": "Écoutez l'annonce, puis répondez aux trois questions.",
+  "audioText": "Attention, all staff. Starting next Monday, the elevators on the east side of the building will be out of service for maintenance until further notice. Please use the elevators on the west side, or the stairs near the cafeteria. We apologize for any inconvenience this may cause. If you have any questions, please contact the facilities office on the first floor. Thank you for your understanding.",
+  "questions": [
+    {
+      "id": "p4-001-q1",
+      "prompt": "What is the announcement mainly about?",
+      "choices": [
+        "A change in office hours",
+        "Elevator maintenance",
+        "A new cafeteria menu",
+        "A staff meeting"
+      ],
+      "answer": 1,
+      "explanation": "L'annonce annonce que les ascenseurs côté est seront hors service pour maintenance."
+    },
+    {
+      "id": "p4-001-q2",
+      "prompt": "When will the change take effect?",
+      "choices": [
+        "Immediately",
+        "Next Monday",
+        "At the end of the month",
+        "Next year"
+      ],
+      "answer": 1,
+      "explanation": "Le texte commence par \"Starting next Monday\"."
+    },
+    {
+      "id": "p4-001-q3",
+      "prompt": "Where should employees go with questions?",
+      "choices": [
+        "The cafeteria",
+        "The facilities office",
+        "The east elevators",
+        "The parking lot"
+      ],
+      "answer": 1,
+      "explanation": "L'annonce dit : \"please contact the facilities office on the first floor\"."
+    }
+  ]
+}

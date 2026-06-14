@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <rect width="400" height="280" fill="#fffde7"/>
+  <!-- sol -->
+  <rect x="0" y="210" width="400" height="70" fill="#d7ccc8"/>
+  <!-- bureau central -->
+  <rect x="60" y="175" width="280" height="18" rx="3" fill="#8d6e63"/>
+  <rect x="80" y="193" width="10" height="30" fill="#6d4c41"/>
+  <rect x="310" y="193" width="10" height="30" fill="#6d4c41"/>
+  <!-- document sur le bureau -->
+  <rect x="130" y="155" width="70" height="22" fill="#fff" stroke="#90a4ae" stroke-width="1.5"/>
+  <line x1="138" y1="163" x2="192" y2="163" stroke="#546e7a" stroke-width="1.5"/>
+  <line x1="138" y1="170" x2="185" y2="170" stroke="#546e7a" stroke-width="1.5"/>
+  <!-- homme gauche (lit le document) -->
+  <circle cx="130" cy="108" r="24" fill="#ffb74d"/>
+  <ellipse cx="130" cy="86" rx="24" ry="13" fill="#4e342e"/>
+  <rect x="108" y="132" width="44" height="55" rx="8" fill="#1565c0"/>
+  <rect x="92" y="145" width="16" height="35" rx="6" fill="#1565c0"/>
+  <!-- bras vers document -->
+  <line x1="108" y1="148" x2="145" y2="162" stroke="#ffb74d" stroke-width="9" stroke-linecap="round"/>
+  <!-- homme droite (prend des notes) -->
+  <circle cx="270" cy="108" r="24" fill="#ffcc80"/>
+  <ellipse cx="270" cy="86" rx="24" ry="13" fill="#212121"/>
+  <rect x="248" y="132" width="44" height="55" rx="8" fill="#2e7d32"/>
+  <!-- bloc-notes -->
+  <rect x="222" y="148" width="28" height="36" rx="3" fill="#fff" stroke="#90a4ae" stroke-width="1.5"/>
+  <line x1="228" y1="158" x2="242" y2="158" stroke="#546e7a" stroke-width="1.5"/>
+  <line x1="228" y1="165" x2="242" y2="165" stroke="#546e7a" stroke-width="1.5"/>
+  <line x1="228" y1="172" x2="238" y2="172" stroke="#546e7a" stroke-width="1.5"/>
+  <!-- stylo -->
+  <line x1="224" y1="156" x2="218" y2="148" stroke="#333" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,46 @@
+{
+  "id": "p3-004",
+  "part": 3,
+  "skill": "listening",
+  "title": "Part 3 – Conversation : un problème de facture",
+  "instructions": "Écoutez la conversation, puis répondez aux trois questions.",
+  "audioText": "Woman: Hi, I'm calling about invoice number 4521. We haven't received payment yet, and it was due last week. Man: I'm sorry about that. Let me check... it looks like the invoice was sent to our old accounting email address. Woman: That would explain it. Could you give me the correct email address so I can resend it? Man: Of course, it's payments at brightline dot com. Also, could you resend it as a PDF? Our system doesn't accept Word documents. Woman: No problem, I'll send it again right away in the correct format. Man: Thanks. Once we receive it, payment should be processed within five business days.",
+  "questions": [
+    {
+      "id": "p3-004-q1",
+      "prompt": "Why is the woman calling?",
+      "choices": [
+        "To cancel an order",
+        "To ask about a late payment",
+        "To request a discount",
+        "To update her address"
+      ],
+      "answer": 1,
+      "explanation": "Elle appelle car le paiement de la facture n°4521 n'a pas été reçu alors qu'il était dû la semaine précédente."
+    },
+    {
+      "id": "p3-004-q2",
+      "prompt": "What was the problem with the invoice?",
+      "choices": [
+        "It had the wrong amount",
+        "It was sent to the wrong email address",
+        "It was missing a signature",
+        "It was sent too early"
+      ],
+      "answer": 1,
+      "explanation": "L'homme explique que la facture a été envoyée à l'ancienne adresse e-mail comptable."
+    },
+    {
+      "id": "p3-004-q3",
+      "prompt": "What does the man ask the woman to do?",
+      "choices": [
+        "Call back tomorrow",
+        "Resend the invoice as a PDF",
+        "Visit the office in person",
+        "Cancel the invoice"
+      ],
+      "answer": 1,
+      "explanation": "Il demande de renvoyer la facture au format PDF car le système n'accepte pas les fichiers Word."
+    }
+  ]
+}

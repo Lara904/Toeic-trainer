@@ -1,0 +1,38 @@
+{
+  "id": "p6-003",
+  "part": 6,
+  "skill": "reading",
+  "title": "Part 6 – Texte à trous : e-mail de bienvenue",
+  "instructions": "Lisez l'e-mail et choisissez le mot ou le groupe de mots qui convient pour chaque numéro.",
+  "passage": "Dear Mr. Diaz,\n\nWelcome to Bright Solutions! We are delighted that you {{1}} join our team as a Junior Analyst starting next Monday.\n\nOn your first day, please arrive at 9 a.m. and check in at the front desk. {{2}}, you will need to bring a valid form of identification for our records.\n\nYour manager, Ms. Cole, will meet with you in the morning to go over your schedule for the first week. {{3}}, you will attend an orientation session in the afternoon with other new hires.\n\nIf you have any questions before your start date, please {{4}} hesitate to contact the HR department.",
+  "questions": [
+    {
+      "id": "p6-003-q1",
+      "blank": 1,
+      "choices": ["will", "would", "are", "were"],
+      "answer": 0,
+      "explanation": "L'arrivée du salarié est un événement futur (\"starting next Monday\") : \"you will join\"."
+    },
+    {
+      "id": "p6-003-q2",
+      "blank": 2,
+      "choices": ["In addition", "However", "Otherwise", "Unless"],
+      "answer": 0,
+      "explanation": "On ajoute une information supplémentaire (apporter une pièce d'identité) : \"In addition\"."
+    },
+    {
+      "id": "p6-003-q3",
+      "blank": 3,
+      "choices": ["Afterward", "Although", "Despite", "Instead"],
+      "answer": 0,
+      "explanation": "On indique la suite chronologique de la journée : \"Afterward\" (ensuite)."
+    },
+    {
+      "id": "p6-003-q4",
+      "blank": 4,
+      "choices": ["do not", "does not", "did not", "not"],
+      "answer": 0,
+      "explanation": "Expression figée : \"please do not hesitate to contact\"."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "train-p6-003",
+  "part": 6,
+  "type": "training",
+  "skill": "reading",
+  "title": "Part 6 – Entraînement 3 : rapports & documents formels",
+  "instructions": "Lisez chaque texte et choisissez le mot ou groupe de mots qui convient pour chaque numéro.",
+  "items": [
+    {
+      "id": "t6-003-t01",
+      "passage": "PRESS RELEASE\n\nNovatech Solutions is {{1}} to announce the successful completion of its acquisition of DataBridge Analytics.\n\nThe acquisition, {{2}} was finalised last Friday, will allow Novatech to expand its data intelligence capabilities and serve clients across twelve additional markets.\n\n\"This is a defining moment for our company,\" said CEO Maria Voss. \"Together, we {{3}} offer a level of data insight that neither company could achieve alone.\"\n\nFull details of the acquisition will be {{4}} in next month's investor report.",
+      "questions": [
+        { "blank": 1, "choices": ["pleased", "pleasing", "pleasure", "please"], "answer": 0, "explanation": "\"is pleased to announce\" : formule standard de communiqué de presse." },
+        { "blank": 2, "choices": ["which", "that", "who", "what"], "answer": 0, "explanation": "\"which\" : pronom relatif non restrictif pour une chose (\"The acquisition\")." },
+        { "blank": 3, "choices": ["will", "would", "could", "shall"], "answer": 0, "explanation": "Citation directe au futur déclaratif : \"we will offer\"." },
+        { "blank": 4, "choices": ["disclosed", "disclosing", "disclose", "disclosure"], "answer": 0, "explanation": "Futur passif : \"will be disclosed\"." }
+      ]
+    },
+    {
+      "id": "t6-003-t02",
+      "passage": "EMPLOYEE SURVEY RESULTS — SUMMARY\n\nA total of four hundred and twelve employees {{1}} in this year's annual satisfaction survey, representing a response rate of eighty-three percent.\n\nOverall job satisfaction remains high, with seventy-eight percent of respondents {{2}} either satisfied or very satisfied with their role. The most commonly cited areas for improvement {{3}} work-life balance and career development opportunities.\n\n{{4}} on these findings, the HR team will develop an action plan to be presented at the next all-hands meeting.",
+      "questions": [
+        { "blank": 1, "choices": ["participated", "participate", "have participated", "are participating"], "answer": 0, "explanation": "Résultat d'un événement passé et terminé (le sondage annuel) : prétérit \"participated\"." },
+        { "blank": 2, "choices": ["reporting", "reported", "to report", "reports"], "answer": 0, "explanation": "Participe présent après \"with\" + complément : \"with 78% of respondents reporting\"." },
+        { "blank": 3, "choices": ["were", "are", "have been", "will be"], "answer": 0, "explanation": "Résultats du sondage : prétérit \"were\" pour les réponses données lors de l'enquête." },
+        { "blank": 4, "choices": ["Based", "Basing", "According", "Following"], "answer": 0, "explanation": "\"Based on these findings\" : participe passé en tête de phrase (structure idiomatique)." }
+      ]
+    },
+    {
+      "id": "t6-003-t03",
+      "passage": "CONTRACT SUMMARY — SERVICE AGREEMENT\n\nThis agreement is entered into between Clearfield Ltd (hereafter referred to as 'the Client') and FastTrack Logistics (hereafter referred to as 'the Provider').\n\nThe Provider {{1}} to deliver all shipments within forty-eight hours of collection. In the event of a delay caused by circumstances {{2}} the Provider's control, the Client will be notified within four hours.\n\nThis agreement is valid for one year from the date of signing and {{3}} be renewed upon mutual agreement of both parties. Either party may terminate the agreement with thirty days' written notice. {{4}} charges incurred before termination remain payable.",
+      "questions": [
+        { "blank": 1, "choices": ["agrees", "agreeing", "is agreed", "agreed"], "answer": 0, "explanation": "\"The Provider agrees to\" : présent simple pour un engagement contractuel." },
+        { "blank": 2, "choices": ["beyond", "outside", "over", "above"], "answer": 0, "explanation": "\"beyond the Provider's control\" = hors du contrôle du prestataire. Expression figée." },
+        { "blank": 3, "choices": ["may", "must", "will", "should"], "answer": 0, "explanation": "\"may be renewed\" : possibilité de reconduction (pas d'obligation)." },
+        { "blank": 4, "choices": ["All", "Any", "Some", "No"], "answer": 0, "explanation": "\"All charges incurred before termination remain payable\" : totalité des frais." }
+      ]
+    },
+    {
+      "id": "t6-003-t04",
+      "passage": "REPORT: Office Energy Consumption — Q3\n\nThis report summarises energy consumption data for all company premises during the third quarter.\n\nOverall energy use {{1}} by eleven percent compared to Q2, largely as a result of the installation of LED lighting across all floors. {{2}}, water consumption increased slightly due to the addition of a new coffee machine in each department kitchen.\n\nWe recommend {{3}} smart thermostats in meeting rooms and common areas to further reduce heating and cooling costs. The estimated {{4}} period for this investment is fourteen months.",
+      "questions": [
+        { "blank": 1, "choices": ["decreased", "has decreased", "decreases", "was decreasing"], "answer": 0, "explanation": "Fait daté et terminé (Q3) : prétérit \"decreased\"." },
+        { "blank": 2, "choices": ["However", "Therefore", "Similarly", "Furthermore"], "answer": 0, "explanation": "\"However\" : contraste entre la baisse d'énergie et la hausse de la consommation d'eau." },
+        { "blank": 3, "choices": ["installing", "install", "to install", "installation"], "answer": 0, "explanation": "\"recommend\" + gérondif : \"recommend installing\"." },
+        { "blank": 4, "choices": ["payback", "payment", "return", "recovery"], "answer": 0, "explanation": "\"payback period\" = délai de retour sur investissement. Terme technique courant." }
+      ]
+    },
+    {
+      "id": "t6-003-t05",
+      "passage": "POLICY DOCUMENT: Remote Work Guidelines\n\nThis document outlines the company's policy on remote working arrangements, {{1}} from the first of next month.\n\nEmployees are eligible to work remotely up to three days per week, subject to {{2}} approval. Remote working days must be agreed with the line manager at least one week in advance and cannot be used on days when in-person attendance is {{3}}.\n\nAll employees working remotely must be available during core hours and must ensure their home working environment is {{4}} professional standards.",
+      "questions": [
+        { "blank": 1, "choices": ["effective", "effectively", "in effect", "effecting"], "answer": 0, "explanation": "\"effective from\" = en vigueur à partir de. Adjectif dans une formule de politique." },
+        { "blank": 2, "choices": ["managerial", "managed", "management", "managing"], "answer": 0, "explanation": "\"subject to managerial approval\" = sous réserve de l'approbation du responsable." },
+        { "blank": 3, "choices": ["required", "requiring", "requirement", "require"], "answer": 0, "explanation": "\"when in-person attendance is required\" : voix passive adjectivale." },
+        { "blank": 4, "choices": ["up to", "in line with", "equal to", "based on"], "answer": 1, "explanation": "\"in line with professional standards\" = conforme aux normes professionnelles." }
+      ]
+    },
+    {
+      "id": "t6-003-t06",
+      "passage": "ANNUAL REPORT EXCERPT — CEO MESSAGE\n\nThis has been a year of significant progress for our organisation. Revenue {{1}} by fourteen percent to reach a record high of forty-two million euros, while operating costs were kept {{2}} through disciplined budget management.\n\nWe also made important strides in our sustainability agenda. Our carbon emissions {{3}} by twenty-two percent, and we are on track to achieve carbon neutrality by 2030.\n\nLooking {{4}}, we will focus on accelerating digital transformation and deepening our client relationships across all regions.",
+      "questions": [
+        { "blank": 1, "choices": ["grew", "has grown", "grows", "was growing"], "answer": 0, "explanation": "Résultat annuel terminé : prétérit \"grew\"." },
+        { "blank": 2, "choices": ["under control", "in check", "on hold", "in line"], "answer": 1, "explanation": "\"kept in check\" = maîtrisés / sous contrôle. Expression idiomatique." },
+        { "blank": 3, "choices": ["were reduced", "reduced", "have reduced", "are reducing"], "answer": 0, "explanation": "Voix passive au prétérit pour un fait de l'année écoulée : \"were reduced\"." },
+        { "blank": 4, "choices": ["ahead", "forward", "beyond", "further"], "answer": 1, "explanation": "\"Looking forward\" = en regardant vers l'avenir. Expression figée." }
+      ]
+    },
+    {
+      "id": "t6-003-t07",
+      "passage": "HEALTH & SAFETY NOTICE\n\nAll employees are reminded that the fire alarm system {{1}} tested on the second Tuesday of each month at ten a.m.\n\nWhen the alarm sounds during a test, evacuation is not required. {{2}}, if the alarm continues for more than three minutes or is accompanied by a verbal announcement, employees must evacuate {{3}}.\n\nPlease ensure you are familiar with the evacuation route from your floor and {{4}} your nearest fire exit is.",
+      "questions": [
+        { "blank": 1, "choices": ["will be", "is being", "is", "was"], "answer": 0, "explanation": "Planification régulière future : \"will be tested\" chaque mois." },
+        { "blank": 2, "choices": ["However", "Therefore", "Additionally", "As a result"], "answer": 0, "explanation": "\"However\" : contraste entre la procédure normale (pas d'évacuation) et l'exception (alarme prolongée)." },
+        { "blank": 3, "choices": ["immediately", "immediate", "with immediacy", "in immediately"], "answer": 0, "explanation": "Adverbe pour modifier \"evacuate\" : \"evacuate immediately\"." },
+        { "blank": 4, "choices": ["where", "what", "which", "that"], "answer": 0, "explanation": "\"know where your nearest fire exit is\" : question indirecte avec \"where\"." }
+      ]
+    },
+    {
+      "id": "t6-003-t08",
+      "passage": "TRAINING PROGRAMME OVERVIEW\n\nThe Leadership Development Programme is designed for employees {{1}} to advance into senior management roles.\n\nThe programme spans six months and includes monthly workshops, one-to-one coaching sessions, and a final project {{2}} participants develop and present a strategic business proposal.\n\nApplicants must have at least three years of management experience and {{3}} recommended by their department head. Applications are reviewed {{4}} and successful candidates will be notified within four weeks.",
+      "questions": [
+        { "blank": 1, "choices": ["looking", "who look", "looked", "to look"], "answer": 0, "explanation": "Participe présent comme adjectif : \"employees looking to advance\"." },
+        { "blank": 2, "choices": ["in which", "which", "that", "where"], "answer": 0, "explanation": "\"a final project in which participants develop\" : pronom relatif avec préposition." },
+        { "blank": 3, "choices": ["must be", "must have been", "are", "should have"], "answer": 0, "explanation": "Condition d'admission parallèle : \"must have... and must be recommended\"." },
+        { "blank": 4, "choices": ["quarterly", "annually", "on a rolling basis", "immediately"], "answer": 2, "explanation": "\"reviewed on a rolling basis\" = en continu, au fil des candidatures. Terme courant en RH." }
+      ]
+    },
+    {
+      "id": "t6-003-t09",
+      "passage": "NOTICE: Expense Policy Clarification\n\nFollowing recent questions from staff, the finance team would like to clarify several points regarding the expense reimbursement policy.\n\nMeals during business travel {{1}} reimbursed up to fifty euros per day. This limit applies regardless of {{2}} the meal is for one person or a group, unless a client entertainment form has been submitted.\n\nReceipts must be {{3}} to all claims over twenty-five euros. Claims submitted {{4}} proper documentation will not be processed until the required paperwork is received.",
+      "questions": [
+        { "blank": 1, "choices": ["will be", "are", "can be", "must be"], "answer": 0, "explanation": "Règle future dans une note de clarification de politique : \"will be reimbursed\"." },
+        { "blank": 2, "choices": ["whether", "if", "that", "which"], "answer": 0, "explanation": "\"regardless of whether\" : construction standard avec une alternative (one person or a group)." },
+        { "blank": 3, "choices": ["attached", "attaching", "attachment", "attach"], "answer": 0, "explanation": "\"must be attached\" : voix passive modale." },
+        { "blank": 4, "choices": ["without", "lacking", "missing", "absent"], "answer": 0, "explanation": "\"submitted without proper documentation\" : préposition correcte dans ce contexte." }
+      ]
+    },
+    {
+      "id": "t6-003-t10",
+      "passage": "CLIENT NEWSLETTER\n\nDear valued clients,\n\nWe are writing to update you on several {{1}} to our service offering, effective from the first of next quarter.\n\nOur premium support tier {{2}} extended to include twenty-four-hour coverage, seven days a week. In addition, all clients on annual contracts will now have access to a dedicated account manager {{3}} will serve as their main point of contact.\n\nWe believe these enhancements reflect our ongoing {{4}} to delivering exceptional service. Please do not hesitate to contact us if you have any questions.",
+      "questions": [
+        { "blank": 1, "choices": ["enhancements", "enhancing", "enhanced", "enhance"], "answer": 0, "explanation": "Nom pluriel après \"several\" : \"several enhancements\"." },
+        { "blank": 2, "choices": ["has been", "will be", "is being", "was"], "answer": 1, "explanation": "Futur passif annonçant un changement à venir : \"will be extended\"." },
+        { "blank": 3, "choices": ["who", "which", "that", "whom"], "answer": 0, "explanation": "\"an account manager who will serve\" : \"who\" pour une personne, sujet de la relative." },
+        { "blank": 4, "choices": ["commitment", "committing", "committed", "commit"], "answer": 0, "explanation": "\"our ongoing commitment to\" : nom dans une formule d'engagement professionnelle." }
+      ]
+    }
+  ]
+}

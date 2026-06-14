@@ -1,0 +1,25 @@
+{
+  "id": "p1-001",
+  "part": 1,
+  "skill": "listening",
+  "title": "Part 1 – Description de photo : le bureau",
+  "instructions": "Regardez l'image. Écoutez les quatre propositions et choisissez celle qui décrit le mieux la photo.",
+  "image": {
+    "src": "/assets/part1/p1-001.svg",
+    "alt": "Une femme assise à un bureau, tapant sur un ordinateur portable, avec une tasse de café et une plante verte à côté"
+  },
+  "audioText": "Look at the picture marked number one in your test book. (A) The woman is talking on the phone. (B) The woman is typing on a laptop. (C) The woman is watering a plant. (D) The woman is reading a book.",
+  "questions": [
+    {
+      "id": "p1-001-q1",
+      "choices": [
+        "The woman is talking on the phone.",
+        "The woman is typing on a laptop.",
+        "The woman is watering a plant.",
+        "The woman is reading a book."
+      ],
+      "answer": 1,
+      "explanation": "Sur l'image, la femme est en train de taper sur un ordinateur portable : c'est la proposition (B). Les propositions (A), (C) et (D) décrivent des actions qui ne sont pas visibles sur la photo."
+    }
+  ]
+}

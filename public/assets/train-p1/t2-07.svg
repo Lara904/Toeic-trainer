@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <rect width="400" height="280" fill="#fce4ec"/>
+  <rect x="0" y="250" width="400" height="30" fill="#bdbdbd"/>
+  <!-- machine industrielle -->
+  <rect x="50" y="90" width="190" height="160" rx="8" fill="#455a64"/>
+  <!-- panneau avant -->
+  <rect x="65" y="105" width="90" height="70" rx="4" fill="#37474f"/>
+  <!-- voyants -->
+  <circle cx="80"  cy="120" r="6" fill="#66bb6a"/>
+  <circle cx="80"  cy="140" r="6" fill="#ef5350"/>
+  <circle cx="80"  cy="160" r="6" fill="#f9a825"/>
+  <!-- écran -->
+  <rect x="100" y="112" width="48" height="38" rx="3" fill="#00acc1"/>
+  <!-- roue crantée centrale -->
+  <circle cx="170" cy="145" r="30" fill="#263238"/>
+  <circle cx="170" cy="145" r="20" fill="#37474f"/>
+  <circle cx="170" cy="145" r="8"  fill="#546e7a"/>
+  <!-- technicien -->
+  <circle cx="310" cy="105" r="24" fill="#ffb74d"/>
+  <ellipse cx="310" cy="83"  rx="24" ry="12" fill="#1a237e"/>
+  <rect x="290" y="129" width="40" height="65" rx="8" fill="#1565c0"/>
+  <rect x="270" y="143" width="20" height="40" rx="7" fill="#1565c0"/>
+  <rect x="330" y="143" width="20" height="40" rx="7" fill="#1565c0"/>
+  <!-- outil (clé) dans la main gauche -->
+  <line x1="270" y1="152" x2="248" y2="145" stroke="#ffb74d" stroke-width="9" stroke-linecap="round"/>
+  <rect x="228" y="138" width="24" height="10" rx="4" fill="#78909c"/>
+  <!-- bras droit vers machine -->
+  <line x1="290" y1="148" x2="268" y2="150" stroke="#ffb74d" stroke-width="9" stroke-linecap="round"/>
+</svg>

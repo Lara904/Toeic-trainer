@@ -1,0 +1,100 @@
+{
+  "id": "train-p3-003",
+  "part": 3,
+  "type": "training",
+  "skill": "listening",
+  "title": "Part 3 – Entraînement 3 : conversations divertissement & santé",
+  "instructions": "Écoutez chaque conversation, puis répondez aux trois questions.",
+  "items": [
+    {
+      "id": "t3-003-c01",
+      "audioText": "Man: Are you coming to the charity gala on Saturday evening? Woman: I'd like to, but I'm not sure I have anything appropriate to wear. What's the dress code? Man: Black tie. It's quite formal. But the event is for a great cause — they're raising money for the children's hospital. Woman: In that case, I'll make the effort. How much are the tickets? Man: Two hundred euros per person, but the company is covering half for each employee who attends.",
+      "questions": [
+        { "id": "t3-003-c01-q1", "prompt": "What event is being discussed?", "choices": ["A company anniversary dinner", "A charity gala", "A product launch party", "A client reception"], "answer": 1, "explanation": "\"Are you coming to the charity gala on Saturday evening?\"" },
+        { "id": "t3-003-c01-q2", "prompt": "What is the dress code?", "choices": ["Smart casual", "Business casual", "Black tie", "Sportswear"], "answer": 2, "explanation": "\"Black tie. It's quite formal\"." },
+        { "id": "t3-003-c01-q3", "prompt": "How much will each employee pay after the company contribution?", "choices": ["Fifty euros", "One hundred euros", "One hundred and fifty euros", "Two hundred euros"], "answer": 1, "explanation": "Tickets cost 200 euros and the company covers half, so employees pay 100 euros." }
+      ]
+    },
+    {
+      "id": "t3-003-c02",
+      "audioText": "Woman: I booked a table at Maison Verte for the client dinner on Thursday. It's that new French restaurant near the station. Man: I've heard great things about it. How many will we be? Woman: Six — the two of us, two clients, and their director. Man: Should I arrange transportation? Some of the clients are coming from the airport. Woman: Good thinking. Please book a taxi to pick them up at seven and bring them to the restaurant. The reservation is at eight.",
+      "questions": [
+        { "id": "t3-003-c02-q1", "prompt": "Where has the woman booked a table?", "choices": ["An Italian restaurant near the office", "A French restaurant near the station called Maison Verte", "A rooftop bar downtown", "A sushi restaurant in the city centre"], "answer": 1, "explanation": "\"I booked a table at Maison Verte... that new French restaurant near the station\"." },
+        { "id": "t3-003-c02-q2", "prompt": "How many people will attend the dinner?", "choices": ["Four", "Five", "Six", "Seven"], "answer": 2, "explanation": "\"Six — the two of us, two clients, and their director\"." },
+        { "id": "t3-003-c02-q3", "prompt": "What time should the taxi pick up the clients?", "choices": ["Six o'clock", "Seven o'clock", "Seven thirty", "Eight o'clock"], "answer": 1, "explanation": "\"Please book a taxi to pick them up at seven\"." }
+      ]
+    },
+    {
+      "id": "t3-003-c03",
+      "audioText": "Man: I need to take tomorrow afternoon off. I have a dental appointment that can't be postponed. Woman: That should be fine. Is it a routine check-up or something more serious? Man: Just a check-up and a possible filling. I should be done by four. Woman: In that case, could you join the three-thirty call remotely if you're available? Man: I'll try. But if the appointment runs late, I'll dial in from the waiting room.",
+      "questions": [
+        { "id": "t3-003-c03-q1", "prompt": "Why does the man need tomorrow afternoon off?", "choices": ["He has a job interview", "He needs to collect his children", "He has a dental appointment", "He is feeling unwell"], "answer": 2, "explanation": "\"I have a dental appointment that can't be postponed\"." },
+        { "id": "t3-003-c03-q2", "prompt": "What time does the man expect to finish his appointment?", "choices": ["Two o'clock", "Three o'clock", "Four o'clock", "Five o'clock"], "answer": 2, "explanation": "\"I should be done by four\"." },
+        { "id": "t3-003-c03-q3", "prompt": "What does the woman ask the man to do if he's available?", "choices": ["Come back to the office", "Send his notes in advance", "Join the three-thirty call remotely", "Reschedule the appointment"], "answer": 2, "explanation": "\"could you join the three-thirty call remotely if you're available?\"" }
+      ]
+    },
+    {
+      "id": "t3-003-c04",
+      "audioText": "Woman: I'm organising the company summer party. Do you think we should do something indoors or outdoors this year? Man: Given last year's weather disaster, I'd go indoors. Maybe hire a venue with a rooftop terrace as a backup option. Woman: I was thinking the same. I've found a great events space — it has a large hall and a terrace. It holds up to two hundred and fifty people. Man: Perfect. When are you planning to hold it? Woman: The last Friday of June. I'm hoping to confirm the venue by the end of this week.",
+      "questions": [
+        { "id": "t3-003-c04-q1", "prompt": "What is the woman organising?", "choices": ["An annual general meeting", "A company summer party", "A charity auction", "A team sports day"], "answer": 1, "explanation": "\"I'm organising the company summer party\"." },
+        { "id": "t3-003-c04-q2", "prompt": "How many people can the venue accommodate?", "choices": ["Up to one hundred and fifty", "Up to two hundred", "Up to two hundred and fifty", "Up to three hundred"], "answer": 2, "explanation": "\"It holds up to two hundred and fifty people\"." },
+        { "id": "t3-003-c04-q3", "prompt": "When does the woman plan to confirm the venue?", "choices": ["By the end of today", "By the end of this week", "By the end of the month", "By the end of next week"], "answer": 1, "explanation": "\"I'm hoping to confirm the venue by the end of this week\"." }
+      ]
+    },
+    {
+      "id": "t3-003-c05",
+      "audioText": "Man: I've been feeling really stressed lately. I don't think I'm managing my workload well. Woman: Have you spoken to your manager about it? Man: Not yet. I'm worried it will look like I can't cope. Woman: I understand that concern, but it's better to address it early. You could also try the company's Employee Assistance Programme — they offer free counselling sessions. Man: I didn't know about that. How do I access it? Woman: There's a dedicated phone line. I'll send you the number now.",
+      "questions": [
+        { "id": "t3-003-c05-q1", "prompt": "What problem does the man describe?", "choices": ["A conflict with a colleague", "Feeling stressed and struggling with his workload", "A health issue requiring time off", "Difficulty with a technical task"], "answer": 1, "explanation": "\"I've been feeling really stressed lately. I don't think I'm managing my workload well\"." },
+        { "id": "t3-003-c05-q2", "prompt": "Why hasn't the man spoken to his manager?", "choices": ["He doesn't trust his manager", "He is afraid of looking unable to cope", "His manager is on leave", "He prefers to handle things alone"], "answer": 1, "explanation": "\"I'm worried it will look like I can't cope\"." },
+        { "id": "t3-003-c05-q3", "prompt": "What does the Employee Assistance Programme offer?", "choices": ["Extra holiday days", "Financial support for medical bills", "Free counselling sessions", "A reduced working schedule"], "answer": 2, "explanation": "\"they offer free counselling sessions\"." }
+      ]
+    },
+    {
+      "id": "t3-003-c06",
+      "audioText": "Woman: I'm thinking of signing up for the lunchtime yoga classes the company is offering. Have you tried them? Man: Yes, I've been going every Tuesday for a month now. They're excellent. The instructor is very good at adapting to different fitness levels. Woman: That's reassuring — I haven't done yoga in a while. Is it held in the building? Man: Yes, in the wellness room on the ground floor. You need to book your spot in advance through the intranet. Woman: Great, I'll register for next Tuesday's session.",
+      "questions": [
+        { "id": "t3-003-c06-q1", "prompt": "What class is the woman thinking of joining?", "choices": ["A lunchtime running club", "Lunchtime yoga classes", "Pilates classes after work", "A meditation workshop"], "answer": 1, "explanation": "\"I'm thinking of signing up for the lunchtime yoga classes\"." },
+        { "id": "t3-003-c06-q2", "prompt": "Where are the classes held?", "choices": ["At a gym near the office", "In the large conference room", "In the wellness room on the ground floor", "On the rooftop terrace"], "answer": 2, "explanation": "\"in the wellness room on the ground floor\"." },
+        { "id": "t3-003-c06-q3", "prompt": "How do employees book their spot?", "choices": ["By emailing the HR department", "By calling the wellness coordinator", "Through the company intranet", "By signing up at the door"], "answer": 2, "explanation": "\"You need to book your spot in advance through the intranet\"." }
+      ]
+    },
+    {
+      "id": "t3-003-c07",
+      "audioText": "Man: Did you hear that the company is offering subsidised gym memberships starting next month? Woman: Really? Which gym? Man: Any of the three partner gyms in the city. The company covers sixty percent of the monthly fee. Woman: That's a great benefit. Is there a maximum number of memberships available? Man: The first fifty employees to register get it. After that, it goes on a waiting list. Woman: I should sign up right away then. Where do I register? Man: Through HR — just fill in the form on the intranet.",
+      "questions": [
+        { "id": "t3-003-c07-q1", "prompt": "What benefit is the company introducing?", "choices": ["Free lunches in the cafeteria", "Subsidised gym memberships", "Discounted public transport passes", "A private health insurance plan"], "answer": 1, "explanation": "\"the company is offering subsidised gym memberships starting next month\"." },
+        { "id": "t3-003-c07-q2", "prompt": "What percentage of the membership fee does the company cover?", "choices": ["Forty percent", "Fifty percent", "Sixty percent", "Eighty percent"], "answer": 2, "explanation": "\"The company covers sixty percent of the monthly fee\"." },
+        { "id": "t3-003-c07-q3", "prompt": "What happens after the first fifty registrations?", "choices": ["The benefit is cancelled", "Additional gyms are added", "Employees go on a waiting list", "The company fee drops to forty percent"], "answer": 2, "explanation": "\"After that, it goes on a waiting list\"." }
+      ]
+    },
+    {
+      "id": "t3-003-c08",
+      "audioText": "Woman: I wanted to let you know that the office first aid kit needs restocking. The bandages and pain relief tablets are almost gone. Man: Thanks for flagging that. I'll order new supplies today. Is anything else missing? Woman: I noticed there are no latex gloves either. We should have at least two pairs. Man: Noted. I'll add those to the order. Do you know if our first aid certificate is still valid? Woman: I'm not sure. I think it was renewed last year but we should double-check. Man: I'll look it up and let you know.",
+      "questions": [
+        { "id": "t3-003-c08-q1", "prompt": "What does the woman report?", "choices": ["A workplace accident", "A broken piece of equipment", "The first aid kit needs restocking", "The fire extinguisher is expired"], "answer": 2, "explanation": "\"the office first aid kit needs restocking\"." },
+        { "id": "t3-003-c08-q2", "prompt": "What else is missing from the kit?", "choices": ["Antiseptic spray", "Eye drops", "Latex gloves", "A thermometer"], "answer": 2, "explanation": "\"there are no latex gloves either\"." },
+        { "id": "t3-003-c08-q3", "prompt": "What will the man check?", "choices": ["The expiry dates on all first aid items", "Whether the first aid certificate is still valid", "How many employees are first aid trained", "Which supplier to use for restocking"], "answer": 1, "explanation": "\"I'll look it up and let you know\" (whether the first aid certificate is still valid)." }
+      ]
+    },
+    {
+      "id": "t3-003-c09",
+      "audioText": "Man: We've just heard that the industry awards ceremony is next month. Are we submitting an entry this year? Woman: I think we should. Our packaging redesign project would be a strong candidate for the innovation award. Man: Agreed. Who would write the submission? Woman: I'd suggest asking Clara from the design team — she led the project and knows every detail. Man: Good idea. The deadline is the twenty-second. Can you check with her this week whether she's willing to take it on? Woman: I'll talk to her this afternoon.",
+      "questions": [
+        { "id": "t3-003-c09-q1", "prompt": "What are the speakers considering entering?", "choices": ["A product sales competition", "An industry awards ceremony", "A regional innovation fair", "A government grant programme"], "answer": 1, "explanation": "\"the industry awards ceremony is next month. Are we submitting an entry this year?\"" },
+        { "id": "t3-003-c09-q2", "prompt": "Which project would they submit for the innovation award?", "choices": ["The new mobile app", "The logistics optimisation project", "The packaging redesign project", "The customer loyalty programme"], "answer": 2, "explanation": "\"Our packaging redesign project would be a strong candidate for the innovation award\"." },
+        { "id": "t3-003-c09-q3", "prompt": "When will the woman speak to Clara?", "choices": ["This morning", "This afternoon", "Tomorrow", "By end of the week"], "answer": 1, "explanation": "\"I'll talk to her this afternoon\"." }
+      ]
+    },
+    {
+      "id": "t3-003-c10",
+      "audioText": "Woman: I'm preparing the welcome speech for the new employees joining next week. Any suggestions on what to include? Man: Definitely cover the company values and culture — new hires always say that's what they care most about. Woman: Good point. I was also thinking of sharing a few highlights from our recent achievements. Man: Great idea. Keep it under ten minutes though — people tend to switch off after that. Woman: Noted. I'll also leave time for a brief Q&A at the end so they feel welcome to ask questions. Man: Perfect. That personal touch makes a big difference.",
+      "questions": [
+        { "id": "t3-003-c10-q1", "prompt": "What is the woman preparing?", "choices": ["An annual performance report", "A training manual", "A welcome speech for new employees", "A company brochure"], "answer": 2, "explanation": "\"I'm preparing the welcome speech for the new employees joining next week\"." },
+        { "id": "t3-003-c10-q2", "prompt": "How long does the man recommend the speech should be?", "choices": ["Under five minutes", "Under ten minutes", "Exactly fifteen minutes", "Up to twenty minutes"], "answer": 1, "explanation": "\"Keep it under ten minutes though — people tend to switch off after that\"." },
+        { "id": "t3-003-c10-q3", "prompt": "What does the woman plan to add at the end?", "choices": ["A video about the company", "A tour of the office", "A brief Q&A session", "A welcome gift presentation"], "answer": 2, "explanation": "\"I'll also leave time for a brief Q&A at the end\"." }
+      ]
+    }
+  ]
+}

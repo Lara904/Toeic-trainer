@@ -1,0 +1,100 @@
+{
+  "id": "train-p7-003",
+  "part": 7,
+  "type": "training",
+  "skill": "reading",
+  "title": "Part 7 – Entraînement 3 : publicités, avis & divers",
+  "instructions": "Lisez chaque passage et répondez aux questions.",
+  "items": [
+    {
+      "id": "t7-003-p01",
+      "passage": "ADVERTISEMENT — FlexiOffice Solutions\n\nTired of paying for unused office space? FlexiOffice offers flexible coworking memberships starting at just €99 per month.\n\nChoose from three plans:\n• Drop-in: €99/month — 10 days access per month\n• Regular: €199/month — unlimited access, no dedicated desk\n• Premium: €349/month — dedicated desk, storage locker, and meeting room credits (5 hours/month)\n\nAll plans include:\n— High-speed Wi-Fi — Printing services — Coffee and tea — 24/7 building access\n\nFirst month half-price for new members. Book a free tour at www.flexioffice.eu",
+      "questions": [
+        { "id": "t7-003-p01-q1", "prompt": "What is included in the Premium plan that is not in the Regular plan?", "choices": ["High-speed Wi-Fi", "Unlimited access", "A dedicated desk and meeting room credits", "Printing services"], "answer": 2, "explanation": "Premium includes \"dedicated desk, storage locker, and meeting room credits\" — not in the Regular plan." },
+        { "id": "t7-003-p01-q2", "prompt": "How many days per month does the Drop-in plan allow?", "choices": ["5", "10", "15", "Unlimited"], "answer": 1, "explanation": "\"Drop-in: €99/month — 10 days access per month\"." },
+        { "id": "t7-003-p01-q3", "prompt": "What offer is available for new members?", "choices": ["A free first month", "First month at half price", "Two months for the price of one", "A free trial for one week"], "answer": 1, "explanation": "\"First month half-price for new members\"." }
+      ]
+    },
+    {
+      "id": "t7-003-p02",
+      "passage": "From: Lena Strauss\nTo: Customer Support\nSubject: Complaint — Conference Room Booking System\n\nDear Support Team,\n\nI am writing to express my frustration with your online conference room booking system.\n\nOn three separate occasions this month, I successfully completed a booking online, received a confirmation email, but arrived to find the room already occupied. On two of these occasions, staff at reception were unable to find any record of my booking in their system.\n\nThis has caused significant disruption to client meetings, which is entirely unacceptable. I would appreciate an urgent investigation into why confirmed bookings are not being reflected in the physical booking system. I also request a written explanation and formal apology within five business days.",
+      "questions": [
+        { "id": "t7-003-p02-q1", "prompt": "What problem did Lena experience?", "choices": ["She was charged twice for a room", "Her confirmed bookings were not showing in the physical system", "She was denied access to the building", "Her meeting was cancelled without notice"], "answer": 1, "explanation": "\"received a confirmation email, but arrived to find the room already occupied\" and \"staff... unable to find any record of my booking\"." },
+        { "id": "t7-003-p02-q2", "prompt": "How many times did this problem occur?", "choices": ["Once", "Twice", "Three times", "Four times"], "answer": 2, "explanation": "\"On three separate occasions this month\"." },
+        { "id": "t7-003-p02-q3", "prompt": "What does Lena request?", "choices": ["A full refund", "A permanent room allocation", "A written explanation and apology within five days", "A phone call from the manager"], "answer": 2, "explanation": "\"I also request a written explanation and formal apology within five business days\"." }
+      ]
+    },
+    {
+      "id": "t7-003-p03",
+      "passage": "PRODUCT LAUNCH ANNOUNCEMENT\n\nIntroducing the DataSync Pro — the next generation of enterprise data synchronisation software.\n\nKey features:\n• Real-time synchronisation across unlimited devices\n• End-to-end encryption for maximum data security\n• Compatible with all major cloud platforms including AWS, Azure, and Google Cloud\n• Automated backup every 15 minutes\n• Centralised admin dashboard for IT teams\n\nLaunch offer: 30% off annual subscriptions purchased before March 31st. Pricing starts at €49/month per user for teams of up to 20. Volume discounts available for larger teams.\n\nRequest a free 14-day trial at www.datasyncpro.com",
+      "questions": [
+        { "id": "t7-003-p03-q1", "prompt": "How often does the automated backup run?", "choices": ["Every 5 minutes", "Every 10 minutes", "Every 15 minutes", "Every 30 minutes"], "answer": 2, "explanation": "\"Automated backup every 15 minutes\"." },
+        { "id": "t7-003-p03-q2", "prompt": "What is the launch discount?", "choices": ["10% off", "20% off", "25% off", "30% off"], "answer": 3, "explanation": "\"30% off annual subscriptions purchased before March 31st\"." },
+        { "id": "t7-003-p03-q3", "prompt": "What is offered before committing to a subscription?", "choices": ["A free webinar", "A one-month free trial", "A 14-day free trial", "A demo with a sales consultant"], "answer": 2, "explanation": "\"Request a free 14-day trial\"." }
+      ]
+    },
+    {
+      "id": "t7-003-p04",
+      "passage": "PROPERTY LISTING — For Sale\n\nModern Commercial Unit — 238 sq.m.\nLocation: Parkside Business Quarter, Unit 14\n\nThis bright and modern commercial unit is ideal for office, retail, or light industrial use. The unit is fully fitted with air conditioning, a kitchenette, two bathrooms, and an open-plan workspace. There is also a private parking area for 6 vehicles.\n\nAsking price: €320,000\nService charge: €2,800/year\nAvailable immediately\n\nNote: Planning permission for signage is included in the sale. A structural survey was completed in January and is available upon request.\n\nContact: DawnProperty Agency — 01 888 4400",
+      "questions": [
+        { "id": "t7-003-p04-q1", "prompt": "What types of use is the unit suitable for?", "choices": ["Residential and retail only", "Office, retail, or light industrial", "Warehouse or distribution only", "Medical or dental practices only"], "answer": 1, "explanation": "\"ideal for office, retail, or light industrial use\"." },
+        { "id": "t7-003-p04-q2", "prompt": "What is included in the sale besides the property?", "choices": ["A five-year maintenance contract", "Planning permission for signage", "Furniture and equipment", "A free parking permit"], "answer": 1, "explanation": "\"Planning permission for signage is included in the sale\"." },
+        { "id": "t7-003-p04-q3", "prompt": "What document is available upon request?", "choices": ["The title deed", "A structural survey completed in January", "Planning permission documents", "The service charge history"], "answer": 1, "explanation": "\"A structural survey was completed in January and is available upon request\"." }
+      ]
+    },
+    {
+      "id": "t7-003-p05",
+      "passage": "RESTAURANT REVIEW — Chez Laurent\n⭐⭐⭐⭐⭐\n\nI celebrated a team dinner here last week for twelve people and it could not have gone better. The private dining room was elegant and spacious, the service was attentive without being intrusive, and the food was exceptional.\n\nHighlights: the duck confit starter, the slow-roasted lamb main, and the chocolate fondant dessert. The sommelier's wine pairing suggestions were spot-on.\n\nThe set menu for groups was €68 per person, including three courses and a glass of wine. For the quality and experience on offer, this is outstanding value.\n\nI would not hesitate to recommend Chez Laurent for any corporate or celebratory occasion.",
+      "questions": [
+        { "id": "t7-003-p05-q1", "prompt": "What was the occasion for the visit?", "choices": ["A birthday celebration", "A client meeting", "A team dinner", "An awards ceremony"], "answer": 2, "explanation": "\"I celebrated a team dinner here last week\"." },
+        { "id": "t7-003-p05-q2", "prompt": "What does the group set menu include?", "choices": ["Two courses and a glass of wine", "Three courses only", "Three courses and a glass of wine", "Unlimited food and drink"], "answer": 2, "explanation": "\"set menu for groups was €68 per person, including three courses and a glass of wine\"." },
+        { "id": "t7-003-p05-q3", "prompt": "What does the reviewer say about the price?", "choices": ["It was too expensive for the quality", "It was reasonable but not exceptional", "It was outstanding value for the experience", "It was cheaper than expected"], "answer": 2, "explanation": "\"For the quality and experience on offer, this is outstanding value\"." }
+      ]
+    },
+    {
+      "id": "t7-003-p06",
+      "passage": "HEALTH & WELLNESS NEWSLETTER\n\nTips for Staying Healthy During Long Business Trips\n\n1. Stay hydrated: Cabin air is very dry. Drink water regularly, especially on long-haul flights, and avoid excessive caffeine and alcohol.\n\n2. Move regularly: Set a timer to stand or walk for five minutes every hour during flights or long car journeys.\n\n3. Maintain your sleep schedule: Try to adjust to the local time zone as soon as you arrive. Avoid napping on arrival day if possible.\n\n4. Choose healthy meals: Airport and hotel menus often have hidden salt and sugar. Look for grilled options and salads when possible.\n\n5. Exercise: Many hotels have gyms. Even a 20-minute workout can improve energy levels and reduce jet lag.",
+      "questions": [
+        { "id": "t7-003-p06-q1", "prompt": "What are travellers advised to avoid?", "choices": ["Drinking water", "Setting timers", "Excessive caffeine and alcohol", "Choosing salads"], "answer": 2, "explanation": "\"avoid excessive caffeine and alcohol\"." },
+        { "id": "t7-003-p06-q2", "prompt": "What is the advice about napping?", "choices": ["Take a nap as soon as you arrive", "Nap for exactly 20 minutes", "Avoid napping on arrival day if possible", "Nap only in the morning"], "answer": 2, "explanation": "\"Avoid napping on arrival day if possible\"." },
+        { "id": "t7-003-p06-q3", "prompt": "How long is the recommended minimum workout?", "choices": ["10 minutes", "20 minutes", "30 minutes", "45 minutes"], "answer": 1, "explanation": "\"Even a 20-minute workout can improve energy levels\"." }
+      ]
+    },
+    {
+      "id": "t7-003-p07",
+      "passage": "WORKSHOP FEEDBACK FORM — SUMMARY\nWorkshop: Effective Business Writing\nDate: September 19th | Participants: 22\n\nOverall satisfaction: 4.3 / 5\n\nHighlights:\n• 91% of participants said the workshop improved their confidence in writing formal emails\n• 85% said the section on structuring reports was the most valuable\n• The interactive exercises were rated highly by 88% of respondents\n\nAreas for improvement:\n• 40% felt the workshop was too short (3 hours)\n• 25% requested more focus on writing for non-native English speakers\n\nRecommendation: Run a follow-up session of at least 4 hours, with dedicated time for non-native speaker support.",
+      "questions": [
+        { "id": "t7-003-p07-q1", "prompt": "What did 91% of participants say?", "choices": ["The workshop was too short", "The interactive exercises were the best part", "Their confidence in writing formal emails improved", "The content was too advanced"], "answer": 2, "explanation": "\"91% of participants said the workshop improved their confidence in writing formal emails\"." },
+        { "id": "t7-003-p07-q2", "prompt": "What was the main criticism of the workshop?", "choices": ["The facilitator was unprepared", "The content was not relevant", "It was too short", "It lacked interactive exercises"], "answer": 2, "explanation": "\"40% felt the workshop was too short (3 hours)\"." },
+        { "id": "t7-003-p07-q3", "prompt": "What is the recommendation for the follow-up session?", "choices": ["The same format for 3 hours", "At least 4 hours with support for non-native speakers", "An online version only", "A focus on report writing only"], "answer": 1, "explanation": "\"Run a follow-up session of at least 4 hours, with dedicated time for non-native speaker support\"." }
+      ]
+    },
+    {
+      "id": "t7-003-p08",
+      "passage": "INVITATION — Exclusive Client Reception\n\nDear Ms. Watanabe,\n\nOn behalf of Harrington Capital, we would like to invite you to our annual client reception, taking place on:\n\nDate: Thursday, November 21st\nTime: 6:30 p.m. – 9:00 p.m.\nVenue: The Grand Ballroom, Meridian Hotel, 5 Harbour Lane\n\nThe evening will include a champagne reception, a keynote address by our Chief Investment Officer, and a cocktail dinner. Formal attire is requested.\n\nPlease RSVP by November 10th to events@harringtoncapital.com or call +353 1 200 3000. We are able to accommodate a guest if you wish to bring one.\n\nWe look forward to your company.",
+      "questions": [
+        { "id": "t7-003-p08-q1", "prompt": "What time does the event begin?", "choices": ["6:00 p.m.", "6:30 p.m.", "7:00 p.m.", "9:00 p.m."], "answer": 1, "explanation": "\"Time: 6:30 p.m. – 9:00 p.m.\"" },
+        { "id": "t7-003-p08-q2", "prompt": "Who will deliver the keynote address?", "choices": ["The CEO", "A guest speaker", "The Chief Investment Officer", "Ms. Watanabe"], "answer": 2, "explanation": "\"a keynote address by our Chief Investment Officer\"." },
+        { "id": "t7-003-p08-q3", "prompt": "Can Ms. Watanabe bring a guest?", "choices": ["No, the invitation is for one person only", "Yes, one guest is welcome", "Yes, up to two guests are allowed", "Only if she RSVPs by phone"], "answer": 1, "explanation": "\"We are able to accommodate a guest if you wish to bring one\"." }
+      ]
+    },
+    {
+      "id": "t7-003-p09",
+      "passage": "NOTICE — Library Resource Centre Hours Update\n\nPlease note the following temporary changes to the Resource Centre opening hours, effective from Monday, October 7th to Friday, November 1st:\n\nMonday–Thursday: 8:00 a.m. – 6:00 p.m. (previously open until 8:00 p.m.)\nFriday: 8:00 a.m. – 4:00 p.m. (unchanged)\nSaturday: CLOSED (previously open 10:00 a.m. – 2:00 p.m.)\nSunday: CLOSED (unchanged)\n\nThese changes are due to reduced staffing during the renovation period. Online resources and e-books remain available 24/7 through the portal.\n\nWe apologise for any inconvenience.",
+      "questions": [
+        { "id": "t7-003-p09-q1", "prompt": "What has changed about Monday–Thursday hours?", "choices": ["Opening time is later", "Closing time is earlier", "The centre is now closed", "No change"], "answer": 1, "explanation": "Previously open until 8:00 p.m., now closing at 6:00 p.m. — earlier closing time." },
+        { "id": "t7-003-p09-q2", "prompt": "Why are the hours being reduced?", "choices": ["The centre is being relocated", "Budget cuts have reduced funding", "Staffing is reduced during a renovation period", "The centre is under new management"], "answer": 2, "explanation": "\"due to reduced staffing during the renovation period\"." },
+        { "id": "t7-003-p09-q3", "prompt": "What resource remains available 24/7?", "choices": ["The physical library collection", "Study rooms in the centre", "Online resources and e-books via the portal", "Printing services"], "answer": 2, "explanation": "\"Online resources and e-books remain available 24/7 through the portal\"." }
+      ]
+    },
+    {
+      "id": "t7-003-p10",
+      "passage": "MEMO — Interdepartmental\n\nTo: All Department Heads\nFrom: Operations Director\nRe: Supplier Review Meeting — Action Required\n\nFollowing last quarter's supply disruptions, we are conducting a full review of our top ten suppliers. Each department head is asked to provide a written evaluation of their main suppliers by October 18th.\n\nEvaluations should cover: delivery performance, product/service quality, communication responsiveness, and value for money. Please use the standard evaluation form, which can be downloaded from the procurement section of the intranet.\n\nThe completed evaluations will be discussed at the Supplier Review Meeting on October 25th. Attendance at this meeting is mandatory for all department heads.",
+      "questions": [
+        { "id": "t7-003-p10-q1", "prompt": "Why is the supplier review being conducted?", "choices": ["To reduce procurement costs", "Following supply disruptions last quarter", "As part of the annual planning process", "Due to a regulatory requirement"], "answer": 1, "explanation": "\"Following last quarter's supply disruptions\"." },
+        { "id": "t7-003-p10-q2", "prompt": "By when must evaluations be submitted?", "choices": ["October 11th", "October 18th", "October 25th", "November 1st"], "answer": 1, "explanation": "\"provide a written evaluation of their main suppliers by October 18th\"." },
+        { "id": "t7-003-p10-q3", "prompt": "What is the status of the October 25th meeting for department heads?", "choices": ["Optional", "Recommended", "Mandatory", "By invitation only"], "answer": 2, "explanation": "\"Attendance at this meeting is mandatory for all department heads\"." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "p1-002",
+  "part": 1,
+  "skill": "listening",
+  "title": "Part 1 – Description de photo : à l'aéroport",
+  "instructions": "Regardez l'image. Écoutez les quatre propositions et choisissez celle qui décrit le mieux la photo.",
+  "image": {
+    "src": "/assets/part1/p1-002.svg",
+    "alt": "Un homme poussant un chariot à bagages dans le terminal d'un aéroport, avec un panneau d'affichage des départs au mur"
+  },
+  "audioText": "Look at the picture marked number one in your test book. (A) The man is checking in at a hotel. (B) The man is pushing a luggage cart. (C) The man is boarding a plane. (D) The man is sitting on a bench.",
+  "questions": [
+    {
+      "id": "p1-002-q1",
+      "choices": [
+        "The man is checking in at a hotel.",
+        "The man is pushing a luggage cart.",
+        "The man is boarding a plane.",
+        "The man is sitting on a bench."
+      ],
+      "answer": 1,
+      "explanation": "L'image montre un homme qui pousse un chariot chargé de bagages : c'est la proposition (B). (A), (C) et (D) décrivent des situations différentes (hôtel, embarquement, banc)."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "p1-006",
+  "part": 1,
+  "skill": "listening",
+  "title": "Part 1 – Description de photo : l'analyse financière",
+  "instructions": "Regardez l'image. Écoutez les quatre propositions et choisissez celle qui décrit le mieux la photo.",
+  "image": {
+    "src": "/assets/part1/p1-006.svg",
+    "alt": "Une femme assise à un bureau, consultant des graphiques financiers sur papier, avec une calculatrice et une tasse de café"
+  },
+  "audioText": "Look at the picture marked number one in your test book. (A) The woman is making a phone call. (B) The woman is reviewing financial documents. (C) The woman is cleaning her desk. (D) The woman is giving a presentation.",
+  "questions": [
+    {
+      "id": "p1-006-q1",
+      "choices": [
+        "The woman is making a phone call.",
+        "The woman is reviewing financial documents.",
+        "The woman is cleaning her desk.",
+        "The woman is giving a presentation."
+      ],
+      "answer": 1,
+      "explanation": "La femme est penchée sur des documents avec un graphique et une calculatrice : c'est la proposition (B)."
+    }
+  ]
+}

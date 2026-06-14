@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <rect width="400" height="280" fill="#e8f5e9"/>
+  <rect x="0" y="255" width="400" height="25" fill="#c8e6c9"/>
+  <!-- couloir hôpital -->
+  <rect x="0" y="0"   width="400" height="255" fill="#f5f5f5"/>
+  <!-- sol -->
+  <rect x="0" y="225" width="400" height="30" fill="#eeeeee"/>
+  <!-- mur -->
+  <rect x="0" y="0" width="20" height="255" fill="#eceff1"/>
+  <rect x="380" y="0" width="20" height="255" fill="#eceff1"/>
+  <!-- infirmière (uniforme blanc/bleu) -->
+  <circle cx="130" cy="110" r="22" fill="#ffcc80"/>
+  <ellipse cx="130" cy="90"  rx="22" ry="11" fill="#1565c0"/>
+  <!-- uniforme blanc -->
+  <rect x="110" y="132" width="40" height="62" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <rect x="90"  y="146" width="20" height="38" rx="7" fill="#fff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <rect x="150" y="146" width="20" height="38" rx="7" fill="#fff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <!-- brassard bleu -->
+  <rect x="110" y="140" width="40" height="10" fill="#1565c0" rx="2"/>
+  <!-- patient assis sur une chaise -->
+  <circle cx="280" cy="115" r="22" fill="#ffb74d"/>
+  <ellipse cx="280" cy="95"  rx="22" ry="11" fill="#4e342e"/>
+  <rect x="260" y="137" width="40" height="55" rx="8" fill="#546e7a"/>
+  <!-- chaise patient -->
+  <rect x="252" y="190" width="64" height="8"  rx="3" fill="#8d6e63"/>
+  <rect x="254" y="198" width="10" height="28" fill="#6d4c41"/>
+  <rect x="302" y="198" width="10" height="28" fill="#6d4c41"/>
+  <!-- jambes assis -->
+  <rect x="262" y="188" width="16" height="14" rx="4" fill="#37474f"/>
+  <rect x="282" y="188" width="16" height="14" rx="4" fill="#37474f"/>
+  <!-- brassard tensiomètre -->
+  <rect x="238" y="152" width="22" height="32" rx="6" fill="#e0e0e0" stroke="#90a4ae" stroke-width="1.5"/>
+  <rect x="210" y="162" width="30" height="14" rx="4" fill="#90a4ae"/>
+  <!-- bras de l'infirmière vers le brassard -->
+  <line x1="150" y1="155" x2="235" y2="162" stroke="#ffcc80" stroke-width="9" stroke-linecap="round"/>
+</svg>

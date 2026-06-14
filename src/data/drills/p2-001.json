@@ -1,0 +1,20 @@
+{
+  "id": "p2-001",
+  "part": 2,
+  "skill": "listening",
+  "title": "Part 2 – Question-Réponse : la gare",
+  "instructions": "Écoutez la question et les trois réponses possibles. Choisissez la réponse la plus appropriée.",
+  "audioText": "Where is the nearest train station? (A) It's about ten minutes' walk from here. (B) I bought it yesterday. (C) Yes, I really enjoyed it.",
+  "questions": [
+    {
+      "id": "p2-001-q1",
+      "choices": [
+        "It's about ten minutes' walk from here.",
+        "I bought it yesterday.",
+        "Yes, I really enjoyed it."
+      ],
+      "answer": 0,
+      "explanation": "La question commence par \"Where\", elle porte donc sur un lieu. Seule la réponse (A) donne une indication de lieu/distance. (B) répond à une question avec \"when\" et (C) répond à une question fermée (yes/no)."
+    }
+  ]
+}

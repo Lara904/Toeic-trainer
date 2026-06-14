@@ -1,0 +1,20 @@
+{
+  "id": "train-p5-001",
+  "part": 5,
+  "type": "training",
+  "skill": "reading",
+  "title": "Part 5 – Entraînement 1 : temps verbaux & voix passive",
+  "instructions": "Choisissez le mot ou le groupe de mots qui complète correctement chaque phrase.",
+  "items": [
+    { "id": "t5-001-q01", "sentence": "The new branch ____ officially opened by the CEO last Thursday.", "choices": ["is", "was", "will be", "has been"], "answer": 1, "explanation": "\"last Thursday\" indique le prétérit. Voix passive : \"was opened\"." },
+    { "id": "t5-001-q02", "sentence": "All orders ____ processed within two business days of receipt.", "choices": ["are", "is", "were", "be"], "answer": 0, "explanation": "Sujet pluriel \"All orders\" + présent simple passif : \"are processed\"." },
+    { "id": "t5-001-q03", "sentence": "The quarterly figures ____ not yet been reviewed by the finance committee.", "choices": ["have", "has", "had", "are"], "answer": 0, "explanation": "\"not yet\" + present perfect avec sujet pluriel : \"have not yet been reviewed\"." },
+    { "id": "t5-001-q04", "sentence": "By the time the client arrives, the report ____ ready.", "choices": ["will be", "is", "was", "has been"], "answer": 0, "explanation": "Futur dans une phrase temporelle avec \"by the time\" : \"will be ready\"." },
+    { "id": "t5-001-q05", "sentence": "The manager ____ the team about the changes before they took effect.", "choices": ["notified", "notify", "notifies", "is notifying"], "answer": 0, "explanation": "\"before they took effect\" : action passée → prétérit \"notified\"." },
+    { "id": "t5-001-q06", "sentence": "New safety procedures ____ put in place following last month's inspection.", "choices": ["have been", "has been", "are", "were being"], "answer": 0, "explanation": "Résultat présent d'une action passée récente → present perfect passif : \"have been put in place\"." },
+    { "id": "t5-001-q07", "sentence": "The client ____ waiting for over thirty minutes when the meeting finally started.", "choices": ["was", "had been", "has been", "is"], "answer": 1, "explanation": "Action en cours avant un moment passé → past perfect continu : \"had been waiting\"." },
+    { "id": "t5-001-q08", "sentence": "Staff are reminded that personal devices ____ not be used during client presentations.", "choices": ["should", "would", "could", "might"], "answer": 0, "explanation": "Règle ou recommandation forte : \"should not be used\"." },
+    { "id": "t5-001-q09", "sentence": "The shipment ____ arrive tomorrow if everything goes according to plan.", "choices": ["will", "would", "should", "must"], "answer": 0, "explanation": "Prédiction conditionnelle au futur : \"will arrive\"." },
+    { "id": "t5-001-q10", "sentence": "Employees ____ to submit their timesheets by noon every Friday.", "choices": ["are expected", "expect", "expecting", "is expected"], "answer": 0, "explanation": "Sujet pluriel + voix passive : \"are expected to submit\"." }
+  ]
+}

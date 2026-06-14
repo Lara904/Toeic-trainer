@@ -1,0 +1,20 @@
+{
+  "id": "train-p5-003",
+  "part": 5,
+  "type": "training",
+  "skill": "reading",
+  "title": "Part 5 – Entraînement 3 : vocabulaire & structure de phrase",
+  "instructions": "Choisissez le mot ou le groupe de mots qui complète correctement chaque phrase.",
+  "items": [
+    { "id": "t5-003-q01", "sentence": "The candidate demonstrated ____ knowledge of financial reporting standards during the interview.", "choices": ["extensive", "extension", "extensively", "extend"], "answer": 0, "explanation": "Adjectif devant un nom : \"extensive knowledge\"." },
+    { "id": "t5-003-q02", "sentence": "We would like to ____ our sincere apologies for the delay in processing your order.", "choices": ["extend", "extension", "extensive", "extending"], "answer": 0, "explanation": "Expression figée : \"extend our apologies\" = présenter nos excuses." },
+    { "id": "t5-003-q03", "sentence": "The proposal was ____ rejected by the committee without further discussion.", "choices": ["unanimously", "unanimous", "unanimity", "unanimousness"], "answer": 0, "explanation": "Adverbe pour modifier le verbe \"rejected\" : \"unanimously\"." },
+    { "id": "t5-003-q04", "sentence": "The new regulation will ____ how companies report their environmental impact.", "choices": ["affect", "effect", "affection", "effective"], "answer": 0, "explanation": "\"affect\" est un verbe (influencer) ; \"effect\" est un nom." },
+    { "id": "t5-003-q05", "sentence": "Participation in the survey is entirely ____ and results are anonymous.", "choices": ["voluntary", "volunteer", "voluntarily", "volunteering"], "answer": 0, "explanation": "Adjectif après \"is\" : \"is entirely voluntary\"." },
+    { "id": "t5-003-q06", "sentence": "The company has ____ measures to reduce its carbon footprint by forty percent.", "choices": ["implemented", "implicated", "implied", "imposed"], "answer": 0, "explanation": "\"implement measures\" = mettre en place des mesures." },
+    { "id": "t5-003-q07", "sentence": "Please ____ that all documents are signed before submitting the application.", "choices": ["ensure", "assure", "insure", "reassure"], "answer": 0, "explanation": "\"ensure that\" = s'assurer que (chose). \"Assure\" s'utilise avec une personne." },
+    { "id": "t5-003-q08", "sentence": "The board has decided to ____ the merger pending further legal review.", "choices": ["postpone", "propose", "promote", "proceed"], "answer": 0, "explanation": "\"postpone\" = reporter, différer. Contexte : attente d'un avis juridique." },
+    { "id": "t5-003-q09", "sentence": "The new software is ____ compatible with all operating systems used in the organisation.", "choices": ["fully", "full", "fuller", "fullest"], "answer": 0, "explanation": "Adverbe pour modifier l'adjectif \"compatible\" : \"fully compatible\"." },
+    { "id": "t5-003-q10", "sentence": "Management is committed to providing a safe and ____ work environment for all employees.", "choices": ["inclusive", "inclusion", "include", "included"], "answer": 0, "explanation": "Adjectif coordonné avec \"safe\" : \"safe and inclusive work environment\"." }
+  ]
+}

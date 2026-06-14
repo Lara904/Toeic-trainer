@@ -1,0 +1,46 @@
+{
+  "id": "p3-007",
+  "part": 3,
+  "skill": "listening",
+  "title": "Part 3 – Conversation : le nouveau programme bien-être",
+  "instructions": "Écoutez la conversation, puis répondez aux trois questions.",
+  "audioText": "Woman: I heard the company is starting a new wellness program next month. Do you know what it includes? Man: Yes, I read about it on the intranet. There will be free yoga classes twice a week, and a nutritionist will be available for consultations once a month. Woman: That sounds great. Do we need to sign up in advance, or can we just show up? Man: You need to register online, because there's a limited number of spots for the yoga classes. But the nutritionist sessions are first come, first served. Woman: I'll sign up for the yoga classes today, then. Do you know where they'll be held? Man: In the conference room on the fourth floor, I believe. They're going to move some furniture around to make space.",
+  "questions": [
+    {
+      "id": "p3-007-q1",
+      "prompt": "What are the speakers mainly discussing?",
+      "choices": [
+        "A new wellness program",
+        "A change in working hours",
+        "A company relocation",
+        "A new health insurance plan"
+      ],
+      "answer": 0,
+      "explanation": "Les deux collègues parlent du nouveau programme bien-être de l'entreprise."
+    },
+    {
+      "id": "p3-007-q2",
+      "prompt": "What does the man say about the yoga classes?",
+      "choices": [
+        "They are only for managers",
+        "They require online registration",
+        "They are held outdoors",
+        "They cost extra money"
+      ],
+      "answer": 1,
+      "explanation": "Il précise qu'il faut s'inscrire en ligne car les places pour le yoga sont limitées."
+    },
+    {
+      "id": "p3-007-q3",
+      "prompt": "Where will the yoga classes take place?",
+      "choices": [
+        "In the cafeteria",
+        "In the parking lot",
+        "In the conference room on the fourth floor",
+        "At a nearby gym"
+      ],
+      "answer": 2,
+      "explanation": "Il indique : \"In the conference room on the fourth floor, I believe\"."
+    }
+  ]
+}

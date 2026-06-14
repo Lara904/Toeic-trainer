@@ -1,0 +1,100 @@
+{
+  "id": "train-p7-002",
+  "part": 7,
+  "type": "training",
+  "skill": "reading",
+  "title": "Part 7 – Entraînement 2 : rapports, politiques & contrats",
+  "instructions": "Lisez chaque passage et répondez aux questions.",
+  "items": [
+    {
+      "id": "t7-002-p01",
+      "passage": "REFUND POLICY — Apex Electronics\n\nWe want you to be completely satisfied with your purchase. If you are not happy with your order for any reason, you may return it within 30 days of delivery for a full refund or exchange.\n\nConditions:\n• Items must be in their original packaging and unused.\n• Proof of purchase is required.\n• Digital downloads and customised items are non-refundable.\n• Shipping costs are non-refundable unless the item is faulty.\n\nTo initiate a return, please contact our customer service team at returns@apexelectronics.com or call 0800 100 200. We aim to process all refunds within 5–7 business days of receiving the returned item.",
+      "questions": [
+        { "id": "t7-002-p01-q1", "prompt": "Within how many days can a customer return an item?", "choices": ["14 days", "21 days", "30 days", "60 days"], "answer": 2, "explanation": "\"you may return it within 30 days of delivery\"." },
+        { "id": "t7-002-p01-q2", "prompt": "Which type of product cannot be refunded?", "choices": ["Faulty items", "Digital downloads", "Items in original packaging", "Items with proof of purchase"], "answer": 1, "explanation": "\"Digital downloads and customised items are non-refundable\"." },
+        { "id": "t7-002-p01-q3", "prompt": "How long does it take to process a refund?", "choices": ["1–2 business days", "3–5 business days", "5–7 business days", "10 business days"], "answer": 2, "explanation": "\"We aim to process all refunds within 5–7 business days of receiving the returned item\"." }
+      ]
+    },
+    {
+      "id": "t7-002-p02",
+      "passage": "QUARTERLY SALES REPORT — SUMMARY\nPeriod: July–September\n\nTotal revenue for Q3 reached €8.4 million, up 11% from the same period last year. The strongest performance came from the Enterprise segment, which grew by 23% year-on-year. The SME segment showed modest growth of 4%, while Consumer sales declined by 2% due to increased market competition.\n\nTop-performing region: Northern Europe (+18%)\nLow-performing region: South Asia (–6%)\n\nOutlook: The sales team projects Q4 revenue of €9.1 million, contingent on successful contract renewals with three key accounts currently under negotiation.",
+      "questions": [
+        { "id": "t7-002-p02-q1", "prompt": "Which segment showed the strongest growth in Q3?", "choices": ["Consumer", "SME", "Enterprise", "Northern Europe"], "answer": 2, "explanation": "\"The strongest performance came from the Enterprise segment, which grew by 23%\"." },
+        { "id": "t7-002-p02-q2", "prompt": "Why did Consumer sales decline?", "choices": ["A product recall", "Reduced marketing spend", "Increased market competition", "Supply chain issues"], "answer": 2, "explanation": "\"Consumer sales declined by 2% due to increased market competition\"." },
+        { "id": "t7-002-p02-q3", "prompt": "What does the Q4 projection depend on?", "choices": ["Hiring more sales staff", "Launching a new product", "Successful contract renewals with key accounts", "Expansion into new markets"], "answer": 2, "explanation": "\"contingent on successful contract renewals with three key accounts\"." }
+      ]
+    },
+    {
+      "id": "t7-002-p03",
+      "passage": "WORKPLACE INVESTIGATION POLICY\n\nWhen a formal complaint is received, the following process will be followed:\n\n1. Acknowledgement: The HR department will acknowledge receipt of the complaint within two working days.\n2. Investigation: A trained investigator will be appointed within five working days. The investigation must be completed within twenty working days, unless an extension is agreed upon by all parties.\n3. Outcome: The complainant and the respondent will each receive a written outcome letter within five working days of the investigation's conclusion.\n4. Appeals: Either party may appeal the outcome within ten working days of receiving the outcome letter.\n\nAll parties are expected to treat proceedings with confidentiality.",
+      "questions": [
+        { "id": "t7-002-p03-q1", "prompt": "Within how many working days will HR acknowledge a complaint?", "choices": ["One", "Two", "Five", "Ten"], "answer": 1, "explanation": "\"acknowledge receipt of the complaint within two working days\"." },
+        { "id": "t7-002-p03-q2", "prompt": "How long may the investigation take?", "choices": ["Five working days", "Ten working days", "Twenty working days", "Thirty working days"], "answer": 2, "explanation": "\"The investigation must be completed within twenty working days\"." },
+        { "id": "t7-002-p03-q3", "prompt": "Within how many days can either party appeal the outcome?", "choices": ["Five working days", "Ten working days", "Fifteen working days", "Twenty working days"], "answer": 1, "explanation": "\"Either party may appeal the outcome within ten working days of receiving the outcome letter\"." }
+      ]
+    },
+    {
+      "id": "t7-002-p04",
+      "passage": "CONFERENCE PROGRAMME EXCERPT\nGlobal Supply Chain Forum — Day 2\n\n9:00 a.m. — Registration and Morning Coffee\n9:30 a.m. — Keynote: 'Resilience in the Modern Supply Chain' — Dr. Alinta Ross, NovaTrade Institute\n11:00 a.m. — Panel Discussion: Nearshoring vs. Offshoring — Pros and Cons\n12:30 p.m. — Networking Lunch (sponsored by LogiCo)\n2:00 p.m. — Breakout Sessions (three concurrent tracks):\n   Track A: Sustainable Logistics\n   Track B: Digital Transformation in Warehousing\n   Track C: Customs Compliance and Cross-Border Trade\n4:00 p.m. — Closing Remarks and Award Ceremony\n5:00 p.m. — Drinks Reception",
+      "questions": [
+        { "id": "t7-002-p04-q1", "prompt": "Who will deliver the keynote speech?", "choices": ["A representative from LogiCo", "Dr. Alinta Ross from NovaTrade Institute", "The conference organiser", "A customs compliance expert"], "answer": 1, "explanation": "\"Keynote: 'Resilience in the Modern Supply Chain' — Dr. Alinta Ross, NovaTrade Institute\"." },
+        { "id": "t7-002-p04-q2", "prompt": "What is happening at 12:30 p.m.?", "choices": ["A panel discussion", "The award ceremony", "A sponsored networking lunch", "The opening keynote"], "answer": 2, "explanation": "\"Networking Lunch (sponsored by LogiCo)\"." },
+        { "id": "t7-002-p04-q3", "prompt": "How many breakout session tracks are available?", "choices": ["Two", "Three", "Four", "Five"], "answer": 1, "explanation": "\"Breakout Sessions (three concurrent tracks)\"." }
+      ]
+    },
+    {
+      "id": "t7-002-p05",
+      "passage": "LETTER OF RECOMMENDATION\n\nTo Whom It May Concern,\n\nI am writing to wholeheartedly recommend Ms. Fatima Okafor for any senior marketing position.\n\nFatima joined our team four years ago as a marketing coordinator and quickly rose to the role of Marketing Manager within eighteen months. During her time with us, she led the rebranding of our flagship product line, which contributed to a 34% increase in brand awareness and a 19% uplift in sales.\n\nFatima is a strategic thinker with exceptional interpersonal skills. She consistently demonstrated the ability to manage cross-functional teams and deliver results under pressure.\n\nI have no hesitation in recommending her and am happy to be contacted for further discussion.\n\nSincerely,\nJames Carton, Chief Marketing Officer",
+      "questions": [
+        { "id": "t7-002-p05-q1", "prompt": "How long did Fatima work at the company?", "choices": ["Less than one year", "Eighteen months", "Two years", "Four years"], "answer": 3, "explanation": "\"Fatima joined our team four years ago\"." },
+        { "id": "t7-002-p05-q2", "prompt": "What was one result of the rebranding project?", "choices": ["A 34% increase in sales", "A 19% increase in brand awareness", "A 34% increase in brand awareness and 19% uplift in sales", "A new product launch"], "answer": 2, "explanation": "\"34% increase in brand awareness and a 19% uplift in sales\"." },
+        { "id": "t7-002-p05-q3", "prompt": "Who wrote the letter?", "choices": ["The HR Manager", "A colleague of Fatima's", "The Chief Marketing Officer", "The company CEO"], "answer": 2, "explanation": "\"James Carton, Chief Marketing Officer\"." }
+      ]
+    },
+    {
+      "id": "t7-002-p06",
+      "passage": "COMPANY TRAVEL INSURANCE SUMMARY\n\nCoverage: All permanent employees travelling on company business\nPolicy Provider: GlobalGuard Insurance\n\nKey Benefits:\n• Medical expenses: Up to €500,000 per trip\n• Trip cancellation: Up to €5,000 per booking\n• Lost luggage: Up to €2,000 per trip\n• Flight delay (over 4 hours): €50 per hour, max €300\n• Personal liability: Up to €1,000,000\n\nExclusions:\n• Pre-existing medical conditions not disclosed at the time of travel\n• Travel to regions under active government travel warnings\n• Alcohol or substance-related incidents\n\nClaims must be submitted within 30 days of the incident.",
+      "questions": [
+        { "id": "t7-002-p06-q1", "prompt": "What is the maximum coverage for lost luggage?", "choices": ["€500", "€2,000", "€5,000", "€500,000"], "answer": 1, "explanation": "\"Lost luggage: Up to €2,000 per trip\"." },
+        { "id": "t7-002-p06-q2", "prompt": "What flight delay compensation applies?", "choices": ["€50 per hour with no cap", "€100 per hour up to €300", "€50 per hour up to €300 for delays over 4 hours", "A flat €300 for any delay"], "answer": 2, "explanation": "\"Flight delay (over 4 hours): €50 per hour, max €300\"." },
+        { "id": "t7-002-p06-q3", "prompt": "What is excluded from the policy?", "choices": ["Medical emergencies abroad", "Trip cancellation", "Travel to areas under government travel warnings", "Lost luggage"], "answer": 2, "explanation": "\"Travel to regions under active government travel warnings\" is listed as an exclusion." }
+      ]
+    },
+    {
+      "id": "t7-002-p07",
+      "passage": "NEW EMPLOYEE BENEFITS GUIDE — Highlights\n\nWelcome to Clearfield Group! As a new employee, you are entitled to the following benefits:\n\nHealth: Private medical insurance from day one, including dental and vision coverage.\n\nPension: The company contributes 6% of your basic salary to your pension, provided you contribute a minimum of 3%.\n\nAnnual Leave: 25 days per year, increasing to 28 days after three years of service.\n\nLearning: An annual learning budget of €1,000 to spend on courses, books, or conferences relevant to your role.\n\nWellness: Access to the Employee Assistance Programme and a subsidised gym membership (50% covered by the company).\n\nFull details are available in the Employee Handbook on the intranet.",
+      "questions": [
+        { "id": "t7-002-p07-q1", "prompt": "What is the company's pension contribution?", "choices": ["3% of salary", "6% of salary", "9% of salary", "It matches the employee's contribution"], "answer": 1, "explanation": "\"The company contributes 6% of your basic salary to your pension\"." },
+        { "id": "t7-002-p07-q2", "prompt": "How many annual leave days are given after three years?", "choices": ["23", "25", "28", "30"], "answer": 2, "explanation": "\"25 days per year, increasing to 28 days after three years of service\"." },
+        { "id": "t7-002-p07-q3", "prompt": "What is the annual learning budget?", "choices": ["€500", "€750", "€1,000", "€1,500"], "answer": 2, "explanation": "\"An annual learning budget of €1,000\"." }
+      ]
+    },
+    {
+      "id": "t7-002-p08",
+      "passage": "From: Sophie Bell\nTo: Marcus Webb\nSubject: Re: Client Visit Next Thursday\n\nHi Marcus,\n\nQuick update on the Delacroix visit next Thursday. They've confirmed four attendees instead of three, so we'll need to switch to the larger conference room on the second floor. Could you update the booking?\n\nAlso, I've just heard their CEO won't be attending after all — their CFO, Pierre Fontaine, will come in her place. He'll be presenting their expansion plans, so please make sure the projector and screen are set up in advance.\n\nI'll handle the catering order — I've already emailed the kitchen with the dietary requirements.\n\nSee you Thursday!\nSophie",
+      "questions": [
+        { "id": "t7-002-p08-q1", "prompt": "Why is a room change needed?", "choices": ["The original room is already booked", "One more attendee will be coming than expected", "The CEO requested a larger room", "The projector is only in the larger room"], "answer": 1, "explanation": "\"They've confirmed four attendees instead of three\"." },
+        { "id": "t7-002-p08-q2", "prompt": "Who will attend instead of the CEO?", "choices": ["The Marketing Director", "The Head of Operations", "The CFO, Pierre Fontaine", "Sophie Bell"], "answer": 2, "explanation": "\"their CFO, Pierre Fontaine, will come in her place\"." },
+        { "id": "t7-002-p08-q3", "prompt": "What has Sophie already handled?", "choices": ["Updating the room booking", "Setting up the projector", "Emailing the kitchen with dietary requirements", "Confirming the number of attendees"], "answer": 2, "explanation": "\"I'll handle the catering order — I've already emailed the kitchen with the dietary requirements\"." }
+      ]
+    },
+    {
+      "id": "t7-002-p09",
+      "passage": "SEMINAR ANNOUNCEMENT\n\nTopic: Introduction to Sustainable Business Practices\nDate: Thursday, November 14th\nTime: 2:00 p.m. – 5:00 p.m.\nVenue: Room 3B, Business Innovation Centre, 22 Park Street\n\nThis interactive seminar is designed for managers and decision-makers who want to integrate sustainability into their business strategy. Topics will include carbon footprint measurement, supply chain ethics, green procurement, and reporting standards.\n\nFacilitator: Dr. Yusuf Alade, Sustainability Consultant\nFee: €75 per person (includes materials and refreshments)\nMax. participants: 20\n\nTo register, visit www.greenbizseminars.ie or email register@greenbizseminars.ie by November 7th.",
+      "questions": [
+        { "id": "t7-002-p09-q1", "prompt": "Who is the seminar designed for?", "choices": ["Sustainability consultants", "University students", "Managers and decision-makers", "Environmental regulators"], "answer": 2, "explanation": "\"designed for managers and decision-makers who want to integrate sustainability into their business strategy\"." },
+        { "id": "t7-002-p09-q2", "prompt": "What does the fee include?", "choices": ["Lunch only", "Materials and refreshments", "Materials, refreshments, and accommodation", "A copy of Dr. Alade's book"], "answer": 1, "explanation": "\"€75 per person (includes materials and refreshments)\"." },
+        { "id": "t7-002-p09-q3", "prompt": "What is the registration deadline?", "choices": ["November 7th", "November 10th", "November 14th", "November 20th"], "answer": 0, "explanation": "\"register... by November 7th\"." }
+      ]
+    },
+    {
+      "id": "t7-002-p10",
+      "passage": "NOTICE OF CHANGES TO BANKING SERVICES\n\nDear Valued Business Customer,\n\nWe are writing to inform you of changes to our business banking service effective January 1st.\n\nKey changes:\n• Monthly account maintenance fee will increase from €8 to €12.\n• Free monthly transactions will be reduced from 100 to 75. Additional transactions will be charged at €0.30 each.\n• International wire transfers will now be processed within 2 business days (previously 3).\n• Business overdraft interest rate will decrease from 9.5% to 8.75%.\n\nIf you have any questions or wish to discuss alternative account options, please contact your relationship manager or visit our website at www.atlasbank.ie.",
+      "questions": [
+        { "id": "t7-002-p10-q1", "prompt": "By how much will the monthly account fee increase?", "choices": ["€2", "€4", "€6", "€8"], "answer": 1, "explanation": "From €8 to €12 = an increase of €4." },
+        { "id": "t7-002-p10-q2", "prompt": "What is the new number of free monthly transactions?", "choices": ["50", "75", "100", "150"], "answer": 1, "explanation": "\"Free monthly transactions will be reduced from 100 to 75\"." },
+        { "id": "t7-002-p10-q3", "prompt": "What change has been made to international wire transfers?", "choices": ["They now cost more", "They will take longer to process", "They will be processed one day faster", "They are no longer available"], "answer": 2, "explanation": "\"International wire transfers will now be processed within 2 business days (previously 3)\" — one day faster." }
+      ]
+    }
+  ]
+}

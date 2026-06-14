@@ -1,0 +1,20 @@
+{
+  "id": "p2-002",
+  "part": 2,
+  "skill": "listening",
+  "title": "Part 2 – Question-Réponse : le rapport",
+  "instructions": "Écoutez la question et les trois réponses possibles. Choisissez la réponse la plus appropriée.",
+  "audioText": "Could you send me the report by Friday? (A) It's on the third floor. (B) Sure, I'll have it ready by then. (C) I'm fine, thanks.",
+  "questions": [
+    {
+      "id": "p2-002-q1",
+      "choices": [
+        "It's on the third floor.",
+        "Sure, I'll have it ready by then.",
+        "I'm fine, thanks."
+      ],
+      "answer": 1,
+      "explanation": "\"Could you...?\" est une demande polie. La réponse logique est une acceptation, comme (B). (A) répond à une question de localisation et (C) répond à \"How are you?\"."
+    }
+  ]
+}

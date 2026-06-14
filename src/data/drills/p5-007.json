@@ -1,0 +1,44 @@
+{
+  "id": "p5-007",
+  "part": 5,
+  "skill": "reading",
+  "title": "Part 5 – Phrases à compléter : santé",
+  "instructions": "Choisissez le mot ou le groupe de mots qui complète correctement chaque phrase.",
+  "questions": [
+    {
+      "id": "p5-007-q1",
+      "sentence": "Employees who feel unwell ____ stay home to avoid spreading illness.",
+      "choices": ["should", "should to", "shoulds", "shoulding"],
+      "answer": 0,
+      "explanation": "Modal \"should\" + verbe à l'infinitif sans \"to\"."
+    },
+    {
+      "id": "p5-007-q2",
+      "sentence": "The clinic is open ____ weekdays from eight to six.",
+      "choices": ["on", "at", "in", "during"],
+      "answer": 0,
+      "explanation": "Collocation : \"open on weekdays\"."
+    },
+    {
+      "id": "p5-007-q3",
+      "sentence": "Patients ____ to arrive fifteen minutes before their appointment.",
+      "choices": ["is advised", "are advised", "advise", "advising"],
+      "answer": 1,
+      "explanation": "Sujet pluriel \"Patients\" + voix passive : \"are advised\"."
+    },
+    {
+      "id": "p5-007-q4",
+      "sentence": "She has been feeling unwell ____ Monday.",
+      "choices": ["since", "for", "from", "at"],
+      "answer": 0,
+      "explanation": "\"since\" + point de départ précis dans le temps (\"Monday\")."
+    },
+    {
+      "id": "p5-007-q5",
+      "sentence": "It is important to wash your hands ____ eating.",
+      "choices": ["before", "ago", "during", "while"],
+      "answer": 0,
+      "explanation": "\"before\" + gérondif : \"before eating\"."
+    }
+  ]
+}

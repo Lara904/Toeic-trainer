@@ -1,0 +1,38 @@
+{
+  "id": "p6-002",
+  "part": 6,
+  "skill": "reading",
+  "title": "Part 6 – Texte à trous : dîner annuel de l'entreprise",
+  "instructions": "Lisez l'invitation et choisissez le mot ou le groupe de mots qui convient pour chaque numéro.",
+  "passage": "To: All Employees\nFrom: Events Committee\nSubject: Annual Company Dinner\n\nWe are excited to invite you to this year's annual company dinner, which {{1}} take place on Friday, July 17th, at the Grand Palace Hotel.\n\n{{2}}, the evening will include a three-course meal, live music, and an awards ceremony to recognize outstanding employees.\n\nPlease RSVP by July 5th so that we can finalize the seating arrangements. {{3}}, let us know if you have any dietary restrictions.\n\nWe look forward to {{4}} you there for an evening of celebration.",
+  "questions": [
+    {
+      "id": "p6-002-q1",
+      "blank": 1,
+      "choices": ["will", "would", "is", "was"],
+      "answer": 0,
+      "explanation": "L'événement est à venir (\"this year's... dinner\"), on utilise le futur \"will take place\"."
+    },
+    {
+      "id": "p6-002-q2",
+      "blank": 2,
+      "choices": ["In addition", "Therefore", "However", "Unless"],
+      "answer": 0,
+      "explanation": "On ajoute des informations supplémentaires sur le déroulement de la soirée : \"In addition\"."
+    },
+    {
+      "id": "p6-002-q3",
+      "blank": 3,
+      "choices": ["Also", "Although", "Despite", "Because"],
+      "answer": 0,
+      "explanation": "On ajoute une seconde demande (les restrictions alimentaires) à la première (le RSVP) : \"Also\"."
+    },
+    {
+      "id": "p6-002-q4",
+      "blank": 4,
+      "choices": ["seeing", "see", "saw", "seen"],
+      "answer": 0,
+      "explanation": "\"Look forward to\" est toujours suivi d'un gérondif : \"to seeing you\"."
+    }
+  ]
+}

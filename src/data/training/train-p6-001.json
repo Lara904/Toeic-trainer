@@ -1,0 +1,110 @@
+{
+  "id": "train-p6-001",
+  "part": 6,
+  "type": "training",
+  "skill": "reading",
+  "title": "Part 6 – Entraînement 1 : e-mails professionnels",
+  "instructions": "Lisez chaque texte et choisissez le mot ou groupe de mots qui convient pour chaque numéro.",
+  "items": [
+    {
+      "id": "t6-001-t01",
+      "passage": "Subject: Project Deadline Reminder\n\nDear team,\n\nThis is a reminder that the final version of the Henderson project report {{1}} by this Friday at five p.m.\n\nPlease ensure all sections {{2}} proofread before submission. Any changes made after the deadline {{3}} require approval from the project director.\n\n{{4}}, do not hesitate to contact me if you have any questions.",
+      "questions": [
+        { "blank": 1, "choices": ["is due", "due", "was due", "will due"], "answer": 0, "explanation": "\"is due\" = est attendu pour (futur proche exprimé au présent)." },
+        { "blank": 2, "choices": ["are", "have been", "be", "were"], "answer": 1, "explanation": "\"have been proofread\" : present perfect passif pour exprimer une action à compléter avant la soumission." },
+        { "blank": 3, "choices": ["will", "would", "should", "might"], "answer": 0, "explanation": "Règle générale au futur : \"will require\"." },
+        { "blank": 4, "choices": ["Otherwise", "Therefore", "As always", "However"], "answer": 2, "explanation": "\"As always\" = comme toujours, introduit une formule de clôture polie et appropriée au contexte." }
+      ]
+    },
+    {
+      "id": "t6-001-t02",
+      "passage": "Subject: Office Relocation — Important Information\n\nDear colleagues,\n\nWe are {{1}} to inform you that our office will be relocating to a new premises on the first of next month.\n\nThe new address is 14 Meridian Way, which is {{2}} accessible by public transport. A map and parking information {{3}} attached to this email.\n\nAll employees are asked to update their contact information in the HR system by the end of this week. {{4}} any assistance with the move, please contact the facilities team.",
+      "questions": [
+        { "blank": 1, "choices": ["pleased", "pleasing", "pleasure", "please"], "answer": 0, "explanation": "\"We are pleased to inform\" : adjectif dans une formule épistolaire standard." },
+        { "blank": 2, "choices": ["easily", "easy", "ease", "easiest"], "answer": 0, "explanation": "Adverbe pour modifier \"accessible\" : \"easily accessible\"." },
+        { "blank": 3, "choices": ["are", "is", "have", "were"], "answer": 0, "explanation": "Sujet pluriel \"A map and parking information\" → \"are attached\"." },
+        { "blank": 4, "choices": ["Should you need", "If you need", "Unless you need", "Whenever you need"], "answer": 0, "explanation": "\"Should you need\" = structure conditionnelle formelle inversée, typique des e-mails professionnels." }
+      ]
+    },
+    {
+      "id": "t6-001-t03",
+      "passage": "Subject: Thank You for Your Application\n\nDear Ms. Torres,\n\nThank you for {{1}} your application for the position of Marketing Coordinator at Novatech.\n\nWe have received a high {{2}} of applications and are currently reviewing all submissions. You will be {{3}} within two weeks if your profile has been shortlisted for an interview.\n\nWe appreciate your interest in joining our team and wish you {{4}} in the selection process.",
+      "questions": [
+        { "blank": 1, "choices": ["submitting", "submit", "submitted", "submission"], "answer": 0, "explanation": "\"Thank you for\" + gérondif : \"for submitting\"." },
+        { "blank": 2, "choices": ["number", "amount", "quantity", "volume"], "answer": 0, "explanation": "\"a high number of applications\" : \"number\" avec des éléments comptables." },
+        { "blank": 3, "choices": ["contacted", "contact", "contacting", "in contact"], "answer": 0, "explanation": "Voix passive : \"You will be contacted\"." },
+        { "blank": 4, "choices": ["the best of luck", "a good chance", "a lot of time", "the most of success"], "answer": 0, "explanation": "Expression figée : \"wish you the best of luck\"." }
+      ]
+    },
+    {
+      "id": "t6-001-t04",
+      "passage": "Subject: Request for Quotation\n\nDear Mr. Nakamura,\n\nI am writing on behalf of Clearfield Industries to {{1}} a quotation for office cleaning services at our new premises.\n\nWe require daily cleaning for a space of approximately eight hundred square metres, {{2}} five days a week. We would also like a deep clean to be carried out {{3}} per quarter.\n\nCould you please provide your best price, {{4}} any available references from current clients?",
+      "questions": [
+        { "blank": 1, "choices": ["request", "requesting", "requested", "requests"], "answer": 0, "explanation": "\"I am writing... to request\" : infinitif de but après \"to\"." },
+        { "blank": 2, "choices": ["covering", "covered", "covers", "cover"], "answer": 0, "explanation": "Participe présent pour une proposition relative abrégée : \"covering five days a week\"." },
+        { "blank": 3, "choices": ["once", "one", "a", "first"], "answer": 0, "explanation": "\"once per quarter\" = une fois par trimestre. Expression de fréquence." },
+        { "blank": 4, "choices": ["along with", "instead of", "despite", "in case of"], "answer": 0, "explanation": "\"along with\" = ainsi que, pour ajouter une demande supplémentaire." }
+      ]
+    },
+    {
+      "id": "t6-001-t05",
+      "passage": "Subject: Training Session Cancellation\n\nDear all,\n\nI regret to inform you that the communication skills training session {{1}} for Thursday has been cancelled due to the trainer's illness.\n\nWe are working to reschedule the session as {{2}} as possible and will confirm the new date by end of next week. {{3}} who have already made travel arrangements are advised to hold off on cancelling until the new date is confirmed.\n\nWe apologise for {{4}} inconvenience this may cause.",
+      "questions": [
+        { "blank": 1, "choices": ["scheduled", "scheduling", "schedule", "schedules"], "answer": 0, "explanation": "Participe passé comme adjectif : \"the session scheduled for Thursday\"." },
+        { "blank": 2, "choices": ["soon", "quick", "fast", "rapid"], "answer": 0, "explanation": "Expression figée : \"as soon as possible\"." },
+        { "blank": 3, "choices": ["Those", "They", "Who", "Anyone"], "answer": 0, "explanation": "\"Those who\" = ceux qui (pronom relatif avec antécédent)." },
+        { "blank": 4, "choices": ["any", "some", "every", "much"], "answer": 0, "explanation": "\"any inconvenience\" dans une formule d'excuse : \"We apologise for any inconvenience\"." }
+      ]
+    },
+    {
+      "id": "t6-001-t06",
+      "passage": "Subject: Policy Update — Use of Company Vehicles\n\nTo: All staff\n\nEffective immediately, the following changes {{1}} to our company vehicle policy.\n\nAll drivers must hold a valid driving licence and {{2}} a driver safety course before operating any company vehicle for the first time. Vehicles must be returned with a full tank of fuel {{3}} each use.\n\n{{4}} found driving without a valid licence will face disciplinary action.",
+      "questions": [
+        { "blank": 1, "choices": ["apply", "applies", "applied", "are applying"], "answer": 0, "explanation": "Sujet pluriel \"changes\" + présent simple : \"apply\"." },
+        { "blank": 2, "choices": ["complete", "completed", "completing", "completion"], "answer": 0, "explanation": "\"must complete\" : modal + infinitif sans \"to\"." },
+        { "blank": 3, "choices": ["after", "before", "during", "while"], "answer": 0, "explanation": "\"after each use\" = après chaque utilisation." },
+        { "blank": 4, "choices": ["Anyone", "Whoever", "Somebody", "Each"], "answer": 0, "explanation": "\"Anyone found\" = toute personne surprise (à) : structure participiale passive." }
+      ]
+    },
+    {
+      "id": "t6-001-t07",
+      "passage": "Subject: Year-End Inventory Count\n\nDear warehouse team,\n\nAs part of our year-end closing procedures, a full inventory count {{1}} on Saturday the fourteenth.\n\nAll stock movements must be completed and recorded {{2}} Friday at midnight. During the count, the warehouse will be closed to {{3}} staff not directly involved in the process.\n\nYour cooperation is {{4}} appreciated.",
+      "questions": [
+        { "blank": 1, "choices": ["will be conducted", "is conducted", "conducted", "conducts"], "answer": 0, "explanation": "Futur passif planifié : \"will be conducted\"." },
+        { "blank": 2, "choices": ["by", "until", "at", "since"], "answer": 0, "explanation": "\"by Friday\" = au plus tard vendredi (limite de délai)." },
+        { "blank": 3, "choices": ["all", "any", "every", "some"], "answer": 1, "explanation": "\"closed to any staff not directly involved\" = fermé à tout membre du personnel non impliqué." },
+        { "blank": 4, "choices": ["greatly", "great", "greater", "greatest"], "answer": 0, "explanation": "Adverbe pour modifier \"appreciated\" : \"greatly appreciated\"." }
+      ]
+    },
+    {
+      "id": "t6-001-t08",
+      "passage": "Subject: Welcome to the Team!\n\nDear Lucas,\n\nOn behalf of {{1}} at Brightfield Solutions, I'd like to warmly welcome you to the company.\n\nYour first day will {{2}} on Monday the third. Please arrive at reception by nine a.m., where you will be met by your line manager, Ms. Aldridge.\n\nYou will need to bring two forms of ID for our security records. {{3}}, please review the employee handbook, which has been attached to this email, before your start date.\n\nWe look forward {{4}} you to the team.",
+      "questions": [
+        { "blank": 1, "choices": ["everyone", "all", "each", "whoever"], "answer": 0, "explanation": "\"on behalf of everyone\" = au nom de tous. \"Everyone\" prend un singulier." },
+        { "blank": 2, "choices": ["begin", "beginning", "begins", "began"], "answer": 0, "explanation": "\"will begin\" : futur simple avec sujet singulier \"Your first day\"." },
+        { "blank": 3, "choices": ["In addition", "However", "Therefore", "Unless"], "answer": 0, "explanation": "\"In addition\" = de plus, pour ajouter une instruction supplémentaire." },
+        { "blank": 4, "choices": ["to welcoming", "to welcome", "welcoming", "welcome"], "answer": 0, "explanation": "\"look forward to\" + gérondif : \"look forward to welcoming\"." }
+      ]
+    },
+    {
+      "id": "t6-001-t09",
+      "passage": "Subject: Feedback on Your Recent Order\n\nDear Ms. Hoffman,\n\nThank you for your recent purchase from our online store. We hope you are {{1}} with your order.\n\nWe would be grateful if you could {{2}} a few minutes to complete our customer satisfaction survey. Your feedback helps us {{3}} our products and services.\n\nAs a token of appreciation, you will receive a ten percent {{4}} on your next order upon completing the survey.",
+      "questions": [
+        { "blank": 1, "choices": ["satisfied", "satisfying", "satisfaction", "satisfy"], "answer": 0, "explanation": "\"are satisfied with\" : adjectif passif + préposition \"with\"." },
+        { "blank": 2, "choices": ["take", "spend", "give", "use"], "answer": 0, "explanation": "Expression figée : \"take a few minutes\" = prendre quelques minutes." },
+        { "blank": 3, "choices": ["improve", "improving", "improvement", "improved"], "answer": 0, "explanation": "\"helps us improve\" : après \"help\", infinitif sans \"to\"." },
+        { "blank": 4, "choices": ["discount", "reduction", "decrease", "deduction"], "answer": 0, "explanation": "\"a ten percent discount\" : mot le plus courant en anglais des affaires pour une réduction commerciale." }
+      ]
+    },
+    {
+      "id": "t6-001-t10",
+      "passage": "Subject: Notice of System Downtime\n\nDear users,\n\nPlease be {{1}} that our internal systems will be unavailable on Sunday from midnight to six a.m. due to scheduled server maintenance.\n\nDuring this period, you will not be able to access email, the shared drive, or any cloud applications. We recommend {{2}} any important work before midnight on Saturday.\n\n{{3}} the maintenance is complete, all services will be restored automatically. No action is {{4}} on your part.",
+      "questions": [
+        { "blank": 1, "choices": ["aware", "warned", "informed", "notified"], "answer": 0, "explanation": "\"Please be aware that\" = expression standard de notification formelle." },
+        { "blank": 2, "choices": ["saving", "save", "saved", "to save"], "answer": 0, "explanation": "\"recommend\" + gérondif : \"recommend saving\"." },
+        { "blank": 3, "choices": ["Once", "Until", "Since", "Unless"], "answer": 0, "explanation": "\"Once\" = une fois que (après que la maintenance est terminée)." },
+        { "blank": 4, "choices": ["required", "requiring", "require", "requirement"], "answer": 0, "explanation": "\"No action is required\" : voix passive au présent." }
+      ]
+    }
+  ]
+}

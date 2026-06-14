@@ -1,0 +1,100 @@
+{
+  "id": "train-p4-003",
+  "part": 4,
+  "type": "training",
+  "skill": "listening",
+  "title": "Part 4 – Entraînement 3 : exposés communication & technologies",
+  "instructions": "Écoutez chaque exposé, puis répondez aux trois questions.",
+  "items": [
+    {
+      "id": "t4-003-e01",
+      "audioText": "Good morning, everyone. Today I'll be walking you through the key features of our new internal communication platform, ConnectHub. Unlike our previous system, ConnectHub integrates messaging, video calls, file sharing, and task management into one interface. The mobile app is available for both iOS and Android. To get started, you'll receive an activation email from IT today. Please activate your account within forty-eight hours. A recorded tutorial is available on the intranet, and live help sessions will be held every Tuesday at noon for the first month.",
+      "questions": [
+        { "id": "t4-003-e01-q1", "prompt": "What does ConnectHub integrate?", "choices": ["Email, payroll, and HR systems", "Messaging, video calls, file sharing, and task management", "CRM, ERP, and accounting tools", "Social media and marketing tools"], "answer": 1, "explanation": "\"ConnectHub integrates messaging, video calls, file sharing, and task management into one interface\"." },
+        { "id": "t4-003-e01-q2", "prompt": "Within how long must employees activate their account?", "choices": ["Twenty-four hours", "Forty-eight hours", "One week", "Ten days"], "answer": 1, "explanation": "\"Please activate your account within forty-eight hours\"." },
+        { "id": "t4-003-e01-q3", "prompt": "When are the live help sessions?", "choices": ["Every Monday at ten a.m.", "Every Tuesday at noon", "Every Wednesday at two p.m.", "Every Friday at nine a.m."], "answer": 1, "explanation": "\"live help sessions will be held every Tuesday at noon for the first month\"." }
+      ]
+    },
+    {
+      "id": "t4-003-e02",
+      "audioText": "This is an update from the IT department. We have identified a vulnerability in the version of our email software currently in use. As a precaution, we will be pushing a mandatory security patch to all devices today between two and three p.m. During this time, your email client may restart automatically. Please save any open work before two o'clock. After the update, you may be prompted to log back in with your company credentials. If you experience any issues after the update, please call the IT helpdesk on extension one hundred.",
+      "questions": [
+        { "id": "t4-003-e02-q1", "prompt": "Why is a security patch being installed?", "choices": ["To speed up the email system", "Because of a vulnerability in the email software", "To add a new email feature", "To comply with a new regulation"], "answer": 1, "explanation": "\"We have identified a vulnerability in the version of our email software currently in use\"." },
+        { "id": "t4-003-e02-q2", "prompt": "What should employees do before two o'clock?", "choices": ["Log out of their computers", "Back up all company files", "Save any open work", "Restart their device manually"], "answer": 2, "explanation": "\"Please save any open work before two o'clock\"." },
+        { "id": "t4-003-e02-q3", "prompt": "What extension should employees call if they have issues?", "choices": ["Eighty", "One hundred", "One hundred and twenty", "Two hundred"], "answer": 1, "explanation": "\"please call the IT helpdesk on extension one hundred\"." }
+      ]
+    },
+    {
+      "id": "t4-003-e03",
+      "audioText": "Hello, this is an announcement from the marketing communications team. We're launching a new brand identity next week, which includes an updated logo, a new colour palette, and revised tone-of-voice guidelines. All external communications — including emails, presentations, and social media posts — must use the new brand assets from Monday. A brand toolkit with all templates has been uploaded to the shared drive under the folder called 'New Brand 2025'. Please do not use the old logo or colour scheme after this date. If you have questions, contact the brand team at brand at company dot com.",
+      "questions": [
+        { "id": "t4-003-e03-q1", "prompt": "What is being launched next week?", "choices": ["A new product line", "A new company website", "A new brand identity", "A new social media strategy"], "answer": 2, "explanation": "\"We're launching a new brand identity next week\"." },
+        { "id": "t4-003-e03-q2", "prompt": "Where can employees find the new brand toolkit?", "choices": ["On the company intranet homepage", "In a shared drive folder called 'New Brand 2025'", "In an email from the brand team", "In the employee handbook"], "answer": 1, "explanation": "\"A brand toolkit with all templates has been uploaded to the shared drive under the folder called 'New Brand 2025'\"." },
+        { "id": "t4-003-e03-q3", "prompt": "What must employees stop using after Monday?", "choices": ["The current email signature template", "The old logo and colour scheme", "The previous tone-of-voice document", "The old brand toolkit folder"], "answer": 1, "explanation": "\"Please do not use the old logo or colour scheme after this date\"." }
+      ]
+    },
+    {
+      "id": "t4-003-e04",
+      "audioText": "Good afternoon. As you may know, our company website is currently ranked fourth in search results for our main product category. Our goal is to reach the top two within six months. To achieve this, we're investing in a search engine optimisation project that will involve rewriting product descriptions, improving site speed, and building quality backlinks from industry publications. The SEO agency we've selected will begin their audit next Monday. We expect to see measurable improvements within three months. The marketing team will provide monthly progress updates.",
+      "questions": [
+        { "id": "t4-003-e04-q1", "prompt": "What is the company's current search ranking?", "choices": ["First", "Second", "Third", "Fourth"], "answer": 3, "explanation": "\"our company website is currently ranked fourth in search results\"." },
+        { "id": "t4-003-e04-q2", "prompt": "What does the SEO project involve?", "choices": ["Building a new website from scratch", "Rewriting product descriptions, improving site speed, and building backlinks", "Increasing the advertising budget", "Hiring an in-house SEO team"], "answer": 1, "explanation": "\"rewriting product descriptions, improving site speed, and building quality backlinks from industry publications\"." },
+        { "id": "t4-003-e04-q3", "prompt": "When will measurable improvements be expected?", "choices": ["Within one month", "Within three months", "Within six months", "Within one year"], "answer": 1, "explanation": "\"We expect to see measurable improvements within three months\"." }
+      ]
+    },
+    {
+      "id": "t4-003-e05",
+      "audioText": "This is a message for all employees. As part of our digital transformation programme, we will be migrating from our current on-premise servers to a cloud-based infrastructure over the next three months. This will improve system reliability and allow for faster access to shared resources from any location. The migration will be carried out in phases to minimise disruption. During each phase, some services may be briefly unavailable, and you will receive advance notice before any planned downtime. All data will be encrypted and backed up throughout the process.",
+      "questions": [
+        { "id": "t4-003-e05-q1", "prompt": "What is the company migrating to?", "choices": ["A new on-premise server system", "A cloud-based infrastructure", "A hybrid remote-office IT model", "A new enterprise software suite"], "answer": 1, "explanation": "\"migrating from our current on-premise servers to a cloud-based infrastructure\"." },
+        { "id": "t4-003-e05-q2", "prompt": "How long will the migration take?", "choices": ["One month", "Two months", "Three months", "Six months"], "answer": 2, "explanation": "\"over the next three months\"." },
+        { "id": "t4-003-e05-q3", "prompt": "What will employees receive before any planned downtime?", "choices": ["A refund on IT costs", "Advance notice", "Alternative login credentials", "A backup device"], "answer": 1, "explanation": "\"you will receive advance notice before any planned downtime\"." }
+      ]
+    },
+    {
+      "id": "t4-003-e06",
+      "audioText": "Good morning. I'd like to share the results of our latest customer satisfaction survey, which was completed by over two thousand clients. Our overall satisfaction score was eighty-eight out of a hundred, up four points from last year. The areas with the highest ratings were product quality at ninety-three and delivery speed at ninety-one. The area that needs the most improvement is our after-sales support, which scored seventy-two — significantly below the industry average of eighty. We'll be presenting an action plan for after-sales improvements at next month's board meeting.",
+      "questions": [
+        { "id": "t4-003-e06-q1", "prompt": "What was the overall satisfaction score?", "choices": ["Seventy-two", "Eighty-four", "Eighty-eight", "Ninety-three"], "answer": 2, "explanation": "\"Our overall satisfaction score was eighty-eight out of a hundred\"." },
+        { "id": "t4-003-e06-q2", "prompt": "Which area received the lowest rating?", "choices": ["Product quality", "Delivery speed", "Pricing", "After-sales support"], "answer": 3, "explanation": "\"The area that needs the most improvement is our after-sales support, which scored seventy-two\"." },
+        { "id": "t4-003-e06-q3", "prompt": "When will the action plan be presented?", "choices": ["This week", "Next week", "Next month's board meeting", "At the end of the year"], "answer": 2, "explanation": "\"We'll be presenting an action plan for after-sales improvements at next month's board meeting\"." }
+      ]
+    },
+    {
+      "id": "t4-003-e07",
+      "audioText": "Hello, this is a recorded message from our telecom provider, SwiftLine. Your business contract is due for renewal in thirty days. We'd like to inform you that we've updated our business plans, and the plan you are currently on is no longer available. However, we can offer you an equivalent plan with fifty percent more data and two additional lines at the same monthly cost. To accept this offer or discuss alternatives, please call our business team on zero eight hundred five five five zero one zero, or visit your nearest SwiftLine business centre.",
+      "questions": [
+        { "id": "t4-003-e07-q1", "prompt": "What is happening to the customer's current plan?", "choices": ["The price is increasing", "It is no longer available", "It is being downgraded", "It will be cancelled immediately"], "answer": 1, "explanation": "\"the plan you are currently on is no longer available\"." },
+        { "id": "t4-003-e07-q2", "prompt": "What does the new equivalent plan offer?", "choices": ["The same data with two fewer lines", "Fifty percent more data and two additional lines at the same cost", "Unlimited data at a higher price", "Reduced data but faster connection speed"], "answer": 1, "explanation": "\"fifty percent more data and two additional lines at the same monthly cost\"." },
+        { "id": "t4-003-e07-q3", "prompt": "What are the two ways to respond to this offer?", "choices": ["Email or post", "Call the business team or visit a business centre", "Log in online or send a text message", "Contact the local office or use the app"], "answer": 1, "explanation": "\"please call our business team... or visit your nearest SwiftLine business centre\"." }
+      ]
+    },
+    {
+      "id": "t4-003-e08",
+      "audioText": "Good afternoon. I'm joining you today from our Tokyo office to give a brief update on the rollout of our new video conferencing system. After a four-week pilot with three departments, we've collected feedback from over eighty participants. The majority — seventy-three percent — found the new system easier to use than the previous one. The main concern raised was audio quality during large group calls, which we've reported to the vendor and expect to be resolved in the next software update. Full company rollout is scheduled to begin on the first of next month.",
+      "questions": [
+        { "id": "t4-003-e08-q1", "prompt": "How long was the pilot programme?", "choices": ["Two weeks", "Three weeks", "Four weeks", "Six weeks"], "answer": 2, "explanation": "\"After a four-week pilot with three departments\"." },
+        { "id": "t4-003-e08-q2", "prompt": "What percentage of participants found the new system easier to use?", "choices": ["Sixty-three percent", "Seventy percent", "Seventy-three percent", "Eighty percent"], "answer": 2, "explanation": "\"seventy-three percent found the new system easier to use than the previous one\"." },
+        { "id": "t4-003-e08-q3", "prompt": "When is the full company rollout scheduled?", "choices": ["Next week", "On the first of next month", "In two months", "After the next software update"], "answer": 1, "explanation": "\"Full company rollout is scheduled to begin on the first of next month\"." }
+      ]
+    },
+    {
+      "id": "t4-003-e09",
+      "audioText": "This message is for all employees who use the company's mobile devices. Starting next month, a new mobile device management policy will require all company phones and tablets to be enrolled in our MDM system. This will allow IT to remotely manage security settings and, if a device is lost or stolen, to wipe it remotely. Enrollment takes approximately fifteen minutes and must be completed by the end of the month. Step-by-step instructions will be emailed to all device users this week. If you need assistance, contact the IT helpdesk.",
+      "questions": [
+        { "id": "t4-003-e09-q1", "prompt": "What will the MDM system allow IT to do?", "choices": ["Track employee location during work hours", "Remotely manage security settings and wipe lost devices", "Monitor employee app usage", "Automatically update all applications"], "answer": 1, "explanation": "\"allow IT to remotely manage security settings and, if a device is lost or stolen, to wipe it remotely\"." },
+        { "id": "t4-003-e09-q2", "prompt": "How long does enrollment take?", "choices": ["Five minutes", "Ten minutes", "Fifteen minutes", "Thirty minutes"], "answer": 2, "explanation": "\"Enrollment takes approximately fifteen minutes\"." },
+        { "id": "t4-003-e09-q3", "prompt": "By when must enrollment be completed?", "choices": ["By the end of this week", "By the end of next week", "By the end of the month", "By the end of the quarter"], "answer": 2, "explanation": "\"must be completed by the end of the month\"." }
+      ]
+    },
+    {
+      "id": "t4-003-e10",
+      "audioText": "Good morning. I'm pleased to announce that our company blog has reached ten thousand monthly readers, a milestone we set at the beginning of this year. Our most read article this year was the one on sustainable packaging, which attracted over three thousand views and was shared by several industry associations. Going forward, we plan to publish two articles per week instead of one, focusing on thought leadership topics relevant to our sector. We're also looking for internal contributors — if you'd like to write for the blog, please contact the communications team.",
+      "questions": [
+        { "id": "t4-003-e10-q1", "prompt": "What milestone has the company blog reached?", "choices": ["Five thousand monthly readers", "Eight thousand monthly readers", "Ten thousand monthly readers", "Fifteen thousand monthly readers"], "answer": 2, "explanation": "\"our company blog has reached ten thousand monthly readers\"." },
+        { "id": "t4-003-e10-q2", "prompt": "What was the most read article about?", "choices": ["Remote work best practices", "Digital marketing trends", "Sustainable packaging", "Customer experience strategies"], "answer": 2, "explanation": "\"Our most read article this year was the one on sustainable packaging\"." },
+        { "id": "t4-003-e10-q3", "prompt": "How many articles per week will be published going forward?", "choices": ["One", "Two", "Three", "Four"], "answer": 1, "explanation": "\"we plan to publish two articles per week instead of one\"." }
+      ]
+    }
+  ]
+}

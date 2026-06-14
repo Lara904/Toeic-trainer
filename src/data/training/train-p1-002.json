@@ -1,0 +1,90 @@
+{
+  "id": "train-p1-002",
+  "part": 1,
+  "type": "training",
+  "skill": "listening",
+  "title": "Part 1 – Entraînement 2 : transport & lieux professionnels",
+  "instructions": "Pour chaque photo, écoutez les quatre propositions et choisissez celle qui décrit le mieux l'image.",
+  "items": [
+    {
+      "id": "t1-002-q01",
+      "image": { "src": "/assets/train-p1/t2-01.svg", "alt": "Un homme en costume tirant une valise à roulettes dans le hall d'un hôtel" },
+      "audioText": "(A) The man is checking bags at an airport counter. (B) The man is pulling a suitcase through a hotel lobby. (C) The man is buying tickets at a station. (D) The man is loading luggage onto a bus.",
+      "choices": ["The man is checking bags at an airport counter.", "The man is pulling a suitcase through a hotel lobby.", "The man is buying tickets at a station.", "The man is loading luggage onto a bus."],
+      "answer": 1,
+      "explanation": "Il tire une valise dans le hall d'un hôtel : (B) est correct."
+    },
+    {
+      "id": "t1-002-q02",
+      "image": { "src": "/assets/train-p1/t2-02.svg", "alt": "Une femme assise dans un avion, lisant un document, avec un hublot à côté d'elle" },
+      "audioText": "(A) The woman is sleeping on the plane. (B) The woman is looking out of the airplane window. (C) The woman is reading a document on the plane. (D) The woman is talking to another passenger.",
+      "choices": ["The woman is sleeping on the plane.", "The woman is looking out of the airplane window.", "The woman is reading a document on the plane.", "The woman is talking to another passenger."],
+      "answer": 2,
+      "explanation": "Elle est assise dans l'avion et lit un document : (C) est la description correcte."
+    },
+    {
+      "id": "t1-002-q03",
+      "image": { "src": "/assets/train-p1/t2-03.svg", "alt": "Un livreur déposant des colis devant une porte d'entreprise" },
+      "audioText": "(A) The delivery man is picking up packages from a truck. (B) The delivery man is dropping off parcels at a company entrance. (C) The delivery man is opening a package. (D) The delivery man is scanning a barcode.",
+      "choices": ["The delivery man is picking up packages from a truck.", "The delivery man is dropping off parcels at a company entrance.", "The delivery man is opening a package.", "The delivery man is scanning a barcode."],
+      "answer": 1,
+      "explanation": "Il dépose des colis devant une entrée d'entreprise : (B) est correct."
+    },
+    {
+      "id": "t1-002-q04",
+      "image": { "src": "/assets/train-p1/t2-04.svg", "alt": "Des voitures garées dans un parking souterrain, avec des lignes de marquage au sol" },
+      "audioText": "(A) Cars are being washed in a parking garage. (B) Cars are parked in an underground lot. (C) Cars are lined up at a tollbooth. (D) Cars are driving through a tunnel.",
+      "choices": ["Cars are being washed in a parking garage.", "Cars are parked in an underground lot.", "Cars are lined up at a tollbooth.", "Cars are driving through a tunnel."],
+      "answer": 1,
+      "explanation": "Des voitures sont garées dans un parking souterrain avec des lignes au sol : (B) est correct."
+    },
+    {
+      "id": "t1-002-q05",
+      "image": { "src": "/assets/train-p1/t2-05.svg", "alt": "Une réceptionniste assise derrière un comptoir d'accueil, souriant à un visiteur qui signe un registre" },
+      "audioText": "(A) The receptionist is handing out brochures. (B) The receptionist is answering the phone. (C) A visitor is signing in at the reception desk. (D) The receptionist is closing the front door.",
+      "choices": ["The receptionist is handing out brochures.", "The receptionist is answering the phone.", "A visitor is signing in at the reception desk.", "The receptionist is closing the front door."],
+      "answer": 2,
+      "explanation": "Un visiteur signe un registre à l'accueil pendant que la réceptionniste sourit : (C) est correct."
+    },
+    {
+      "id": "t1-002-q06",
+      "image": { "src": "/assets/train-p1/t2-06.svg", "alt": "Un bus d'entreprise stationné devant un immeuble de bureaux, la porte ouverte" },
+      "audioText": "(A) A bus is driving down a highway. (B) A company bus is parked in front of an office building with its door open. (C) Passengers are boarding a city bus. (D) A bus is being repaired in a garage.",
+      "choices": ["A bus is driving down a highway.", "A company bus is parked in front of an office building with its door open.", "Passengers are boarding a city bus.", "A bus is being repaired in a garage."],
+      "answer": 1,
+      "explanation": "Un bus d'entreprise est stationné devant un immeuble de bureaux, porte ouverte : (B) est correct."
+    },
+    {
+      "id": "t1-002-q07",
+      "image": { "src": "/assets/train-p1/t2-07.svg", "alt": "Un technicien en bleu de travail réparant une machine industrielle avec des outils" },
+      "audioText": "(A) The technician is operating the machine. (B) The technician is cleaning the factory floor. (C) The technician is repairing an industrial machine with tools. (D) The technician is installing new equipment.",
+      "choices": ["The technician is operating the machine.", "The technician is cleaning the factory floor.", "The technician is repairing an industrial machine with tools.", "The technician is installing new equipment."],
+      "answer": 2,
+      "explanation": "Le technicien répare une machine industrielle avec des outils : (C) est la description exacte."
+    },
+    {
+      "id": "t1-002-q08",
+      "image": { "src": "/assets/train-p1/t2-08.svg", "alt": "Deux personnes debout près d'un tableau d'affichage dans un couloir, l'une montrant quelque chose sur le panneau à l'autre" },
+      "audioText": "(A) Two people are putting up a notice on the board. (B) One person is pointing at something on a notice board while talking to another. (C) Two people are taking down posters. (D) One person is photographing the notice board.",
+      "choices": ["Two people are putting up a notice on the board.", "One person is pointing at something on a notice board while talking to another.", "Two people are taking down posters.", "One person is photographing the notice board."],
+      "answer": 1,
+      "explanation": "Une personne montre quelque chose sur le tableau d'affichage à l'autre : (B) est correct."
+    },
+    {
+      "id": "t1-002-q09",
+      "image": { "src": "/assets/train-p1/t2-09.svg", "alt": "Une femme debout dans une salle de stockage, comptant des boîtes sur des étagères métalliques" },
+      "audioText": "(A) The woman is moving boxes off the shelves. (B) The woman is assembling metal shelving. (C) The woman is counting boxes on warehouse shelves. (D) The woman is labelling packages.",
+      "choices": ["The woman is moving boxes off the shelves.", "The woman is assembling metal shelving.", "The woman is counting boxes on warehouse shelves.", "The woman is labelling packages."],
+      "answer": 2,
+      "explanation": "Elle compte des boîtes sur les étagères d'un entrepôt, avec un bloc-notes : (C) est correct."
+    },
+    {
+      "id": "t1-002-q10",
+      "image": { "src": "/assets/train-p1/t2-10.svg", "alt": "Un homme signant un contrat sur un bureau, avec un autre homme assis en face de lui" },
+      "audioText": "(A) The men are reviewing blueprints at a desk. (B) One man is signing a contract while another sits across from him. (C) The men are arguing over documents. (D) One man is handing papers to the other.",
+      "choices": ["The men are reviewing blueprints at a desk.", "One man is signing a contract while another sits across from him.", "The men are arguing over documents.", "One man is handing papers to the other."],
+      "answer": 1,
+      "explanation": "Un homme signe un document pendant que l'autre est assis en face : (B) est correct."
+    }
+  ]
+}

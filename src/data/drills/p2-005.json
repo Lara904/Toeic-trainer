@@ -1,0 +1,20 @@
+{
+  "id": "p2-005",
+  "part": 2,
+  "skill": "listening",
+  "title": "Part 2 – Question-Réponse : le prix de l'imprimante",
+  "instructions": "Écoutez la question et les trois réponses possibles. Choisissez la réponse la plus appropriée.",
+  "audioText": "How much did the new printer cost? (A) It's in the supply room. (B) Around three hundred dollars. (C) I ordered two of them.",
+  "questions": [
+    {
+      "id": "p2-005-q1",
+      "choices": [
+        "It's in the supply room.",
+        "Around three hundred dollars.",
+        "I ordered two of them."
+      ],
+      "answer": 1,
+      "explanation": "\"How much...cost?\" interroge sur un prix. (B) donne un montant. (A) répond à une question de localisation et (C) répond à une question sur la quantité."
+    }
+  ]
+}

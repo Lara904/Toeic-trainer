@@ -1,0 +1,52 @@
+{
+  "id": "train-p8-003",
+  "part": 8,
+  "type": "training",
+  "skill": "reading",
+  "title": "Part 8 – Entraînement 3 : communication, santé & divertissement",
+  "instructions": "Lisez les deux documents de chaque exercice et répondez aux questions.",
+  "items": [
+    {
+      "id": "t8-003-set01",
+      "passages": [
+        { "label": "Conditions générales d'utilisation (extrait)", "text": "StreamLine Pro — Subscription Terms\n\nSubscription Plans:\n• Basic: €9.99/month — 1 screen, HD quality\n• Standard: €14.99/month — 2 screens, Full HD quality\n• Premium: €19.99/month — 4 screens, 4K quality\n\nAll plans include a 7-day free trial for new subscribers. Payment is charged on the first day after the trial ends. Subscribers may cancel at any time; cancellation takes effect at the end of the current billing period.\n\nFamily Sharing: Available on Standard and Premium plans. Each additional profile beyond the included screens incurs an extra €3/month.\n\nRefund policy: No refunds are issued for partial months." },
+        { "label": "E-mail d'un client", "text": "From: Oliver Jensen\nTo: support@streamlinepro.com\nSubject: Billing Question\n\nHi,\n\nI signed up for the Premium plan three weeks ago after my 7-day trial. I'd like to add two more screens so that my whole family (6 people) can use the service simultaneously.\n\nI also want to check: if I decide to cancel next month, will I get a partial refund for the days I haven't used?\n\nFinally, I noticed I was charged on October 8th — is that because my trial started on October 1st?\n\nThanks,\nOliver" }
+      ],
+      "questions": [
+        { "id": "t8-003-s01-q1", "prompt": "How many screens does the Premium plan include?", "choices": ["1", "2", "4", "6"], "answer": 2, "explanation": "\"Premium: €19.99/month — 4 screens, 4K quality\"." },
+        { "id": "t8-003-s01-q2", "prompt": "Oliver wants 6 simultaneous screens. How many extra screens does he need?", "choices": ["1", "2", "3", "4"], "answer": 1, "explanation": "Premium = 4 screens. Oliver needs 6. He needs 2 extra screens." },
+        { "id": "t8-003-s01-q3", "prompt": "What would be the extra cost for those additional screens?", "choices": ["€3/month", "€6/month", "€9/month", "€12/month"], "answer": 1, "explanation": "\"Each additional profile... incurs an extra €3/month\" × 2 = €6/month." },
+        { "id": "t8-003-s01-q4", "prompt": "Will Oliver receive a partial refund if he cancels mid-month?", "choices": ["Yes, pro-rated", "No, no refunds for partial months", "Only if he cancels within 14 days", "Yes, for unused days only"], "answer": 1, "explanation": "\"No refunds are issued for partial months\"." },
+        { "id": "t8-003-s01-q5", "prompt": "Why was Oliver charged on October 8th?", "choices": ["He upgraded his plan on that date", "His 7-day trial started on October 1st", "His payment was delayed", "He registered on October 8th"], "answer": 1, "explanation": "Trial started October 1st + 7 days = payment on October 8th (first day after trial)." }
+      ]
+    },
+    {
+      "id": "t8-003-set02",
+      "passages": [
+        { "label": "Brochure médicale", "text": "Sunrise Wellness Clinic — Corporate Health Packages\n\nPackage A — Basic Screening: €120/person\n— Blood pressure and BMI measurement\n— Cholesterol and glucose blood test\n— Vision screening\n— Written health report within 5 working days\n\nPackage B — Full Health Check: €220/person\n— All Package A services\n— ECG (heart rhythm)\n— Lung function test\n— Consultation with a GP (30 minutes)\n— Written health report within 3 working days\n\nGroup discount: 10% for groups of 10 or more.\nAll screenings conducted on-site at your premises by appointment.\nMinimum notice required: 2 weeks." },
+        { "label": "E-mail d'une responsable RH", "text": "From: Claire Matos, HR Manager\nTo: Sunrise Wellness Clinic\nSubject: Corporate Health Screening Enquiry\n\nDear Team,\n\nWe are interested in booking health screenings for our 45 employees. Most staff have expressed a preference for the Full Health Check, as they are particularly keen to have the GP consultation included.\n\nWould the group discount apply to our booking? Also, our preferred date is March 7th — is that feasible given the two-week notice requirement?\n\nFinally, could you confirm whether the Written health report would be ready within 3 working days for the Full Health Check?\n\nWe look forward to your response.\nClaire Matos" }
+      ],
+      "questions": [
+        { "id": "t8-003-s02-q1", "prompt": "What is included in Package B but not Package A?", "choices": ["Vision screening", "Blood pressure check", "GP consultation and ECG", "Cholesterol blood test"], "answer": 2, "explanation": "\"Package B — All Package A services plus: ECG, lung function test, GP consultation\"." },
+        { "id": "t8-003-s02-q2", "prompt": "How many employees does Claire's company have?", "choices": ["10", "25", "45", "50"], "answer": 2, "explanation": "\"booking health screenings for our 45 employees\"." },
+        { "id": "t8-003-s02-q3", "prompt": "Will the group discount apply to their booking?", "choices": ["No — they need at least 50", "Yes — they have more than 10 employees", "Only if they choose Package A", "Not mentioned in the brochure"], "answer": 1, "explanation": "\"Group discount: 10% for groups of 10 or more\" — 45 employees qualifies." },
+        { "id": "t8-003-s02-q4", "prompt": "How long does a Package B report take?", "choices": ["1 working day", "2 working days", "3 working days", "5 working days"], "answer": 2, "explanation": "\"Written health report within 3 working days\" for Package B." },
+        { "id": "t8-003-s02-q5", "prompt": "Why does Claire mention March 7th specifically?", "choices": ["It is the last day of the quarter", "She wants to check if it meets the 2-week notice requirement", "It is the company's anniversary", "It was suggested by the clinic"], "answer": 1, "explanation": "She asks \"is that feasible given the two-week notice requirement?\" — she is checking whether March 7th gives enough lead time." }
+      ]
+    },
+    {
+      "id": "t8-003-set03",
+      "passages": [
+        { "label": "Programme du festival", "text": "URBAN ARTS FESTIVAL — Weekend Programme\n\nSaturday:\n10:00 a.m. — Street art workshops (all ages) — Central Plaza\n1:00 p.m. — Live music: The Junction (indie/folk) — Main Stage\n3:30 p.m. — Spoken word performance — Black Box Theatre\n7:00 p.m. — Headline act: NOVA (electronic) — Main Stage\n\nSunday:\n11:00 a.m. — Family art market — Riverside Park\n2:00 p.m. — Film screening: 'City in Motion' (documentary) — Cinema Tent\n5:00 p.m. — Closing ceremony and fireworks — Main Stage\n\nTickets: Day pass €25 / Weekend pass €40\nUnder-12s: Free\nFood and drink vendors on site all weekend." },
+        { "label": "E-mail entre amis", "text": "From: Petra\nTo: Marcus\nSubject: Urban Arts Festival — this weekend!\n\nHi Marcus,\n\nAre you free this weekend? I'm going to the Urban Arts Festival on Sunday with my kids (aged 8 and 11). We're planning to hit the art market in the morning and catch the documentary in the afternoon.\n\nTicket-wise, I'm getting a day pass for myself. The kids get in free, right?\n\nWould you want to join us? If you can make Saturday too, the weekend pass saves you €10 compared to two day passes.\n\nLet me know!\nPetra" }
+      ],
+      "questions": [
+        { "id": "t8-003-s03-q1", "prompt": "What time is the headline act on Saturday?", "choices": ["1:00 p.m.", "3:30 p.m.", "7:00 p.m.", "10:00 p.m."], "answer": 2, "explanation": "\"7:00 p.m. — Headline act: NOVA (electronic) — Main Stage\"." },
+        { "id": "t8-003-s03-q2", "prompt": "Where will Petra and her kids go in the morning on Sunday?", "choices": ["The Black Box Theatre", "The Main Stage", "Riverside Park", "The Cinema Tent"], "answer": 2, "explanation": "\"Family art market — Riverside Park\" at 11:00 a.m. Sunday." },
+        { "id": "t8-003-s03-q3", "prompt": "Do Petra's children need tickets?", "choices": ["Yes, day passes at €25 each", "Yes, but at a reduced rate", "No, under-12s are free", "Yes, weekend passes are required for children"], "answer": 2, "explanation": "\"Under-12s: Free\" — both children are 8 and 11." },
+        { "id": "t8-003-s03-q4", "prompt": "How much does a weekend pass cost?", "choices": ["€25", "€35", "€40", "€50"], "answer": 2, "explanation": "\"Weekend pass €40\"." },
+        { "id": "t8-003-s03-q5", "prompt": "How much does Marcus save by buying a weekend pass instead of two day passes?", "choices": ["€5", "€10", "€15", "€20"], "answer": 1, "explanation": "Two day passes = €25 × 2 = €50. Weekend pass = €40. Saving = €10." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "p8-001",
+  "part": 8,
+  "skill": "reading",
+  "title": "Part 8 – Passages multiples : voyage d'affaires et note de frais",
+  "instructions": "Lisez les deux documents, puis répondez aux questions en faisant le lien entre eux.",
+  "passages": [
+    {
+      "label": "E-mail de l'agence de voyage",
+      "text": "From: Horizon Travel Agency\nTo: Daniel Reyes\nSubject: Your Business Trip Itinerary - Chicago\n\nDear Mr. Reyes,\n\nPlease find below the details of your upcoming business trip to Chicago.\n\nDeparture: Monday, March 9th, 8:15 a.m., Flight AB204 from Boston to Chicago.\nReturn: Wednesday, March 11th, 6:40 p.m., Flight AB319 from Chicago to Boston.\nHotel: Lakeside Business Hotel, three nights (March 9-11), breakfast included.\n\nPlease remember that, according to your company's travel policy, all taxi receipts above $30 must be submitted with a written explanation. If you need to extend your stay, please contact us at least 48 hours before your return flight.\n\nWe wish you a pleasant trip.\n\nHorizon Travel Agency"
+    },
+    {
+      "label": "Note de frais de D. Reyes",
+      "text": "Expense Report Summary - D. Reyes - Chicago Trip\n\nTaxi (airport to hotel): $42.00 - Note: heavy traffic due to road closure, no shuttle available\nHotel (3 nights): $540.00 - prepaid by company\nClient dinner (March 10): $85.00\nTaxi (hotel to airport): $28.00\n\nTotal to be reimbursed: $155.00\nSubmitted to: Accounting Department\nStatus: Pending approval"
+    }
+  ],
+  "questions": [
+    {
+      "id": "p8-001-q1",
+      "prompt": "How long will Mr. Reyes stay in Chicago?",
+      "choices": ["One night", "Two nights", "Three nights", "Four nights"],
+      "answer": 2,
+      "explanation": "L'e-mail précise : \"Hotel: Lakeside Business Hotel, three nights (March 9-11)\"."
+    },
+    {
+      "id": "p8-001-q2",
+      "prompt": "Why does one of the taxi receipts need a written explanation?",
+      "choices": [
+        "It was paid in cash",
+        "It is above $30",
+        "The taxi was late",
+        "The driver charged extra fees"
+      ],
+      "answer": 1,
+      "explanation": "L'e-mail indique que \"all taxi receipts above $30 must be submitted with a written explanation\", et la note de frais montre un taxi à $42.00 avec une explication (\"heavy traffic due to road closure\")."
+    },
+    {
+      "id": "p8-001-q3",
+      "prompt": "What is included in the hotel reservation?",
+      "choices": ["Airport transfer", "Breakfast", "Dinner", "Gym access"],
+      "answer": 1,
+      "explanation": "L'e-mail précise : \"Hotel: Lakeside Business Hotel, three nights (March 9-11), breakfast included\"."
+    },
+    {
+      "id": "p8-001-q4",
+      "prompt": "What is the total amount Mr. Reyes is requesting in reimbursement?",
+      "choices": ["$42.00", "$85.00", "$155.00", "$540.00"],
+      "answer": 2,
+      "explanation": "La note de frais indique : \"Total to be reimbursed: $155.00\"."
+    },
+    {
+      "id": "p8-001-q5",
+      "prompt": "If Mr. Reyes wants to extend his stay, what should he do?",
+      "choices": [
+        "Pay for an extra night himself",
+        "Contact the travel agency at least 48 hours before his return flight",
+        "Ask the hotel directly without notice",
+        "Submit a request to the accounting department"
+      ],
+      "answer": 1,
+      "explanation": "L'e-mail précise : \"If you need to extend your stay, please contact us at least 48 hours before your return flight\"."
+    }
+  ]
+}

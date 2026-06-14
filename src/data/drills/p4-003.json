@@ -1,0 +1,36 @@
+{
+  "id": "p4-003",
+  "part": 4,
+  "skill": "listening",
+  "title": "Part 4 – Exposé : nouvelle politique de télétravail",
+  "instructions": "Écoutez l'exposé, puis répondez aux trois questions.",
+  "audioText": "Good afternoon, everyone. Before we start today's training session, I'd like to share a quick update from the HR department. Starting next month, all employees will be able to request up to two additional remote working days per week, as long as their manager approves the schedule in advance. To request these days, simply fill out the new form on the intranet under the 'Flexible Work' section. Please note that this form must be submitted at least three days before the requested remote day. If you have any questions about this new policy, you can speak with your manager or contact HR directly. Now, let's move on to today's training topic.",
+  "questions": [
+    {
+      "id": "p4-003-q1",
+      "prompt": "What is mainly being announced?",
+      "choices": [
+        "A new vacation policy",
+        "A new remote work policy",
+        "A change in office hours",
+        "A new training program"
+      ],
+      "answer": 1,
+      "explanation": "L'annonce porte sur la possibilité de demander des jours de télétravail supplémentaires."
+    },
+    {
+      "id": "p4-003-q2",
+      "prompt": "How many additional remote days can employees request per week?",
+      "choices": ["One", "Two", "Three", "Four"],
+      "answer": 1,
+      "explanation": "\"up to two additional remote working days per week\"."
+    },
+    {
+      "id": "p4-003-q3",
+      "prompt": "How far in advance must the form be submitted?",
+      "choices": ["One day", "Two days", "Three days", "One week"],
+      "answer": 2,
+      "explanation": "\"this form must be submitted at least three days before the requested remote day\"."
+    }
+  ]
+}

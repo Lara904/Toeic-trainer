@@ -1,0 +1,58 @@
+{
+  "id": "p7-002",
+  "part": 7,
+  "skill": "reading",
+  "title": "Part 7 – Passage unique : inscription à l'assurance santé",
+  "instructions": "Lisez la note de service, puis répondez aux questions.",
+  "passage": "To: All Staff\nFrom: Benefits Office\nSubject: Annual Health Insurance Enrollment\n\nThe annual open enrollment period for health insurance begins on November 1st and ends on November 30th. During this time, employees can change their health plan, add or remove dependents, or enroll in additional coverage such as dental and vision insurance.\n\nIf you do not make any changes during this period, your current coverage will automatically continue for next year. However, employees who want to switch from the Basic Plan to the Premium Plan must submit a request form, available on the company intranet, before November 25th.\n\nA representative from our insurance provider will be available in the main conference room on November 10th and 17th, from 1 p.m. to 4 p.m., to answer questions in person. Employees may also schedule a phone consultation by emailing benefits@company.com.\n\nWe encourage everyone to review their current coverage carefully, as plan details and premiums may change from year to year.",
+  "questions": [
+    {
+      "id": "p7-002-q1",
+      "prompt": "What is the purpose of the memo?",
+      "choices": [
+        "To announce a new health insurance provider",
+        "To inform employees about the open enrollment period",
+        "To cancel the dental insurance plan",
+        "To request employee feedback on benefits"
+      ],
+      "answer": 1,
+      "explanation": "La note informe les employés de la période d'inscription ouverte aux assurances santé."
+    },
+    {
+      "id": "p7-002-q2",
+      "prompt": "What happens if an employee makes no changes during the enrollment period?",
+      "choices": [
+        "Their coverage will be cancelled",
+        "Their coverage will automatically continue",
+        "They will be switched to the Basic Plan",
+        "They must contact the Benefits Office immediately"
+      ],
+      "answer": 1,
+      "explanation": "\"your current coverage will automatically continue for next year\"."
+    },
+    {
+      "id": "p7-002-q3",
+      "prompt": "What must employees do before November 25th to switch to the Premium Plan?",
+      "choices": [
+        "Attend a meeting in person",
+        "Call the insurance provider",
+        "Submit a request form",
+        "Email their manager"
+      ],
+      "answer": 2,
+      "explanation": "\"must submit a request form, available on the company intranet, before November 25th\"."
+    },
+    {
+      "id": "p7-002-q4",
+      "prompt": "How can employees schedule a phone consultation?",
+      "choices": [
+        "By visiting the main conference room",
+        "By emailing benefits@company.com",
+        "By calling the HR hotline",
+        "By submitting a form to their manager"
+      ],
+      "answer": 1,
+      "explanation": "\"Employees may also schedule a phone consultation by emailing benefits@company.com\"."
+    }
+  ]
+}

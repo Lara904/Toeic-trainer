@@ -1,0 +1,69 @@
+{
+  "id": "p8-002",
+  "part": 8,
+  "skill": "reading",
+  "title": "Part 8 – Passages multiples : candidature et entretien",
+  "instructions": "Lisez les deux documents, puis répondez aux questions en faisant le lien entre eux.",
+  "passages": [
+    {
+      "label": "E-mail de candidature",
+      "text": "From: Marc Lefevre\nTo: HR Department\nSubject: Application for Marketing Assistant Position\n\nDear Hiring Team,\n\nI am writing to apply for the Marketing Assistant position posted on your careers page. I have attached my resume and cover letter for your review.\n\nI am currently available for an interview any weekday afternoon, except Wednesdays, as I have a prior commitment. Please let me know if you need any additional documents.\n\nThank you for considering my application.\n\nBest regards,\nMarc Lefevre"
+    },
+    {
+      "label": "Note interne - planning d'entretien",
+      "text": "Interview Schedule - Marketing Assistant Position\n\nCandidate: Marc Lefevre\nInterview Date: Thursday, May 9th\nTime: 2:00 p.m. - 2:45 p.m.\nLocation: Meeting Room B, 2nd Floor\nInterviewers: S. Wallace (Marketing Manager), T. Nguyen (HR Coordinator)\n\nNote: Candidate should bring a portfolio of past marketing projects if available. A short writing test (15 minutes) will be administered before the interview."
+    }
+  ],
+  "questions": [
+    {
+      "id": "p8-002-q1",
+      "prompt": "What is the purpose of Marc's email?",
+      "choices": [
+        "To resign from his position",
+        "To apply for a job",
+        "To request a salary increase",
+        "To schedule a vacation"
+      ],
+      "answer": 1,
+      "explanation": "Il écrit pour postuler au poste d'assistant marketing : \"I am writing to apply for the Marketing Assistant position\"."
+    },
+    {
+      "id": "p8-002-q2",
+      "prompt": "When is Marc not available for an interview?",
+      "choices": ["Mondays", "Tuesdays", "Wednesdays", "Fridays"],
+      "answer": 2,
+      "explanation": "Il précise être disponible \"any weekday afternoon, except Wednesdays\"."
+    },
+    {
+      "id": "p8-002-q3",
+      "prompt": "On what day has the interview been scheduled?",
+      "choices": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+      "answer": 2,
+      "explanation": "La note interne indique \"Interview Date: Thursday, May 9th\", ce qui correspond bien aux disponibilités de Marc (pas un mercredi)."
+    },
+    {
+      "id": "p8-002-q4",
+      "prompt": "Who will interview Marc?",
+      "choices": [
+        "Only the HR Coordinator",
+        "The Marketing Manager and the HR Coordinator",
+        "The CEO",
+        "A recruitment agency"
+      ],
+      "answer": 1,
+      "explanation": "\"Interviewers: S. Wallace (Marketing Manager), T. Nguyen (HR Coordinator)\"."
+    },
+    {
+      "id": "p8-002-q5",
+      "prompt": "What should Marc bring to the interview, if available?",
+      "choices": [
+        "A reference letter",
+        "A portfolio of past marketing projects",
+        "A copy of his diploma",
+        "A laptop"
+      ],
+      "answer": 1,
+      "explanation": "\"Candidate should bring a portfolio of past marketing projects if available\"."
+    }
+  ]
+}

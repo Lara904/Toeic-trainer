@@ -1,0 +1,28 @@
+{
+  "id": "vocab-transport",
+  "title": "Transport & Voyages",
+  "icon": "✈️",
+  "description": "Déplacements professionnels, logistique",
+  "cards": [
+    {"en":"itinerary","fr":"itinéraire","example":"Please send me the travel itinerary."},
+    {"en":"boarding pass","fr":"carte d'embarquement","example":"Keep your boarding pass until you land."},
+    {"en":"layover","fr":"escale (longue)","example":"We have a three-hour layover in Dubai."},
+    {"en":"freight","fr":"fret / marchandises","example":"The freight was delayed due to customs."},
+    {"en":"carrier","fr":"transporteur","example":"We use three different carriers for deliveries."},
+    {"en":"shipment","fr":"expédition / envoi","example":"The shipment is expected to arrive on Friday."},
+    {"en":"customs clearance","fr":"dédouanement","example":"Customs clearance took longer than expected."},
+    {"en":"warehouse","fr":"entrepôt","example":"The warehouse holds up to ten thousand units."},
+    {"en":"dispatch","fr":"expédier / dépecher","example":"The order was dispatched yesterday morning."},
+    {"en":"charter","fr":"affréter / vol charter","example":"We chartered a flight for the executive team."},
+    {"en":"loading dock","fr":"quai de chargement","example":"Deliveries are made at the loading dock."},
+    {"en":"check in","fr":"s'enregistrer (hôtel/aéroport)","example":"Please check in at least two hours before departure."},
+    {"en":"mileage","fr":"kilométrage","example":"Mileage is reimbursed at a fixed rate per kilometre."},
+    {"en":"terminal","fr":"terminal (aéroport/port)","example":"The terminal is a ten-minute walk from the hotel."},
+    {"en":"duty-free","fr":"hors taxe","example":"She bought perfume at the duty-free shop."},
+    {"en":"route","fr":"itinéraire / route","example":"The fastest route avoids the motorway."},
+    {"en":"vehicle fleet","fr":"flotte (de véhicules)","example":"The company manages a fleet of twenty vehicles."},
+    {"en":"overweight baggage","fr":"excédent de bagages","example":"He paid extra for overweight baggage."},
+    {"en":"ETA (estimated time of arrival)","fr":"heure d'arrivée estimée","example":"The ETA has been updated to 4 p.m."},
+    {"en":"transit","fr":"transit","example":"The goods are currently in transit."}
+  ]
+}

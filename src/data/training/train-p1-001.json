@@ -1,0 +1,90 @@
+{
+  "id": "train-p1-001",
+  "part": 1,
+  "type": "training",
+  "skill": "listening",
+  "title": "Part 1 – Entraînement 1 : scènes de bureau",
+  "instructions": "Pour chaque photo, écoutez les quatre propositions et choisissez celle qui décrit le mieux l'image.",
+  "items": [
+    {
+      "id": "t1-001-q01",
+      "image": { "src": "/assets/train-p1/t1-01.svg", "alt": "Une femme debout devant un tableau blanc, écrivant avec un marqueur lors d'une réunion" },
+      "audioText": "(A) The woman is cleaning the whiteboard. (B) The woman is writing on the whiteboard. (C) The woman is reading a document. (D) The woman is leaving the room.",
+      "choices": ["The woman is cleaning the whiteboard.", "The woman is writing on the whiteboard.", "The woman is reading a document.", "The woman is leaving the room."],
+      "answer": 1,
+      "explanation": "L'image montre une femme en train d'écrire sur un tableau blanc avec un marqueur : (B) est correct."
+    },
+    {
+      "id": "t1-001-q02",
+      "image": { "src": "/assets/train-p1/t1-02.svg", "alt": "Deux hommes assis de chaque côté d'un bureau, l'un lisant un document, l'autre prenant des notes" },
+      "audioText": "(A) The men are shaking hands. (B) One man is reviewing a document while the other takes notes. (C) The men are eating lunch at a desk. (D) The men are standing near a window.",
+      "choices": ["The men are shaking hands.", "One man is reviewing a document while the other takes notes.", "The men are eating lunch at a desk.", "The men are standing near a window."],
+      "answer": 1,
+      "explanation": "Un homme lit un document et l'autre écrit : (B) décrit correctement la scène."
+    },
+    {
+      "id": "t1-001-q03",
+      "image": { "src": "/assets/train-p1/t1-03.svg", "alt": "Un homme debout à la photocopieuse, récupérant des feuilles imprimées" },
+      "audioText": "(A) The man is fixing the photocopier. (B) The man is loading paper into the machine. (C) The man is collecting printed sheets from the copier. (D) The man is turning off the machine.",
+      "choices": ["The man is fixing the photocopier.", "The man is loading paper into the machine.", "The man is collecting printed sheets from the copier.", "The man is turning off the machine."],
+      "answer": 2,
+      "explanation": "L'homme récupère les feuilles qui sortent de la photocopieuse : (C) est la bonne réponse."
+    },
+    {
+      "id": "t1-001-q04",
+      "image": { "src": "/assets/train-p1/t1-04.svg", "alt": "Une femme au téléphone, assise à son bureau avec un ordinateur allumé devant elle" },
+      "audioText": "(A) The woman is typing on a keyboard. (B) The woman is talking on the phone at her desk. (C) The woman is closing her laptop. (D) The woman is standing near the window.",
+      "choices": ["The woman is typing on a keyboard.", "The woman is talking on the phone at her desk.", "The woman is closing her laptop.", "The woman is standing near the window."],
+      "answer": 1,
+      "explanation": "Elle est assise à son bureau avec un ordinateur et téléphone : (B) est correct."
+    },
+    {
+      "id": "t1-001-q05",
+      "image": { "src": "/assets/train-p1/t1-05.svg", "alt": "Un groupe de personnes assises autour d'une grande table de conférence lors d'une réunion" },
+      "audioText": "(A) The people are eating at a restaurant. (B) The people are seated around a conference table. (C) The people are standing in a hallway. (D) The people are signing a contract.",
+      "choices": ["The people are eating at a restaurant.", "The people are seated around a conference table.", "The people are standing in a hallway.", "The people are signing a contract."],
+      "answer": 1,
+      "explanation": "Plusieurs personnes sont assises autour d'une grande table de réunion : (B) est correct."
+    },
+    {
+      "id": "t1-001-q06",
+      "image": { "src": "/assets/train-p1/t1-06.svg", "alt": "Un homme consultant des boîtes de stockage dans une salle d'archives, avec des étagères remplies de dossiers" },
+      "audioText": "(A) The man is shelving boxes in a storage room. (B) The man is throwing away old files. (C) The man is building a bookshelf. (D) The man is locking a cabinet.",
+      "choices": ["The man is shelving boxes in a storage room.", "The man is throwing away old files.", "The man is building a bookshelf.", "The man is locking a cabinet."],
+      "answer": 0,
+      "explanation": "Il consulte des boîtes rangées sur des étagères dans un espace de stockage : (A) est correct."
+    },
+    {
+      "id": "t1-001-q07",
+      "image": { "src": "/assets/train-p1/t1-07.svg", "alt": "Une femme arrosant des plantes dans un bureau open space lumineux" },
+      "audioText": "(A) The woman is decorating the office with flowers. (B) The woman is watering plants in the office. (C) The woman is sweeping the floor. (D) The woman is opening a window.",
+      "choices": ["The woman is decorating the office with flowers.", "The woman is watering plants in the office.", "The woman is sweeping the floor.", "The woman is opening a window."],
+      "answer": 1,
+      "explanation": "Elle arrose des plantes dans l'open space : (B) est la description correcte."
+    },
+    {
+      "id": "t1-001-q08",
+      "image": { "src": "/assets/train-p1/t1-08.svg", "alt": "Deux femmes debout dans un couloir de bureau, l'une remettant une enveloppe à l'autre" },
+      "audioText": "(A) The women are opening letters at a desk. (B) One woman is handing an envelope to the other in a hallway. (C) The women are walking out of an elevator. (D) The women are reading a notice on the wall.",
+      "choices": ["The women are opening letters at a desk.", "One woman is handing an envelope to the other in a hallway.", "The women are walking out of an elevator.", "The women are reading a notice on the wall."],
+      "answer": 1,
+      "explanation": "Une femme tend une enveloppe à l'autre dans le couloir : (B) est correct."
+    },
+    {
+      "id": "t1-001-q09",
+      "image": { "src": "/assets/train-p1/t1-09.svg", "alt": "Un homme debout devant une fenêtre, regardant à l'extérieur, les bras croisés, dans un bureau moderne" },
+      "audioText": "(A) The man is closing the blinds. (B) The man is standing by the window with his arms crossed. (C) The man is cleaning the window. (D) The man is sitting on a windowsill.",
+      "choices": ["The man is closing the blinds.", "The man is standing by the window with his arms crossed.", "The man is cleaning the window.", "The man is sitting on a windowsill."],
+      "answer": 1,
+      "explanation": "Il est debout devant la fenêtre, bras croisés : (B) est la description exacte."
+    },
+    {
+      "id": "t1-001-q10",
+      "image": { "src": "/assets/train-p1/t1-10.svg", "alt": "Une femme installant un projecteur sur un trépied dans une salle de réunion avant une présentation" },
+      "audioText": "(A) The woman is watching a presentation. (B) The woman is packing up equipment after a meeting. (C) The woman is setting up a projector on a tripod. (D) The woman is replacing a lightbulb.",
+      "choices": ["The woman is watching a presentation.", "The woman is packing up equipment after a meeting.", "The woman is setting up a projector on a tripod.", "The woman is replacing a lightbulb."],
+      "answer": 2,
+      "explanation": "Elle installe un projecteur sur un trépied avant une présentation : (C) est correct."
+    }
+  ]
+}

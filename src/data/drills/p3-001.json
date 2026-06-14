@@ -1,0 +1,46 @@
+{
+  "id": "p3-001",
+  "part": 3,
+  "skill": "listening",
+  "title": "Part 3 – Conversation : l'enregistrement à l'hôtel",
+  "instructions": "Écoutez la conversation, puis répondez aux trois questions.",
+  "audioText": "Woman: Good afternoon, welcome to the Lakeview Hotel. Do you have a reservation? Man: Yes, I booked a single room for two nights under the name Carter. Woman: Let me check... I'm sorry, but I can only find a reservation for one night. Would you like to extend your stay? Man: That's strange, I'm sure I booked two nights online. Could you check again? Otherwise, yes, please add one more night. Woman: I've added an extra night to your reservation. Your room is on the fifth floor, and breakfast is served from seven to ten in the morning. Man: Great, thank you. Is the gym open all day? Woman: Yes, it's open twenty-four hours, right next to the pool on the second floor.",
+  "questions": [
+    {
+      "id": "p3-001-q1",
+      "prompt": "What problem does the man have?",
+      "choices": [
+        "His room is not ready.",
+        "His reservation only covers one night.",
+        "He lost his room key.",
+        "He cannot find the hotel."
+      ],
+      "answer": 1,
+      "explanation": "La réceptionniste indique qu'elle ne trouve une réservation que pour une nuit, alors que l'homme pensait en avoir réservé deux."
+    },
+    {
+      "id": "p3-001-q2",
+      "prompt": "Where is the man's room located?",
+      "choices": [
+        "On the second floor",
+        "On the third floor",
+        "On the fifth floor",
+        "On the ground floor"
+      ],
+      "answer": 2,
+      "explanation": "La réceptionniste précise : \"Your room is on the fifth floor\"."
+    },
+    {
+      "id": "p3-001-q3",
+      "prompt": "What does the woman say about the gym?",
+      "choices": [
+        "It is closed for renovation.",
+        "It is open twenty-four hours.",
+        "It is only open in the morning.",
+        "It requires a reservation."
+      ],
+      "answer": 1,
+      "explanation": "Elle répond : \"Yes, it's open twenty-four hours, right next to the pool on the second floor\"."
+    }
+  ]
+}

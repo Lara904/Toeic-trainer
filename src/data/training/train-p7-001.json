@@ -1,0 +1,100 @@
+{
+  "id": "train-p7-001",
+  "part": 7,
+  "type": "training",
+  "skill": "reading",
+  "title": "Part 7 – Entraînement 1 : e-mails & annonces",
+  "instructions": "Lisez chaque passage et répondez aux questions.",
+  "items": [
+    {
+      "id": "t7-001-p01",
+      "passage": "From: Sandra Koch, HR Manager\nTo: All Employees\nSubject: New Hybrid Work Schedule — Q4\n\nDear team,\n\nStarting October 1st, we are updating our hybrid work schedule. Employees will be required to work from the office a minimum of three days per week. Tuesdays and Wednesdays are mandatory on-site days for all staff. The third day can be chosen freely from Monday, Thursday, or Friday.\n\nEmployees wishing to request an exception to this schedule due to personal circumstances should submit a written request to their line manager by September 20th.\n\nFull details are available on the HR portal.",
+      "questions": [
+        { "id": "t7-001-p01-q1", "prompt": "How many days per week must employees work on site?", "choices": ["One", "Two", "Three", "Five"], "answer": 2, "explanation": "\"a minimum of three days per week\"." },
+        { "id": "t7-001-p01-q2", "prompt": "Which days are mandatory for all staff?", "choices": ["Monday and Tuesday", "Tuesday and Wednesday", "Wednesday and Thursday", "Thursday and Friday"], "answer": 1, "explanation": "\"Tuesdays and Wednesdays are mandatory on-site days for all staff\"." },
+        { "id": "t7-001-p01-q3", "prompt": "By when must exception requests be submitted?", "choices": ["September 15th", "September 20th", "October 1st", "October 15th"], "answer": 1, "explanation": "\"submit a written request... by September 20th\"." }
+      ]
+    },
+    {
+      "id": "t7-001-p02",
+      "passage": "WANTED: Office Space for Rent\n\nPrime commercial office space available in the Central Business District. 450 square metres across two floors, fully furnished with high-speed internet, meeting rooms, and a shared kitchen. Parking for up to eight vehicles included.\n\nMonthly rent: €4,200 (utilities not included)\nMinimum lease: 12 months\nAvailable from: February 1st\n\nFor viewing appointments or further information, contact Westgate Property on 01 555 7890 or email info@westgateproperty.ie.\n\nNo agency fees.",
+      "questions": [
+        { "id": "t7-001-p02-q1", "prompt": "What is included in the rent?", "choices": ["Utilities and parking", "Furniture, internet, meeting rooms, and parking", "Parking and utilities only", "Internet and cleaning services"], "answer": 1, "explanation": "\"fully furnished with high-speed internet, meeting rooms, and a shared kitchen. Parking for up to eight vehicles included.\"" },
+        { "id": "t7-001-p02-q2", "prompt": "What is the minimum lease period?", "choices": ["Six months", "Nine months", "Twelve months", "Twenty-four months"], "answer": 2, "explanation": "\"Minimum lease: 12 months\"." },
+        { "id": "t7-001-p02-q3", "prompt": "What is notable about the agency fees?", "choices": ["They are ten percent of rent", "They are included in the monthly rent", "There are no agency fees", "They must be paid upfront"], "answer": 2, "explanation": "\"No agency fees.\"" }
+      ]
+    },
+    {
+      "id": "t7-001-p03",
+      "passage": "From: Customer Service\nTo: Henry Ashford\nSubject: Your Order #88421 — Shipping Update\n\nDear Mr. Ashford,\n\nWe are writing to inform you of a delay affecting your recent order (#88421) placed on November 3rd.\n\nDue to unexpected demand for one of the items in your order — the Solarmate Portable Charger — this product is currently out of stock. We expect to receive a new shipment by November 22nd.\n\nYou have two options:\n1. Wait for the full order to ship together on or around November 22nd.\n2. Receive the in-stock items now, with the Solarmate Portable Charger shipped separately at no additional cost once restocked.\n\nPlease reply to this email to let us know your preference. If we do not hear from you by November 12th, we will proceed with option 1.",
+      "questions": [
+        { "id": "t7-001-p03-q1", "prompt": "Why is the order delayed?", "choices": ["A shipping company error", "One item is out of stock", "The order was placed incorrectly", "The delivery address was wrong"], "answer": 1, "explanation": "\"the Solarmate Portable Charger — this product is currently out of stock\"." },
+        { "id": "t7-001-p03-q2", "prompt": "What happens if the customer does not reply by November 12th?", "choices": ["The order is cancelled", "Option 2 is selected automatically", "Option 1 is applied — full order shipped together", "A refund is issued"], "answer": 2, "explanation": "\"If we do not hear from you by November 12th, we will proceed with option 1\"." },
+        { "id": "t7-001-p03-q3", "prompt": "What is option 2?", "choices": ["Cancel the out-of-stock item", "Wait for all items to ship together", "Receive in-stock items now, the charger later at no extra cost", "Exchange the charger for another product"], "answer": 2, "explanation": "\"Receive the in-stock items now, with the Solarmate Portable Charger shipped separately at no additional cost once restocked\"." }
+      ]
+    },
+    {
+      "id": "t7-001-p04",
+      "passage": "JOB ADVERTISEMENT\n\nFinancial Analyst — Permanent Position\nLocation: Dublin, Ireland (Hybrid)\nSalary: €45,000–€55,000 depending on experience\n\nWe are seeking a motivated Financial Analyst to join our growing finance team. The successful candidate will be responsible for preparing monthly management accounts, analysing financial data, and supporting the annual budgeting process.\n\nRequirements:\n• A degree in Finance, Accounting, or a related field\n• At least two years of relevant experience\n• Strong Excel skills and experience with financial modelling\n• Excellent communication skills\n\nTo apply, send your CV and cover letter to careers@fingroup.ie by January 15th. Interviews will be held in the last week of January.",
+      "questions": [
+        { "id": "t7-001-p04-q1", "prompt": "What type of contract is offered?", "choices": ["Fixed-term contract", "Freelance", "Permanent", "Internship"], "answer": 2, "explanation": "\"Financial Analyst — Permanent Position\"." },
+        { "id": "t7-001-p04-q2", "prompt": "What is the minimum experience required?", "choices": ["One year", "Two years", "Three years", "Five years"], "answer": 1, "explanation": "\"At least two years of relevant experience\"." },
+        { "id": "t7-001-p04-q3", "prompt": "When will interviews take place?", "choices": ["The first week of January", "The second week of January", "The last week of January", "The first week of February"], "answer": 2, "explanation": "\"Interviews will be held in the last week of January\"." }
+      ]
+    },
+    {
+      "id": "t7-001-p05",
+      "passage": "NOTICE: Building Access Changes\n\nDear tenants,\n\nEffective Monday, September 9th, all access to the building outside of regular business hours (8:00 a.m. to 7:00 p.m.) will require the use of your new digital access card.\n\nPhysical keys will no longer be valid after September 8th. If you have not yet collected your new access card, please visit the management office on the ground floor before Friday, September 6th.\n\nThe building will also be installing additional CCTV cameras over the weekend of September 7th–8th. During this time, access to the basement level will be temporarily unavailable.\n\nThank you for your understanding.",
+      "questions": [
+        { "id": "t7-001-p05-q1", "prompt": "What is required to access the building outside regular hours from September 9th?", "choices": ["A physical key", "A digital access card", "A PIN code", "A visitor pass"], "answer": 1, "explanation": "\"all access to the building outside of regular business hours will require the use of your new digital access card\"." },
+        { "id": "t7-001-p05-q2", "prompt": "When must tenants collect their new card by?", "choices": ["September 6th", "September 8th", "September 9th", "September 12th"], "answer": 0, "explanation": "\"please visit the management office... before Friday, September 6th\"." },
+        { "id": "t7-001-p05-q3", "prompt": "What will be temporarily unavailable during the weekend of September 7th–8th?", "choices": ["The main entrance", "The management office", "The basement level", "The parking lot"], "answer": 2, "explanation": "\"access to the basement level will be temporarily unavailable\"." }
+      ]
+    },
+    {
+      "id": "t7-001-p06",
+      "passage": "Riverside Community Centre — Spring Programme\n\nWe are pleased to announce our Spring Activity Programme, running from March 3rd to May 23rd.\n\nHighlights include:\n• Monday evenings: Beginner Photography (6–8 p.m.)\n• Wednesday mornings: Senior Fitness Class (10–11:30 a.m.)\n• Friday afternoons: Youth Art Workshop (3–5 p.m., ages 8–14)\n• Every Saturday: Family Cookery Classes (11 a.m.–1 p.m.)\n\nAll classes must be booked in advance. Early bird registration (before February 15th) entitles participants to a 15% discount. Registration can be completed online at www.riversidecc.org or in person at the centre.\n\nCorporate group bookings are also available. Please contact us at events@riversidecc.org for further information.",
+      "questions": [
+        { "id": "t7-001-p06-q1", "prompt": "When does the Spring Programme begin?", "choices": ["February 15th", "March 3rd", "March 10th", "May 23rd"], "answer": 1, "explanation": "\"running from March 3rd to May 23rd\"." },
+        { "id": "t7-001-p06-q2", "prompt": "What discount is available for early registration?", "choices": ["Ten percent", "Twelve percent", "Fifteen percent", "Twenty percent"], "answer": 2, "explanation": "\"Early bird registration (before February 15th) entitles participants to a 15% discount\"." },
+        { "id": "t7-001-p06-q3", "prompt": "Which class is designed for a specific age group?", "choices": ["Senior Fitness Class", "Family Cookery Classes", "Youth Art Workshop", "Beginner Photography"], "answer": 2, "explanation": "\"Youth Art Workshop (3–5 p.m., ages 8–14)\" — the only class specifying an age range." }
+      ]
+    },
+    {
+      "id": "t7-001-p07",
+      "passage": "From: IT Helpdesk\nTo: All Staff\nSubject: Scheduled Email System Upgrade\n\nDear colleagues,\n\nOur email system will be upgraded this Saturday, from 10 p.m. to 6 a.m. Sunday morning.\n\nDuring this window, you will not be able to send or receive emails. Any emails sent to you during this time will be queued and delivered automatically once the system is back online.\n\nActions to take before 10 p.m. Saturday:\n• Save any important email drafts locally\n• Download attachments you may need over the weekend\n• If you have urgent communications, use the internal messaging app (ConnectHub) as an alternative\n\nThe upgrade will improve email speed and add new security features. We apologise for any inconvenience.",
+      "questions": [
+        { "id": "t7-001-p07-q1", "prompt": "How long will the email system be unavailable?", "choices": ["Four hours", "Six hours", "Eight hours", "Ten hours"], "answer": 2, "explanation": "From 10 p.m. Saturday to 6 a.m. Sunday = 8 hours." },
+        { "id": "t7-001-p07-q2", "prompt": "What happens to emails sent during the maintenance window?", "choices": ["They are lost permanently", "They are bounced back to the sender", "They are queued and delivered once the system is back online", "They are redirected to a backup address"], "answer": 2, "explanation": "\"Any emails sent to you during this time will be queued and delivered automatically once the system is back online\"." },
+        { "id": "t7-001-p07-q3", "prompt": "What alternative communication tool is suggested?", "choices": ["Text message", "Phone call", "ConnectHub", "A personal email account"], "answer": 2, "explanation": "\"use the internal messaging app (ConnectHub) as an alternative\"." }
+      ]
+    },
+    {
+      "id": "t7-001-p08",
+      "passage": "TRAVEL ADVISORY — Eastbridge Insurance\n\nAttn: Corporate Policyholders\n\nEastbridge Insurance wishes to inform corporate clients that travel insurance coverage for business trips to the following regions has been temporarily suspended: Northern Kova, East Talian Province, and the Rhandor Coast.\n\nThis decision follows updated risk assessments issued by the Foreign Affairs Ministry. Coverage will be reviewed and reinstated once conditions improve.\n\nEmployees already on assignment in these areas are still covered until the end of their current trip. All new travel to these regions after October 3rd will not be covered under standard corporate travel policies.\n\nFor queries, please contact your dedicated account manager or call our corporate helpline at 1800 344 900.",
+      "questions": [
+        { "id": "t7-001-p08-q1", "prompt": "What has Eastbridge Insurance done regarding certain regions?", "choices": ["Raised premiums for travel there", "Cancelled all existing policies", "Suspended travel insurance coverage for those regions", "Issued mandatory travel warnings"], "answer": 2, "explanation": "\"travel insurance coverage... has been temporarily suspended\"." },
+        { "id": "t7-001-p08-q2", "prompt": "Are employees currently on assignment in the affected regions still covered?", "choices": ["No, all coverage has ended immediately", "Yes, until the end of their current trip", "Only if they return before October 3rd", "Only for medical emergencies"], "answer": 1, "explanation": "\"Employees already on assignment in these areas are still covered until the end of their current trip\"." },
+        { "id": "t7-001-p08-q3", "prompt": "From what date will new travel to those regions not be covered?", "choices": ["Immediately", "October 1st", "October 3rd", "October 10th"], "answer": 2, "explanation": "\"All new travel to these regions after October 3rd will not be covered\"." }
+      ]
+    },
+    {
+      "id": "t7-001-p09",
+      "passage": "PRODUCT REVIEW — ProDesk Standing Desk Converter\n\nRating: ★★★★☆ (4/5)\n\nI purchased the ProDesk Standing Desk Converter three months ago after experiencing lower back pain from sitting all day. The setup was straightforward and took about twenty minutes.\n\nThe height adjustment mechanism is smooth and can go from sitting to standing in seconds. It comfortably fits my monitor, laptop, keyboard, and mouse. The surface is spacious enough for a notebook as well.\n\nMy only complaint is that the cable management could be better — there are no built-in cable channels, which makes the desk look a bit cluttered. Also, at €289, it is on the pricier side.\n\nOverall, I would recommend it to anyone who wants to improve their posture at work.",
+      "questions": [
+        { "id": "t7-001-p09-q1", "prompt": "Why did the reviewer buy the product?", "choices": ["To increase productivity", "To save space on their desk", "To address lower back pain from sitting all day", "Because it was on sale"], "answer": 2, "explanation": "\"after experiencing lower back pain from sitting all day\"." },
+        { "id": "t7-001-p09-q2", "prompt": "What is the reviewer's main criticism?", "choices": ["The height adjustment is difficult", "It takes too long to set up", "The cable management is poor", "It is too heavy to move"], "answer": 2, "explanation": "\"the cable management could be better — there are no built-in cable channels\"." },
+        { "id": "t7-001-p09-q3", "prompt": "What is the reviewer's overall conclusion?", "choices": ["They would not buy it again", "They would recommend it for improving posture", "They regret the purchase", "They plan to return it"], "answer": 1, "explanation": "\"I would recommend it to anyone who wants to improve their posture at work\"." }
+      ]
+    },
+    {
+      "id": "t7-001-p10",
+      "passage": "STAFF NEWSLETTER — October Edition\n\nEMPLOYEE OF THE MONTH: Congratulations to Priya Menon from the Customer Relations team, who has been named Employee of the Month for October. Priya handled an exceptionally high volume of client escalations this month while maintaining a ninety-six percent satisfaction rating — the highest in her department's history.\n\nUPCOMING EVENTS:\n— October 18th: Blood donation drive in the lobby (9 a.m.–3 p.m.)\n— October 25th: Quarterly all-hands meeting (2 p.m., Main Auditorium)\n— November 1st: Diwali celebration in the staff lounge (12–2 p.m.)\n\nDid you know? Our company has donated over €40,000 to local charities this year through our employee giving programme.",
+      "questions": [
+        { "id": "t7-001-p10-q1", "prompt": "Why was Priya Menon named Employee of the Month?", "choices": ["She joined the company this month", "She achieved the highest sales figures", "She handled many escalations with a high satisfaction rating", "She completed a major project ahead of schedule"], "answer": 2, "explanation": "\"handled an exceptionally high volume of client escalations... while maintaining a ninety-six percent satisfaction rating\"." },
+        { "id": "t7-001-p10-q2", "prompt": "Where will the all-hands meeting take place?", "choices": ["The staff lounge", "The lobby", "The main conference room", "The Main Auditorium"], "answer": 3, "explanation": "\"October 25th: Quarterly all-hands meeting (2 p.m., Main Auditorium)\"." },
+        { "id": "t7-001-p10-q3", "prompt": "How much has the company donated to charities this year?", "choices": ["Over €20,000", "Over €30,000", "Over €40,000", "Over €50,000"], "answer": 2, "explanation": "\"donated over €40,000 to local charities this year\"." }
+      ]
+    }
+  ]
+}

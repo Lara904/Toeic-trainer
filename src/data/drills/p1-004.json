@@ -1,0 +1,25 @@
+{
+  "id": "p1-004",
+  "part": 1,
+  "skill": "listening",
+  "title": "Part 1 – Description de photo : la visioconférence",
+  "instructions": "Regardez l'image. Écoutez les quatre propositions et choisissez celle qui décrit le mieux la photo.",
+  "image": {
+    "src": "/assets/part1/p1-004.svg",
+    "alt": "Un homme assis à un bureau, en visioconférence sur son ordinateur portable, avec un casque sur les oreilles"
+  },
+  "audioText": "Look at the picture marked number one in your test book. (A) The man is writing a letter. (B) The man is talking on a video call. (C) The man is printing documents. (D) The man is repairing a computer.",
+  "questions": [
+    {
+      "id": "p1-004-q1",
+      "choices": [
+        "The man is writing a letter.",
+        "The man is talking on a video call.",
+        "The man is printing documents.",
+        "The man is repairing a computer."
+      ],
+      "answer": 1,
+      "explanation": "L'écran de l'ordinateur portable affiche une fenêtre de visioconférence et l'homme porte un casque : c'est la proposition (B)."
+    }
+  ]
+}

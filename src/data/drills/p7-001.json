@@ -1,0 +1,58 @@
+{
+  "id": "p7-001",
+  "part": 7,
+  "skill": "reading",
+  "title": "Part 7 – Compréhension écrite : e-mail professionnel",
+  "instructions": "Lisez l'e-mail, puis répondez aux questions.",
+  "passage": "From: Sophie Martin, Operations Manager\nTo: All Department Heads\nSubject: New Expense Reporting System\n\nDear colleagues,\n\nStarting next month, our company will switch to a new online expense reporting system called QuickClaim. All expense reports must be submitted through this platform instead of the paper forms we currently use.\n\nTo help with the transition, the IT department will hold training sessions every Tuesday and Thursday afternoon during the first two weeks of next month. Attendance is optional but strongly recommended, especially for employees who frequently travel for work.\n\nPlease note that any paper expense forms submitted after the end of this month will not be processed. If you have questions about the new system, contact the IT helpdesk at extension 204.\n\nThank you for your cooperation.\n\nSophie Martin\nOperations Manager",
+  "questions": [
+    {
+      "id": "p7-001-q1",
+      "prompt": "What is the purpose of the email?",
+      "choices": [
+        "To announce a new expense reporting system",
+        "To request a budget increase",
+        "To cancel upcoming training sessions",
+        "To introduce a new manager"
+      ],
+      "answer": 0,
+      "explanation": "L'e-mail annonce le passage à un nouveau système de notes de frais, QuickClaim."
+    },
+    {
+      "id": "p7-001-q2",
+      "prompt": "When will the training sessions take place?",
+      "choices": [
+        "Every Monday and Wednesday",
+        "Every Tuesday and Thursday afternoon",
+        "Only on weekends",
+        "During the last week of the month"
+      ],
+      "answer": 1,
+      "explanation": "Le texte précise : \"every Tuesday and Thursday afternoon during the first two weeks of next month\"."
+    },
+    {
+      "id": "p7-001-q3",
+      "prompt": "What will happen to paper expense forms submitted after the end of the month?",
+      "choices": [
+        "They will be processed as usual",
+        "They will be sent to the IT department",
+        "They will not be processed",
+        "They will be forwarded to Sophie Martin"
+      ],
+      "answer": 2,
+      "explanation": "Le texte indique : \"any paper expense forms submitted after the end of this month will not be processed\"."
+    },
+    {
+      "id": "p7-001-q4",
+      "prompt": "Who should employees contact with questions about the system?",
+      "choices": [
+        "Sophie Martin directly",
+        "Their department head",
+        "The IT helpdesk",
+        "The accounting team"
+      ],
+      "answer": 2,
+      "explanation": "Le texte indique : \"contact the IT helpdesk at extension 204\"."
+    }
+  ]
+}

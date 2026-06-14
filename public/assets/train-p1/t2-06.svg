@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Un bus d'entreprise stationné devant un immeuble de bureaux, la porte ouverte">
+  <rect width="400" height="300" fill="#f1f5f9"/>
+  <rect x="0" y="230" width="400" height="70" fill="#9ca3af"/>
+  <rect x="40" y="120" width="300" height="120" rx="16" fill="#1e3a8a"/>
+  <rect x="60" y="130" width="70" height="50" rx="4" fill="#bfdbfe"/>
+  <rect x="150" y="130" width="70" height="50" rx="4" fill="#bfdbfe"/>
+  <rect x="240" y="130" width="70" height="50" rx="4" fill="#bfdbfe"/>
+  <rect x="40" y="185" width="80" height="35" rx="4" fill="#1e3a8a" stroke="#93c5fd" stroke-width="2"/>
+  <circle cx="100" cy="232" r="18" fill="#1e293b"/>
+  <circle cx="100" cy="232" r="9" fill="#475569"/>
+  <circle cx="290" cy="232" r="18" fill="#1e293b"/>
+  <circle cx="290" cy="232" r="9" fill="#475569"/>
+  <rect x="200" y="40" width="160" height="110" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="220" y="55" width="30" height="40" fill="#bfdbfe"/>
+  <rect x="270" y="55" width="30" height="40" fill="#bfdbfe"/>
+</svg>

@@ -1,0 +1,74 @@
+{
+  "id": "p8-006",
+  "part": 8,
+  "skill": "reading",
+  "title": "Part 8 – Passages multiples : rendez-vous médical et assurance",
+  "instructions": "Lisez les deux documents, puis répondez aux questions en faisant le lien entre eux.",
+  "passages": [
+    {
+      "label": "Confirmation de rendez-vous",
+      "text": "Appointment Confirmation - Sunrise Medical Center\n\nPatient: Helena Petrov\nDoctor: Dr. Okafor\nDate: Tuesday, June 24th\nTime: 10:30 a.m.\nReason for visit: Annual physical examination\n\nPlease arrive 10 minutes early to complete a health questionnaire. Bring a valid photo ID and your insurance card.\n\nIf you need to cancel or reschedule, please call at least 24 hours in advance. Cancellations made less than 24 hours before the appointment may be subject to a $25 fee."
+    },
+    {
+      "label": "E-mail de l'assurance",
+      "text": "From: HealthFirst Insurance\nTo: Helena Petrov\nSubject: Coverage Update for Annual Check-ups\n\nDear Ms. Petrov,\n\nWe're writing to remind you that, under your current plan, annual physical examinations are fully covered with no co-pay, as long as they are performed by an in-network provider.\n\nSunrise Medical Center is part of our network, so your upcoming visit on June 24th should not result in any out-of-pocket cost, provided no additional tests are performed during the visit.\n\nIf your doctor recommends additional tests or services beyond the standard physical exam, those may be subject to a co-pay depending on the service. We recommend asking your doctor's office for an estimate before agreeing to any additional procedures."
+    }
+  ],
+  "questions": [
+    {
+      "id": "p8-006-q1",
+      "prompt": "What is the reason for Helena's appointment?",
+      "choices": [
+        "A follow-up consultation",
+        "An annual physical examination",
+        "A vaccination",
+        "A dental cleaning"
+      ],
+      "answer": 1,
+      "explanation": "\"Reason for visit: Annual physical examination\"."
+    },
+    {
+      "id": "p8-006-q2",
+      "prompt": "What should Helena bring to her appointment?",
+      "choices": [
+        "A referral letter",
+        "A valid photo ID and insurance card",
+        "Payment in cash only",
+        "A list of allergies only"
+      ],
+      "answer": 1,
+      "explanation": "\"Bring a valid photo ID and your insurance card\"."
+    },
+    {
+      "id": "p8-006-q3",
+      "prompt": "What fee might apply for a late cancellation?",
+      "choices": ["$10", "$25", "$50", "$100"],
+      "answer": 1,
+      "explanation": "\"Cancellations made less than 24 hours before the appointment may be subject to a $25 fee\"."
+    },
+    {
+      "id": "p8-006-q4",
+      "prompt": "According to the insurance email, what is required for the annual exam to be fully covered?",
+      "choices": [
+        "A co-pay of $25",
+        "The exam must be performed by an in-network provider",
+        "Helena must be over 50 years old",
+        "The exam must be scheduled a year in advance"
+      ],
+      "answer": 1,
+      "explanation": "\"annual physical examinations are fully covered with no co-pay, as long as they are performed by an in-network provider\", et Sunrise Medical Center fait partie du réseau."
+    },
+    {
+      "id": "p8-006-q5",
+      "prompt": "What does the insurance company recommend if additional tests are suggested?",
+      "choices": [
+        "Refuse all additional tests",
+        "Ask for a cost estimate before agreeing",
+        "Pay immediately in cash",
+        "Contact a different clinic"
+      ],
+      "answer": 1,
+      "explanation": "\"We recommend asking your doctor's office for an estimate before agreeing to any additional procedures\"."
+    }
+  ]
+}

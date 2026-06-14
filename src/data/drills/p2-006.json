@@ -1,0 +1,20 @@
+{
+  "id": "p2-006",
+  "part": 2,
+  "skill": "listening",
+  "title": "Part 2 – Question-Réponse : la navette pour l'aéroport",
+  "instructions": "Écoutez la question et les trois réponses possibles. Choisissez la réponse la plus appropriée.",
+  "audioText": "When does the shuttle bus leave for the airport? (A) Every hour, on the hour. (B) It's a five-minute walk. (C) I prefer the window seat.",
+  "questions": [
+    {
+      "id": "p2-006-q1",
+      "choices": [
+        "Every hour, on the hour.",
+        "It's a five-minute walk.",
+        "I prefer the window seat."
+      ],
+      "answer": 0,
+      "explanation": "\"When\" interroge sur le moment/la fréquence. (A) donne une fréquence horaire. (B) répond à une question de distance, (C) répond à une question de préférence."
+    }
+  ]
+}

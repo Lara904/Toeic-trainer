@@ -1,0 +1,44 @@
+{
+  "id": "p5-005",
+  "part": 5,
+  "skill": "reading",
+  "title": "Part 5 – Phrases à compléter : finance & budget",
+  "instructions": "Choisissez le mot ou le groupe de mots qui complète correctement chaque phrase.",
+  "questions": [
+    {
+      "id": "p5-005-q1",
+      "sentence": "The company's profits have increased ____ fifteen percent since last quarter.",
+      "choices": ["by", "of", "at", "with"],
+      "answer": 0,
+      "explanation": "Collocation : \"increase by + pourcentage\"."
+    },
+    {
+      "id": "p5-005-q2",
+      "sentence": "The accountant ____ the figures twice before submitting the report.",
+      "choices": ["check", "checks", "checked", "checking"],
+      "answer": 2,
+      "explanation": "\"before submitting\" indique une action terminée avant l'envoi : prétérit \"checked\"."
+    },
+    {
+      "id": "p5-005-q3",
+      "sentence": "Each department must stay ____ its allocated budget for the year.",
+      "choices": ["within", "inside", "into", "among"],
+      "answer": 0,
+      "explanation": "Expression figée : \"stay within budget\"."
+    },
+    {
+      "id": "p5-005-q4",
+      "sentence": "The invoice ____ paid within thirty days of receipt.",
+      "choices": ["should", "shoulds", "should be", "should being"],
+      "answer": 2,
+      "explanation": "Voix passive avec modal : \"should be paid\"."
+    },
+    {
+      "id": "p5-005-q5",
+      "sentence": "____ rising costs, the company decided to postpone the office renovation.",
+      "choices": ["Due to", "Despite", "Although", "Unless"],
+      "answer": 0,
+      "explanation": "\"Due to\" + groupe nominal exprime la cause (contrairement à \"Although\", qui introduit une proposition complète)."
+    }
+  ]
+}

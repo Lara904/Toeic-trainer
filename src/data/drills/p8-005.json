@@ -1,0 +1,64 @@
+{
+  "id": "p8-005",
+  "part": 8,
+  "skill": "reading",
+  "title": "Part 8 – Passages multiples : soirée d'entreprise et confirmation RSVP",
+  "instructions": "Lisez les deux documents, puis répondez aux questions en faisant le lien entre eux.",
+  "passages": [
+    {
+      "label": "Invitation",
+      "text": "You're Invited: End-of-Year Celebration\n\nDate: December 18th\nTime: 6:00 p.m. - 10:00 p.m.\nLocation: Skyline Rooftop Lounge, 8th Floor\n\nJoin us for an evening of food, music, and games to celebrate another great year together! Dinner will be served at 7:00 p.m., followed by an awards presentation and live music.\n\nDress code: Smart casual.\n\nPlease RSVP by December 5th using the link below, and let us know if you have any dietary restrictions or if you'll be bringing a guest (each employee may bring one guest)."
+    },
+    {
+      "label": "E-mail de confirmation RSVP",
+      "text": "From: Events Team\nTo: Nadia Khoury\nSubject: RSVP Confirmed - End-of-Year Celebration\n\nHi Nadia,\n\nThanks for your RSVP! We've noted that you'll be attending with one guest, and that you've requested a vegetarian meal for both of you.\n\nA reminder: parking at the Skyline Rooftop Lounge is limited, so we recommend using public transportation or a taxi if possible.\n\nWe also wanted to let you know that the awards presentation has been moved earlier in the evening, right after dinner at 7:00 p.m., so that the live music can run a bit longer than originally planned.\n\nSee you on December 18th!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "p8-005-q1",
+      "prompt": "What time will dinner be served?",
+      "choices": ["6:00 p.m.", "7:00 p.m.", "8:00 p.m.", "10:00 p.m."],
+      "answer": 1,
+      "explanation": "\"Dinner will be served at 7:00 p.m.\"."
+    },
+    {
+      "id": "p8-005-q2",
+      "prompt": "By when were employees asked to RSVP?",
+      "choices": ["December 5th", "December 12th", "December 18th", "January 5th"],
+      "answer": 0,
+      "explanation": "\"Please RSVP by December 5th\"."
+    },
+    {
+      "id": "p8-005-q3",
+      "prompt": "How many guests is Nadia bringing?",
+      "choices": ["None", "One", "Two", "Three"],
+      "answer": 1,
+      "explanation": "\"We've noted that you'll be attending with one guest\"."
+    },
+    {
+      "id": "p8-005-q4",
+      "prompt": "What food request did Nadia make?",
+      "choices": [
+        "A gluten-free meal",
+        "A vegetarian meal for herself and her guest",
+        "Extra dessert",
+        "No special request"
+      ],
+      "answer": 1,
+      "explanation": "\"you've requested a vegetarian meal for both of you\"."
+    },
+    {
+      "id": "p8-005-q5",
+      "prompt": "What change is mentioned in the RSVP confirmation email?",
+      "choices": [
+        "The event date has changed",
+        "The dress code has been removed",
+        "The awards presentation has been moved earlier",
+        "The location has changed"
+      ],
+      "answer": 2,
+      "explanation": "\"the awards presentation has been moved earlier in the evening, right after dinner\"."
+    }
+  ]
+}

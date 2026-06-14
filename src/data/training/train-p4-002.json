@@ -1,0 +1,100 @@
+{
+  "id": "train-p4-002",
+  "part": 4,
+  "type": "training",
+  "skill": "listening",
+  "title": "Part 4 – Entraînement 2 : exposés finance & budget",
+  "instructions": "Écoutez chaque exposé, puis répondez aux trois questions.",
+  "items": [
+    {
+      "id": "t4-002-e01",
+      "audioText": "Good morning. Before we start today's finance committee meeting, I'd like to share a brief update on our year-to-date figures. Revenue is currently tracking at one hundred and six percent of our annual target, which is encouraging. However, operating expenses have risen by nine percent compared to the same period last year, mainly due to increased energy costs and higher raw material prices. We will need to identify savings in discretionary spending to protect our profit margin. I'll circulate a detailed breakdown after this meeting.",
+      "questions": [
+        { "id": "t4-002-e01-q1", "prompt": "What percentage of the annual revenue target has been achieved so far?", "choices": ["Ninety-six percent", "One hundred percent", "One hundred and six percent", "One hundred and nine percent"], "answer": 2, "explanation": "\"Revenue is currently tracking at one hundred and six percent of our annual target\"." },
+        { "id": "t4-002-e01-q2", "prompt": "Why have operating expenses increased?", "choices": ["Higher staff costs and travel expenses", "Investment in new technology", "Increased energy costs and higher raw material prices", "Opening of two new offices"], "answer": 2, "explanation": "\"mainly due to increased energy costs and higher raw material prices\"." },
+        { "id": "t4-002-e01-q3", "prompt": "What does the speaker plan to circulate after the meeting?", "choices": ["A revised annual budget", "A list of cost-cutting measures", "A detailed breakdown of figures", "A new financial forecast"], "answer": 2, "explanation": "\"I'll circulate a detailed breakdown after this meeting\"." }
+      ]
+    },
+    {
+      "id": "t4-002-e02",
+      "audioText": "Attention, this is a message from the accounts payable team. As a reminder, all purchase orders above two thousand euros must be accompanied by three competitive quotes before approval. This policy applies to all departments and was introduced to ensure cost-effectiveness and transparency in procurement. Invoices submitted without the required documentation will be returned and may cause payment delays. If you are unsure whether your purchase requires quotes, please contact the procurement office before placing the order. The policy document is available on the finance intranet page.",
+      "questions": [
+        { "id": "t4-002-e02-q1", "prompt": "What must accompany purchase orders above two thousand euros?", "choices": ["A manager's written approval", "Three competitive quotes", "A budget code and cost centre", "A signed supplier contract"], "answer": 1, "explanation": "\"all purchase orders above two thousand euros must be accompanied by three competitive quotes before approval\"." },
+        { "id": "t4-002-e02-q2", "prompt": "What may happen to invoices without the required documentation?", "choices": ["They will be automatically rejected", "They will be returned and may cause payment delays", "They will be escalated to senior management", "They will be processed at a reduced amount"], "answer": 1, "explanation": "\"Invoices submitted without the required documentation will be returned and may cause payment delays\"." },
+        { "id": "t4-002-e02-q3", "prompt": "Where can employees find the policy document?", "choices": ["In the employee handbook", "On the finance intranet page", "In the procurement office", "In the company newsletter"], "answer": 1, "explanation": "\"The policy document is available on the finance intranet page\"." }
+      ]
+    },
+    {
+      "id": "t4-002-e03",
+      "audioText": "Good afternoon. This is a brief update on the company's cost reduction initiative, launched three months ago. I'm pleased to report that we've already achieved savings of two hundred and thirty thousand euros across all departments. The biggest contributions came from renegotiating supplier contracts, which saved a hundred and ten thousand euros, and reducing paper and printing costs, which saved around forty thousand euros. We're on track to meet our end-of-year target of five hundred thousand euros in savings. Thank you to all department heads for their cooperation.",
+      "questions": [
+        { "id": "t4-002-e03-q1", "prompt": "How long ago was the cost reduction initiative launched?", "choices": ["One month", "Two months", "Three months", "Six months"], "answer": 2, "explanation": "\"the company's cost reduction initiative, launched three months ago\"." },
+        { "id": "t4-002-e03-q2", "prompt": "What was the largest source of savings?", "choices": ["Reducing energy consumption", "Renegotiating supplier contracts", "Cutting business travel", "Reducing printing costs"], "answer": 1, "explanation": "\"The biggest contributions came from renegotiating supplier contracts, which saved a hundred and ten thousand euros\"." },
+        { "id": "t4-002-e03-q3", "prompt": "What is the end-of-year savings target?", "choices": ["Two hundred and thirty thousand euros", "Three hundred thousand euros", "Four hundred thousand euros", "Five hundred thousand euros"], "answer": 3, "explanation": "\"our end-of-year target of five hundred thousand euros in savings\"." }
+      ]
+    },
+    {
+      "id": "t4-002-e04",
+      "audioText": "Hello everyone. This is a message from the finance team regarding the upcoming external audit. Our external auditors will be on site from the fourteenth to the eighteenth of this month. During this period, all finance staff should ensure their files and records are fully up to date and accessible. The auditors may request documentation at short notice, so please respond promptly to any requests from their team. If you are contacted directly by the auditors with a question outside your area, please direct them to the CFO's office. We appreciate your cooperation.",
+      "questions": [
+        { "id": "t4-002-e04-q1", "prompt": "When will the external auditors be on site?", "choices": ["From the fourth to the eighth", "From the tenth to the fourteenth", "From the fourteenth to the eighteenth", "From the eighteenth to the twenty-second"], "answer": 2, "explanation": "\"from the fourteenth to the eighteenth of this month\"." },
+        { "id": "t4-002-e04-q2", "prompt": "What should finance staff ensure during the audit?", "choices": ["They take annual leave after the audit", "Their files and records are fully up to date and accessible", "They submit a summary of their accounts in advance", "They are available for one-on-one meetings with auditors"], "answer": 1, "explanation": "\"all finance staff should ensure their files and records are fully up to date and accessible\"." },
+        { "id": "t4-002-e04-q3", "prompt": "Where should staff direct questions outside their area?", "choices": ["To the Head of Finance", "To the HR department", "To the CFO's office", "To the audit team's main contact"], "answer": 2, "explanation": "\"please direct them to the CFO's office\"." }
+      ]
+    },
+    {
+      "id": "t4-002-e05",
+      "audioText": "Good morning. This is a reminder to all managers about the annual budget submission process. Budget proposals for next fiscal year are due on the fifteenth of November. Please use the standard template, which has been updated this year to include a new section on sustainability investments. Proposals should be submitted electronically to the finance team via the budget portal. Any proposal submitted after the deadline without prior agreement from the CFO will not be considered for the first round of approvals. A training session on the new template will be held online next Wednesday at two p.m.",
+      "questions": [
+        { "id": "t4-002-e05-q1", "prompt": "When are budget proposals due?", "choices": ["The first of November", "The fifteenth of November", "The end of October", "The first of December"], "answer": 1, "explanation": "\"Budget proposals for next fiscal year are due on the fifteenth of November\"." },
+        { "id": "t4-002-e05-q2", "prompt": "What is new in this year's template?", "choices": ["A section on digital transformation", "A section on sustainability investments", "A revised revenue forecasting model", "A simplified cost centre structure"], "answer": 1, "explanation": "\"updated this year to include a new section on sustainability investments\"." },
+        { "id": "t4-002-e05-q3", "prompt": "When is the training session on the new template?", "choices": ["This Friday at two p.m.", "Next Monday at ten a.m.", "Next Wednesday at two p.m.", "Next Thursday at three p.m."], "answer": 2, "explanation": "\"A training session on the new template will be held online next Wednesday at two p.m.\"" }
+      ]
+    },
+    {
+      "id": "t4-002-e06",
+      "audioText": "This is an urgent message for all project managers. Please be aware that due to currency exchange rate fluctuations, the budget allocated for our international projects has been affected. Specifically, projects invoiced in US dollars are subject to a revised exchange rate that reduces the available budget by approximately seven percent. Finance asks that all project managers review their current spending and identify any non-essential costs that can be deferred. A revised budget allocation will be issued within the next five working days. We apologise for the inconvenience.",
+      "questions": [
+        { "id": "t4-002-e06-q1", "prompt": "What has caused the budget issue?", "choices": ["An unexpected increase in material costs", "Currency exchange rate fluctuations", "A cut in the company's overall budget", "Higher than expected project costs"], "answer": 1, "explanation": "\"due to currency exchange rate fluctuations, the budget allocated for our international projects has been affected\"." },
+        { "id": "t4-002-e06-q2", "prompt": "By how much has the available budget been reduced?", "choices": ["Three percent", "Five percent", "Seven percent", "Ten percent"], "answer": 2, "explanation": "\"reduces the available budget by approximately seven percent\"." },
+        { "id": "t4-002-e06-q3", "prompt": "When will a revised budget allocation be issued?", "choices": ["Today", "Within two working days", "Within five working days", "Next month"], "answer": 2, "explanation": "\"A revised budget allocation will be issued within the next five working days\"." }
+      ]
+    },
+    {
+      "id": "t4-002-e07",
+      "audioText": "Good afternoon. As part of our ongoing effort to improve financial transparency, we're introducing a new monthly financial dashboard for all senior managers. Starting next month, you will receive a personalised report each Monday morning showing your department's spending against budget, headcount costs, and key financial KPIs. The report will be generated automatically from our finance system and sent directly to your email. We're piloting this with five departments first and will roll it out company-wide in the new year if the feedback is positive.",
+      "questions": [
+        { "id": "t4-002-e07-q1", "prompt": "What is being introduced for senior managers?", "choices": ["A new budgeting tool", "A monthly financial dashboard", "An annual finance training course", "A real-time expense tracking app"], "answer": 1, "explanation": "\"we're introducing a new monthly financial dashboard for all senior managers\"." },
+        { "id": "t4-002-e07-q2", "prompt": "When will managers receive their reports?", "choices": ["Every Friday evening", "Every Monday morning", "On the first of each month", "Every two weeks"], "answer": 1, "explanation": "\"you will receive a personalised report each Monday morning\"." },
+        { "id": "t4-002-e07-q3", "prompt": "How many departments will pilot the dashboard first?", "choices": ["Two", "Three", "Five", "Ten"], "answer": 2, "explanation": "\"We're piloting this with five departments first\"." }
+      ]
+    },
+    {
+      "id": "t4-002-e08",
+      "audioText": "Hello, this is a message from the treasury team. We'd like to remind all department heads that the mid-year financial review will take place on the twenty-sixth and twenty-seventh of this month. Each department will have a thirty-minute slot to present their spend-to-date, explain any variances from budget, and outline their forecast for the remaining six months. Slots have been assigned and a calendar invitation has been sent to all participants. Please ensure your presentation is no longer than fifteen slides and is submitted to the treasury team at least two days before your slot.",
+      "questions": [
+        { "id": "t4-002-e08-q1", "prompt": "What event is taking place on the twenty-sixth and twenty-seventh?", "choices": ["The annual shareholder meeting", "The mid-year financial review", "The Q3 budget planning session", "An external audit"], "answer": 1, "explanation": "\"the mid-year financial review will take place on the twenty-sixth and twenty-seventh\"." },
+        { "id": "t4-002-e08-q2", "prompt": "How long is each department's presentation slot?", "choices": ["Fifteen minutes", "Twenty minutes", "Thirty minutes", "Forty-five minutes"], "answer": 2, "explanation": "\"Each department will have a thirty-minute slot\"." },
+        { "id": "t4-002-e08-q3", "prompt": "By when must presentations be submitted to the treasury team?", "choices": ["One week before the slot", "Three days before", "At least two days before", "The morning of the review"], "answer": 2, "explanation": "\"submitted to the treasury team at least two days before your slot\"." }
+      ]
+    },
+    {
+      "id": "t4-002-e09",
+      "audioText": "This is a notice from the finance department. Starting from the first of January, all employee expense claims must be submitted within thirty days of the expenditure being incurred. Claims submitted after this period will require special approval from the CFO and will be subject to a review. This change is being made to improve the accuracy of our monthly accounts and to align with best practice in expense management. The updated expense claim form will be available on the intranet from December fifteenth.",
+      "questions": [
+        { "id": "t4-002-e09-q1", "prompt": "What is the new rule for expense claims?", "choices": ["Claims must be submitted weekly", "Claims must be submitted within thirty days of the expense", "Claims over five hundred euros need two approvals", "Claims must include photos of all receipts"], "answer": 1, "explanation": "\"all employee expense claims must be submitted within thirty days of the expenditure being incurred\"." },
+        { "id": "t4-002-e09-q2", "prompt": "What happens to late expense claims?", "choices": ["They are automatically rejected", "They require special approval from the CFO", "They are delayed by sixty days", "They are forwarded to the line manager"], "answer": 1, "explanation": "\"Claims submitted after this period will require special approval from the CFO\"." },
+        { "id": "t4-002-e09-q3", "prompt": "When will the updated expense claim form be available?", "choices": ["From the first of January", "From the first of December", "From December fifteenth", "From November thirtieth"], "answer": 2, "explanation": "\"The updated expense claim form will be available on the intranet from December fifteenth\"." }
+      ]
+    },
+    {
+      "id": "t4-002-e10",
+      "audioText": "Good morning. I'm pleased to announce that the company has secured a new line of credit of five million euros with our banking partner, Eurobank. This facility will be used to fund the expansion of our manufacturing capacity over the next two years and is not intended for day-to-day operations. The interest rate is fixed at three point two percent per annum. We expect the first drawdown to take place in Q2 of next year, once the site acquisition has been confirmed. More details will be shared with the finance committee next week.",
+      "questions": [
+        { "id": "t4-002-e10-q1", "prompt": "What has the company secured?", "choices": ["A government grant of five million euros", "A new line of credit of five million euros", "An investment from a venture capital firm", "A new business partnership with Eurobank"], "answer": 1, "explanation": "\"the company has secured a new line of credit of five million euros with our banking partner, Eurobank\"." },
+        { "id": "t4-002-e10-q2", "prompt": "What is the fixed interest rate?", "choices": ["Two point five percent", "Three percent", "Three point two percent", "Four percent"], "answer": 2, "explanation": "\"The interest rate is fixed at three point two percent per annum\"." },
+        { "id": "t4-002-e10-q3", "prompt": "When is the first drawdown expected?", "choices": ["In Q1 of next year", "In Q2 of next year", "In Q3 of next year", "At the end of next year"], "answer": 1, "explanation": "\"We expect the first drawdown to take place in Q2 of next year\"." }
+      ]
+    }
+  ]
+}

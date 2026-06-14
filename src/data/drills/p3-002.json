@@ -1,0 +1,46 @@
+{
+  "id": "p3-002",
+  "part": 3,
+  "skill": "listening",
+  "title": "Part 3 – Conversation : la proposition de budget",
+  "instructions": "Écoutez la conversation, puis répondez aux trois questions.",
+  "audioText": "Woman: Did you have a chance to look at the budget proposal I sent you for the marketing campaign? Man: Yes, I went through it this morning. The total seems a bit high compared to last year. Woman: I know, but we're planning to attend two trade shows this year instead of one, which explains most of the increase. Man: That makes sense. Could you also add a separate line for the printing costs? Right now they're included in the travel budget, which is confusing. Woman: Sure, I'll update the spreadsheet and send you the new version by tomorrow morning. Man: Perfect. Let's discuss it again at Thursday's meeting before submitting it to finance.",
+  "questions": [
+    {
+      "id": "p3-002-q1",
+      "prompt": "What are the speakers mainly discussing?",
+      "choices": [
+        "A marketing budget proposal",
+        "A new trade show schedule",
+        "A printing company contract",
+        "A finance department meeting"
+      ],
+      "answer": 0,
+      "explanation": "La femme demande à l'homme s'il a regardé la proposition de budget pour la campagne marketing : c'est le sujet principal."
+    },
+    {
+      "id": "p3-002-q2",
+      "prompt": "Why has the budget increased compared to last year?",
+      "choices": [
+        "The company hired more staff",
+        "They will attend two trade shows instead of one",
+        "Printing costs have doubled",
+        "The travel policy has changed"
+      ],
+      "answer": 1,
+      "explanation": "Elle explique : \"we're planning to attend two trade shows this year instead of one, which explains most of the increase\"."
+    },
+    {
+      "id": "p3-002-q3",
+      "prompt": "What does the man ask the woman to do?",
+      "choices": [
+        "Cancel one of the trade shows",
+        "Submit the budget to finance immediately",
+        "Add a separate line for printing costs",
+        "Reduce the marketing budget by half"
+      ],
+      "answer": 2,
+      "explanation": "Il demande : \"Could you also add a separate line for the printing costs?\"."
+    }
+  ]
+}

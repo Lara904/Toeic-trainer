@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Deux personnes debout près d'un tableau d'affichage dans un couloir, l'une montrant quelque chose sur le panneau à l'autre">
+  <rect width="400" height="300" fill="#fff7ed"/>
+  <rect x="0" y="250" width="400" height="50" fill="#e2e8f0"/>
+  <rect x="100" y="50" width="150" height="120" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+  <rect x="114" y="64" width="122" height="12" fill="#fbbf24"/>
+  <rect x="114" y="82" width="100" height="8" fill="#cbd5e1"/>
+  <rect x="114" y="95" width="80" height="8" fill="#cbd5e1"/>
+  <rect x="114" y="108" width="90" height="8" fill="#cbd5e1"/>
+  <rect x="114" y="121" width="70" height="8" fill="#cbd5e1"/>
+  <circle cx="100" cy="180" r="20" fill="#fbbf24"/>
+  <rect x="82" y="200" width="36" height="50" rx="8" fill="#16a34a"/>
+  <rect x="118" y="212" width="34" height="8" rx="3" fill="#16a34a"/>
+  <circle cx="270" cy="175" r="20" fill="#f59e0b"/>
+  <rect x="252" y="195" width="36" height="55" rx="8" fill="#7c3aed"/>
+</svg>

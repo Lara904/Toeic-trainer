@@ -1,0 +1,90 @@
+{
+  "id": "train-p1-003",
+  "part": 1,
+  "type": "training",
+  "skill": "listening",
+  "title": "Part 1 – Entraînement 3 : santé, restauration & vie quotidienne",
+  "instructions": "Pour chaque photo, écoutez les quatre propositions et choisissez celle qui décrit le mieux l'image.",
+  "items": [
+    {
+      "id": "t1-003-q01",
+      "image": { "src": "/assets/train-p1/t3-01.svg", "alt": "Un médecin en blouse blanche consultant un patient assis en face de lui dans un cabinet médical" },
+      "audioText": "(A) The doctor is writing a prescription at his desk. (B) The doctor is consulting a patient in his office. (C) The doctor is examining equipment in a lab. (D) The doctor is speaking on the phone.",
+      "choices": ["The doctor is writing a prescription at his desk.", "The doctor is consulting a patient in his office.", "The doctor is examining equipment in a lab.", "The doctor is speaking on the phone."],
+      "answer": 1,
+      "explanation": "Un médecin est en consultation avec un patient dans son cabinet : (B) est correct."
+    },
+    {
+      "id": "t1-003-q02",
+      "image": { "src": "/assets/train-p1/t3-02.svg", "alt": "Un chef cuisinier en tablier blanc préparant des plats dans une cuisine professionnelle" },
+      "audioText": "(A) The chef is serving food to customers. (B) The chef is washing dishes in the kitchen. (C) The chef is preparing dishes in a professional kitchen. (D) The chef is reading a recipe book.",
+      "choices": ["The chef is serving food to customers.", "The chef is washing dishes in the kitchen.", "The chef is preparing dishes in a professional kitchen.", "The chef is reading a recipe book."],
+      "answer": 2,
+      "explanation": "Le chef prépare des plats dans une cuisine professionnelle : (C) est la bonne réponse."
+    },
+    {
+      "id": "t1-003-q03",
+      "image": { "src": "/assets/train-p1/t3-03.svg", "alt": "Des personnes faisant la queue à un guichet de banque, avec un agent derrière une vitre en plexiglas" },
+      "audioText": "(A) People are withdrawing money from an ATM. (B) People are waiting in line at a bank counter. (C) People are sitting in a waiting room. (D) People are leaving a bank branch.",
+      "choices": ["People are withdrawing money from an ATM.", "People are waiting in line at a bank counter.", "People are sitting in a waiting room.", "People are leaving a bank branch."],
+      "answer": 1,
+      "explanation": "Des personnes font la queue au guichet d'une banque : (B) est correct."
+    },
+    {
+      "id": "t1-003-q04",
+      "image": { "src": "/assets/train-p1/t3-04.svg", "alt": "Deux collègues debout dans un espace de pause, tenant des tasses à café et discutant" },
+      "audioText": "(A) Two colleagues are having coffee and chatting in a break area. (B) Two colleagues are working at their desks. (C) Two colleagues are arguing in a meeting room. (D) Two colleagues are leaving the office.",
+      "choices": ["Two colleagues are having coffee and chatting in a break area.", "Two colleagues are working at their desks.", "Two colleagues are arguing in a meeting room.", "Two colleagues are leaving the office."],
+      "answer": 0,
+      "explanation": "Deux collègues discutent en tenant des tasses de café dans un espace de pause : (A) est correct."
+    },
+    {
+      "id": "t1-003-q05",
+      "image": { "src": "/assets/train-p1/t3-05.svg", "alt": "Un homme consultant son téléphone portable tout en marchant dans la rue devant des commerces" },
+      "audioText": "(A) The man is taking a photo of a store window. (B) The man is checking his phone while walking along a street. (C) The man is buying something at a shop. (D) The man is waiting at a bus stop.",
+      "choices": ["The man is taking a photo of a store window.", "The man is checking his phone while walking along a street.", "The man is buying something at a shop.", "The man is waiting at a bus stop."],
+      "answer": 1,
+      "explanation": "Il regarde son téléphone en marchant dans la rue : (B) est la description exacte."
+    },
+    {
+      "id": "t1-003-q06",
+      "image": { "src": "/assets/train-p1/t3-06.svg", "alt": "Une infirmière prenant la tension artérielle d'un patient assis dans un couloir d'hôpital" },
+      "audioText": "(A) The nurse is giving an injection to a patient. (B) The nurse is taking a patient's blood pressure. (C) The nurse is escorting a patient to a room. (D) The nurse is reviewing medical files.",
+      "choices": ["The nurse is giving an injection to a patient.", "The nurse is taking a patient's blood pressure.", "The nurse is escorting a patient to a room.", "The nurse is reviewing medical files."],
+      "answer": 1,
+      "explanation": "L'infirmière prend la tension artérielle du patient : (B) est correct."
+    },
+    {
+      "id": "t1-003-q07",
+      "image": { "src": "/assets/train-p1/t3-07.svg", "alt": "Un homme debout dans un entrepôt, vérifiant une liste sur une tablette pendant qu'un chariot élévateur passe en arrière-plan" },
+      "audioText": "(A) The man is driving a forklift in a warehouse. (B) The man is unloading boxes from a truck. (C) The man is checking a list on a tablet in a warehouse. (D) The man is repairing a forklift.",
+      "choices": ["The man is driving a forklift in a warehouse.", "The man is unloading boxes from a truck.", "The man is checking a list on a tablet in a warehouse.", "The man is repairing a forklift."],
+      "answer": 2,
+      "explanation": "Il consulte une tablette dans l'entrepôt pendant qu'un chariot élévateur passe : (C) est correct."
+    },
+    {
+      "id": "t1-003-q08",
+      "image": { "src": "/assets/train-p1/t3-08.svg", "alt": "Une femme assise à un bureau de coworking, travaillant sur un ordinateur portable, avec d'autres personnes en arrière-plan" },
+      "audioText": "(A) The woman is presenting slides to her colleagues. (B) The woman is working on a laptop at a coworking desk. (C) The woman is packing up her belongings. (D) The woman is on a video call.",
+      "choices": ["The woman is presenting slides to her colleagues.", "The woman is working on a laptop at a coworking desk.", "The woman is packing up her belongings.", "The woman is on a video call."],
+      "answer": 1,
+      "explanation": "Elle travaille sur son ordinateur portable dans un espace de coworking : (B) est correct."
+    },
+    {
+      "id": "t1-003-q09",
+      "image": { "src": "/assets/train-p1/t3-09.svg", "alt": "Un homme accrochant un tableau encadré sur un mur de bureau blanc" },
+      "audioText": "(A) The man is removing a painting from the wall. (B) The man is cleaning a framed picture. (C) The man is hanging a framed picture on a white office wall. (D) The man is packing artwork into a box.",
+      "choices": ["The man is removing a painting from the wall.", "The man is cleaning a framed picture.", "The man is hanging a framed picture on a white office wall.", "The man is packing artwork into a box."],
+      "answer": 2,
+      "explanation": "Il accroche un tableau sur un mur de bureau blanc : (C) est la description exacte."
+    },
+    {
+      "id": "t1-003-q10",
+      "image": { "src": "/assets/train-p1/t3-10.svg", "alt": "Des employés réunis autour d'un gâteau dans une salle de pause pour fêter un anniversaire ou une promotion" },
+      "audioText": "(A) Employees are decorating a conference room. (B) Employees are gathered around a cake in a break room. (C) Employees are preparing food in the cafeteria. (D) Employees are sitting down for a formal dinner.",
+      "choices": ["Employees are decorating a conference room.", "Employees are gathered around a cake in a break room.", "Employees are preparing food in the cafeteria.", "Employees are sitting down for a formal dinner."],
+      "answer": 1,
+      "explanation": "Des employés sont rassemblés autour d'un gâteau dans la salle de pause : (B) est correct."
+    }
+  ]
+}

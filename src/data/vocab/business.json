@@ -1,0 +1,28 @@
+{
+  "id": "vocab-business",
+  "title": "Entreprise & RH",
+  "icon": "🏢",
+  "description": "Vocabulaire clé : recrutement, contrats, départements",
+  "cards": [
+    {"en":"hire","fr":"embaucher","example":"They plan to hire ten new engineers."},
+    {"en":"resignation","fr":"démission","example":"She submitted her resignation last Friday."},
+    {"en":"severance pay","fr":"indemnité de licenciement","example":"He received three months of severance pay."},
+    {"en":"appraisal","fr":"évaluation (de performance)","example":"Annual appraisals are held in December."},
+    {"en":"probationary period","fr":"période d'essai","example":"The probationary period lasts three months."},
+    {"en":"turnover","fr":"rotation du personnel / chiffre d'affaires","example":"High turnover increases recruitment costs."},
+    {"en":"onboarding","fr":"intégration (d'un nouvel employé)","example":"The onboarding process takes one week."},
+    {"en":"workforce","fr":"effectifs / main-d'œuvre","example":"The company reduced its workforce by ten percent."},
+    {"en":"overtime","fr":"heures supplémentaires","example":"Employees are paid extra for overtime."},
+    {"en":"layoff","fr":"licenciement économique","example":"The factory announced layoffs due to low demand."},
+    {"en":"headcount","fr":"effectif (nombre de personnes)","example":"The headcount has grown to two hundred."},
+    {"en":"promotion","fr":"promotion","example":"She received a promotion after two years."},
+    {"en":"payroll","fr":"fiche de paie / masse salariale","example":"Payroll is processed on the last Friday of the month."},
+    {"en":"benefits","fr":"avantages sociaux","example":"Benefits include health insurance and a pension plan."},
+    {"en":"incentive","fr":"prime / incitation","example":"Sales incentives motivate the team to reach targets."},
+    {"en":"compliance","fr":"conformité (réglementaire)","example":"All staff must complete compliance training annually."},
+    {"en":"outsource","fr":"externaliser","example":"They outsource their IT support to a specialist firm."},
+    {"en":"merger","fr":"fusion (d'entreprises)","example":"The merger was completed in March."},
+    {"en":"restructuring","fr":"restructuration","example":"The restructuring led to the closure of two offices."},
+    {"en":"subsidiary","fr":"filiale","example":"The Paris subsidiary employs fifty people."}
+  ]
+}

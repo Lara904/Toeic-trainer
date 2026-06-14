@@ -1,0 +1,38 @@
+{
+  "id": "p6-006",
+  "part": 6,
+  "skill": "reading",
+  "title": "Part 6 – Texte à trous : changements de stationnement",
+  "instructions": "Lisez la note de service et choisissez le mot ou le groupe de mots qui convient pour chaque numéro.",
+  "passage": "To: All Employees\nFrom: Facilities Management\nSubject: Temporary Parking Changes\n\nDue to construction work in the main parking lot, parking spaces {{1}} be limited starting next Monday.\n\nEmployees are encouraged to use public transportation or carpool {{2}} possible during this period.\n\nA temporary parking area has been set up behind the warehouse, {{3}} is about a ten-minute walk from the main entrance.\n\nWe expect the construction to be completed within {{4}} weeks, and we will notify you once normal parking is restored.",
+  "questions": [
+    {
+      "id": "p6-006-q1",
+      "blank": 1,
+      "choices": ["will", "would", "are", "were"],
+      "answer": 0,
+      "explanation": "Le changement débute \"starting next Monday\" : futur passif, \"will be limited\"."
+    },
+    {
+      "id": "p6-006-q2",
+      "blank": 2,
+      "choices": ["whenever", "when", "while", "wherever"],
+      "answer": 0,
+      "explanation": "Expression figée : \"whenever possible\" (chaque fois que c'est possible)."
+    },
+    {
+      "id": "p6-006-q3",
+      "blank": 3,
+      "choices": ["which", "who", "whose", "what"],
+      "answer": 0,
+      "explanation": "Pronom relatif pour une chose (\"a temporary parking area\") : \"which\"."
+    },
+    {
+      "id": "p6-006-q4",
+      "blank": 4,
+      "choices": ["two", "second", "twice", "double"],
+      "answer": 0,
+      "explanation": "\"within two weeks\" : nombre cardinal après \"within\"."
+    }
+  ]
+}

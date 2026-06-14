@@ -1,0 +1,100 @@
+{
+  "id": "train-p4-004",
+  "part": 4,
+  "type": "training",
+  "skill": "listening",
+  "title": "Part 4 – Entraînement 4 : exposés transport, divertissement & santé",
+  "instructions": "Écoutez chaque exposé, puis répondez aux trois questions.",
+  "items": [
+    {
+      "id": "t4-004-e01",
+      "audioText": "Attention, passengers waiting for the Eurostar service to London. We regret to inform you that this service has been delayed by approximately forty minutes due to a signal fault on the line. The revised departure time is now eleven forty-five. Passengers are advised to remain in the departure lounge and listen for further announcements. Complimentary refreshments are available at the hospitality desk near gate seven. We apologise for the inconvenience and thank you for your patience.",
+      "questions": [
+        { "id": "t4-004-e01-q1", "prompt": "Why has the service been delayed?", "choices": ["Bad weather conditions", "A signal fault on the line", "A mechanical issue with the train", "Congestion at the station"], "answer": 1, "explanation": "\"due to a signal fault on the line\"." },
+        { "id": "t4-004-e01-q2", "prompt": "What is the revised departure time?", "choices": ["Eleven o'clock", "Eleven fifteen", "Eleven forty-five", "Twelve fifteen"], "answer": 2, "explanation": "\"The revised departure time is now eleven forty-five\"." },
+        { "id": "t4-004-e01-q3", "prompt": "What is available near gate seven?", "choices": ["A customer service desk", "A seating area with Wi-Fi", "Complimentary refreshments", "A shuttle bus to the platform"], "answer": 2, "explanation": "\"Complimentary refreshments are available at the hospitality desk near gate seven\"." }
+      ]
+    },
+    {
+      "id": "t4-004-e02",
+      "audioText": "Good morning, and welcome aboard the express bus service to the city centre. This journey takes approximately thirty-five minutes under normal traffic conditions. Our next stop will be the Central Business District, followed by the University, and then the final stop at the Airport Terminal Two. If you need to purchase or validate your ticket, please do so now using the machine at the front of the bus. Passengers travelling with bicycles are reminded that bikes must be folded and stored in the designated area at the rear.",
+      "questions": [
+        { "id": "t4-004-e02-q1", "prompt": "How long does the journey take under normal conditions?", "choices": ["Twenty minutes", "Twenty-five minutes", "Thirty-five minutes", "Forty-five minutes"], "answer": 2, "explanation": "\"This journey takes approximately thirty-five minutes under normal traffic conditions\"." },
+        { "id": "t4-004-e02-q2", "prompt": "What is the final stop?", "choices": ["The Central Business District", "The University", "The Airport Terminal Two", "The Main Railway Station"], "answer": 2, "explanation": "\"the final stop at the Airport Terminal Two\"." },
+        { "id": "t4-004-e02-q3", "prompt": "Where must bicycles be stored on the bus?", "choices": ["In the overhead rack", "Near the driver's cabin", "In the designated area at the rear", "In the luggage compartment under the bus"], "answer": 2, "explanation": "\"bikes must be folded and stored in the designated area at the rear\"." }
+      ]
+    },
+    {
+      "id": "t4-004-e03",
+      "audioText": "Good morning, and welcome to the Grand Tour of Bordeaux. My name is Sophie, and I'll be your guide for the next two hours. We'll begin here at the Grand Théâtre, one of the finest examples of neoclassical architecture in France. From there, we'll walk along the waterfront to the famous Miroir d'Eau, before heading up to the old town for a tasting at a traditional wine merchant. Please stay together as a group and feel free to ask questions at any point. Our tour ends at the Place de la Bourse at approximately noon.",
+      "questions": [
+        { "id": "t4-004-e03-q1", "prompt": "How long will the tour last?", "choices": ["One hour", "One and a half hours", "Two hours", "Three hours"], "answer": 2, "explanation": "\"I'll be your guide for the next two hours\"." },
+        { "id": "t4-004-e03-q2", "prompt": "What will visitors do in the old town?", "choices": ["Visit a museum", "Attend a cooking class", "Have a tasting at a wine merchant", "Watch a theatre performance"], "answer": 2, "explanation": "\"heading up to the old town for a tasting at a traditional wine merchant\"." },
+        { "id": "t4-004-e03-q3", "prompt": "Where does the tour end?", "choices": ["At the Grand Théâtre", "At the Miroir d'Eau", "At the Place de la Bourse", "At the wine merchant"], "answer": 2, "explanation": "\"Our tour ends at the Place de la Bourse at approximately noon\"." }
+      ]
+    },
+    {
+      "id": "t4-004-e04",
+      "audioText": "Hello and welcome to this week's edition of Business Horizons, the podcast for professionals on the move. I'm your host, James Leroy. In today's episode, we'll be speaking with three entrepreneurs who built successful companies without any external funding. We'll also be discussing the latest trends in remote team management and how companies can maintain culture across multiple time zones. Today's episode is sponsored by WorkNest, a platform for remote team collaboration. You can find the link in the show notes. Let's get started.",
+      "questions": [
+        { "id": "t4-004-e04-q1", "prompt": "What is the podcast mainly for?", "choices": ["Students studying business", "Professionals on the move", "HR specialists", "Technology entrepreneurs only"], "answer": 1, "explanation": "\"Business Horizons, the podcast for professionals on the move\"." },
+        { "id": "t4-004-e04-q2", "prompt": "What is one of the topics covered in today's episode?", "choices": ["International trade regulations", "Remote team management trends", "How to raise venture capital", "Office design strategies"], "answer": 1, "explanation": "\"the latest trends in remote team management\"." },
+        { "id": "t4-004-e04-q3", "prompt": "What is WorkNest?", "choices": ["A business news website", "A remote team collaboration platform", "A podcast hosting service", "A project management consultancy"], "answer": 1, "explanation": "\"WorkNest, a platform for remote team collaboration\"." }
+      ]
+    },
+    {
+      "id": "t4-004-e05",
+      "audioText": "Good afternoon, and thank you for attending today's webinar on workplace mental health. Over the next sixty minutes, we'll be covering three key areas: recognising early signs of burnout, practical strategies for stress management, and how organisations can build a culture of psychological safety. There will be a Q&A session at the end. Please type your questions in the chat box throughout the presentation. Slides will be shared with all registered participants after the session. If you cannot stay for the full webinar, a recording will be available within twenty-four hours.",
+      "questions": [
+        { "id": "t4-004-e05-q1", "prompt": "How long is the webinar?", "choices": ["Thirty minutes", "Forty-five minutes", "Sixty minutes", "Ninety minutes"], "answer": 2, "explanation": "\"Over the next sixty minutes\"." },
+        { "id": "t4-004-e05-q2", "prompt": "How should participants submit questions?", "choices": ["By raising their hand virtually", "By emailing the presenter", "By typing in the chat box", "By submitting them before the webinar"], "answer": 2, "explanation": "\"Please type your questions in the chat box throughout the presentation\"." },
+        { "id": "t4-004-e05-q3", "prompt": "When will the recording be available?", "choices": ["Immediately after the session", "Within twelve hours", "Within twenty-four hours", "Within forty-eight hours"], "answer": 2, "explanation": "\"a recording will be available within twenty-four hours\"." }
+      ]
+    },
+    {
+      "id": "t4-004-e06",
+      "audioText": "This is an announcement from the corporate travel desk. Due to a public transport strike in Paris this Friday, all employees travelling to our Paris office should plan for significant delays. We strongly advise booking taxi or ride-share services in advance, as demand will be very high. Alternatively, if your meetings can be conducted remotely, please coordinate with your Paris colleagues to shift to video conferencing. Employees who need to travel and incur higher transport costs due to the strike may claim these as exceptional expenses with a note in their expense report.",
+      "questions": [
+        { "id": "t4-004-e06-q1", "prompt": "What is causing travel disruptions on Friday?", "choices": ["A road closure", "Bad weather", "A public transport strike in Paris", "An international sporting event"], "answer": 2, "explanation": "\"a public transport strike in Paris this Friday\"." },
+        { "id": "t4-004-e06-q2", "prompt": "What does the desk strongly advise?", "choices": ["Postponing all Paris meetings", "Flying instead of taking the train", "Booking taxis or ride-shares in advance", "Travelling a day earlier"], "answer": 2, "explanation": "\"We strongly advise booking taxi or ride-share services in advance\"." },
+        { "id": "t4-004-e06-q3", "prompt": "How should extra transport costs due to the strike be claimed?", "choices": ["By submitting a separate claim form", "As exceptional expenses with a note in the expense report", "By requesting reimbursement from HR", "They will not be reimbursed"], "answer": 1, "explanation": "\"may claim these as exceptional expenses with a note in their expense report\"." }
+      ]
+    },
+    {
+      "id": "t4-004-e07",
+      "audioText": "Welcome to the NovaMed Health Clinic. If you're calling to book an appointment, please press one. For test results, press two. For prescriptions and repeat medication, press three. To speak with a nurse, press four. Our clinic is open Monday to Friday from eight a.m. to seven p.m., and Saturday from nine to one p.m. We are closed on Sundays and public holidays. If you are experiencing a medical emergency, please hang up and dial one-one-two. For non-urgent out-of-hours advice, you can reach our nurse helpline on zero eight hundred two hundred three hundred.",
+      "questions": [
+        { "id": "t4-004-e07-q1", "prompt": "Which number should a caller press to book an appointment?", "choices": ["One", "Two", "Three", "Four"], "answer": 0, "explanation": "\"If you're calling to book an appointment, please press one\"." },
+        { "id": "t4-004-e07-q2", "prompt": "What are the clinic's Saturday hours?", "choices": ["Eight a.m. to five p.m.", "Eight a.m. to one p.m.", "Nine a.m. to one p.m.", "Nine a.m. to three p.m."], "answer": 2, "explanation": "\"Saturday from nine to one p.m.\"" },
+        { "id": "t4-004-e07-q3", "prompt": "What should callers do in a medical emergency?", "choices": ["Press zero to speak to a nurse immediately", "Call the nurse helpline", "Hang up and dial one-one-two", "Stay on hold for priority treatment"], "answer": 2, "explanation": "\"please hang up and dial one-one-two\"." }
+      ]
+    },
+    {
+      "id": "t4-004-e08",
+      "audioText": "Good evening, and welcome to the Greenfield Music Festival. Tonight's main stage will open at seven p.m. with local act The Copper Line, followed at nine by headliner Mara Stone. The festival site has three food courts and two licensed bars. Please note that the northern bar will close at eleven p.m. due to a local noise ordinance. Lost property should be reported to the information tent near the main entrance. The last shuttle bus back to the city centre departs at midnight. We hope you enjoy the evening.",
+      "questions": [
+        { "id": "t4-004-e08-q1", "prompt": "What time does the main stage open?", "choices": ["Six p.m.", "Seven p.m.", "Eight p.m.", "Nine p.m."], "answer": 1, "explanation": "\"Tonight's main stage will open at seven p.m.\"" },
+        { "id": "t4-004-e08-q2", "prompt": "Why will the northern bar close at eleven p.m.?", "choices": ["Due to low stock", "Due to staff shortages", "Due to a local noise ordinance", "Due to a licensing restriction"], "answer": 2, "explanation": "\"the northern bar will close at eleven p.m. due to a local noise ordinance\"." },
+        { "id": "t4-004-e08-q3", "prompt": "When does the last shuttle bus leave?", "choices": ["Ten p.m.", "Eleven p.m.", "Midnight", "One a.m."], "answer": 2, "explanation": "\"The last shuttle bus back to the city centre departs at midnight\"." }
+      ]
+    },
+    {
+      "id": "t4-004-e09",
+      "audioText": "Hello, this is a reminder from Vitacare Pharmacy. Your prescription for blood pressure medication is ready for collection. You can pick it up at any time during our opening hours, which are Monday to Friday eight a.m. to eight p.m., and weekends ten a.m. to four p.m. Please bring your prescription card when you collect. If you're unable to collect in person, we offer a home delivery service for a small fee of three euros fifty. To request delivery, please call us back on this number or visit our website at www.vitacarepharmacy.com.",
+      "questions": [
+        { "id": "t4-004-e09-q1", "prompt": "What is ready for collection?", "choices": ["A medical device", "A blood test result", "A prescription for blood pressure medication", "A referral letter"], "answer": 2, "explanation": "\"Your prescription for blood pressure medication is ready for collection\"." },
+        { "id": "t4-004-e09-q2", "prompt": "What must the patient bring when collecting?", "choices": ["A photo ID", "Their prescription card", "Their insurance details", "A form of payment"], "answer": 1, "explanation": "\"Please bring your prescription card when you collect\"." },
+        { "id": "t4-004-e09-q3", "prompt": "How much does home delivery cost?", "choices": ["Free of charge", "Two euros", "Three euros fifty", "Five euros"], "answer": 2, "explanation": "\"home delivery service for a small fee of three euros fifty\"." }
+      ]
+    },
+    {
+      "id": "t4-004-e10",
+      "audioText": "Good morning. This is a brief announcement from the building management team. In preparation for next week's fire safety inspection, a full fire evacuation drill will take place this Thursday at ten a.m. When the alarm sounds, all employees must leave the building immediately using the nearest fire exit and assemble at their designated muster point. Do not use the lifts. Please make sure you know your muster point — they are listed on the safety notice boards on each floor. The drill should last no longer than fifteen minutes. Your cooperation is appreciated.",
+      "questions": [
+        { "id": "t4-004-e10-q1", "prompt": "Why is the drill being held this Thursday?", "choices": ["It is a routine monthly exercise", "In preparation for a fire safety inspection", "Following a recent fire incident", "As required by a new safety regulation"], "answer": 1, "explanation": "\"In preparation for next week's fire safety inspection\"." },
+        { "id": "t4-004-e10-q2", "prompt": "What should employees NOT do during the evacuation?", "choices": ["Leave immediately", "Use the nearest fire exit", "Use the lifts", "Go to their muster point"], "answer": 2, "explanation": "\"Do not use the lifts\"." },
+        { "id": "t4-004-e10-q3", "prompt": "Where can employees find their muster point?", "choices": ["In their employment contract", "On the safety notice boards on each floor", "In an email from HR", "On the company intranet"], "answer": 1, "explanation": "\"they are listed on the safety notice boards on each floor\"." }
+      ]
+    }
+  ]
+}

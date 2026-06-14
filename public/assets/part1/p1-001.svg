@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Une femme assise à un bureau, tapant sur un ordinateur portable, avec une tasse de café et une plante verte à côté">
+  <rect width="400" height="300" fill="#eef2ff"/>
+  <rect x="0" y="220" width="400" height="80" fill="#cbd5e1"/>
+  <rect x="80" y="160" width="240" height="14" fill="#94a3b8"/>
+  <rect x="100" y="174" width="14" height="60" fill="#94a3b8"/>
+  <rect x="286" y="174" width="14" height="60" fill="#94a3b8"/>
+  <rect x="150" y="150" width="100" height="14" rx="2" fill="#475569"/>
+  <rect x="160" y="130" width="80" height="22" rx="2" fill="#1e293b"/>
+  <rect x="166" y="134" width="68" height="12" fill="#38bdf8"/>
+  <circle cx="200" cy="95" r="22" fill="#fbbf24"/>
+  <rect x="182" y="117" width="36" height="40" rx="8" fill="#f59e0b"/>
+  <rect x="170" y="150" width="20" height="14" rx="2" fill="#ef4444"/>
+  <rect x="260" y="138" width="22" height="26" rx="3" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  <rect x="265" y="150" width="12" height="3" fill="#92400e"/>
+  <path d="M120 150 q-6 -28 14 -34 q24 -6 22 18" fill="#22c55e"/>
+  <rect x="124" y="150" width="14" height="14" fill="#78350f"/>
+</svg>

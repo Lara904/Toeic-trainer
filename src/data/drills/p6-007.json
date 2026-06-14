@@ -1,0 +1,38 @@
+{
+  "id": "p6-007",
+  "part": 6,
+  "skill": "reading",
+  "title": "Part 6 – Texte à trous : campagne de vaccination contre la grippe",
+  "instructions": "Lisez la note de service et choisissez le mot ou le groupe de mots qui convient pour chaque numéro.",
+  "passage": "To: All Staff\nFrom: Human Resources\nSubject: On-Site Flu Vaccination\n\nAs part of our annual health initiative, free flu vaccinations {{1}} be offered to all employees next week.\n\nA nurse from Wellness Partners {{2}} be available in the main conference room from Tuesday to Thursday, between 10 a.m. and 3 p.m.\n\nNo appointment is necessary; employees can simply {{3}} by during their break.\n\n{{4}}, please bring your employee ID card so we can update our records.",
+  "questions": [
+    {
+      "id": "p6-007-q1",
+      "blank": 1,
+      "choices": ["will", "would", "is", "was"],
+      "answer": 0,
+      "explanation": "L'action se déroule \"next week\" : futur passif, \"will be offered\"."
+    },
+    {
+      "id": "p6-007-q2",
+      "blank": 2,
+      "choices": ["will", "would", "can", "could"],
+      "answer": 0,
+      "explanation": "Futur simple annonçant la disponibilité de l'infirmière la semaine suivante."
+    },
+    {
+      "id": "p6-007-q3",
+      "blank": 3,
+      "choices": ["stop", "stopping", "stops", "stopped"],
+      "answer": 0,
+      "explanation": "Après le modal \"can\", on utilise l'infinitif sans \"to\" : \"can simply stop by\"."
+    },
+    {
+      "id": "p6-007-q4",
+      "blank": 4,
+      "choices": ["Additionally", "However", "Despite", "Unless"],
+      "answer": 0,
+      "explanation": "On ajoute une instruction supplémentaire (apporter sa carte d'employé) : \"Additionally\"."
+    }
+  ]
+}

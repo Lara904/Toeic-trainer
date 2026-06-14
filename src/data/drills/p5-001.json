@@ -1,0 +1,44 @@
+{
+  "id": "p5-001",
+  "part": 5,
+  "skill": "reading",
+  "title": "Part 5 – Phrases à compléter : grammaire & vocabulaire",
+  "instructions": "Choisissez le mot ou le groupe de mots qui complète correctement chaque phrase.",
+  "questions": [
+    {
+      "id": "p5-001-q1",
+      "sentence": "Ms. Tanaka has worked for this company ____ more than ten years.",
+      "choices": ["since", "for", "during", "ago"],
+      "answer": 1,
+      "explanation": "\"For\" + durée (ten years) ; \"since\" s'utilise avec un point de départ précis (since 2015)."
+    },
+    {
+      "id": "p5-001-q2",
+      "sentence": "Please make sure all reports are submitted ____ the end of the day.",
+      "choices": ["by", "until", "since", "from"],
+      "answer": 0,
+      "explanation": "\"By\" + moment = au plus tard à ce moment-là. \"Until\" indiquerait une durée continue jusqu'à ce moment."
+    },
+    {
+      "id": "p5-001-q3",
+      "sentence": "The new software is much more efficient ____ the previous version.",
+      "choices": ["than", "that", "as", "then"],
+      "answer": 0,
+      "explanation": "Comparatif (\"more efficient\") suivi de \"than\"."
+    },
+    {
+      "id": "p5-001-q4",
+      "sentence": "If the shipment arrives late, we ____ to inform the client immediately.",
+      "choices": ["needs", "needing", "need", "needed"],
+      "answer": 2,
+      "explanation": "Le sujet \"we\" est pluriel et la phrase est au présent : \"need\" sans -s."
+    },
+    {
+      "id": "p5-001-q5",
+      "sentence": "The conference room ____ for the budget meeting at 3 p.m.",
+      "choices": ["has been reserved", "has reserved", "reserves", "reserving"],
+      "answer": 0,
+      "explanation": "La salle ne réserve pas elle-même : il faut la voix passive, \"has been reserved\"."
+    }
+  ]
+}

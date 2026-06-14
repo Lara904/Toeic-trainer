@@ -1,0 +1,53 @@
+{
+  "id": "p7-006",
+  "part": 7,
+  "skill": "reading",
+  "title": "Part 7 – Passage unique : confirmation d'inscription à un salon",
+  "instructions": "Lisez l'e-mail, puis répondez aux questions.",
+  "passage": "Registration Confirmation - Annual Marketing Summit\n\nDear Ms. Brooks,\n\nThank you for registering for the Annual Marketing Summit, taking place on October 14th and 15th at the Riverside Convention Center.\n\nYour registration includes access to all keynote sessions, workshops, and the networking reception on the evening of October 14th. Lunch will be provided on both days.\n\nPlease bring this confirmation email or your registration number (MS-2291) to the check-in desk, which opens at 8 a.m. on the first day. Badges will not be mailed in advance.\n\nIf you wish to attend any of the optional evening workshops on October 15th, please note that these require a separate ticket, available for purchase at the check-in desk while supplies last.\n\nWe look forward to seeing you at the summit!",
+  "questions": [
+    {
+      "id": "p7-006-q1",
+      "prompt": "What does Ms. Brooks's registration include?",
+      "choices": [
+        "Hotel accommodation",
+        "Keynote sessions, workshops, and the networking reception",
+        "Transportation to the venue",
+        "A one-on-one meeting with speakers"
+      ],
+      "answer": 1,
+      "explanation": "\"Your registration includes access to all keynote sessions, workshops, and the networking reception\"."
+    },
+    {
+      "id": "p7-006-q2",
+      "prompt": "What should Ms. Brooks bring to the check-in desk?",
+      "choices": [
+        "A printed ticket only",
+        "Her confirmation email or registration number",
+        "A company ID badge",
+        "Payment for the registration fee"
+      ],
+      "answer": 1,
+      "explanation": "\"Please bring this confirmation email or your registration number (MS-2291)\"."
+    },
+    {
+      "id": "p7-006-q3",
+      "prompt": "At what time does check-in open on the first day?",
+      "choices": ["7 a.m.", "8 a.m.", "9 a.m.", "10 a.m."],
+      "answer": 1,
+      "explanation": "\"the check-in desk, which opens at 8 a.m. on the first day\"."
+    },
+    {
+      "id": "p7-006-q4",
+      "prompt": "What is required to attend the optional evening workshops on October 15th?",
+      "choices": [
+        "Nothing extra is needed",
+        "A separate ticket",
+        "An invitation from the organizer",
+        "Completion of a survey"
+      ],
+      "answer": 1,
+      "explanation": "\"these require a separate ticket, available for purchase at the check-in desk\"."
+    }
+  ]
+}

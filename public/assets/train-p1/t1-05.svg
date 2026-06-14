@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <rect width="400" height="280" fill="#e8f5e9"/>
+  <rect x="0" y="240" width="400" height="40" fill="#c8e6c9"/>
+  <!-- grande table ovale -->
+  <ellipse cx="200" cy="190" rx="170" ry="52" fill="#fff" stroke="#b0bec5" stroke-width="2"/>
+  <!-- 5 personnes autour -->
+  <!-- gauche -->
+  <circle cx="48" cy="178" r="18" fill="#ffb74d"/>
+  <rect x="32" y="196" width="32" height="40" rx="7" fill="#1565c0"/>
+  <!-- milieu gauche -->
+  <circle cx="118" cy="155" r="18" fill="#ffcc80"/>
+  <rect x="102" y="173" width="32" height="40" rx="7" fill="#e53935"/>
+  <!-- centre -->
+  <circle cx="200" cy="148" r="20" fill="#ef9a9a"/>
+  <rect x="182" y="168" width="36" height="42" rx="8" fill="#6a1b9a"/>
+  <!-- milieu droit -->
+  <circle cx="282" cy="155" r="18" fill="#a5d6a7"/>
+  <rect x="266" y="173" width="32" height="40" rx="7" fill="#00695c"/>
+  <!-- droit -->
+  <circle cx="352" cy="178" r="18" fill="#ffb74d"/>
+  <rect x="336" y="196" width="32" height="40" rx="7" fill="#37474f"/>
+  <!-- documents sur la table -->
+  <rect x="155" y="175" width="50" height="14" rx="2" fill="#eceff1" stroke="#90a4ae" stroke-width="1"/>
+  <rect x="210" y="178" width="40" height="12" rx="2" fill="#eceff1" stroke="#90a4ae" stroke-width="1"/>
+</svg>

@@ -1,0 +1,100 @@
+{
+  "id": "train-p3-002",
+  "part": 3,
+  "type": "training",
+  "skill": "listening",
+  "title": "Part 3 – Entraînement 2 : conversations finance, tech & transport",
+  "instructions": "Écoutez chaque conversation, puis répondez aux trois questions.",
+  "items": [
+    {
+      "id": "t3-002-c01",
+      "audioText": "Woman: I've been reviewing the Q2 expense reports and noticed that the travel budget was overspent by nearly twenty percent. Man: I know. We had three last-minute flights to Madrid that weren't budgeted for. Woman: We need to tighten the approval process. Going forward, any travel over five hundred euros should require my sign-off before booking. Man: Understood. I'll update the travel request form and send it to all team leaders by end of day.",
+      "questions": [
+        { "id": "t3-002-c01-q1", "prompt": "What issue has the woman identified?", "choices": ["The Q2 revenue figures are incorrect", "The travel budget was overspent by twenty percent", "Three employees missed their flights to Madrid", "The expense report deadline was missed"], "answer": 1, "explanation": "\"the travel budget was overspent by nearly twenty percent\"." },
+        { "id": "t3-002-c01-q2", "prompt": "Why was the budget exceeded?", "choices": ["Hotel costs increased unexpectedly", "Staff used taxis instead of trains", "Three last-minute flights to Madrid were not budgeted", "The exchange rate changed"], "answer": 2, "explanation": "\"We had three last-minute flights to Madrid that weren't budgeted for\"." },
+        { "id": "t3-002-c01-q3", "prompt": "What new rule does the woman want to introduce?", "choices": ["All travel must be booked two weeks in advance", "Travel over five hundred euros needs her approval before booking", "Only managers can book international flights", "All travel must be booked through the agency"], "answer": 1, "explanation": "\"any travel over five hundred euros should require my sign-off before booking\"." }
+      ]
+    },
+    {
+      "id": "t3-002-c02",
+      "audioText": "Man: Our cloud storage costs have gone up forty percent this year. I think we need to audit what we're actually storing. Woman: Agreed. A lot of it is probably outdated project files that nobody accesses anymore. Man: Exactly. I'd suggest setting a retention policy — anything not accessed in two years gets archived or deleted. Woman: That makes sense. Let's get the IT team to run a usage report first so we know what we're dealing with.",
+      "questions": [
+        { "id": "t3-002-c02-q1", "prompt": "What problem are the speakers addressing?", "choices": ["Slow internet connection in the office", "A data security breach", "A forty percent rise in cloud storage costs", "Loss of important project files"], "answer": 2, "explanation": "\"Our cloud storage costs have gone up forty percent this year\"." },
+        { "id": "t3-002-c02-q2", "prompt": "What does the man suggest doing with files not accessed in two years?", "choices": ["Sharing them with all employees", "Backing them up to physical hard drives", "Archiving or deleting them", "Moving them to a cheaper server"], "answer": 2, "explanation": "\"anything not accessed in two years gets archived or deleted\"." },
+        { "id": "t3-002-c02-q3", "prompt": "What does the woman suggest doing first?", "choices": ["Contacting the cloud provider for a discount", "Getting IT to run a usage report", "Migrating to a different platform", "Deleting all files older than one year"], "answer": 1, "explanation": "\"Let's get the IT team to run a usage report first\"." }
+      ]
+    },
+    {
+      "id": "t3-002-c03",
+      "audioText": "Woman: The company credit card statements came in. I'm seeing a charge of twelve hundred euros from a vendor called Orbex. Do you know what that's for? Man: Yes, that's the licence fee for the project management software we trialled last month. Woman: I don't remember approving that. Who authorised the purchase? Man: It was approved by the operations director as a pilot. But we've decided not to continue with it, so I'll request a refund today. Woman: Please do — and make sure any future software purchases go through the standard approval process.",
+      "questions": [
+        { "id": "t3-002-c03-q1", "prompt": "What is the woman questioning?", "choices": ["An incorrect vendor invoice", "A twelve-hundred-euro charge on the company credit card", "A missing receipt for a business trip", "A duplicate payment to a supplier"], "answer": 1, "explanation": "\"I'm seeing a charge of twelve hundred euros from a vendor called Orbex\"." },
+        { "id": "t3-002-c03-q2", "prompt": "What was the charge for?", "choices": ["A hardware upgrade", "A team-building event", "A project management software licence", "A cloud storage subscription"], "answer": 2, "explanation": "\"that's the licence fee for the project management software we trialled last month\"." },
+        { "id": "t3-002-c03-q3", "prompt": "What will the man do today?", "choices": ["Cancel the software subscription", "Request a refund from the vendor", "Contact the operations director", "Submit the expense for approval"], "answer": 1, "explanation": "\"I'll request a refund today\"." }
+      ]
+    },
+    {
+      "id": "t3-002-c04",
+      "audioText": "Man: The client's server went down at midnight and their team has been unable to access their data since. Woman: Did we get an alert? Man: Yes, our monitoring system flagged it at twelve-oh-five, but the on-call engineer didn't respond until one-thirty. Woman: That's unacceptable. Our SLA guarantees a fifteen-minute response time. We need to review our on-call procedures immediately. Man: I've already escalated it to the engineering director. We're meeting this afternoon to go over the incident.",
+      "questions": [
+        { "id": "t3-002-c04-q1", "prompt": "What happened at midnight?", "choices": ["A power outage at the office", "The client's server went down", "An employee lost access to the VPN", "The monitoring system crashed"], "answer": 1, "explanation": "\"The client's server went down at midnight\"." },
+        { "id": "t3-002-c04-q2", "prompt": "Why is the woman dissatisfied?", "choices": ["The monitoring system did not send an alert", "The engineer responded too slowly, violating the SLA", "The client was not informed about the outage", "The wrong team was notified"], "answer": 1, "explanation": "\"Our SLA guarantees a fifteen-minute response time\" but the engineer didn't respond until one-thirty." },
+        { "id": "t3-002-c04-q3", "prompt": "What has the man already done?", "choices": ["Rebooted the client's server", "Sent an apology to the client", "Escalated the issue to the engineering director", "Updated the on-call schedule"], "answer": 2, "explanation": "\"I've already escalated it to the engineering director\"." }
+      ]
+    },
+    {
+      "id": "t3-002-c05",
+      "audioText": "Woman: I'm trying to book train tickets for the team trip to Brussels next month, but the corporate booking portal keeps crashing. Man: I had the same issue last week. Try clearing your browser cache — that fixed it for me. Woman: I already tried that. It's still not working. Man: In that case, call the travel desk directly. They can make the booking over the phone and send you the confirmation by email. Woman: All right, I'll do that now. Do you have their extension? Man: It's extension three-twenty.",
+      "questions": [
+        { "id": "t3-002-c05-q1", "prompt": "What problem is the woman experiencing?", "choices": ["The train tickets are sold out", "The team trip has been cancelled", "The corporate booking portal keeps crashing", "She cannot find the travel desk phone number"], "answer": 2, "explanation": "\"the corporate booking portal keeps crashing\"." },
+        { "id": "t3-002-c05-q2", "prompt": "What did the man suggest that the woman already tried?", "choices": ["Restarting her computer", "Clearing the browser cache", "Using a different browser", "Logging in with a different account"], "answer": 1, "explanation": "\"Try clearing your browser cache\" — \"I already tried that\"." },
+        { "id": "t3-002-c05-q3", "prompt": "What is the travel desk extension?", "choices": ["212", "230", "320", "302"], "answer": 2, "explanation": "\"It's extension three-twenty\"." }
+      ]
+    },
+    {
+      "id": "t3-002-c06",
+      "audioText": "Man: The supplier just informed us they can't deliver the components until the fourteenth — that's two weeks later than planned. Woman: That's going to push back our whole production schedule. Can we source them from another supplier in the meantime? Man: I checked — the only alternative is twenty percent more expensive. Woman: Given the delay costs, it might still be worth it. Let me run the numbers and get back to you within the hour. Man: Please do. We need to make a decision before three o'clock.",
+      "questions": [
+        { "id": "t3-002-c06-q1", "prompt": "What problem has arisen?", "choices": ["Components were damaged in transit", "The supplier cannot deliver until two weeks later than planned", "The production facility is closed for maintenance", "A component order was placed incorrectly"], "answer": 1, "explanation": "\"they can't deliver the components until the fourteenth — that's two weeks later than planned\"." },
+        { "id": "t3-002-c06-q2", "prompt": "What is the disadvantage of using an alternative supplier?", "choices": ["Longer delivery time", "Lower quality components", "Twenty percent higher cost", "Different component specifications"], "answer": 2, "explanation": "\"the only alternative is twenty percent more expensive\"." },
+        { "id": "t3-002-c06-q3", "prompt": "By when does a decision need to be made?", "choices": ["Within the hour", "Before noon", "Before three o'clock", "By end of day"], "answer": 2, "explanation": "\"We need to make a decision before three o'clock\"." }
+      ]
+    },
+    {
+      "id": "t3-002-c07",
+      "audioText": "Woman: I've set up the new expense tracking software on the finance team's computers. Is everyone trained on it? Man: Most of the team did the online tutorial, but two people were out sick that day. Woman: I can run a short catch-up session for them — maybe thirty minutes on Thursday. Man: That would be great. Could you also send them the user guide PDF in the meantime? Woman: Of course, I'll email it to you and you can forward it.",
+      "questions": [
+        { "id": "t3-002-c07-q1", "prompt": "What has the woman just set up?", "choices": ["A new payroll system", "A cloud backup solution", "An expense tracking software", "A project management tool"], "answer": 2, "explanation": "\"I've set up the new expense tracking software on the finance team's computers\"." },
+        { "id": "t3-002-c07-q2", "prompt": "Why haven't two team members been trained yet?", "choices": ["They refused to take the tutorial", "They were out sick during the training", "They don't use the software", "They were on a business trip"], "answer": 1, "explanation": "\"two people were out sick that day\"." },
+        { "id": "t3-002-c07-q3", "prompt": "What will the woman send to the man?", "choices": ["A meeting invitation for Thursday", "The login credentials for the software", "The user guide PDF", "A short video tutorial"], "answer": 2, "explanation": "\"I'll email it to you and you can forward it\" (the user guide PDF)." }
+      ]
+    },
+    {
+      "id": "t3-002-c08",
+      "audioText": "Man: I'm looking at the flight options for the trade fair in Tokyo. There are two viable routes — a direct flight at eight hundred euros or a connecting flight via Dubai at five hundred and fifty. Woman: What's the travel time difference? Man: The direct flight is eleven hours. Via Dubai it's about sixteen hours with a three-hour layover. Woman: For a trip that long, I'd go with the direct flight. The extra cost is justified by the shorter journey time. Man: I agree. I'll book the direct flight for both of us.",
+      "questions": [
+        { "id": "t3-002-c08-q1", "prompt": "What are the speakers comparing?", "choices": ["Two hotels in Tokyo", "Two airlines serving the same route", "Two flight options to Tokyo", "Two conference locations in Japan"], "answer": 2, "explanation": "They're comparing a direct flight and a connecting flight to Tokyo." },
+        { "id": "t3-002-c08-q2", "prompt": "How long is the connecting flight via Dubai including the layover?", "choices": ["Eleven hours", "Thirteen hours", "Sixteen hours", "Eighteen hours"], "answer": 2, "explanation": "\"about sixteen hours with a three-hour layover\"." },
+        { "id": "t3-002-c08-q3", "prompt": "Which option do they decide on?", "choices": ["The connecting flight to save money", "The direct flight for a shorter journey time", "Neither — they will attend virtually", "They will decide after checking again"], "answer": 1, "explanation": "\"I'd go with the direct flight. The extra cost is justified by the shorter journey time\"." }
+      ]
+    },
+    {
+      "id": "t3-002-c09",
+      "audioText": "Woman: We're moving to a new CRM system at the end of the quarter. I want to make sure the data migration goes smoothly. Man: Have you backed up everything in the current system? Woman: Yes, our database administrator did a full backup last Friday. Man: Good. Who'll be managing the migration on the technical side? Woman: Our IT project manager, with support from the CRM vendor's implementation team. They'll work over the weekend to minimise disruption. Man: Smart. Make sure users get a briefing on the new interface before Monday.",
+      "questions": [
+        { "id": "t3-002-c09-q1", "prompt": "What is happening at the end of the quarter?", "choices": ["The company is merging with a competitor", "A new CRM system is being introduced", "The IT department is being restructured", "A new data protection policy is launching"], "answer": 1, "explanation": "\"We're moving to a new CRM system at the end of the quarter\"." },
+        { "id": "t3-002-c09-q2", "prompt": "Who will manage the technical migration?", "choices": ["The database administrator", "The IT project manager and the CRM vendor's team", "An external consultant", "The finance and IT departments jointly"], "answer": 1, "explanation": "\"Our IT project manager, with support from the CRM vendor's implementation team\"." },
+        { "id": "t3-002-c09-q3", "prompt": "What does the man recommend before Monday?", "choices": ["Conducting final data backups", "Testing the new system with a small group", "Briefing users on the new interface", "Delaying the migration by one week"], "answer": 2, "explanation": "\"Make sure users get a briefing on the new interface before Monday\"." }
+      ]
+    },
+    {
+      "id": "t3-002-c10",
+      "audioText": "Man: The company van needs servicing. The last service was over fifteen thousand kilometres ago. Woman: Is it due for an MOT as well? Man: Yes, both are due. I've contacted three garages for quotes. The cheapest was four hundred and twenty euros all in. Woman: That's reasonable. Go ahead and book it. Try to get it done on a day when we don't have scheduled deliveries. Man: Tuesday looks quiet. I'll book it in for Tuesday morning.",
+      "questions": [
+        { "id": "t3-002-c10-q1", "prompt": "What does the company van need?", "choices": ["New tyres and a paint job", "A service and an MOT", "A replacement engine", "A full inspection after an accident"], "answer": 1, "explanation": "\"The last service was over fifteen thousand kilometres ago\" and the MOT is also due." },
+        { "id": "t3-002-c10-q2", "prompt": "How much is the cheapest quote?", "choices": ["Three hundred euros", "Three hundred and eighty euros", "Four hundred and twenty euros", "Five hundred euros"], "answer": 2, "explanation": "\"The cheapest was four hundred and twenty euros all in\"." },
+        { "id": "t3-002-c10-q3", "prompt": "When will the man book the service?", "choices": ["Monday morning", "Tuesday morning", "Wednesday afternoon", "Thursday"], "answer": 1, "explanation": "\"Tuesday looks quiet. I'll book it in for Tuesday morning\"." }
+      ]
+    }
+  ]
+}

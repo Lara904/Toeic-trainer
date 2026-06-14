@@ -1,0 +1,46 @@
+{
+  "id": "p3-005",
+  "part": 3,
+  "skill": "listening",
+  "title": "Part 3 – Conversation : une livraison retardée",
+  "instructions": "Écoutez la conversation, puis répondez aux trois questions.",
+  "audioText": "Man: I'm calling to check on the status of our shipment, order number 7789. It was supposed to arrive yesterday. Woman: Let me look that up... I see here that the truck was delayed because of a mechanical issue, but it left the warehouse this morning. Man: Do you have an estimated delivery time for today? Woman: Based on the current route, it should arrive at your warehouse between two and four this afternoon. Man: Okay. Could someone call our receiving department about thirty minutes before it arrives? They need time to prepare the loading dock. Woman: Of course, I'll add that note to the driver's instructions right now.",
+  "questions": [
+    {
+      "id": "p3-005-q1",
+      "prompt": "What is the man calling about?",
+      "choices": [
+        "A cancelled order",
+        "A delayed shipment",
+        "A billing error",
+        "A new delivery address"
+      ],
+      "answer": 1,
+      "explanation": "Il appelle pour vérifier le statut d'une commande qui devait arriver la veille et qui est en retard."
+    },
+    {
+      "id": "p3-005-q2",
+      "prompt": "Why was the shipment delayed?",
+      "choices": [
+        "Bad weather",
+        "A mechanical issue with the truck",
+        "A staff shortage",
+        "An incorrect address"
+      ],
+      "answer": 1,
+      "explanation": "La femme explique que le camion a été retardé en raison d'un problème mécanique."
+    },
+    {
+      "id": "p3-005-q3",
+      "prompt": "What does the man request?",
+      "choices": [
+        "A refund for the delay",
+        "A call to the receiving department before arrival",
+        "A new delivery date",
+        "A discount on the order"
+      ],
+      "answer": 1,
+      "explanation": "Il demande qu'on prévienne le service de réception environ trente minutes avant l'arrivée du camion."
+    }
+  ]
+}

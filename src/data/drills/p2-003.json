@@ -1,0 +1,20 @@
+{
+  "id": "p2-003",
+  "part": 2,
+  "skill": "listening",
+  "title": "Part 2 – Question-Réponse : le rendez-vous médical",
+  "instructions": "Écoutez la question et les trois réponses possibles. Choisissez la réponse la plus appropriée.",
+  "audioText": "Have you made an appointment with Dr. Reynolds yet? (A) Yes, for next Tuesday morning. (B) It's down the hall, on the left. (C) I'd rather have tea, thanks.",
+  "questions": [
+    {
+      "id": "p2-003-q1",
+      "choices": [
+        "Yes, for next Tuesday morning.",
+        "It's down the hall, on the left.",
+        "I'd rather have tea, thanks."
+      ],
+      "answer": 0,
+      "explanation": "La question \"Have you...yet?\" attend une réponse par oui/non suivie d'un détail. (A) confirme et précise le moment du rendez-vous. (B) indique une direction et (C) répond à une proposition de boisson."
+    }
+  ]
+}
