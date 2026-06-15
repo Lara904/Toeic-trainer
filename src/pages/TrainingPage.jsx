@@ -1,13 +1,12 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import ListeningPlayer from '../components/ListeningPlayer';
 import QuestionCard from '../components/QuestionCard';
 import ResultsSummary from '../components/ResultsSummary';
 import { PART_LABELS } from '../data/drillsIndex';
-import { getTrainingById } from '../data/trainingIndex';
+import { loadTrainingById } from '../data/trainingIndex';
 import styles from './TrainingPage.module.css';
 
-// ── renderPassage ──────────────────────────────────────────────────────────
 const renderPassage = (text) => {
   const parts = text.split(/(\{\{\d+\}\})/g);
   return parts.map((part, i) => {
@@ -19,35 +18,15 @@ const renderPassage = (text) => {
 };
 
 /**
- * Normalise un item en tableau de questions exploitable par QuestionCard.
- *
- * Trois formats coexistent dans les JSON d'entraînement :
- *
- *  A) item.questions = [{id, choices, answer, explanation, prompt?, sentence?, blank?}]
- *     → Parts 3, 4, 6 (textes à trous), 7, 8
- *
- *  B) item plat : {id, audioText?, image?, choices, answer, explanation}
- *     → Parts 1 (photo + 4 propositions) et 2 (Q-R à 3 réponses)
- *
- *  C) item plat avec sentence : {id, sentence, choices, answer, explanation}
- *     → Part 5 (phrases à compléter)
- *
- * Dans les cas B et C, on fabrique un objet question synthétique à partir
- * des champs de l'item lui-même, pour que QuestionCard reçoive toujours
- * la même interface : { id, prompt?, sentence?, blank?, choices, answer, explanation }
- *
- * Correction des réponses :
- *   QuestionCard compare `selected` (index 0-3 choisi par l'utilisateur)
- *   avec `question.answer` (index 0-3 stocké dans le JSON).
- *   selected === question.answer  →  bonne réponse ✅
- *   selected !== question.answer  →  mauvaise réponse ❌
+ * Normalise un item en tableau de questions.
+ * Format A : item.questions[]          → Parts 3,4,6,7,8
+ * Format B : choices à la racine       → Parts 1,2
+ * Format C : sentence à la racine      → Part 5
  */
 const getItemQuestions = (item) => {
-  if (Array.isArray(item.questions) && item.questions.length > 0) {
-    return item.questions;           // Cas A
-  }
+  if (Array.isArray(item.questions) && item.questions.length > 0) return item.questions;
   if (Array.isArray(item.choices)) {
-    return [{                        // Cas B et C
+    return [{
       id:          item.id,
       sentence:    item.sentence    || undefined,
       prompt:      item.prompt      || undefined,
@@ -63,36 +42,30 @@ const getItemQuestions = (item) => {
 const countCorrect = (item, answers) =>
   getItemQuestions(item).filter((q) => answers[q.id] === q.answer).length;
 
-// ── TrainingItem ───────────────────────────────────────────────────────────
-const TrainingItem = ({ item, answers, submitted, onSelect }) => {
+// ── TrainingItem ────────────────────────────────────────────────────────────
+const TrainingItem = ({ item, part, answers, submitted, onSelect }) => {
   const questions = getItemQuestions(item);
+  // Part 1 : dans le vrai TOEIC, on n'affiche que A B C D, pas le texte
+  const hideChoiceText = part <= 4;
 
   return (
     <div className={styles.item}>
-
       {item.image && (
-        <img
-          className={styles.itemImage}
-          src={item.image.src}
-          alt={item.image.alt}
-          width="400"
-          height="300"
-          loading="lazy"
+        <img className={styles.itemImage}
+          src={item.image.src} alt={item.image.alt}
+          width="400" height="300" loading="lazy"
         />
       )}
-
       {item.audioText && (
         <div className={styles.audioWrap}>
           <ListeningPlayer text={item.audioText} />
         </div>
       )}
-
       {item.passage && (
         <div className={styles.passage}>
           <pre className={styles.passageText}>{renderPassage(item.passage)}</pre>
         </div>
       )}
-
       {item.passages && (
         <div className={styles.multiPassages}>
           {item.passages.map((doc) => (
@@ -103,7 +76,6 @@ const TrainingItem = ({ item, answers, submitted, onSelect }) => {
           ))}
         </div>
       )}
-
       <div className={styles.questions}>
         {questions.map((q, qi) => (
           <QuestionCard
@@ -113,11 +85,8 @@ const TrainingItem = ({ item, answers, submitted, onSelect }) => {
             selected={answers[q.id]}
             onSelect={(ci) => onSelect(q.id, ci)}
             submitted={submitted}
-            fallbackPrompt={
-              q.blank
-                ? `Mot ou groupe de mots pour le repère (${q.blank})`
-                : undefined
-            }
+            hideChoiceText={hideChoiceText}
+            fallbackPrompt={q.blank ? `Mot ou groupe de mots pour le repère (${q.blank})` : undefined}
           />
         ))}
       </div>
@@ -125,30 +94,35 @@ const TrainingItem = ({ item, answers, submitted, onSelect }) => {
   );
 };
 
-// ── TrainingPage ───────────────────────────────────────────────────────────
+// ── TrainingPage ─────────────────────────────────────────────────────────────
 const TrainingPage = () => {
   const { id }     = useParams();
   const navigate   = useNavigate();
-  const exercise   = useMemo(() => getTrainingById(id), [id]);
-
-  const [answers,   setAnswers]   = useState({});
+  const [exercise, setExercise] = useState(null);
+  const [loading, setLoading]   = useState(true);
+  const [answers, setAnswers]   = useState({});
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setAnswers({});
+    setSubmitted(false);
+    loadTrainingById(id).then((data) => { setExercise(data); setLoading(false); });
+  }, [id]);
 
   const handleSelect = useCallback((qId, ci) => {
     if (submitted) return;
     setAnswers((prev) => ({ ...prev, [qId]: ci }));
   }, [submitted]);
 
-  const handleRetry = () => { setAnswers({}); setSubmitted(false); };
+  if (loading) return <div className={styles.loading}>Chargement de l'exercice…</div>;
 
-  if (!exercise) {
-    return (
-      <section>
-        <h1>Exercice introuvable</h1>
-        <button type="button" onClick={() => navigate('/')}>Retour</button>
-      </section>
-    );
-  }
+  if (!exercise) return (
+    <section>
+      <h1>Exercice introuvable</h1>
+      <button type="button" onClick={() => navigate('/')}>Retour</button>
+    </section>
+  );
 
   const items    = exercise.items || [];
   const totalQ   = items.reduce((s, it) => s + getItemQuestions(it).length, 0);
@@ -162,11 +136,10 @@ const TrainingPage = () => {
 
       {items.map((item, idx) => (
         <div key={item.id} className={styles.itemWrap}>
-          <p className={styles.itemNum}>
-            {idx + 1} / {items.length}
-          </p>
+          <p className={styles.itemNum}>{idx + 1} / {items.length}</p>
           <TrainingItem
             item={item}
+            part={exercise.part}
             answers={answers}
             submitted={submitted}
             onSelect={handleSelect}
@@ -175,18 +148,13 @@ const TrainingPage = () => {
       ))}
 
       {!submitted ? (
-        <button
-          type="button"
-          className={styles.submit}
-          onClick={() => setSubmitted(true)}
-        >
+        <button type="button" className={styles.submit} onClick={() => setSubmitted(true)}>
           Valider toutes mes réponses
         </button>
       ) : (
         <ResultsSummary
-          correct={correctQ}
-          total={totalQ}
-          onRetry={handleRetry}
+          correct={correctQ} total={totalQ}
+          onRetry={() => { setAnswers({}); setSubmitted(false); }}
         />
       )}
     </section>

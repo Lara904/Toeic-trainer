@@ -1,49 +1,29 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ListeningPlayer from '../components/ListeningPlayer';
 import QuestionCard from '../components/QuestionCard';
-import { getDrillById, PART_LABELS } from '../data/drillsIndex';
-import { TEST_BLANC } from '../data/trainingIndex';
+import { PART_LABELS, loadDrillsByIds } from '../data/drillsIndex';
+import { loadTestBlanc } from '../data/trainingIndex';
 import styles from './TestBlancPage.module.css';
 
-// ── helpers ────────────────────────────────────────────────────────────────
 const renderPassage = (text) => {
   const parts = text.split(/(\{\{\d+\}\})/g);
-  return parts.map((part, i) => {
-    const m = part.match(/^\{\{(\d+)\}\}$/);
-    return m
-      ? <strong key={i} className={styles.blankMarker}>({m[1]})</strong>
-      : <span key={i}>{part}</span>;
+  return parts.map((p, i) => {
+    const m = p.match(/^\{\{(\d+)\}\}$/);
+    return m ? <strong key={i} className={styles.blankMarker}>({m[1]})</strong> : <span key={i}>{p}</span>;
   });
 };
 
-// Retourne les questions d'un drill (flat) quel que soit son format
 const getDrillQuestions = (drill) => drill.questions || [];
 
-// ── mini-rendu d'un drill dans le test blanc ───────────────────────────────
 const DrillBlock = ({ drill, answers, submitted, onSelect }) => {
   const questions = getDrillQuestions(drill);
+  const hideChoiceText = drill.part <= 4;
   return (
     <div className={styles.drillBlock}>
-      {drill.image && (
-        <img
-          className={styles.drillImage}
-          src={drill.image.src}
-          alt={drill.image.alt}
-          width="400" height="300"
-          loading="lazy"
-        />
-      )}
-      {drill.audioText && (
-        <div className={styles.audioWrap}>
-          <ListeningPlayer text={drill.audioText} />
-        </div>
-      )}
-      {drill.passage && (
-        <div className={styles.passage}>
-          <pre className={styles.passageText}>{renderPassage(drill.passage)}</pre>
-        </div>
-      )}
+      {drill.image && <img className={styles.drillImage} src={drill.image.src} alt={drill.image.alt} width="400" height="300" loading="lazy" />}
+      {drill.audioText && <div className={styles.audioWrap}><ListeningPlayer text={drill.audioText} /></div>}
+      {drill.passage && <div className={styles.passage}><pre className={styles.passageText}>{renderPassage(drill.passage)}</pre></div>}
       {drill.passages && (
         <div className={styles.multiPassages}>
           {drill.passages.map((doc) => (
@@ -56,18 +36,10 @@ const DrillBlock = ({ drill, answers, submitted, onSelect }) => {
       )}
       <div className={styles.questions}>
         {questions.map((q, qi) => (
-          <QuestionCard
-            key={q.id}
-            question={q}
-            index={qi}
-            selected={answers[q.id]}
-            onSelect={(ci) => onSelect(q.id, ci)}
-            submitted={submitted}
-            fallbackPrompt={
-              q.blank
-                ? `Mot ou groupe de mots pour le repère (${q.blank})`
-                : drill.instructions
-            }
+          <QuestionCard key={q.id} question={q} index={qi}
+            selected={answers[q.id]} onSelect={(ci) => onSelect(q.id, ci)}
+            submitted={submitted} hideChoiceText={hideChoiceText}
+            fallbackPrompt={q.blank ? `Repère (${q.blank})` : drill.instructions}
           />
         ))}
       </div>
@@ -75,92 +47,76 @@ const DrillBlock = ({ drill, answers, submitted, onSelect }) => {
   );
 };
 
-// ── page ──────────────────────────────────────────────────────────────────
 const TestBlancPage = () => {
   const navigate = useNavigate();
-  const [answers, setAnswers]   = useState({});
+  const [started,   setStarted]   = useState(false);
+  const [loading,   setLoading]   = useState(false);
+  const [structure, setStructure] = useState(null); // test-blanc.json
+  const [sections,  setSections]  = useState([]);   // avec drills chargés
+  const [answers,   setAnswers]   = useState({});
   const [submitted, setSubmitted] = useState(false);
-  const [started, setStarted]   = useState(false);
 
-  // Charge tous les drills référencés dans test-blanc.json
-  const sections = useMemo(() => {
-    return TEST_BLANC.sections.map((section) => ({
-      ...section,
-      parts: section.parts.map((part) => ({
-        ...part,
-        drills: part.drillIds.map((id) => getDrillById(id)).filter(Boolean),
-      })),
-    }));
-  }, []);
+  // Charge la structure légère dès le démarrage du test
+  const handleStart = async () => {
+    setLoading(true);
+    const tb = await loadTestBlanc();
+    setStructure(tb);
+    // Charge tous les drills référencés en parallèle par section
+    const loaded = await Promise.all(
+      tb.sections.map(async (section) => ({
+        ...section,
+        parts: await Promise.all(
+          section.parts.map(async (part) => ({
+            ...part,
+            drills: await loadDrillsByIds(part.drillIds),
+          }))
+        ),
+      }))
+    );
+    setSections(loaded);
+    setLoading(false);
+    setStarted(true);
+  };
 
-  const allDrills = useMemo(
-    () => sections.flatMap((s) => s.parts.flatMap((p) => p.drills)),
-    [sections]
-  );
-
-  const allQuestions = useMemo(
-    () => allDrills.flatMap((d) => getDrillQuestions(d)),
-    [allDrills]
-  );
-
+  const allQuestions = sections.flatMap((s) => s.parts.flatMap((p) => p.drills.flatMap(getDrillQuestions)));
   const totalQ   = allQuestions.length;
   const correctQ = allQuestions.filter((q) => answers[q.id] === q.answer).length;
+  const answeredCount = Object.keys(answers).length;
+  const percentage = submitted && totalQ > 0 ? Math.round((correctQ / totalQ) * 100) : 0;
 
   const handleSelect = useCallback((qId, ci) => {
     if (submitted) return;
     setAnswers((prev) => ({ ...prev, [qId]: ci }));
   }, [submitted]);
 
-  const answeredCount = Object.keys(answers).length;
-  const percentage    = submitted ? Math.round((correctQ / totalQ) * 100) : 0;
+  // Écran d'accueil
+  if (!started) return (
+    <section className={styles.intro}>
+      <h1>🎯 Test Blanc TOEIC®</h1>
+      <p>Simulation complète : 200 questions · 8 parties · conditions officielles (~2h)</p>
+      <div className={styles.stats}>
+        <div className={styles.statBox}><span className={styles.statNum}>200</span><span className={styles.statLabel}>questions</span></div>
+        <div className={styles.statBox}><span className={styles.statNum}>8</span><span className={styles.statLabel}>parties</span></div>
+        <div className={styles.statBox}><span className={styles.statNum}>~2h</span><span className={styles.statLabel}>durée</span></div>
+      </div>
+      {loading
+        ? <p className={styles.loadingMsg}>Chargement des questions…</p>
+        : <button type="button" className={styles.startBtn} onClick={handleStart}>Commencer le test</button>
+      }
+      <button type="button" className={styles.backBtn} onClick={() => navigate('/')}>← Retour</button>
+    </section>
+  );
 
-  // ── écran d'accueil ─────────────────────────────────────────────────────
-  if (!started) {
-    return (
-      <section className={styles.intro}>
-        <h1>🎯 Test Blanc TOEIC®</h1>
-        <p>{TEST_BLANC.description}</p>
-        <div className={styles.stats}>
-          <div className={styles.statBox}>
-            <span className={styles.statNum}>{totalQ}</span>
-            <span className={styles.statLabel}>questions</span>
-          </div>
-          <div className={styles.statBox}>
-            <span className={styles.statNum}>8</span>
-            <span className={styles.statLabel}>parties</span>
-          </div>
-          <div className={styles.statBox}>
-            <span className={styles.statNum}>~2h</span>
-            <span className={styles.statLabel}>durée estimée</span>
-          </div>
-        </div>
-        <button type="button" className={styles.startBtn} onClick={() => setStarted(true)}>
-          Commencer le test
-        </button>
-        <button type="button" className={styles.backBtn} onClick={() => navigate('/')}>
-          ← Retour
-        </button>
-      </section>
-    );
-  }
-
-  // ── barre de progression sticky ─────────────────────────────────────────
-  const progressPct = Math.round((answeredCount / totalQ) * 100);
+  const progressPct = totalQ > 0 ? Math.round((answeredCount / totalQ) * 100) : 0;
 
   return (
     <section>
-      {/* sticky header */}
       <div className={styles.stickyHeader}>
         <span className={styles.stickyTitle}>Test Blanc TOEIC®</span>
-        {!submitted ? (
-          <span className={styles.stickyProgress}>
-            {answeredCount} / {totalQ} répondues
-          </span>
-        ) : (
-          <span className={styles.stickyScore}>
-            Score : {correctQ}/{totalQ} ({percentage}%)
-          </span>
-        )}
+        {!submitted
+          ? <span className={styles.stickyProgress}>{answeredCount} / {totalQ} répondues</span>
+          : <span className={styles.stickyScore}>Score : {correctQ}/{totalQ} ({percentage}%)</span>
+        }
       </div>
       {!submitted && (
         <div className={styles.progressBar}>
@@ -170,24 +126,16 @@ const TestBlancPage = () => {
 
       <h1 className={styles.pageTitle}>Test Blanc TOEIC®</h1>
 
-      {/* sections Listening / Reading */}
       {sections.map((section) => (
         <div key={section.label} className={styles.section}>
           <h2 className={styles.sectionTitle}>{section.label}</h2>
-
           {section.parts.map((part) => (
             <div key={part.part} className={styles.partGroup}>
-              <h3 className={styles.partTitle}>{part.title}</h3>
+              <h3 className={styles.partTitle}>{PART_LABELS[part.part]}</h3>
               <p className={styles.partInstructions}>{part.instructions}</p>
-
               {part.drills.map((drill) => (
                 <div key={drill.id} className={styles.drillWrap}>
-                  <DrillBlock
-                    drill={drill}
-                    answers={answers}
-                    submitted={submitted}
-                    onSelect={handleSelect}
-                  />
+                  <DrillBlock drill={drill} answers={answers} submitted={submitted} onSelect={handleSelect} />
                 </div>
               ))}
             </div>
@@ -195,13 +143,10 @@ const TestBlancPage = () => {
         </div>
       ))}
 
-      {/* ── actions ── */}
       {!submitted ? (
         <div className={styles.actionBar}>
           <p className={styles.actionHint}>
-            {answeredCount < totalQ
-              ? `${totalQ - answeredCount} question(s) sans réponse`
-              : 'Toutes les questions sont remplies — prêt à valider !'}
+            {answeredCount < totalQ ? `${totalQ - answeredCount} question(s) sans réponse` : 'Tout est rempli — prêt à valider !'}
           </p>
           <button type="button" className={styles.submitBtn} onClick={() => setSubmitted(true)}>
             Terminer le test et voir mes résultats
@@ -213,19 +158,12 @@ const TestBlancPage = () => {
             <p className={styles.resultsScore}>{correctQ} / {totalQ}</p>
             <p className={styles.resultsPct}>{percentage}%</p>
             <p className={styles.resultsLabel}>
-              {percentage >= 785 / 990 * 100
-                ? '🏆 Excellent score !'
-                : percentage >= 60
-                ? '👍 Bon travail, continue !'
-                : '💪 Continue à t\'entraîner !'}
+              {percentage >= 80 ? '🏆 Excellent !' : percentage >= 60 ? '👍 Bon travail !' : '💪 Continue !'}
             </p>
             <div className={styles.resultsActions}>
-              <button
-                type="button"
-                className={styles.retryBtn}
-                onClick={() => { setAnswers({}); setSubmitted(false); window.scrollTo(0, 0); }}
-              >
-                Recommencer le test
+              <button type="button" className={styles.retryBtn}
+                onClick={() => { setAnswers({}); setSubmitted(false); window.scrollTo(0, 0); }}>
+                Recommencer
               </button>
               <button type="button" className={styles.backBtn2} onClick={() => navigate('/')}>
                 Retour à l'accueil
@@ -239,3 +177,4 @@ const TestBlancPage = () => {
 };
 
 export default TestBlancPage;
+

@@ -1,63 +1,88 @@
-// ─── imports test blanc ───────────────────────────────────────────────────────
-import testBlanc from './training/test-blanc.json';
-
-// ─── imports Part 1 ──────────────────────────────────────────────────────────
-import trainP1_001 from './training/train-p1-001.json';
-import trainP1_002 from './training/train-p1-002.json';
-import trainP1_003 from './training/train-p1-003.json';
-
-// ─── imports Part 2 ──────────────────────────────────────────────────────────
-import trainP2_001 from './training/train-p2-001.json';
-import trainP2_002 from './training/train-p2-002.json';
-import trainP2_003 from './training/train-p2-003.json';
-import trainP2_004 from './training/train-p2-004.json';
-import trainP2_005 from './training/train-p2-005.json';
-
-// ─── imports Part 3 ──────────────────────────────────────────────────────────
-import trainP3_001 from './training/train-p3-001.json';
-import trainP3_002 from './training/train-p3-002.json';
-import trainP3_003 from './training/train-p3-003.json';
-
-// ─── imports Part 4 ──────────────────────────────────────────────────────────
-import trainP4_001 from './training/train-p4-001.json';
-import trainP4_002 from './training/train-p4-002.json';
-import trainP4_003 from './training/train-p4-003.json';
-import trainP4_004 from './training/train-p4-004.json';
-
-// ─── imports Part 5 ──────────────────────────────────────────────────────────
-import trainP5_001 from './training/train-p5-001.json';
-import trainP5_002 from './training/train-p5-002.json';
-import trainP5_003 from './training/train-p5-003.json';
-
-// ─── imports Part 6 ──────────────────────────────────────────────────────────
-import trainP6_001 from './training/train-p6-001.json';
-import trainP6_002 from './training/train-p6-002.json';
-import trainP6_003 from './training/train-p6-003.json';
-
-// ─── imports Part 7 ──────────────────────────────────────────────────────────
-import trainP7_001 from './training/train-p7-001.json';
-import trainP7_002 from './training/train-p7-002.json';
-import trainP7_003 from './training/train-p7-003.json';
-
-// ─── imports Part 8 ──────────────────────────────────────────────────────────
-import trainP8_001 from './training/train-p8-001.json';
-import trainP8_002 from './training/train-p8-002.json';
-import trainP8_003 from './training/train-p8-003.json';
-
-// ─── catalogue ordonné par partie ────────────────────────────────────────────
-export const TEST_BLANC = testBlanc;
-
-export const TRAINING_BY_PART = {
-  1: [trainP1_001, trainP1_002, trainP1_003],
-  2: [trainP2_001, trainP2_002, trainP2_003, trainP2_004, trainP2_005],
-  3: [trainP3_001, trainP3_002, trainP3_003],
-  4: [trainP4_001, trainP4_002, trainP4_003, trainP4_004],
-  5: [trainP5_001, trainP5_002, trainP5_003],
-  6: [trainP6_001, trainP6_002, trainP6_003],
-  7: [trainP7_001, trainP7_002, trainP7_003],
-  8: [trainP8_001, trainP8_002, trainP8_003],
+// ── REGISTRE STATIQUE (aucun JSON chargé au démarrage) ────────────────────
+const TRAINING_PATHS = {
+  'test-blanc':    () => import('./training/test-blanc.json'),
+  'train-p1-001':  () => import('./training/train-p1-001.json'),
+  'train-p1-002':  () => import('./training/train-p1-002.json'),
+  'train-p1-003':  () => import('./training/train-p1-003.json'),
+  'train-p2-001':  () => import('./training/train-p2-001.json'),
+  'train-p2-002':  () => import('./training/train-p2-002.json'),
+  'train-p2-003':  () => import('./training/train-p2-003.json'),
+  'train-p2-004':  () => import('./training/train-p2-004.json'),
+  'train-p2-005':  () => import('./training/train-p2-005.json'),
+  'train-p3-001':  () => import('./training/train-p3-001.json'),
+  'train-p3-002':  () => import('./training/train-p3-002.json'),
+  'train-p3-003':  () => import('./training/train-p3-003.json'),
+  'train-p4-001':  () => import('./training/train-p4-001.json'),
+  'train-p4-002':  () => import('./training/train-p4-002.json'),
+  'train-p4-003':  () => import('./training/train-p4-003.json'),
+  'train-p4-004':  () => import('./training/train-p4-004.json'),
+  'train-p5-001':  () => import('./training/train-p5-001.json'),
+  'train-p5-002':  () => import('./training/train-p5-002.json'),
+  'train-p5-003':  () => import('./training/train-p5-003.json'),
+  'train-p6-001':  () => import('./training/train-p6-001.json'),
+  'train-p6-002':  () => import('./training/train-p6-002.json'),
+  'train-p6-003':  () => import('./training/train-p6-003.json'),
+  'train-p7-001':  () => import('./training/train-p7-001.json'),
+  'train-p7-002':  () => import('./training/train-p7-002.json'),
+  'train-p7-003':  () => import('./training/train-p7-003.json'),
+  'train-p8-001':  () => import('./training/train-p8-001.json'),
+  'train-p8-002':  () => import('./training/train-p8-002.json'),
+  'train-p8-003':  () => import('./training/train-p8-003.json'),
 };
 
-export const ALL_TRAINING = Object.values(TRAINING_BY_PART).flat();
+// Catalogue statique pour l'accueil (métadonnées seulement, pas le contenu)
+export const TRAINING_CATALOG = {
+  1: [
+    { id: 'train-p1-001', title: 'Entraînement 1 : scènes de bureau',                    items: 10, skill: 'listening' },
+    { id: 'train-p1-002', title: 'Entraînement 2 : transport & lieux professionnels',     items: 10, skill: 'listening' },
+    { id: 'train-p1-003', title: 'Entraînement 3 : santé, restauration & vie quotidienne', items: 10, skill: 'listening' },
+  ],
+  2: [
+    { id: 'train-p2-001', title: 'Entraînement 1 : questions What / Where / Who',  items: 10, skill: 'listening' },
+    { id: 'train-p2-002', title: 'Entraînement 2 : questions When / How / How long', items: 10, skill: 'listening' },
+    { id: 'train-p2-003', title: 'Entraînement 3 : questions oui/non et invitations', items: 10, skill: 'listening' },
+    { id: 'train-p2-004', title: 'Entraînement 4 : questions Why / Which + pièges',  items: 10, skill: 'listening' },
+    { id: 'train-p2-005', title: 'Entraînement 5 : mix de types de questions',        items: 10, skill: 'listening' },
+  ],
+  3: [
+    { id: 'train-p3-001', title: 'Entraînement 1 : conversations RH & entreprise',            items: 10, skill: 'listening' },
+    { id: 'train-p3-002', title: 'Entraînement 2 : conversations finance, tech & transport',  items: 10, skill: 'listening' },
+    { id: 'train-p3-003', title: 'Entraînement 3 : conversations divertissement & santé',     items: 10, skill: 'listening' },
+  ],
+  4: [
+    { id: 'train-p4-001', title: 'Entraînement 1 : exposés RH & entreprise',               items: 10, skill: 'listening' },
+    { id: 'train-p4-002', title: 'Entraînement 2 : exposés finance & budget',               items: 10, skill: 'listening' },
+    { id: 'train-p4-003', title: 'Entraînement 3 : exposés communication & technologies',  items: 10, skill: 'listening' },
+    { id: 'train-p4-004', title: 'Entraînement 4 : exposés transport, divertissement & santé', items: 10, skill: 'listening' },
+  ],
+  5: [
+    { id: 'train-p5-001', title: 'Entraînement 1 : temps verbaux & voix passive',   items: 10, skill: 'reading' },
+    { id: 'train-p5-002', title: 'Entraînement 2 : prépositions & conjonctions',    items: 10, skill: 'reading' },
+    { id: 'train-p5-003', title: 'Entraînement 3 : vocabulaire & structure',         items: 10, skill: 'reading' },
+  ],
+  6: [
+    { id: 'train-p6-001', title: 'Entraînement 1 : e-mails professionnels',      items: 10, skill: 'reading' },
+    { id: 'train-p6-002', title: 'Entraînement 2 : notes de service & annonces', items: 10, skill: 'reading' },
+    { id: 'train-p6-003', title: 'Entraînement 3 : rapports & documents formels', items: 10, skill: 'reading' },
+  ],
+  7: [
+    { id: 'train-p7-001', title: 'Entraînement 1 : e-mails & annonces',           items: 10, skill: 'reading' },
+    { id: 'train-p7-002', title: 'Entraînement 2 : rapports, politiques & contrats', items: 10, skill: 'reading' },
+    { id: 'train-p7-003', title: 'Entraînement 3 : publicités, avis & divers',   items: 10, skill: 'reading' },
+  ],
+  8: [
+    { id: 'train-p8-001', title: 'Entraînement 1 : RH & entreprise',            items: 3, skill: 'reading' },
+    { id: 'train-p8-002', title: 'Entraînement 2 : finance & transport',         items: 3, skill: 'reading' },
+    { id: 'train-p8-003', title: 'Entraînement 3 : communication, santé & divertissement', items: 3, skill: 'reading' },
+  ],
+};
 
-export const getTrainingById = (id) => ALL_TRAINING.find((t) => t.id === id);
+/** Charge un exercice d'entraînement par son id */
+export const loadTrainingById = (id) => {
+  const loader = TRAINING_PATHS[id];
+  if (!loader) return Promise.resolve(null);
+  return loader().then((m) => m.default ?? m);
+};
+
+/** Charge le test blanc (structure légère, les drills sont chargés séparément) */
+export const loadTestBlanc = () => loadTrainingById('test-blanc');

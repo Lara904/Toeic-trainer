@@ -2,12 +2,27 @@ import styles from './QuestionCard.module.css';
 
 const CHOICE_LABELS = ['A', 'B', 'C', 'D'];
 
-// Affiche une question à choix multiples. Avant validation : simple QCM.
-// Après validation (submitted=true) : met en évidence la bonne réponse,
-// la réponse choisie si elle est fausse, et affiche l'explication.
-const QuestionCard = ({ question, index, selected, onSelect, submitted, fallbackPrompt }) => {
+/**
+ * Affiche une question à choix multiples.
+ *
+ * Props :
+ *   hideChoiceText  — si true, n'affiche que la lettre (A B C D), pas le texte.
+ *                     Utilisé pour la Part 1 (photos) : dans le vrai TOEIC,
+ *                     on entend les propositions, on ne les lit pas.
+ *                     Après validation, le texte est toujours révélé pour
+ *                     permettre de comprendre l'explication.
+ */
+const QuestionCard = ({
+  question,
+  index,
+  selected,
+  onSelect,
+  submitted,
+  hideChoiceText = false,
+  fallbackPrompt,
+}) => {
   const promptText = question.prompt || question.sentence || fallbackPrompt;
-  const isCorrect = submitted && selected === question.answer;
+  const isCorrect  = submitted && selected === question.answer;
   const isAnswered = selected !== undefined && selected !== null;
 
   return (
@@ -18,9 +33,9 @@ const QuestionCard = ({ question, index, selected, onSelect, submitted, fallback
       </legend>
 
       <div className={styles.choices}>
-        {question.choices.map((choice, choiceIndex) => {
-          const isSelected = selected === choiceIndex;
-          const isAnswerChoice = choiceIndex === question.answer;
+        {question.choices.map((choice, ci) => {
+          const isSelected    = selected === ci;
+          const isAnswerChoice = ci === question.answer;
           let stateClass = '';
           if (submitted) {
             if (isAnswerChoice) stateClass = styles.correct;
@@ -28,17 +43,24 @@ const QuestionCard = ({ question, index, selected, onSelect, submitted, fallback
           }
 
           return (
-            <label key={choice} className={`${styles.choice} ${stateClass}`}>
+            <label key={ci} className={`${styles.choice} ${stateClass}`}>
               <input
                 type="radio"
                 name={question.id}
-                value={choiceIndex}
+                value={ci}
                 checked={isSelected}
                 disabled={submitted}
-                onChange={() => onSelect(choiceIndex)}
+                onChange={() => onSelect(ci)}
               />
-              <span className={styles.choiceLabel}>{CHOICE_LABELS[choiceIndex]}</span>
-              <span>{choice}</span>
+              <span className={styles.choiceLabel}>{CHOICE_LABELS[ci]}</span>
+              {/* Texte de la proposition :
+                  - caché avant validation si hideChoiceText (Part 1)
+                  - toujours visible après validation pour lire l'explication */}
+              {(!hideChoiceText || submitted) && (
+                <span className={hideChoiceText && submitted ? styles.revealedChoice : undefined}>
+                  {choice}
+                </span>
+              )}
             </label>
           );
         })}
@@ -46,7 +68,12 @@ const QuestionCard = ({ question, index, selected, onSelect, submitted, fallback
 
       {submitted && (
         <p className={isCorrect ? styles.feedbackOk : styles.feedbackKo} role="status">
-          {isCorrect ? '✅ Bonne réponse.' : isAnswered ? '❌ Réponse incorrecte.' : '⚠️ Pas de réponse donnée.'}{' '}
+          {isCorrect
+            ? '✅ Bonne réponse.'
+            : isAnswered
+            ? `❌ Réponse incorrecte. La bonne réponse était ${CHOICE_LABELS[question.answer]}.`
+            : '⚠️ Pas de réponse donnée.'
+          }{' '}
           {question.explanation}
         </p>
       )}
