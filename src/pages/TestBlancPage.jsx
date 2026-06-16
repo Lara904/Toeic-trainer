@@ -4,6 +4,7 @@ import ListeningPlayer from '../components/ListeningPlayer';
 import QuestionCard from '../components/QuestionCard';
 import { PART_LABELS, loadDrillsByIds } from '../data/drillsIndex';
 import { loadTestBlanc } from '../data/trainingIndex';
+import useProgress from '../hooks/useProgress';
 import styles from './TestBlancPage.module.css';
 
 const renderPassage = (text) => {
@@ -17,7 +18,7 @@ const renderPassage = (text) => {
 const getDrillQuestions = (drill) => drill.questions || [];
 
 const DrillBlock = ({ drill, answers, submitted, onSelect }) => {
-  const questions = getDrillQuestions(drill);
+  const questions      = getDrillQuestions(drill);
   const hideChoiceText = drill.part <= 4;
   return (
     <div className={styles.drillBlock}>
@@ -49,19 +50,18 @@ const DrillBlock = ({ drill, answers, submitted, onSelect }) => {
 
 const TestBlancPage = () => {
   const navigate = useNavigate();
+  const { saveTestBlanc } = useProgress();
+
   const [started,   setStarted]   = useState(false);
   const [loading,   setLoading]   = useState(false);
-  const [structure, setStructure] = useState(null); // test-blanc.json
-  const [sections,  setSections]  = useState([]);   // avec drills chargés
+  const [sections,  setSections]  = useState([]);
   const [answers,   setAnswers]   = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [saved,     setSaved]     = useState(false);
 
-  // Charge la structure légère dès le démarrage du test
   const handleStart = async () => {
     setLoading(true);
     const tb = await loadTestBlanc();
-    setStructure(tb);
-    // Charge tous les drills référencés en parallèle par section
     const loaded = await Promise.all(
       tb.sections.map(async (section) => ({
         ...section,
@@ -78,16 +78,36 @@ const TestBlancPage = () => {
     setStarted(true);
   };
 
-  const allQuestions = sections.flatMap((s) => s.parts.flatMap((p) => p.drills.flatMap(getDrillQuestions)));
-  const totalQ   = allQuestions.length;
-  const correctQ = allQuestions.filter((q) => answers[q.id] === q.answer).length;
+  const allDrills    = sections.flatMap((s) => s.parts.flatMap((p) => p.drills));
+  const allQuestions = allDrills.flatMap(getDrillQuestions);
+  const totalQ       = allQuestions.length;
+  const correctQ     = allQuestions.filter((q) => answers[q.id] === q.answer).length;
   const answeredCount = Object.keys(answers).length;
-  const percentage = submitted && totalQ > 0 ? Math.round((correctQ / totalQ) * 100) : 0;
+  const percentage   = submitted && totalQ > 0 ? Math.round((correctQ / totalQ) * 100) : 0;
 
   const handleSelect = useCallback((qId, ci) => {
     if (submitted) return;
     setAnswers((prev) => ({ ...prev, [qId]: ci }));
   }, [submitted]);
+
+  // Sauvegarde unique après validation
+  useEffect(() => {
+    if (!submitted || saved || totalQ === 0) return;
+
+    // Score par partie
+    const byPart = {};
+    sections.forEach((section) => {
+      section.parts.forEach((part) => {
+        const partNum = part.part;
+        const qs = part.drills.flatMap(getDrillQuestions);
+        const c  = qs.filter((q) => answers[q.id] === q.answer).length;
+        byPart[partNum] = { correct: c, total: qs.length };
+      });
+    });
+
+    saveTestBlanc(correctQ, totalQ, byPart);
+    setSaved(true);
+  }, [submitted, saved, totalQ, correctQ, sections, answers, saveTestBlanc]);
 
   // Écran d'accueil
   if (!started) return (
@@ -160,9 +180,10 @@ const TestBlancPage = () => {
             <p className={styles.resultsLabel}>
               {percentage >= 80 ? '🏆 Excellent !' : percentage >= 60 ? '👍 Bon travail !' : '💪 Continue !'}
             </p>
+            <p className={styles.savedNote}>✅ Résultat sauvegardé dans vos stats.</p>
             <div className={styles.resultsActions}>
               <button type="button" className={styles.retryBtn}
-                onClick={() => { setAnswers({}); setSubmitted(false); window.scrollTo(0, 0); }}>
+                onClick={() => { setAnswers({}); setSubmitted(false); setSaved(false); window.scrollTo(0, 0); }}>
                 Recommencer
               </button>
               <button type="button" className={styles.backBtn2} onClick={() => navigate('/')}>
@@ -177,4 +198,3 @@ const TestBlancPage = () => {
 };
 
 export default TestBlancPage;
-

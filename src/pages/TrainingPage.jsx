@@ -5,6 +5,7 @@ import QuestionCard from '../components/QuestionCard';
 import ResultsSummary from '../components/ResultsSummary';
 import { PART_LABELS } from '../data/drillsIndex';
 import { loadTrainingById } from '../data/trainingIndex';
+import useProgress from '../hooks/useProgress';
 import styles from './TrainingPage.module.css';
 
 const renderPassage = (text) => {
@@ -17,12 +18,6 @@ const renderPassage = (text) => {
   });
 };
 
-/**
- * Normalise un item en tableau de questions.
- * Format A : item.questions[]          → Parts 3,4,6,7,8
- * Format B : choices à la racine       → Parts 1,2
- * Format C : sentence à la racine      → Part 5
- */
 const getItemQuestions = (item) => {
   if (Array.isArray(item.questions) && item.questions.length > 0) return item.questions;
   if (Array.isArray(item.choices)) {
@@ -42,10 +37,8 @@ const getItemQuestions = (item) => {
 const countCorrect = (item, answers) =>
   getItemQuestions(item).filter((q) => answers[q.id] === q.answer).length;
 
-// ── TrainingItem ────────────────────────────────────────────────────────────
 const TrainingItem = ({ item, part, answers, submitted, onSelect }) => {
-  const questions = getItemQuestions(item);
-  // Part 1 : dans le vrai TOEIC, on n'affiche que A B C D, pas le texte
+  const questions      = getItemQuestions(item);
   const hideChoiceText = part <= 4;
 
   return (
@@ -94,19 +87,22 @@ const TrainingItem = ({ item, part, answers, submitted, onSelect }) => {
   );
 };
 
-// ── TrainingPage ─────────────────────────────────────────────────────────────
 const TrainingPage = () => {
   const { id }     = useParams();
   const navigate   = useNavigate();
-  const [exercise, setExercise] = useState(null);
-  const [loading, setLoading]   = useState(true);
-  const [answers, setAnswers]   = useState({});
+  const { saveTraining } = useProgress();
+
+  const [exercise,  setExercise]  = useState(null);
+  const [loading,   setLoading]   = useState(true);
+  const [answers,   setAnswers]   = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [saved,     setSaved]     = useState(false);
 
   useEffect(() => {
     setLoading(true);
     setAnswers({});
     setSubmitted(false);
+    setSaved(false);
     loadTrainingById(id).then((data) => { setExercise(data); setLoading(false); });
   }, [id]);
 
@@ -114,6 +110,20 @@ const TrainingPage = () => {
     if (submitted) return;
     setAnswers((prev) => ({ ...prev, [qId]: ci }));
   }, [submitted]);
+
+  const handleSubmit = useCallback(() => {
+    setSubmitted(true);
+  }, []);
+
+  // Sauvegarde une seule fois après la validation
+  useEffect(() => {
+    if (!submitted || !exercise || saved) return;
+    const items    = exercise.items || [];
+    const totalQ   = items.reduce((s, it) => s + getItemQuestions(it).length, 0);
+    const correctQ = items.reduce((s, it) => s + countCorrect(it, answers), 0);
+    saveTraining(exercise.id, exercise.title, exercise.part, exercise.skill, correctQ, totalQ);
+    setSaved(true);
+  }, [submitted, exercise, answers, saved, saveTraining]);
 
   if (loading) return <div className={styles.loading}>Chargement de l'exercice…</div>;
 
@@ -148,13 +158,14 @@ const TrainingPage = () => {
       ))}
 
       {!submitted ? (
-        <button type="button" className={styles.submit} onClick={() => setSubmitted(true)}>
+        <button type="button" className={styles.submit} onClick={handleSubmit}>
           Valider toutes mes réponses
         </button>
       ) : (
         <ResultsSummary
-          correct={correctQ} total={totalQ}
-          onRetry={() => { setAnswers({}); setSubmitted(false); }}
+          correct={correctQ}
+          total={totalQ}
+          onRetry={() => { setAnswers({}); setSubmitted(false); setSaved(false); }}
         />
       )}
     </section>

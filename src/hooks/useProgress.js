@@ -1,54 +1,136 @@
+/**
+ * useProgress — persistance locale complète (localStorage)
+ *
+ * Structure stockée :
+ * {
+ *   training: [{ id, title, part, skill, correct, total, date }],
+ *   testBlanc: [{ correct, total, byPart: {1:{c,t}, ...}, date }],
+ *   flashcards: { [deckId]: { mastered: [...card.en], reviewed: number, lastDate } }
+ * }
+ */
+
 import { useCallback, useEffect, useState } from 'react';
 
-const STORAGE_KEY = 'toeic-trainer-progress';
+const KEY = 'toeic-progress-v2';
 
-const readHistory = () => {
+const DEFAULT = { training: [], testBlanc: [], flashcards: {} };
+
+const read = () => {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : [];
+    const raw = localStorage.getItem(KEY);
+    return raw ? { ...DEFAULT, ...JSON.parse(raw) } : { ...DEFAULT };
   } catch {
-    return [];
+    return { ...DEFAULT };
   }
 };
 
-// Suivi de progression 100% local (localStorage), comme un mini "studyStats".
-// Chaque tentative est enregistrée avec : exercice, partie, score, date.
+const write = (data) => {
+  try { localStorage.setItem(KEY, JSON.stringify(data)); } catch { /* quota */ }
+};
+
 const useProgress = () => {
-  const [history, setHistory] = useState(() => readHistory());
+  const [data, setData] = useState(() => read());
 
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(history));
-  }, [history]);
+  // Sync vers localStorage à chaque changement
+  useEffect(() => { write(data); }, [data]);
 
-  const recordAttempt = useCallback((drill, correctCount) => {
-    const entry = {
-      drillId: drill.id,
-      title: drill.title,
-      part: drill.part,
-      skill: drill.skill,
-      total: drill.questions.length,
-      correct: correctCount,
-      date: new Date().toISOString(),
-    };
-    setHistory((prev) => [...prev, entry]);
+  /* ── Exercices d'entraînement ──────────────────────────────────────────── */
+  const saveTraining = useCallback((id, title, part, skill, correct, total) => {
+    setData((prev) => ({
+      ...prev,
+      training: [
+        ...prev.training,
+        { id, title, part, skill, correct, total, date: new Date().toISOString() },
+      ],
+    }));
   }, []);
 
-  const resetHistory = useCallback(() => setHistory([]), []);
+  /* ── Test blanc ────────────────────────────────────────────────────────── */
+  const saveTestBlanc = useCallback((correct, total, byPart) => {
+    setData((prev) => ({
+      ...prev,
+      testBlanc: [
+        ...prev.testBlanc,
+        { correct, total, byPart, date: new Date().toISOString() },
+      ],
+    }));
+  }, []);
 
-  const getStatsByPart = useCallback(() => {
+  /* ── Flashcards ─────────────────────────────────────────────────────────
+   * mastered = tableau des card.en des cartes maîtrisées dans ce deck
+   * reviewed = nombre total de cartes vues cette session
+   */
+  const saveFlashcardSession = useCallback((deckId, masteredCards, total) => {
+    setData((prev) => {
+      const existing = prev.flashcards[deckId] || { mastered: [], reviewed: 0 };
+      // Ajoute les nouvelles cartes maîtrisées sans doublons
+      const masteredSet = new Set([...existing.mastered, ...masteredCards.map((c) => c.en)]);
+      return {
+        ...prev,
+        flashcards: {
+          ...prev.flashcards,
+          [deckId]: {
+            mastered:  [...masteredSet],
+            reviewed:  existing.reviewed + total,
+            lastDate:  new Date().toISOString(),
+          },
+        },
+      };
+    });
+  }, []);
+
+  const resetFlashcardDeck = useCallback((deckId) => {
+    setData((prev) => {
+      const next = { ...prev.flashcards };
+      delete next[deckId];
+      return { ...prev, flashcards: next };
+    });
+  }, []);
+
+  /* ── Réinitialisation globale ──────────────────────────────────────────── */
+  const resetAll = useCallback(() => setData({ ...DEFAULT }), []);
+
+  /* ── Helpers lecture ───────────────────────────────────────────────────── */
+  const trainingStatsByPart = useCallback(() => {
     const stats = {};
-    history.forEach((entry) => {
-      if (!stats[entry.part]) {
-        stats[entry.part] = { attempts: 0, correct: 0, total: 0 };
-      }
-      stats[entry.part].attempts += 1;
-      stats[entry.part].correct += entry.correct;
-      stats[entry.part].total += entry.total;
+    data.training.forEach(({ part, correct, total }) => {
+      if (!stats[part]) stats[part] = { attempts: 0, correct: 0, total: 0 };
+      stats[part].attempts += 1;
+      stats[part].correct  += correct;
+      stats[part].total    += total;
     });
     return stats;
-  }, [history]);
+  }, [data.training]);
 
-  return { history, recordAttempt, resetHistory, getStatsByPart };
+  const lastTestBlanc = data.testBlanc.at(-1) ?? null;
+
+  const flashcardProgress = useCallback((deckId, totalCards) => {
+    const d = data.flashcards[deckId];
+    if (!d) return { masteredCount: 0, totalCards, pct: 0 };
+    return {
+      masteredCount: d.mastered.length,
+      totalCards,
+      pct: Math.round((d.mastered.length / totalCards) * 100),
+      lastDate: d.lastDate,
+    };
+  }, [data.flashcards]);
+
+  return {
+    // données brutes
+    trainingHistory: data.training,
+    testBlancHistory: data.testBlanc,
+    flashcardsData: data.flashcards,
+    // actions
+    saveTraining,
+    saveTestBlanc,
+    saveFlashcardSession,
+    resetFlashcardDeck,
+    resetAll,
+    // helpers
+    trainingStatsByPart,
+    lastTestBlanc,
+    flashcardProgress,
+  };
 };
 
 export default useProgress;

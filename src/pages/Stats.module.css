@@ -1,75 +1,151 @@
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  margin: 1rem 0 2rem;
+h1 { margin-bottom: 1.5rem; }
+
+.empty {
+  color: var(--color-text-muted);
+  padding: 2rem;
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
 }
 
-.card {
-  background-color: var(--color-surface);
+/* ── blocs ─────────────────────────────────────────────────────────────── */
+.block {
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
   box-shadow: var(--shadow);
-  padding: 1rem;
-  text-align: center;
 }
-
-.card h2 {
-  font-size: 0.95rem;
-  color: var(--color-text-muted);
-  margin-bottom: 0.5rem;
-}
-
-.percentage {
-  font-size: 2rem;
-  font-weight: 700;
+.blockTitle {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
   color: var(--color-primary);
 }
-
-.detail {
-  font-size: 0.85rem;
+.subTitle {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 1.25rem 0 0.6rem;
   color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.historyTitle {
-  margin-bottom: 0.75rem;
+/* ── ScoreBar ───────────────────────────────────────────────────────────── */
+.barWrap { display: flex; align-items: center; gap: 0.6rem; }
+.bar {
+  flex: 1;
+  height: 8px;
+  background: var(--color-border);
+  border-radius: 4px;
+  overflow: hidden;
 }
+.barFill { height: 100%; border-radius: 4px; transition: width 0.4s ease; }
+.barLabel { font-size: 0.78rem; color: var(--color-text-muted); white-space: nowrap; min-width: 90px; }
 
-.history {
-  list-style: none;
+/* ── Test Blanc ─────────────────────────────────────────────────────────── */
+.testBlancCard {
+  background: linear-gradient(135deg, #eff6ff, #f0fdf4);
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+.testBlancScore {
   display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  margin-bottom: 1.5rem;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
 }
+.bigScore { font-size: 2rem; font-weight: 800; color: var(--color-primary); }
+.bigPct   { font-size: 1.2rem; font-weight: 700; color: var(--color-success); }
+.testBlancDate { font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1rem; }
 
+.byPart { display: flex; flex-direction: column; gap: 0.5rem; }
+.byPartRow { display: flex; align-items: center; gap: 0.75rem; }
+.byPartLabel { font-size: 0.78rem; font-weight: 600; color: var(--color-text-muted); min-width: 160px; }
+
+/* ── Exercices par partie ───────────────────────────────────────────────── */
+.partGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.partCard {
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 0.85rem;
+  background: var(--color-bg);
+}
+.partCardTitle { font-size: 0.78rem; font-weight: 700; color: var(--color-text-muted); margin-bottom: 0.3rem; }
+.partPct { font-size: 1.5rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.4rem; }
+.partAttempts { font-size: 0.72rem; color: var(--color-text-muted); margin-top: 0.4rem; }
+
+/* ── Historique ─────────────────────────────────────────────────────────── */
+.historyList { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
 .historyItem {
   display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
+  align-items: center;
+  gap: 0.75rem;
   padding: 0.5rem 0.75rem;
-  font-size: 0.9rem;
+  background: var(--color-bg);
+  border-radius: 8px;
+  font-size: 0.82rem;
   flex-wrap: wrap;
 }
+.histTitle { flex: 1; color: var(--color-text); font-weight: 600; min-width: 140px; }
+.histScore { font-weight: 700; color: var(--color-primary); white-space: nowrap; }
+.histDate  { color: var(--color-text-muted); white-space: nowrap; margin-left: auto; }
 
-.date {
-  color: var(--color-text-muted);
+/* ── Flashcards ─────────────────────────────────────────────────────────── */
+.vocabGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+.vocabCard {
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 0.85rem;
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.vocabIcon  { font-size: 1.5rem; }
+.vocabTitle { font-weight: 700; font-size: 0.88rem; }
+.vocabSub   { font-size: 0.75rem; color: var(--color-text-muted); }
+.vocabDate  { font-size: 0.72rem; color: var(--color-text-muted); }
+.vocabLink  {
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.vocabLink:hover { text-decoration: underline; }
+
+/* ── Reset ──────────────────────────────────────────────────────────────── */
+.resetWrap { margin-top: 2rem; text-align: center; }
+.resetBtn {
+  padding: 0.6rem 1.4rem;
+  background: none;
+  border: 2px solid var(--color-error);
+  border-radius: var(--radius);
+  color: var(--color-error);
+  font-weight: 700;
+  font-size: 0.88rem;
+  transition: background 0.15s;
+}
+.resetBtn:hover { background: #fee2e2; }
+
+/* ── mobile ─────────────────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .byPartLabel { min-width: 110px; font-size: 0.72rem; }
+  .histTitle   { min-width: 0; }
+  .partGrid, .vocabGrid { grid-template-columns: 1fr; }
 }
 
-.reset {
-  background-color: var(--color-error);
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 0.5rem 1rem;
-  font-weight: 600;
-}
-
-@media (min-width: 640px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
