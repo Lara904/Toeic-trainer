@@ -1,0 +1,290 @@
+// src/pages/CoursPage.jsx
+import { useState } from 'react';
+import { COURS_DATA } from '../data/coursData';
+import styles from './CoursPage.module.css';
+
+// ─── Sous-composant : tableau de données ────────────────────────────────────
+const DataTable = ({ tableau }) => (
+  <div className={styles.tableWrap}>
+    {tableau.titre && <p className={styles.tableTitle}>{tableau.titre}</p>}
+    <table className={styles.table}>
+      <thead>
+        <tr>
+          {tableau.colonnes.map((col, i) => (
+            <th key={i}>{col}</th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {tableau.lignes.map((ligne, i) => (
+          <tr key={i}>
+            {ligne.map((cell, j) => (
+              <td key={j}>{cell}</td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+);
+
+// ─── Sous-composant : liste d'exemples ──────────────────────────────────────
+const ExemplesList = ({ exemples }) => (
+  <div className={styles.exemplesList}>
+    {exemples.map((ex, i) => (
+      <div key={i} className={styles.exempleItem}>
+        <div className={styles.exempleLabel}>{ex.fr}</div>
+        <pre className={styles.exempleCode}>{ex.en}</pre>
+        {ex.note && <p className={styles.exempleNote}>{ex.note}</p>}
+      </div>
+    ))}
+  </div>
+);
+
+// ─── Sous-composant : leçon individuelle ────────────────────────────────────
+const LeconSection = ({ lecon }) => (
+  <div className={styles.lecon}>
+    <h3 className={styles.leconTitre}>{lecon.titre}</h3>
+    {lecon.contenu && (
+      <p className={styles.leconContenu}>{lecon.contenu}</p>
+    )}
+    {lecon.tableaux && lecon.tableaux.map((t, i) => (
+      <DataTable key={i} tableau={t} />
+    ))}
+    {lecon.exemples && <ExemplesList exemples={lecon.exemples} />}
+    {lecon.astuce && (
+      <div className={styles.astuce}>
+        <p>{lecon.astuce}</p>
+      </div>
+    )}
+  </div>
+);
+
+// ─── Sous-composant : QCM question ──────────────────────────────────────────
+const QuestionQCM = ({ question, index }) => {
+  const [selected, setSelected] = useState(null);
+  const [submitted, setSubmitted] = useState(false);
+  const isCorrect = submitted && selected === question.answer;
+  const LABELS = ['A', 'B', 'C', 'D'];
+
+  const handleSubmit = () => {
+    if (selected !== null) setSubmitted(true);
+  };
+
+  const handleReset = () => {
+    setSelected(null);
+    setSubmitted(false);
+  };
+
+  return (
+    <div className={styles.question}>
+      <p className={styles.questionEnonce}>
+        <span className={styles.questionNum}>Q{index + 1}</span>
+        {question.enonce}
+      </p>
+
+      <div className={styles.choices}>
+        {question.choices.map((choice, ci) => {
+          let cls = styles.choice;
+          if (submitted) {
+            if (ci === question.answer) cls = `${styles.choice} ${styles.choiceCorrect}`;
+            else if (ci === selected) cls = `${styles.choice} ${styles.choiceWrong}`;
+          } else if (ci === selected) {
+            cls = `${styles.choice} ${styles.choiceSelected}`;
+          }
+          return (
+            <label key={ci} className={cls}>
+              <input
+                type="radio"
+                name={question.id}
+                value={ci}
+                checked={selected === ci}
+                disabled={submitted}
+                onChange={() => setSelected(ci)}
+              />
+              <span className={styles.choiceLetter}>{LABELS[ci]}</span>
+              <span className={styles.choiceText}>{choice}</span>
+            </label>
+          );
+        })}
+      </div>
+
+      {!submitted ? (
+        <button
+          className={styles.btnValidate}
+          onClick={handleSubmit}
+          disabled={selected === null}
+        >
+          Valider ma réponse
+        </button>
+      ) : (
+        <div className={`${styles.feedback} ${isCorrect ? styles.feedbackOk : styles.feedbackKo}`}>
+          <p className={styles.feedbackResult}>
+            {isCorrect ? '✅ Bonne réponse !' : `❌ Incorrect — la bonne réponse était ${LABELS[question.answer]}.`}
+          </p>
+          <p className={styles.feedbackExplication}>{question.explication}</p>
+          {question.regle && (
+            <p className={styles.feedbackRegle}>{question.regle}</p>
+          )}
+          <button className={styles.btnReset} onClick={handleReset}>
+            ↩ Réessayer
+          </button>
+        </div>
+      )}
+    </div>
+  );
+};
+
+// ─── Sous-composant : score résumé du chapitre ──────────────────────────────
+const ScoreBar = ({ correct, total, color }) => {
+  const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
+  const msg =
+    pct === 100 ? '🏆 Parfait !'
+    : pct >= 80 ? '👍 Très bien !'
+    : pct >= 60 ? '💪 Continue !'
+    : '📖 Relis le cours.';
+
+  return (
+    <div className={styles.scoreBar}>
+      <div className={styles.scoreBarHeader}>
+        <span className={styles.scoreLabel}>Score : <strong>{correct}/{total}</strong></span>
+        <span className={styles.scoreMsg}>{msg}</span>
+      </div>
+      <div className={styles.scoreTrack}>
+        <div
+          className={styles.scoreFill}
+          style={{ width: `${pct}%`, background: color }}
+        />
+      </div>
+    </div>
+  );
+};
+
+// ─── Sous-composant : onglet d'un chapitre ──────────────────────────────────
+const ChapitrePanel = ({ chapitre }) => {
+  const [tab, setTab] = useState('cours');
+  const [answers, setAnswers] = useState({});
+  const [submitted, setSubmitted] = useState({});
+
+  // Score global
+  const correct = chapitre.questions.filter(
+    (q, i) => submitted[q.id] && answers[q.id] === q.answer
+  ).length;
+  const totalSubmitted = Object.keys(submitted).length;
+
+  return (
+    <div className={styles.chapitrePanel}>
+      {/* Onglets cours / entraînement */}
+      <div className={styles.tabs}>
+        <button
+          className={`${styles.tab} ${tab === 'cours' ? styles.tabActive : ''}`}
+          style={tab === 'cours' ? { borderBottomColor: chapitre.color } : {}}
+          onClick={() => setTab('cours')}
+        >
+          📚 Cours
+        </button>
+        <button
+          className={`${styles.tab} ${tab === 'entrainement' ? styles.tabActive : ''}`}
+          style={tab === 'entrainement' ? { borderBottomColor: chapitre.color } : {}}
+          onClick={() => setTab('entrainement')}
+        >
+          ✏️ Entraînement
+          {totalSubmitted > 0 && (
+            <span className={styles.tabBadge} style={{ background: chapitre.color }}>
+              {correct}/{totalSubmitted}
+            </span>
+          )}
+        </button>
+      </div>
+
+      {/* Contenu COURS */}
+      {tab === 'cours' && (
+        <div className={styles.coursContent}>
+          {chapitre.lecon.map((lecon) => (
+            <LeconSection key={lecon.id} lecon={lecon} />
+          ))}
+          <button
+            className={styles.btnGoTrain}
+            style={{ background: chapitre.color }}
+            onClick={() => setTab('entrainement')}
+          >
+            ✏️ Passer aux exercices →
+          </button>
+        </div>
+      )}
+
+      {/* Contenu ENTRAÎNEMENT */}
+      {tab === 'entrainement' && (
+        <div className={styles.entrainementContent}>
+          {totalSubmitted > 0 && (
+            <ScoreBar
+              correct={correct}
+              total={totalSubmitted}
+              color={chapitre.color}
+            />
+          )}
+          {chapitre.questions.map((q, i) => (
+            <QuestionQCM key={q.id} question={q} index={i} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+// ─── PAGE PRINCIPALE ────────────────────────────────────────────────────────
+const CoursPage = () => {
+  const [activeId, setActiveId] = useState(COURS_DATA[0].id);
+  const chapitre = COURS_DATA.find((c) => c.id === activeId);
+
+  return (
+    <section>
+      <div className={styles.hero}>
+        <h1>Apprendre</h1>
+        <p className={styles.heroSub}>
+          7 chapitres de grammaire essentiels pour le TOEIC — cours détaillés + exercices corrigés
+        </p>
+      </div>
+
+      {/* Navigation chapitres */}
+      <nav className={styles.chapNav} aria-label="Chapitres">
+        {COURS_DATA.map((c) => (
+          <button
+            key={c.id}
+            className={`${styles.chapBtn} ${activeId === c.id ? styles.chapBtnActive : ''}`}
+            style={activeId === c.id ? { borderColor: c.color, color: c.color } : {}}
+            onClick={() => setActiveId(c.id)}
+            aria-current={activeId === c.id ? 'true' : undefined}
+          >
+            <span className={styles.chapIcon}>{c.icon}</span>
+            <span className={styles.chapLabel}>{c.title}</span>
+          </button>
+        ))}
+      </nav>
+
+      {/* Panneau du chapitre sélectionné */}
+      {chapitre && (
+        <div
+          className={styles.chapitreWrap}
+          key={chapitre.id}
+        >
+          <div className={styles.chapitreHeader} style={{ borderLeftColor: chapitre.color }}>
+            <span className={styles.chapitreHeaderIcon}>{chapitre.icon}</span>
+            <div>
+              <h2 className={styles.chapitreTitle} style={{ color: chapitre.color }}>
+                {chapitre.title}
+              </h2>
+              <p className={styles.chapitreSubtitle}>
+                {chapitre.lecon.length} leçon{chapitre.lecon.length > 1 ? 's' : ''} · {chapitre.questions.length} questions d'entraînement
+              </p>
+            </div>
+          </div>
+
+          <ChapitrePanel chapitre={chapitre} />
+        </div>
+      )}
+    </section>
+  );
+};
+
+export default CoursPage;
