@@ -1,3 +1,4 @@
+// src/components/Navbar.jsx — version mise à jour avec le lien "Apprendre"
 import { Link, NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
@@ -6,6 +7,7 @@ const Navbar = () => (
     <Link to="/" className={styles.brand}>TOEIC</Link>
     <div className={styles.links}>
       <NavLink to="/"            end className={({ isActive }) => isActive ? styles.active : undefined}>Accueil</NavLink>
+      <NavLink to="/cours"           className={({ isActive }) => isActive ? styles.active : undefined}>Apprendre</NavLink>
       <NavLink to="/test-blanc"      className={({ isActive }) => isActive ? styles.active : undefined}>Test blanc</NavLink>
       <NavLink to="/flashcards"      className={({ isActive }) => isActive ? styles.active : undefined}>Vocab</NavLink>
       <NavLink to="/stats"           className={({ isActive }) => isActive ? styles.active : undefined}>Stats</NavLink>
