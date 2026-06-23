@@ -31,11 +31,11 @@ export const COURS_DATA = [
       },
       {
         id: 'structure-ordre',
-        titre: 'L'ordre Sujet – Verbe – Objet',
+        titre: "L'ordre Sujet - Verbe - Objet",
         contenu: `En anglais, le sujet vient TOUJOURS avant le verbe, et l'objet TOUJOURS après.`,
         exemples: [
           { fr: 'La pomme, je la mange.', en: 'I eat the apple.', note: '→ "La pomme" ne peut pas être au début en anglais.' },
-          { fr: 'Ce film, je l'adore.', en: 'I love this film.', note: '→ L\'objet suit toujours le verbe.' },
+          { fr: 'Ce film, je l\'adore.', en: 'I love this film.', note: '→ L\'objet suit toujours le verbe.' },
           { fr: 'Pierre aime Marie.', en: 'Pierre loves Marie.', note: '→ Changer l\'ordre change le sens !' },
         ],
         astuce: `⚠️ Piège courant : "The report wrote my manager" est FAUX. La bonne forme est "My manager wrote the report."`,
@@ -219,7 +219,7 @@ Mots-clés : for (pendant), since (depuis), all day/week/year, how long.`,
       },
       {
         id: 'conj-q2',
-        enonce: '"I ___ (work) in this company for 10 years." — Choisissez le bon temps.',
+        enonce: '"I ___ (work) in this company for 10 years."  -  Choisissez le bon temps.',
         choices: [
           'worked',
           'was working',
@@ -342,7 +342,7 @@ Mots-clés : for (pendant), since (depuis), all day/week/year, how long.`,
       },
       {
         id: 'pron-q2',
-        enonce: '"This report was written by ___ alone — no one helped me."',
+        enonce: '"This report was written by ___ alone  -  no one helped me."',
         choices: ['me', 'I', 'myself', 'mine'],
         answer: 2,
         explication: '✅ Correct : "This report was written by MYSELF alone." Le pronom réfléchi "myself" est utilisé ici pour renforcer l\'idée d\'indépendance (sens emphatique : j\'ai fait cela seul).',
@@ -359,7 +359,7 @@ Mots-clés : for (pendant), since (depuis), all day/week/year, how long.`,
         ],
         answer: 1,
         explication: '✅ Correct : "The decision is YOURS." Après le verbe "be", on utilise le pronom possessif (sans nom après) : mine, yours, his, hers, ours, theirs. L\'adjectif possessif (your) doit toujours être suivi d\'un nom.',
-        regle: '📌 Règle : Adjectif possessif + NOM = "your decision". Pronom possessif SEUL = "yours". Les pronoms possessifs n\'ont jamais d\'apostrophe (yours, hers, theirs — jamais your\'s ou their\'s).',
+        regle: '📌 Règle : Adjectif possessif + NOM = "your decision". Pronom possessif SEUL = "yours". Les pronoms possessifs n\'ont jamais d\'apostrophe (yours, hers, theirs  -  jamais your\'s ou their\'s).',
       },
       {
         id: 'pron-q4',
@@ -432,12 +432,12 @@ Mais : fast → faster (deux consonnes finales → pas de doublement)`,
           { fr: 'Négation d\'égalité', en: 'not as + adjectif + as', note: '"This report is NOT AS detailed AS the last one."' },
         ],
         astuce: `💡 Au TOEIC, les phrases à compléter testent souvent la structure "as ... as". Retiens-la bien :
-✅ "She is as qualified AS him." — les deux "as" encadrent l'adjectif.
-❌ "She is as qualified than him." — FAUX, "than" ne va pas avec "as...as".`,
+✅ "She is as qualified AS him."  -  les deux "as" encadrent l'adjectif.
+❌ "She is as qualified than him."  -  FAUX, "than" ne va pas avec "as...as".`,
       },
       {
         id: 'comp-irreguliers',
-        titre: 'Les irréguliers — à apprendre par cœur',
+        titre: 'Les irréguliers  -  à apprendre par cœur',
         contenu: `Certains adjectifs ont des formes comparatives et superlatives totalement irrégulières. Ils sont fréquents au TOEIC.`,
         tableaux: [
           {
@@ -580,8 +580,8 @@ Règles grammaticales communes à TOUS les modaux :
             titre: 'Degré de probabilité',
             colonnes: ['Modal', 'Certitude', 'Exemple'],
             lignes: [
-              ['must + infinitif', '95% certain (déduction positive)', '"He must be in a meeting — his line is busy."'],
-              ['can\'t / couldn\'t + infinitif', '95% certain (déduction négative)', '"She can\'t be the manager — she just started."'],
+              ['must + infinitif', '95% certain (déduction positive)', '"He must be in a meeting  -  his line is busy."'],
+              ['can\'t / couldn\'t + infinitif', '95% certain (déduction négative)', '"She can\'t be the manager  -  she just started."'],
               ['should + infinitif', '75% probable', '"The package should arrive tomorrow."'],
               ['may + infinitif', '50% probable', '"It may be a technical issue."'],
               ['might + infinitif', '30% probable', '"I might attend the conference."'],
@@ -611,7 +611,7 @@ Règles grammaticales communes à TOUS les modaux :
       },
       {
         id: 'mod-q2',
-        enonce: '"You ___ worry about it — it\'s optional." (absence d\'obligation)',
+        enonce: '"You ___ worry about it  -  it\'s optional." (absence d\'obligation)',
         choices: [
           "mustn't",
           "don't have to",
@@ -620,7 +620,7 @@ Règles grammaticales communes à TOUS les modaux :
         ],
         answer: 1,
         explication: '✅ Correct : "don\'t have to" = ce n\'est pas obligatoire, c\'est facultatif. "Mustn\'t" = interdiction (complètement différent !). "Can\'t" = impossibilité ou interdiction. "Shouldn\'t" = déconseillé.',
-        regle: '📌 PIÈGE CLASSIQUE : mustn\'t ≠ don\'t have to. mustn\'t = INTERDIT (you must not do this). don\'t have to = PAS NÉCESSAIRE (you are not obliged to do this). Ce piège apparaît régulièrement au TOEIC Part 5.',
+        regle: '📌 PIÈGE CLASSIQUE : mustn\'t != don\'t have to. mustn\'t = INTERDIT (you must not do this). don\'t have to = PAS NÉCESSAIRE (you are not obliged to do this). Ce piège apparaît régulièrement au TOEIC Part 5.',
       },
       {
         id: 'mod-q3',
@@ -851,7 +851,7 @@ Exemple : "to look" (regarder) peut donner :
         ],
         answer: 1,
         explication: '✅ Correct : "put off" = reporter, remettre à plus tard. "Put on" = mettre (vêtement) ou allumer. "Put up" = héberger ou afficher. "Put down" = poser, noter.',
-        regle: '📌 La particule change TOUT le sens : put on ≠ put off ≠ put up ≠ put down. C\'est la difficulté des phrasal verbs : il faut les mémoriser un par un.',
+        regle: '📌 La particule change TOUT le sens : put on != put off != put up != put down. C\'est la difficulté des phrasal verbs : il faut les mémoriser un par un.',
       },
       {
         id: 'pv-q2',
@@ -881,7 +881,7 @@ Exemple : "to look" (regarder) peut donner :
       },
       {
         id: 'pv-q4',
-        enonce: '"I found this article interesting — can you ___ more information on the topic?"',
+        enonce: '"I found this article interesting  -  can you ___ more information on the topic?"',
         choices: [
           'look up',
           'look into',
