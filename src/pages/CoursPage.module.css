@@ -560,6 +560,76 @@
   color: var(--color-text);
 }
 
+/* ─────────────────────────────────────────────────────────────────────────────
+   PATCH CoursPage.module.css
+   Ajouter ces règles À LA FIN du fichier existant.
+   Elles gèrent le panneau de sous-navigation du chapitre Conjugaison.
+───────────────────────────────────────────────────────────────────────────── */
+
+/* ─── PANEL CONJUGAISON ─────────────────────────────────────────────────── */
+.conjPanel {
+  /* pas de padding propre, il hérite du chapitreWrap */
+}
+
+/* ─── Navigation sous-onglets (niveau 1) ───────────────────────────────── */
+.conjNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding: 0.1rem 0 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 0.15rem;
+}
+
+.conjNavBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.38rem 0.75rem;
+  border: 1.5px solid var(--color-border);
+  border-radius: 99px;
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+  white-space: nowrap;
+}
+
+.conjNavBtn:hover:not(.conjNavBtnActive) {
+  border-color: var(--color-primary-light);
+  color: var(--color-primary-light);
+  background: #f0f7ff;
+}
+
+.conjNavBtnActive {
+  background: #f5f0ff;
+  font-weight: 700;
+  /* border-color et color sont forcés en inline via style prop */
+}
+
+/* ─── Message vide (onglet sans exercices) ──────────────────────────────── */
+.emptyMsg {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  padding: 2rem 0;
+  font-style: italic;
+}
+
+/* ─── RESPONSIVE mobile ─────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .conjNav {
+    gap: 0.35rem;
+  }
+
+  .conjNavBtn {
+    font-size: 0.74rem;
+    padding: 0.32rem 0.6rem;
+  }
+}
+
 /* ─── MOBILE ─────────────────────────────────────────────────────────────── */
 @media (max-width: 480px) {
   .chapNav {
