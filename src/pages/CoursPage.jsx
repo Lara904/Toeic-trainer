@@ -160,15 +160,116 @@ const ScoreBar = ({ correct, total, color }) => {
   );
 };
 
-// ─── Sous-composant : onglet d'un chapitre ──────────────────────────────────
+// ─── NOUVEAU : Panel pour les chapitres avec sous-onglets (conjugaison) ─────
+const ConjugaisonPanel = ({ chapitre }) => {
+  const [activeOnglet, setActiveOnglet] = useState(chapitre.sousOnglets[0].id);
+  const [tab, setTab] = useState('cours'); // 'cours' | 'exercices'
+
+  // Réinitialise l'onglet cours/exercices quand on change de sous-onglet
+  const handleOngletChange = (id) => {
+    setActiveOnglet(id);
+    setTab('cours');
+  };
+
+  const onglet = chapitre.sousOnglets.find((o) => o.id === activeOnglet);
+  if (!onglet) return null;
+
+  const nbQuestions = onglet.questions?.length ?? 0;
+
+  return (
+    <div className={styles.conjPanel}>
+
+      {/* ── Niveau 1 : navigation sous-onglets ──────────────────────────── */}
+      <nav
+        className={styles.conjNav}
+        role="tablist"
+        aria-label="Modules de conjugaison"
+      >
+        {chapitre.sousOnglets.map((o) => (
+          <button
+            key={o.id}
+            role="tab"
+            aria-selected={activeOnglet === o.id}
+            className={`${styles.conjNavBtn} ${activeOnglet === o.id ? styles.conjNavBtnActive : ''}`}
+            style={activeOnglet === o.id ? { borderColor: chapitre.color, color: chapitre.color } : {}}
+            onClick={() => handleOngletChange(o.id)}
+          >
+            {o.label}
+          </button>
+        ))}
+      </nav>
+
+      {/* ── Niveau 2 : Cours | Exercices ─────────────────────────────────── */}
+      <div className={styles.tabs}>
+        <button
+          className={`${styles.tab} ${tab === 'cours' ? styles.tabActive : ''}`}
+          style={tab === 'cours' ? { borderBottomColor: chapitre.color } : {}}
+          onClick={() => setTab('cours')}
+        >
+          📚 Cours
+        </button>
+        <button
+          className={`${styles.tab} ${tab === 'exercices' ? styles.tabActive : ''}`}
+          style={tab === 'exercices' ? { borderBottomColor: chapitre.color } : {}}
+          onClick={() => setTab('exercices')}
+        >
+          ✏️ Exercices
+          {nbQuestions > 0 && (
+            <span className={styles.tabBadge} style={{ background: chapitre.color }}>
+              {nbQuestions}
+            </span>
+          )}
+        </button>
+      </div>
+
+      {/* ── Contenu COURS ─────────────────────────────────────────────────── */}
+      {tab === 'cours' && (
+        <div className={styles.coursContent}>
+          {onglet.lecon?.map((lecon) => (
+            <LeconSection key={lecon.id} lecon={lecon} />
+          ))}
+          {nbQuestions > 0 && (
+            <button
+              className={styles.btnGoTrain}
+              style={{ background: chapitre.color }}
+              onClick={() => setTab('exercices')}
+            >
+              ✏️ Passer aux exercices →
+            </button>
+          )}
+        </div>
+      )}
+
+      {/* ── Contenu EXERCICES ─────────────────────────────────────────────── */}
+      {tab === 'exercices' && (
+        <div className={styles.entrainementContent}>
+          {nbQuestions === 0 ? (
+            <p className={styles.emptyMsg}>Pas encore d'exercices pour cet onglet.</p>
+          ) : (
+            onglet.questions.map((q, i) => (
+              <QuestionQCM key={q.id} question={q} index={i} />
+            ))
+          )}
+        </div>
+      )}
+    </div>
+  );
+};
+
+// ─── Sous-composant : onglet d'un chapitre standard ─────────────────────────
 const ChapitrePanel = ({ chapitre }) => {
+  // ← Si le chapitre a des sous-onglets, déléguer à ConjugaisonPanel
+  if (chapitre.sousOnglets) {
+    return <ConjugaisonPanel chapitre={chapitre} />;
+  }
+
+  // Comportement standard (tous les autres chapitres)
   const [tab, setTab] = useState('cours');
   const [answers, setAnswers] = useState({});
   const [submitted, setSubmitted] = useState({});
 
-  // Score global
   const correct = chapitre.questions.filter(
-    (q, i) => submitted[q.id] && answers[q.id] === q.answer
+    (q) => submitted[q.id] && answers[q.id] === q.answer
   ).length;
   const totalSubmitted = Object.keys(submitted).length;
 
@@ -275,7 +376,10 @@ const CoursPage = () => {
                 {chapitre.title}
               </h2>
               <p className={styles.chapitreSubtitle}>
-                {chapitre.lecon.length} leçon{chapitre.lecon.length > 1 ? 's' : ''} · {chapitre.questions.length} questions d'entraînement
+                {chapitre.sousOnglets
+                  ? `${chapitre.sousOnglets.length} modules · Cours + Exercices par type de temps`
+                  : `${chapitre.lecon.length} leçon${chapitre.lecon.length > 1 ? 's' : ''} · ${chapitre.questions.length} questions d'entraînement`
+                }
               </p>
             </div>
           </div>
