@@ -113,18 +113,16 @@ export const COURS_DATA = [
   // ─────────────────────────────────────────────────────────────
   // 2. LES CONJUGAISONS (12 temps)
   // ─────────────────────────────────────────────────────────────
-    {
+   {
     id: 'conjugaison',
     icon: '⏰',
     title: 'Les conjugaisons',
     color: '#8b5cf6',
- 
-    // Présence de sousOnglets → CoursPage bascule en mode ConjugaisonPanel
     sousOnglets: [
  
-      // ════════════════════════════════════════════════════════════════════════
+      // ══════════════════════════════════════════════════════════════════════
       // 1. TEMPS SIMPLES
-      // ════════════════════════════════════════════════════════════════════════
+      // ══════════════════════════════════════════════════════════════════════
       {
         id: 'simple',
         label: '① Simple',
@@ -138,73 +136,112 @@ export const COURS_DATA = [
                 titre: '3 temps simples',
                 colonnes: ['Temps', 'Formation', 'Usage', 'Exemple'],
                 lignes: [
-                  ['Présent simple', 'Sujet + V (+ s à la 3ème pers.)', 'Habitude, vérité générale, routine, fait permanent', 'I play tennis every Sunday. / She works in Paris.'],
-                  ['Passé simple', 'Sujet + V-ed / V irrégulier', 'Action terminée à un moment précis du passé', 'Yesterday, she called me. / He went to London last week.'],
-                  ['Futur simple', 'Sujet + will + V (base)', 'Prédiction, décision spontanée, promesse, offre', 'I will help you tomorrow. / It will rain tonight.'],
+                  ['Présent simple', 'Sujet + V (+ s 3ème pers.)', 'Habitude, vérité générale, routine', 'She works in Paris. / Water boils at 100°C.'],
+                  ['Passé simple', 'Sujet + V-ed / V irrégulier', 'Action terminée à un moment précis du passé', 'She called me yesterday. / He went to London last week.'],
+                  ['Futur simple', 'Sujet + will + V base', 'Prédiction, décision spontanée, promesse', 'I will help you. / It will rain tonight.'],
                 ],
               },
             ],
-            astuce: `💡 Marqueurs temporels qui déclenchent chaque temps :
-• Présent simple → every day/week, always, never, usually, often, sometimes, on Mondays
-• Passé simple → yesterday, last week/year, in 2020, ago, at 5pm, when (moment précis)
-• Futur simple → tomorrow, next week, soon, in the future, I think..., probably
+            astuce: `💡 Marqueurs temporels clés :
+• Présent simple → every day/week, always, never, usually, often, on Mondays
+• Passé simple → yesterday, last week/year, in 2020, ago, at 5pm
+• Futur simple → tomorrow, next week, soon, I think..., probably
  
-⚠️ Piège classique : "She go to work every day." → FAUX. 3ème personne sing. : "She GOES to work every day."
-⚠️ Négatif 3ème pers. : "She doesn't work" → le verbe reste à la BASE (sans s).`,
+⚠️ Piège 3ème pers. sing. : "She go" → FAUX. "She goes" ✅
+⚠️ Négatif : doesn't + V BASE. "She doesn't works" → FAUX. "She doesn't work" ✅`,
           },
         ],
-        questions: [
+        exercices: [
           {
-            id: 'simple-q1',
-            enonce: 'Choisissez la bonne forme : "She ___ to the gym every morning before work."',
-            choices: ['go', 'goes', 'went', 'will go'],
-            answer: 1,
-            explication: '✅ Correct : "She goes to the gym..." → Habitude régulière = présent simple. À la 3ème personne du singulier (she/he/it), on ajoute -s au verbe.',
-            regle: '📌 Règle : Présent simple → habitude/routine. 3ème pers. sing. : V + s. Marqueurs : every day, always, usually, often, never.',
-          },
-          {
-            id: 'simple-q2',
-            enonce: '"The company ___ its annual report last Friday." — Quel temps ?',
-            choices: ['publishes', 'will publish', 'published', 'is publishing'],
-            answer: 2,
-            explication: '✅ Correct : "published" → "last Friday" indique un moment précis et terminé du passé → passé simple.',
-            regle: '📌 Règle : Passé simple = action terminée à un moment précis. Marqueurs clés : yesterday, last week/month/year, ago, in [année], at [heure].',
-          },
-          {
-            id: 'simple-q3',
-            enonce: '"I ___ you a hand with those boxes — they look heavy!"',
-            choices: ['give', 'gave', 'will give', 'am giving'],
-            answer: 2,
-            explication: '✅ Correct : "will give" → Décision spontanée prise au moment où on parle = futur simple avec will.',
-            regle: '📌 Règle : Will = décision prise à l\'instant, offre spontanée, prédiction. À ne pas confondre avec be going to (intention planifiée à l\'avance).',
-          },
-          {
-            id: 'simple-q4',
-            enonce: 'Laquelle de ces phrases est au PRÉSENT SIMPLE correct ?',
-            choices: [
-              'He don\'t like meetings.',
-              'He doesn\'t likes meetings.',
-              'He doesn\'t like meetings.',
-              'He not like meetings.',
+            id: 'simple-exo1',
+            titre: 'Exercice 1 — Présent simple : identifier et conjuguer',
+            instructions: 'Choisissez la forme correcte du présent simple.',
+            questions: [
+              { id: 's1-q1', enonce: '"She ___ to work by bus every morning."', choices: ['go', 'goes', 'went', 'is going'], answer: 1, explication: '✅ "goes" — 3ème pers. sing. → V+s. Habitude = présent simple.', regle: '📌 3ème pers. sing. : he/she/it + V+s.' },
+              { id: 's1-q2', enonce: '"Water ___ at 100 degrees Celsius."', choices: ['boiled', 'is boiling', 'boils', 'will boil'], answer: 2, explication: '✅ "boils" — Vérité scientifique = présent simple.', regle: '📌 Vérités générales → présent simple.' },
+              { id: 's1-q3', enonce: '"They ___ in a small apartment near the city centre."', choices: ['live', 'lives', 'lived', 'are living'], answer: 0, explication: '✅ "live" — Sujet pluriel + fait permanent = présent simple sans s.', regle: '📌 Sujet pluriel → V base (sans s).' },
+              { id: 's1-q4', enonce: '"The store ___ at 9am and ___ at 6pm every day."', choices: ['open / close', 'opens / closes', 'opened / closed', 'is opening / is closing'], answer: 1, explication: '✅ "opens / closes" — Horaire régulier + 3ème pers. sing.', regle: '📌 Horaires fixes → présent simple.' },
+              { id: 's1-q5', enonce: '"He ___ not like spicy food."', choices: ['do', 'does', 'did', 'is'], answer: 1, explication: '✅ "does" — Négatif 3ème pers. sing. : doesn\'t + V base.', regle: '📌 He/she/it + doesn\'t + V base.' },
+              { id: 's1-q6', enonce: 'Laquelle est correcte ?', choices: ["She don't know the answer.", "She doesn't knows the answer.", "She doesn't know the answer.", "She not know the answer."], answer: 2, explication: '✅ "She doesn\'t know" — doesn\'t + V base. "Doesn\'t knows" est une double erreur.', regle: '📌 Avec doesn\'t, le verbe principal reste à la BASE, sans -s.' },
+              { id: 's1-q7', enonce: '"___ he work on weekends?"', choices: ['Do', 'Does', 'Did', 'Is'], answer: 1, explication: '✅ "Does" — Question 3ème pers. sing. présent simple.', regle: '📌 Question présent simple : Do I/you/we/they ? Does he/she/it ?' },
+              { id: 's1-q8', enonce: '"The sun ___ in the east."', choices: ['rise', 'is rising', 'rises', 'rose'], answer: 2, explication: '✅ "rises" — Vérité + 3ème pers. sing.', regle: '📌 Vérités permanentes → présent simple. 3ème pers. : V+s.' },
+              { id: 's1-q9', enonce: '"I ___ my teeth twice a day."', choices: ['brush', 'brushes', 'brushed', 'am brushing'], answer: 0, explication: '✅ "brush" — 1ère pers. + habitude = présent simple base.', regle: '📌 I/you/we/they + V base au présent simple.' },
+              { id: 's1-q10', enonce: '"She always ___ the bus when it rains."', choices: ['take', 'takes', 'took', 'is taking'], answer: 1, explication: '✅ "takes" — Habitude (always) + 3ème pers. sing.', regle: '📌 "Always" = marqueur du présent simple (habitude).' },
             ],
-            answer: 2,
-            explication: '✅ Correct : "He doesn\'t like meetings." → Négation 3ème pers. sing. : doesn\'t + verbe BASE (sans s). "Doesn\'t likes" est une double erreur classique.',
-            regle: '📌 Règle : Négatif présent simple : I/You/We/They + don\'t + V. He/She/It + doesn\'t + V (base, sans -s). L\'auxiliaire "does" porte déjà la marque du singulier.',
           },
           {
-            id: 'simple-q5',
-            enonce: '"Water ___ at 100 degrees Celsius." — Quel temps convient ?',
-            choices: ['boiled', 'boils', 'will boil', 'is boiling'],
-            answer: 1,
-            explication: '✅ Correct : "boils" → Vérité scientifique générale, toujours vraie = présent simple.',
-            regle: '📌 Règle : Le présent simple s\'utilise pour les vérités générales et les faits scientifiques. Ce n\'est pas une action qui se passe "en ce moment", c\'est une réalité permanente.',
+            id: 'simple-exo2',
+            titre: 'Exercice 2 — Passé simple : identifier et conjuguer',
+            instructions: 'Choisissez la forme correcte du passé simple.',
+            questions: [
+              { id: 's2-q1', enonce: '"She ___ her keys this morning."', choices: ['lose', 'loses', 'lost', 'has lost'], answer: 2, explication: '✅ "lost" — "this morning" = passé précis terminé → passé simple. lose → lost (irrégulier).', regle: '📌 "This morning" (passé précis) → passé simple.' },
+              { id: 's2-q2', enonce: '"They ___ a new office building last year."', choices: ['build', 'builds', 'built', 'have built'], answer: 2, explication: '✅ "built" — "last year" = passé simple. build → built (irrégulier).', regle: '📌 "Last year/week/month" → passé simple.' },
+              { id: 's2-q3', enonce: '"When ___ you last ___ him?"', choices: ['did / see', 'do / saw', 'did / saw', 'do / see'], answer: 0, explication: '✅ "did / see" — Question passé simple : did + sujet + V base. "Saw" après "did" = FAUX.', regle: '📌 Did + sujet + V BASE. Jamais V-ed après did.' },
+              { id: 's2-q4', enonce: '"He ___ not finish the report on time."', choices: ['do', 'does', 'did', 'had'], answer: 2, explication: '✅ "did" — Négatif passé simple : didn\'t + V base.', regle: '📌 Négatif passé simple : didn\'t + V BASE.' },
+              { id: 's2-q5', enonce: '"I ___ to Paris in 2018 for a conference."', choices: ['go', 'goes', 'went', 'have gone'], answer: 2, explication: '✅ "went" — "in 2018" = moment précis passé → passé simple. go → went (irrégulier).', regle: '📌 "In [année]" → passé simple. "Go" → "went".' },
+              { id: 's2-q6', enonce: '"The meeting ___ two hours ago."', choices: ['ends', 'ended', 'has ended', 'was ending'], answer: 1, explication: '✅ "ended" — "two hours ago" = moment précis → passé simple régulier.', regle: '📌 "Ago" = marqueur classique du passé simple.' },
+              { id: 's2-q7', enonce: '"She ___ the project before the deadline."', choices: ['complete', 'completes', 'completed', 'has completed'], answer: 2, explication: '✅ "completed" — Action terminée dans le passé → passé simple.', regle: '📌 Passé simple pour les actions terminées dans le passé.' },
+              { id: 's2-q8', enonce: '"They ___ the contract and ___ it to the client."', choices: ['signed / send', 'sign / sent', 'signed / sent', 'have signed / sent'], answer: 2, explication: '✅ "signed / sent" — Deux actions passées terminées → deux passés simples.', regle: '📌 Plusieurs actions passées → toutes au passé simple.' },
+              { id: 's2-q9', enonce: '"___ you ___ the email I sent yesterday?"', choices: ['Did / received', 'Have / received', 'Did / receive', 'Do / receive'], answer: 2, explication: '✅ "Did / receive" — "yesterday" force le passé simple. Did + V base.', regle: '📌 "Yesterday" → passé simple. Did + V base.' },
+              { id: 's2-q10', enonce: '"I ___ in London when I was a student."', choices: ['live', 'lives', 'lived', 'have lived'], answer: 2, explication: '✅ "lived" — "when I was a student" = période passée terminée → passé simple.', regle: '📌 Période passée et terminée → passé simple.' },
+            ],
+          },
+          {
+            id: 'simple-exo3',
+            titre: 'Exercice 3 — Futur simple : will',
+            instructions: 'Choisissez la forme correcte du futur simple.',
+            questions: [
+              { id: 's3-q1', enonce: '"I think it ___ rain this afternoon."', choices: ['is', 'was', 'will', 'would'], answer: 2, explication: '✅ "will" — Prédiction avec "I think".', regle: '📌 Prédictions → will + V base.' },
+              { id: 's3-q2', enonce: '"Don\'t worry, I ___ help you with the report."', choices: ['am going to', 'will', 'am', 'was'], answer: 1, explication: '✅ "will" — Décision/promesse spontanée → will.', regle: '📌 Décision prise à l\'instant, promesse → will.' },
+              { id: 's3-q3', enonce: '"She ___ not be at the meeting tomorrow — she\'s on holiday."', choices: ['do', 'does', 'will', 'has'], answer: 2, explication: '✅ "will" — Négatif futur : won\'t + V base.', regle: '📌 Négatif futur : won\'t / will not + V base.' },
+              { id: 's3-q4', enonce: '"___ you help me move this weekend?"', choices: ['Do', 'Are', 'Will', 'Have'], answer: 2, explication: '✅ "Will" — Demande de service futur.', regle: '📌 Questions futur : Will + sujet + V base ?' },
+              { id: 's3-q5', enonce: '"The next train ___ arrive at platform 3."', choices: ['arrives', 'arrived', 'will arrive', 'is arrived'], answer: 2, explication: '✅ "will arrive" — Annonce futur.', regle: '📌 Annonces et prédictions → will + V base.' },
+              { id: 's3-q6', enonce: '"I\'m sure she ___ get the job."', choices: ['gets', 'got', 'will get', 'is getting'], answer: 2, explication: '✅ "will get" — Prédiction basée sur l\'opinion (I\'m sure).', regle: '📌 Opinions et certitudes sur le futur → will.' },
+              { id: 's3-q7', enonce: '"___ you be at the office tomorrow morning?"', choices: ['Do', 'Did', 'Will', 'Are'], answer: 2, explication: '✅ "Will" — Question sur une action future.', regle: '📌 Will you...? pour demander quelque chose dans le futur.' },
+              { id: 's3-q8', enonce: '"This project ___ take at least three months."', choices: ['takes', 'took', 'will take', 'has taken'], answer: 2, explication: '✅ "will take" — Estimation future.', regle: '📌 Estimations → will.' },
+              { id: 's3-q9', enonce: '"If you work hard, you ___ succeed."', choices: ['succeed', 'succeeds', 'will succeed', 'succeeded'], answer: 2, explication: '✅ "will succeed" — If + présent simple → will + V base.', regle: '📌 If + présent simple → will + V base.' },
+              { id: 's3-q10', enonce: '"I\'m hungry. I think I ___ make a sandwich."', choices: ['make', 'made', 'will make', 'am making'], answer: 2, explication: '✅ "will make" — Décision spontanée prise au moment de parler.', regle: '📌 Décision prise au moment de parler → will.' },
+            ],
+          },
+          {
+            id: 'simple-exo4',
+            titre: 'Exercice 4 — Distinguer les 3 temps simples',
+            instructions: 'Choisissez le bon temps simple selon le contexte.',
+            questions: [
+              { id: 's4-q1', enonce: '"She ___ her report every Monday." (habitude)', choices: ['submitted', 'submits', 'will submit', 'is submitting'], answer: 1, explication: '✅ "submits" — Habitude + 3ème pers. sing.', regle: '📌 Habitude → présent simple.' },
+              { id: 's4-q2', enonce: '"He ___ the contract last Tuesday."', choices: ['signs', 'signed', 'will sign', 'has signed'], answer: 1, explication: '✅ "signed" — "last Tuesday" = moment précis → passé simple.', regle: '📌 "Last [jour]" → passé simple.' },
+              { id: 's4-q3', enonce: '"I ___ call you back in five minutes." (promesse)', choices: ['call', 'called', 'will call', 'am calling'], answer: 2, explication: '✅ "will call" — Promesse → futur simple will.', regle: '📌 Promesse → will + V base.' },
+              { id: 's4-q4', enonce: '"The company ___ a new CEO in 2019."', choices: ['appoints', 'appointed', 'will appoint', 'appoint'], answer: 1, explication: '✅ "appointed" — "in 2019" = passé précis.', regle: '📌 Date passée → passé simple.' },
+              { id: 's4-q5', enonce: '"Dogs ___ meat." (vérité générale)', choices: ['ate', 'eat', 'will eat', 'are eating'], answer: 1, explication: '✅ "eat" — Vérité générale + sujet pluriel.', regle: '📌 Vérités générales → présent simple.' },
+              { id: 's4-q6', enonce: '"I ___ probably need more time."', choices: ['need', 'needed', 'will need', 'am needing'], answer: 2, explication: '✅ "will need" — "probably" + futur. "Need" = stative → pas de progressif.', regle: '📌 "Probably" + futur → will.' },
+              { id: 's4-q7', enonce: '"___ she speak English well?"', choices: ['Do', 'Does', 'Did', 'Will'], answer: 1, explication: '✅ "Does" — Question présent simple 3ème pers.', regle: '📌 Does + he/she/it + V base ?' },
+              { id: 's4-q8', enonce: '"The earthquake ___ at 3am. Nobody was hurt."', choices: ['strikes', 'struck', 'will strike', 'has struck'], answer: 1, explication: '✅ "struck" — Événement passé terminé → passé simple irrégulier.', regle: '📌 Narration passée → passé simple.' },
+              { id: 's4-q9', enonce: '"The presentation ___ at 10am tomorrow."', choices: ['starts', 'started', 'will start', 'has started'], answer: 2, explication: '✅ "will start" — Événement futur.', regle: '📌 Événements à venir → will.' },
+              { id: 's4-q10', enonce: '"She ___ the piano since she was 5." — Quel est le PIÈGE ?', choices: ['plays', 'played', 'will play', 'None — needs present perfect'], answer: 3, explication: '✅ Piège ! "Since she was 5" + continue → présent parfait : "She has played (ou has been playing) the piano since she was 5."', regle: '📌 "Since" + action continue → présent parfait, pas présent simple.' },
+            ],
+          },
+          {
+            id: 'simple-exo5',
+            titre: 'Exercice 5 — Questions et négations',
+            instructions: 'Choisissez la forme interrogative ou négative correcte.',
+            questions: [
+              { id: 's5-q1', enonce: '"___ she work late often?" (présent)', choices: ['Is', 'Does', 'Did', 'Has'], answer: 1, explication: '✅ "Does" — Question présent simple 3ème pers.', regle: '📌 Does + he/she/it + V base ?' },
+              { id: 's5-q2', enonce: '"They ___ not accept credit cards here." (présent)', choices: ['do', 'does', 'did', 'will'], answer: 0, explication: '✅ "do" — Négatif présent sujet pluriel : don\'t.', regle: '📌 I/you/we/they + don\'t.' },
+              { id: 's5-q3', enonce: '"___ the manager call you back yesterday?"', choices: ['Does', 'Do', 'Did', 'Has'], answer: 2, explication: '✅ "Did" — Question passé simple.', regle: '📌 Did + sujet + V BASE ?' },
+              { id: 's5-q4', enonce: '"She ___ not reply to my email last week."', choices: ['do', 'does', 'did', 'has'], answer: 2, explication: '✅ "did" — Négatif passé simple : didn\'t.', regle: '📌 Négatif passé simple : didn\'t + V base.' },
+              { id: 's5-q5', enonce: '"___ they agree to the new terms?" (passé)', choices: ['Do', 'Does', 'Did', 'Have'], answer: 2, explication: '✅ "Did" — Événement passé → passé simple.', regle: '📌 Événements passés terminés → Did ?' },
+              { id: 's5-q6', enonce: '"She ___ not understand what you mean." (présent)', choices: ['do', 'does', 'did', 'has'], answer: 1, explication: '✅ "does" — Négatif présent 3ème pers. sing.', regle: '📌 Doesn\'t + V base. "Doesn\'t understands" → FAUX.' },
+              { id: 's5-q7', enonce: '"___ your team finish the audit in time?" (futur)', choices: ['Do', 'Does', 'Will', 'Had'], answer: 2, explication: '✅ "Will" — Question futur simple.', regle: '📌 Will + sujet + V base ?' },
+              { id: 's5-q8', enonce: '"I ___ not think that\'s a good idea."', choices: ['do', 'does', 'did', 'am'], answer: 0, explication: '✅ "do" — Négatif présent 1ère pers. "Think" = opinion = stative.', regle: '📌 I/you/we/they + don\'t + V base.' },
+              { id: 's5-q9', enonce: '"He ___ not attend the training last Monday."', choices: ['do', 'does', 'did', 'had'], answer: 2, explication: '✅ "did" — "last Monday" → passé simple. Négatif : didn\'t.', regle: '📌 "Last [jour]" → passé simple. Négatif : didn\'t + V base.' },
+              { id: 's5-q10', enonce: '"___ it matter if I arrive a bit late?" (présent)', choices: ['Is', 'Does', 'Did', 'Do'], answer: 1, explication: '✅ "Does" — "it" = 3ème pers. sing. Question présent.', regle: '📌 Does + it/he/she + V base ?' },
+            ],
           },
         ],
       },
- 
-      // ════════════════════════════════════════════════════════════════════════
-      // 2. TEMPS PROGRESSIFS
-      // ════════════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════════════════
+// 2. TEMPS PROGRESSIFS
+// ══════════════════════════════════════════════════════════════════════
       {
         id: 'progressif',
         label: '② Progressif',
@@ -212,82 +249,116 @@ export const COURS_DATA = [
           {
             id: 'conj-progressifs',
             titre: 'Les temps PROGRESSIFS (continus)',
-            contenu: `Les temps progressifs décrivent une action EN TRAIN DE SE DÉROULER à un moment précis — passé, présent ou futur. Formation : BE (conjugué selon le temps) + verbe en -ING.`,
+            contenu: `Les temps progressifs décrivent une action EN TRAIN DE SE DÉROULER. Formation : BE (conjugué) + V-ING.`,
             tableaux: [
               {
                 titre: '3 temps progressifs',
                 colonnes: ['Temps', 'Formation', 'Usage', 'Exemple'],
                 lignes: [
-                  ['Présent progressif', 'am/is/are + V-ing', 'Action en cours EN CE MOMENT / situation temporaire / futur planifié proche', 'I am working right now. / She is staying in Paris this month.'],
-                  ['Passé progressif', 'was/were + V-ing', 'Action en cours à un moment précis du passé / action interrompue par une autre', 'She was sleeping when I arrived. / At 8pm, we were having dinner.'],
-                  ['Futur progressif', 'will be + V-ing', 'Action qui sera en cours à un moment précis du futur', 'I will be travelling this time tomorrow. / She will be presenting at 3pm.'],
+                  ['Présent progressif', 'am/is/are + V-ing', 'Action en cours / situation temporaire / futur planifié proche', 'I am working right now.'],
+                  ['Passé progressif', 'was/were + V-ing', 'Action en cours au passé / action interrompue', 'She was sleeping when I arrived.'],
+                  ['Futur progressif', 'will be + V-ing', 'Action en cours à un moment précis du futur', 'I will be travelling this time tomorrow.'],
                 ],
               },
             ],
-            astuce: `💡 Verbes qui NE s'utilisent PAS au progressif (stative verbs) :
-• État mental : know, believe, understand, think (=croire), want, need, prefer
-• Sentiment : like, love, hate, wish
-• Possession : have (=posséder), own, belong, contain
-• Sens : see (=voir), hear, smell, taste, seem, appear
+            astuce: `💡 Stative verbs → JAMAIS au progressif : know, believe, understand, want, need, like, love, hate, have (posséder), own, see (voir), hear, seem.
+❌ "I am knowing" → ✅ "I know"
  
-❌ "I am knowing the answer." → FAUX
-✅ "I know the answer." → Correct
- 
-💡 Marqueurs progressif : right now, at the moment, currently, at 5pm yesterday, this week (temporaire), Look! / Listen!`,
+💡 Marqueurs : right now, at the moment, currently, Look!, Listen!, at 5pm yesterday, this week (temporaire).`,
           },
         ],
-        questions: [
+        exercices: [
           {
-            id: 'prog-q1',
-            enonce: '"Listen! Someone ___ (knock) on the door."',
-            choices: ['knocks', 'knocked', 'is knocking', 'was knocking'],
-            answer: 2,
-            explication: '✅ Correct : "is knocking" → "Listen!" signale une action en cours en ce moment précis → présent progressif.',
-            regle: '📌 Règle : Présent progressif = action qui se passe maintenant. Déclencheurs : Look!, Listen!, right now, at the moment, currently.',
-          },
-          {
-            id: 'prog-q2',
-            enonce: '"At 9am yesterday, the team ___ (discuss) the budget proposal."',
-            choices: ['discusses', 'discussed', 'was discussing', 'has discussed'],
-            answer: 2,
-            explication: '✅ Correct : "was discussing" → "At 9am yesterday" = moment précis dans le passé. Action en cours à ce moment = passé progressif.',
-            regle: '📌 Règle : Passé progressif = action en cours à un moment précis du passé. Souvent introduit par "at [heure] yesterday", "when...", "while...".',
-          },
-          {
-            id: 'prog-q3',
-            enonce: 'Laquelle est INCORRECTE ? (stative verb mal utilisé)',
-            choices: [
-              'She is thinking about quitting.',
-              'He is knowing the answer.',
-              'We are having a great time!',
-              'They are meeting clients today.',
+            id: 'prog-exo1',
+            titre: 'Exercice 1 — Présent progressif',
+            instructions: 'Choisissez la forme correcte du présent progressif.',
+            questions: [
+              { id: 'p1-q1', enonce: '"Listen! The birds ___."', choices: ['sing', 'sang', 'are singing', 'were singing'], answer: 2, explication: '✅ "are singing" — "Listen!" = action en cours → présent progressif.', regle: '📌 "Look! / Listen!" → présent progressif.' },
+              { id: 'p1-q2', enonce: '"She ___ in Paris this month while the office is renovated."', choices: ['works', 'worked', 'is working', 'will work'], answer: 2, explication: '✅ "is working" — Situation temporaire en cours.', regle: '📌 Situation temporaire → présent progressif.' },
+              { id: 'p1-q3', enonce: '"Why ___ you ___ that old jacket today?"', choices: ['do / wear', 'are / wearing', 'did / wear', 'have / worn'], answer: 1, explication: '✅ "are / wearing" — Question présent progressif.', regle: '📌 Question présent progressif : Are + sujet + V-ing ?' },
+              { id: 'p1-q4', enonce: '"They ___ a new product line at the moment."', choices: ['develop', 'developed', 'are developing', 'will develop'], answer: 2, explication: '✅ "are developing" — "at the moment" = action en cours.', regle: '📌 "At the moment / right now" → présent progressif.' },
+              { id: 'p1-q5', enonce: 'Laquelle est INCORRECTE ?', choices: ['She is thinking about quitting.', 'I am having lunch right now.', 'He is knowing the answer.', 'They are meeting clients today.'], answer: 2, explication: '✅ "He is knowing" est FAUX. "Know" = stative → "He knows the answer."', regle: '📌 Stative verbs (know, believe...) → jamais au progressif.' },
+              { id: 'p1-q6', enonce: '"I ___ (not/watch) TV right now — I\'m reading."', choices: ["don't watch", "didn't watch", "am not watching", "won't watch"], answer: 2, explication: '✅ "am not watching" — Négatif présent progressif : am/is/are + not + V-ing.', regle: '📌 Négatif présent progressif : am/is/are + not + V-ing.' },
+              { id: 'p1-q7', enonce: '"She ___ better since she started the new treatment."', choices: ['is feeling', 'feels', 'felt', 'has felt'], answer: 1, explication: '✅ "feels" — "feel" comme état physique = stative → présent simple.', regle: '📌 "Feel" (état) = stative → présent simple.' },
+              { id: 'p1-q8', enonce: '"What ___ you ___ this evening?" (plans)', choices: ['do / do', 'are / doing', 'did / do', 'will / do'], answer: 1, explication: '✅ "are / doing" — Plans proches confirmés → présent progressif pour le futur proche.', regle: '📌 Plans futurs proches confirmés → présent progressif.' },
+              { id: 'p1-q9', enonce: '"The company ___ rapidly in new markets this year."', choices: ['expands', 'expanded', 'is expanding', 'has expanded'], answer: 2, explication: '✅ "is expanding" — "this year" = période temporaire en cours.', regle: '📌 "This year/week/month" en cours → présent progressif.' },
+              { id: 'p1-q10', enonce: '"I ___ what you mean." (compréhension)', choices: ['am understanding', 'understand', 'understood', 'have understood'], answer: 1, explication: '✅ "understand" — Stative verb → jamais progressif.', regle: '📌 "Understand" = stative → présent simple.' },
             ],
-            answer: 1,
-            explication: '✅ "He is knowing the answer." est INCORRECT. "Know" est un stative verb (état mental) — il ne s\'utilise jamais au progressif. → "He knows the answer."',
-            regle: '📌 Règle : Les stative verbs (know, believe, want, need, understand, like, love, hate, have-posséder...) ne s\'utilisent PAS au progressif. Exception : "have" au sens d\'activité → "I am having lunch" ✅.',
           },
           {
-            id: 'prog-q4',
-            enonce: '"Don\'t call me at 8pm — I ___ (watch) the match."',
-            choices: ['watch', 'watched', 'will be watching', 'am watching'],
-            answer: 2,
-            explication: '✅ Correct : "will be watching" → Action en cours à un moment précis du futur (8pm) = futur progressif.',
-            regle: '📌 Règle : Futur progressif (will be + V-ing) = action qui sera en cours à un moment précis du futur. Utile pour : "What will you be doing at [heure] ?"',
+            id: 'prog-exo2',
+            titre: 'Exercice 2 — Passé progressif',
+            instructions: 'Choisissez la forme correcte du passé progressif.',
+            questions: [
+              { id: 'p2-q1', enonce: '"At 9pm last night, she ___ a report."', choices: ['writes', 'wrote', 'was writing', 'has written'], answer: 2, explication: '✅ "was writing" — "At 9pm last night" = moment précis passé, action en cours.', regle: '📌 "At [heure] last night" → passé progressif.' },
+              { id: 'p2-q2', enonce: '"I ___ a shower when the phone rang."', choices: ['take', 'took', 'was taking', 'had taken'], answer: 2, explication: '✅ "was taking" — Action longue interrompue par le téléphone.', regle: '📌 "Was doing X when Y happened" = action interrompue.' },
+              { id: 'p2-q3', enonce: '"While she ___ the meeting, he ___ emails."', choices: ['led / wrote', 'was leading / was writing', 'leads / writes', 'led / was writing'], answer: 1, explication: '✅ "was leading / was writing" — Deux actions simultanées avec "while".', regle: '📌 "While" + simultanéité au passé → les deux au passé progressif.' },
+              { id: 'p2-q4', enonce: '"What ___ you ___ at this time yesterday?"', choices: ['do / do', 'were / doing', 'did / do', 'are / doing'], answer: 1, explication: '✅ "were / doing" — Question passé progressif.', regle: '📌 Question passé progressif : Was/Were + sujet + V-ing ?' },
+              { id: 'p2-q5', enonce: '"He ___ his phone when he walked into the door."', choices: ['checks', 'checked', 'was checking', 'has checked'], answer: 2, explication: '✅ "was checking" — Action en cours interrompue par un événement.', regle: '📌 Action en cours interrompue → passé progressif.' },
+              { id: 'p2-q6', enonce: '"They ___ not ___ attention during the briefing."', choices: ['were / paying', 'did / pay', 'are / paying', 'do / pay'], answer: 0, explication: '✅ "were / paying" — Négatif passé progressif : weren\'t + V-ing.', regle: '📌 Négatif passé progressif : was/were + not + V-ing.' },
+              { id: 'p2-q7', enonce: '"The children ___ when the storm started."', choices: ['sleep', 'slept', 'were sleeping', 'have slept'], answer: 2, explication: '✅ "were sleeping" — Action de fond (dormir) + événement soudain (tempête).', regle: '📌 Action de fond + événement → passé progressif + passé simple.' },
+              { id: 'p2-q8', enonce: '"She looked tired — she ___ all day."', choices: ['worked', 'works', 'was working', 'had worked'], answer: 2, explication: '✅ "was working" — Activité en cours pendant toute une période passée.', regle: '📌 Activité en cours pendant une durée passée → passé progressif.' },
+              { id: 'p2-q9', enonce: '"The sales team ___ a deal when the power cut happened."', choices: ['closes', 'closed', 'was closing', 'has closed'], answer: 2, explication: '✅ "was closing" — Action en cours (négociation) interrompue → passé progressif.', regle: '📌 Négociation en cours interrompue → passé progressif.' },
+              { id: 'p2-q10', enonce: '"When I arrived, everyone ___ and laughing."', choices: ['talked', 'talks', 'was talking', 'were talking'], answer: 3, explication: '✅ "were talking" — Description de la scène à mon arrivée. "Everyone" → were ici (contexte pluriel implicite).', regle: '📌 Description de scène passée → passé progressif.' },
+            ],
           },
           {
-            id: 'prog-q5',
-            enonce: '"I ___ in Paris for two weeks while my apartment is being renovated." (situation temporaire)',
-            choices: ['stay', 'stayed', 'am staying', 'will stay'],
-            answer: 2,
-            explication: '✅ Correct : "am staying" → Situation temporaire en cours (pas une habitude permanente) = présent progressif.',
-            regle: '📌 Règle : Le présent progressif peut exprimer une situation TEMPORAIRE. "I live in Paris" (permanent) vs "I am living in Paris for 3 months" (temporaire).',
+            id: 'prog-exo3',
+            titre: 'Exercice 3 — Futur progressif',
+            instructions: 'Choisissez la forme correcte du futur progressif.',
+            questions: [
+              { id: 'p3-q1', enonce: '"This time next week, I ___ on the beach."', choices: ['sit', 'sat', 'will be sitting', 'am sitting'], answer: 2, explication: '✅ "will be sitting" — "This time next week" = moment précis futur, action en cours.', regle: '📌 "This time tomorrow/next week" → futur progressif.' },
+              { id: 'p3-q2', enonce: '"Don\'t call at 3pm — the team ___ a presentation."', choices: ['gives', 'gave', 'will be giving', 'is giving'], answer: 2, explication: '✅ "will be giving" — Action en cours à un moment précis du futur.', regle: '📌 Action en cours à un moment précis du futur → will be + V-ing.' },
+              { id: 'p3-q3', enonce: '"She ___ the Paris office next month." (visite en cours pendant le mois)', choices: ['visits', 'visited', 'will be visiting', 'has visited'], answer: 2, explication: '✅ "will be visiting" — Activité continue pendant le mois prochain.', regle: '📌 Activité continue sur une période future → futur progressif.' },
+              { id: 'p3-q4', enonce: '"At midnight tonight, the servers ___ data."', choices: ['process', 'processed', 'will be processing', 'are processing'], answer: 2, explication: '✅ "will be processing" — Moment précis (midnight), action en cours.', regle: '📌 "At [heure] tonight/tomorrow" → futur progressif.' },
+              { id: 'p3-q5', enonce: '"What ___ you ___ at 6pm tomorrow?"', choices: ['do / do', 'are / doing', 'will / be doing', 'did / do'], answer: 2, explication: '✅ "will / be doing" — Question futur progressif.', regle: '📌 Question futur progressif : Will + sujet + be + V-ing ?' },
+              { id: 'p3-q6', enonce: '"By the time you wake up, I ___ already."', choices: ['leave', 'left', 'will have left', 'will be leaving'], answer: 2, explication: '✅ "will have left" — "By the time" + action TERMINÉE → futur parfait (pas progressif).', regle: '📌 "By the time" → futur parfait (terminé), pas futur progressif (en cours).' },
+              { id: 'p3-q7', enonce: '"She ___ the conference while I handle the clients."', choices: ['attends', 'attended', 'will be attending', 'has attended'], answer: 2, explication: '✅ "will be attending" — Action en cours pendant une période future.', regle: '📌 Deux activités parallèles futures → futur progressif.' },
+              { id: 'p3-q8', enonce: '"I ___ through London next week — shall I visit you?"', choices: ['pass', 'passed', 'will be passing', 'am passing'], answer: 2, explication: '✅ "will be passing" — Action de fond future.', regle: '📌 Futur progressif pour une action de fond future.' },
+              { id: 'p3-q9', enonce: '"They ___ the new system all day tomorrow."', choices: ['test', 'tested', 'will be testing', 'have tested'], answer: 2, explication: '✅ "will be testing" — Activité continue toute la journée demain.', regle: '📌 Activité continue sur une durée future → futur progressif.' },
+              { id: 'p3-q10', enonce: '"I ___ (not/work) this Friday — I\'m off."', choices: ["don't work", "didn't work", "won't be working", "haven't worked"], answer: 2, explication: '✅ "won\'t be working" — Négatif futur progressif.', regle: '📌 Négatif futur progressif : won\'t be + V-ing.' },
+            ],
+          },
+          {
+            id: 'prog-exo4',
+            titre: 'Exercice 4 — Stative verbs et pièges',
+            instructions: 'Identifiez si le progressif est correct ou non.',
+            questions: [
+              { id: 'p4-q1', enonce: 'Laquelle est correcte ?', choices: ['I am wanting a coffee.', 'I want a coffee.', 'I am want a coffee.', 'I wanting a coffee.'], answer: 1, explication: '✅ "I want a coffee." — "Want" = stative → jamais progressif.', regle: '📌 "Want" = stative → présent simple.' },
+              { id: 'p4-q2', enonce: '"She ___ the company." (=elle la possède)', choices: ['is owning', 'owns', 'is own', 'be owning'], answer: 1, explication: '✅ "owns" — "Own" (posséder) = stative.', regle: '📌 "Own" = stative → simple.' },
+              { id: 'p4-q3', enonce: '"The soup ___ good!" (perception)', choices: ['is tasting', 'tastes', 'taste', 'was tasting'], answer: 1, explication: '✅ "tastes" — "Taste" comme perception involontaire = stative.', regle: '📌 Perception involontaire → présent simple.' },
+              { id: 'p4-q4', enonce: '"I ___ (think) you should apologise." (opinion)', choices: ['am thinking', 'think', 'thought', 'was thinking'], answer: 1, explication: '✅ "think" — Opinion = stative → présent simple.', regle: '📌 "Think" = opinion → présent simple.' },
+              { id: 'p4-q5', enonce: '"She ___ the coffee." (action active de goûter)', choices: ['is tasting', 'tastes', 'taste', 'was taste'], answer: 0, explication: '✅ "is tasting" — "Taste" comme action intentionnelle → progressif possible.', regle: '📌 "Taste" actif (intentionnel) → progressif. "Taste" passif (avoir un goût) → simple.' },
+              { id: 'p4-q6', enonce: '"I ___ what you mean."', choices: ['am understanding', 'understand', 'understood', 'was understanding'], answer: 1, explication: '✅ "understand" — Stative, jamais progressif.', regle: '📌 "Understand" = stative → présent simple.' },
+              { id: 'p4-q7', enonce: '"He ___ his car — it\'s in the garage." (possession)', choices: ['is having', 'has', 'have', 'was having'], answer: 1, explication: '✅ "has" — "Have" comme posséder = stative.', regle: '📌 "Have" = posséder → simple. "Have" = activité → peut être progressif.' },
+              { id: 'p4-q8', enonce: '"They ___ lunch when I called." (activité)', choices: ['have', 'had', 'were having', 'are having'], answer: 2, explication: '✅ "were having" — "Have lunch" = activité, pas possession → progressif possible. Passé progressif.', regle: '📌 "Have" + repas/activité → progressif possible.' },
+              { id: 'p4-q9', enonce: '"I ___ she\'s right about this." (croyance)', choices: ['am believing', 'believe', 'believed', 'was believing'], answer: 1, explication: '✅ "believe" — Stative.', regle: '📌 "Believe" = stative → simple.' },
+              { id: 'p4-q10', enonce: '"The chef ___ each dish before service." (action intentionnelle)', choices: ['is tasting', 'tastes', 'taste', 'has tasted'], answer: 0, explication: '✅ "is tasting" — Action active en cours → progressif.', regle: '📌 "Taste" comme action délibérée → progressif. "Taste" comme état → simple.' },
+            ],
+          },
+          {
+            id: 'prog-exo5',
+            titre: 'Exercice 5 — Tous les temps progressifs en contexte',
+            instructions: 'Choisissez le bon temps progressif.',
+            questions: [
+              { id: 'p5-q1', enonce: '"I ___ right now — can I call you back?"', choices: ['drive', 'drove', 'am driving', 'will drive'], answer: 2, explication: '✅ "am driving" — Action en cours maintenant.', regle: '📌 Action en cours maintenant → présent progressif.' },
+              { id: 'p5-q2', enonce: '"At 8pm yesterday, we ___ dinner with clients."', choices: ['have', 'had', 'were having', 'will be having'], answer: 2, explication: '✅ "were having" — Moment précis passé (8pm yesterday).', regle: '📌 "At [heure] yesterday" → passé progressif.' },
+              { id: 'p5-q3', enonce: '"This time tomorrow, I ___ my driving test."', choices: ['take', 'took', 'am taking', 'will be taking'], answer: 3, explication: '✅ "will be taking" — "This time tomorrow" → futur progressif.', regle: '📌 "This time tomorrow" → futur progressif.' },
+              { id: 'p5-q4', enonce: '"She ___ for the bus when it started to rain."', choices: ['waits', 'waited', 'was waiting', 'has waited'], answer: 2, explication: '✅ "was waiting" — Action en cours interrompue par la pluie.', regle: '📌 Action interrompue → passé progressif.' },
+              { id: 'p5-q5', enonce: '"We ___ the new platform all of next week."', choices: ['test', 'tested', 'will be testing', 'have tested'], answer: 2, explication: '✅ "will be testing" — Activité continue la semaine prochaine.', regle: '📌 Activité continue sur période future → futur progressif.' },
+              { id: 'p5-q6', enonce: '"Look! The CEO ___ in our direction."', choices: ['walks', 'walked', 'is walking', 'will walk'], answer: 2, explication: '✅ "is walking" — "Look!" = en cours maintenant.', regle: '📌 "Look!" → présent progressif.' },
+              { id: 'p5-q7', enonce: '"She ___ her presentation while he was setting up the projector."', choices: ['practised', 'practises', 'was practising', 'is practising'], answer: 2, explication: '✅ "was practising" — "While" + simultanéité passée.', regle: '📌 "While" + simultanéité passée → passé progressif.' },
+              { id: 'p5-q8', enonce: '"I ___ (not/work) from home anymore — I\'m back at the office."', choices: ["don't work", "am not working", "wasn't working", "won't be working"], answer: 1, explication: '✅ "am not working" — Changement de situation temporaire actuelle.', regle: '📌 Changement de situation temporaire → présent progressif.' },
+              { id: 'p5-q9', enonce: '"Don\'t disturb her — she ___ a very important call."', choices: ['takes', 'took', 'is taking', 'was taking'], answer: 2, explication: '✅ "is taking" — Action en cours maintenant.', regle: '📌 Action en cours maintenant → présent progressif.' },
+              { id: 'p5-q10', enonce: '"At this time next month, we ___ our results to the board."', choices: ['present', 'presented', 'will present', 'will be presenting'], answer: 3, explication: '✅ "will be presenting" — "At this time next month" = moment futur précis.', regle: '📌 "At this time next [période]" → futur progressif.' },
+            ],
           },
         ],
       },
  
-      // ════════════════════════════════════════════════════════════════════════
+      // ══════════════════════════════════════════════════════════════════════
       // 3. TEMPS PARFAITS
-      // ════════════════════════════════════════════════════════════════════════
+      // ══════════════════════════════════════════════════════════════════════
       {
         id: 'parfait',
         label: '③ Parfait',
@@ -295,80 +366,117 @@ export const COURS_DATA = [
           {
             id: 'conj-parfaits',
             titre: 'Les temps PARFAITS',
-            contenu: `Les temps parfaits créent un LIEN entre deux moments — une action passée et son résultat présent, ou son rapport avec un autre moment passé/futur. Formation : HAVE/HAS/HAD + participe passé (V-pp).`,
+            contenu: `Les temps parfaits créent un LIEN entre deux moments. Formation : HAVE/HAS/HAD + participe passé (V-pp).`,
             tableaux: [
               {
                 titre: '3 temps parfaits',
                 colonnes: ['Temps', 'Formation', 'Usage principal', 'Exemple'],
                 lignes: [
-                  ['Présent parfait', 'have/has + V-pp', '① Expérience de vie ② Résultat visible maintenant ③ Action récente (just) ④ Action qui dure jusqu\'au présent', 'I have visited Paris. / She has just left. / He has worked here for 5 years.'],
-                  ['Passé parfait', 'had + V-pp', 'Action terminée AVANT une autre action passée', 'When I arrived, she had already left. / He had finished before the meeting started.'],
-                  ['Futur parfait', 'will have + V-pp', 'Action qui sera terminée AVANT un moment précis du futur', 'By 2030, I will have graduated. / By 5pm, she will have sent the report.'],
+                  ['Présent parfait', 'have/has + V-pp', '① Expérience ② Résultat visible ③ Just/already/yet ④ Durée jusqu\'au présent', 'I have visited Paris. / She has just left.'],
+                  ['Passé parfait', 'had + V-pp', 'Action terminée AVANT une autre action passée', 'When I arrived, she had already left.'],
+                  ['Futur parfait', 'will have + V-pp', 'Action terminée AVANT un moment précis du futur', 'By 5pm, she will have sent the report.'],
                 ],
               },
             ],
-            astuce: `💡 Règle d'or : présent parfait vs passé simple
-• ❌ "I have seen him YESTERDAY." → FAUX ! "Yesterday" = moment précis terminé → passé simple obligatoire.
-• ✅ "I saw him yesterday."
-• ✅ "I have seen this film before." (expérience, pas de moment précis)
+            astuce: `💡 Règle d'or : présent parfait ≠ passé simple
+• ❌ "I have seen him YESTERDAY." → FAUX. "Yesterday" → passé simple.
+• ✅ "I saw him yesterday." / ✅ "I have seen this film before."
  
-Marqueurs du PRÉSENT PARFAIT : already, yet, just, ever, never, since, for, recently, so far, up to now
-Marqueurs du PASSÉ PARFAIT : when, before, after, already (+ passé simple pour l'autre action)
-Marqueurs du FUTUR PARFAIT : by the time, by [date], before, when (futur)`,
+Marqueurs présent parfait : already, yet, just, ever, never, since, for, recently.
+INTERDIT avec : yesterday, last week, in 2020, at 3pm, ago.`,
           },
         ],
-        questions: [
+        exercices: [
           {
-            id: 'parfait-q1',
-            enonce: '"When I arrived at the office, the meeting ___ (already/start)."',
-            choices: [
-              'already started',
-              'had already started',
-              'has already started',
-              'was already starting',
+            id: 'parfait-exo1',
+            titre: 'Exercice 1 — Présent parfait : résultat et expérience',
+            instructions: 'Choisissez la forme correcte du présent parfait.',
+            questions: [
+              { id: 'pp1-q1', enonce: '"Look! Someone ___ the window."', choices: ['breaks', 'broke', 'has broken', 'had broken'], answer: 2, explication: '✅ "has broken" — Résultat visible maintenant → présent parfait.', regle: '📌 Résultat visible dans le présent → présent parfait.' },
+              { id: 'pp1-q2', enonce: '"She ___ already ___ the report."', choices: ['has / finished', 'did / finish', 'have / finished', 'had / finished'], answer: 0, explication: '✅ "has / finished" — "Already" + 3ème pers. sing. → has.', regle: '📌 "Already" → présent parfait.' },
+              { id: 'pp1-q3', enonce: '"Have you ever ___ sushi?"', choices: ['eat', 'ate', 'eaten', 'eating'], answer: 2, explication: '✅ "eaten" — "Ever" → présent parfait. V-pp = "eaten".', regle: '📌 "Ever" → présent parfait. Have + ever + V-pp.' },
+              { id: 'pp1-q4', enonce: '"I ___ (just/receive) your email."', choices: ['received', 'have just received', 'was receiving', 'am receiving'], answer: 1, explication: '✅ "have just received" — "Just" = action très récente → présent parfait.', regle: '📌 "Just" → présent parfait.' },
+              { id: 'pp1-q5', enonce: '"She ___ never ___ to Asia."', choices: ['has / been', 'had / been', 'have / been', 'was / been'], answer: 0, explication: '✅ "has / been" — "Never" + expérience + 3ème pers. sing.', regle: '📌 "Never" + expérience → présent parfait.' },
+              { id: 'pp1-q6', enonce: '"___ you ___ your homework yet?"', choices: ['Did / finish', 'Have / finished', 'Do / finish', 'Had / finished'], answer: 1, explication: '✅ "Have / finished" — "Yet" + question → présent parfait.', regle: '📌 "Yet" dans une question → présent parfait.' },
+              { id: 'pp1-q7', enonce: '"The company ___ three offices this year."', choices: ['opens', 'opened', 'has opened', 'had opened'], answer: 2, explication: '✅ "has opened" — "This year" (période en cours) + résultat.', regle: '📌 "This year" (en cours) + résultat → présent parfait.' },
+              { id: 'pp1-q8', enonce: '"I ___ (not/read) the instructions yet."', choices: ["don't read", "didn't read", "haven't read", "hadn't read"], answer: 2, explication: '✅ "haven\'t read" — "Yet" dans négation → présent parfait.', regle: '📌 "Yet" dans négation → haven\'t/hasn\'t + V-pp.' },
+              { id: 'pp1-q9', enonce: '"This is the best film I ___ ever ___."', choices: ['saw', 'have / seen', 'had / seen', 'see'], answer: 1, explication: '✅ "have / seen" — Superlatif + "ever" → présent parfait.', regle: '📌 "The best/worst... I have ever + V-pp" = structure classique.' },
+              { id: 'pp1-q10', enonce: '"She ___ the project." (Résultat visible, terminé)', choices: ['finishes', 'finished', 'has finished', 'will finish'], answer: 2, explication: '✅ "has finished" — Résultat présent → présent parfait.', regle: '📌 Résultat présent → présent parfait.' },
             ],
-            answer: 1,
-            explication: '✅ Correct : "had already started" → Deux actions passées. La réunion a commencé AVANT mon arrivée → la plus ancienne prend le passé parfait. "Arrived" = passé simple (action plus récente).',
-            regle: '📌 Règle : Passé parfait = action terminée avant une autre action passée. Structure classique : "When + passé simple, sujet + had + pp" (ou inversement).',
           },
           {
-            id: 'parfait-q2',
-            enonce: '"Look! The floor is wet. Someone ___ (spill) water."',
-            choices: ['spilled', 'was spilling', 'has spilled', 'had spilled'],
-            answer: 2,
-            explication: '✅ Correct : "has spilled" → Le résultat (sol mouillé) est visible MAINTENANT. Une action passée dont l\'effet est présent = présent parfait.',
-            regle: '📌 Règle : Présent parfait = action passée dont le résultat est encore visible/ressenti maintenant. Aucun moment précis n\'est mentionné.',
+            id: 'parfait-exo2',
+            titre: 'Exercice 2 — Présent parfait vs Passé simple',
+            instructions: 'Choisissez entre présent parfait et passé simple.',
+            questions: [
+              { id: 'pp2-q1', enonce: '"She ___ to Rome last summer."', choices: ['has gone', 'went', 'goes', 'had gone'], answer: 1, explication: '✅ "went" — "last summer" = moment précis → passé simple.', regle: '📌 "Last summer/week/year" → passé simple.' },
+              { id: 'pp2-q2', enonce: '"I ___ three coffees today." (journée non terminée)', choices: ['drink', 'drank', 'have drunk', 'had drunk'], answer: 2, explication: '✅ "have drunk" — "Today" (période en cours) → présent parfait.', regle: '📌 "Today" (non terminé) → présent parfait.' },
+              { id: 'pp2-q3', enonce: '"When ___ she ___ the company?" (date précise)', choices: ['has / joined', 'did / join', 'does / join', 'had / joined'], answer: 1, explication: '✅ "did / join" — Question sur un moment précis → passé simple.', regle: '📌 Question sur date précise → passé simple.' },
+              { id: 'pp2-q4', enonce: '"He ___ already ___ the presentation twice this week."', choices: ['gave', 'has / given', 'have / given', 'had / given'], answer: 1, explication: '✅ "has / given" — "Already... this week" (en cours) → présent parfait.', regle: '📌 "This week" (en cours) + "already" → présent parfait.' },
+              { id: 'pp2-q5', enonce: '"___ you enjoy the conference?" (terminée hier)', choices: ['Have', 'Do', 'Did', 'Had'], answer: 2, explication: '✅ "Did" — Événement terminé → passé simple.', regle: '📌 Événement terminé → passé simple.' },
+              { id: 'pp2-q6', enonce: '"I ___ this novel before — it\'s very good."', choices: ['read', 'have read', 'was reading', 'had read'], answer: 1, explication: '✅ "have read" — Expérience sans moment précis ("before") → présent parfait.', regle: '📌 "Before" sans moment précis → présent parfait.' },
+              { id: 'pp2-q7', enonce: '"She ___ the project at 5pm yesterday."', choices: ['finishes', 'has finished', 'finished', 'had finished'], answer: 2, explication: '✅ "finished" — "at 5pm yesterday" = moment précis → passé simple.', regle: '📌 Heure précise dans le passé → passé simple.' },
+              { id: 'pp2-q8', enonce: '"I\'m exhausted — I ___ so much today!"', choices: ['work', 'worked', 'have worked', 'was working'], answer: 2, explication: '✅ "have worked" — "Today" (non terminé) + état présent résultant.', regle: '📌 "Today" non terminé + état actuel → présent parfait.' },
+              { id: 'pp2-q9', enonce: '"Who ___ the photocopier?" (Elle est cassée, on ne sait pas quand)', choices: ['breaks', 'broke', 'has broken', 'had broken'], answer: 2, explication: '✅ "has broken" — Résultat visible, pas de moment précis.', regle: '📌 Résultat visible, pas de moment précis → présent parfait.' },
+              { id: 'pp2-q10', enonce: '"She ___ in this city her whole life."', choices: ['lives', 'lived', 'has lived', 'was living'], answer: 2, explication: '✅ "has lived" — Action commencée dans le passé, toujours vraie.', regle: '📌 Action qui continue jusqu\'au présent → présent parfait.' },
+            ],
           },
           {
-            id: 'parfait-q3',
-            enonce: 'Lequel de ces marqueurs NE PEUT PAS accompagner le présent parfait ?',
-            choices: ['already', 'yesterday', 'just', 'yet'],
-            answer: 1,
-            explication: '✅ Correct : "yesterday" ne peut PAS accompagner le présent parfait. Il indique un moment précis et terminé → passé simple. "I saw him yesterday." (JAMAIS "I have seen him yesterday.")',
-            regle: '📌 Règle : Le présent parfait est INTERDIT avec des marqueurs temporels précis : yesterday, last week, in 2020, at 3pm, ago. Ces marqueurs → passé simple obligatoire.',
+            id: 'parfait-exo3',
+            titre: 'Exercice 3 — Passé parfait',
+            instructions: 'Choisissez la forme correcte du passé parfait.',
+            questions: [
+              { id: 'pp3-q1', enonce: '"When I arrived, she ___ already ___."', choices: ['already left', 'has already left', 'had already left', 'was already leaving'], answer: 2, explication: '✅ "had already left" — Action AVANT mon arrivée → passé parfait.', regle: '📌 Passé parfait = action avant une autre action passée.' },
+              { id: 'pp3-q2', enonce: '"He couldn\'t enter because he ___ his badge at home."', choices: ['left', 'leaves', 'had left', 'has left'], answer: 2, explication: '✅ "had left" — L\'oubli explique pourquoi il ne peut pas entrer.', regle: '📌 Cause dans le passé → passé parfait. Conséquence → passé simple.' },
+              { id: 'pp3-q3', enonce: '"Before she joined the team, she ___ for two other companies."', choices: ['works', 'worked', 'has worked', 'had worked'], answer: 3, explication: '✅ "had worked" — Avant "before she joined" → passé parfait.', regle: '📌 "Before + passé simple" → passé parfait pour l\'action antérieure.' },
+              { id: 'pp3-q4', enonce: '"By the time the ambulance arrived, he ___ consciousness."', choices: ['loses', 'lost', 'had lost', 'has lost'], answer: 2, explication: '✅ "had lost" — Action avant l\'arrivée de l\'ambulance.', regle: '📌 "By the time [passé simple]" → passé parfait.' },
+              { id: 'pp3-q5', enonce: '"She told me she ___ the report earlier that morning."', choices: ['sends', 'sent', 'had sent', 'has sent'], answer: 2, explication: '✅ "had sent" — Discours indirect au passé → passé parfait.', regle: '📌 Discours indirect passé : "she said/told she had + V-pp."' },
+              { id: 'pp3-q6', enonce: '"I was certain I ___ my keys in the car."', choices: ['leave', 'left', 'had left', 'have left'], answer: 2, explication: '✅ "had left" — Action antérieure à la certitude (passé).', regle: '📌 Passé parfait pour action avant un autre moment passé.' },
+              { id: 'pp3-q7', enonce: '"After they ___ the deal, they celebrated."', choices: ['close', 'closed', 'had closed', 'have closed'], answer: 2, explication: '✅ "had closed" — Action antérieure à la célébration.', regle: '📌 "After + passé parfait, passé simple" est la structure préférée.' },
+              { id: 'pp3-q8', enonce: '"They ___ never ___ such a difficult project before."', choices: ['have / seen', 'had / seen', 'did / see', 'were / seeing'], answer: 1, explication: '✅ "had / seen" — Expérience jusqu\'à un moment passé → passé parfait.', regle: '📌 "Never before" dans contexte passé → passé parfait.' },
+              { id: 'pp3-q9', enonce: '"She realised she ___ the wrong address."', choices: ['gives', 'gave', 'had given', 'has given'], answer: 2, explication: '✅ "had given" — L\'erreur a eu lieu avant qu\'elle s\'en rende compte.', regle: '📌 "She realised" → l\'erreur = passé parfait.' },
+              { id: 'pp3-q10', enonce: '"The team ___ already ___ when the manager arrived."', choices: ['had / left', 'has / left', 'was / leaving', 'left'], answer: 0, explication: '✅ "had / left" — Déjà partis avant l\'arrivée du manager.', regle: '📌 "Already + passé parfait" pour action accomplie avant un moment passé.' },
+            ],
           },
           {
-            id: 'parfait-q4',
-            enonce: '"By the time you arrive, I ___ (cook) dinner."',
-            choices: ['will cook', 'will have cooked', 'will be cooking', 'cooked'],
-            answer: 1,
-            explication: '✅ Correct : "will have cooked" → "By the time" + action future → l\'action sera TERMINÉE avant ton arrivée = futur parfait.',
-            regle: '📌 Règle : Futur parfait (will have + V-pp) = action terminée avant un moment futur. Marqueurs : by the time, by [date], before [événement futur].',
+            id: 'parfait-exo4',
+            titre: 'Exercice 4 — Futur parfait',
+            instructions: 'Choisissez la forme correcte du futur parfait.',
+            questions: [
+              { id: 'pp4-q1', enonce: '"By next Friday, she ___ the project."', choices: ['finishes', 'will finish', 'will have finished', 'has finished'], answer: 2, explication: '✅ "will have finished" — "By next Friday" = limite future → action terminée.', regle: '📌 "By [moment futur]" → futur parfait.' },
+              { id: 'pp4-q2', enonce: '"By the time you read this, I ___ already ___."', choices: ['already left', 'have already left', 'will have already left', 'had already left'], answer: 2, explication: '✅ "will have already left" — "By the time + présent simple" → futur parfait.', regle: '📌 "By the time + présent simple" → futur parfait.' },
+              { id: 'pp4-q3', enonce: '"In 2030, she ___ for this company for 20 years."', choices: ['works', 'will work', 'will have worked', 'has worked'], answer: 2, explication: '✅ "will have worked" — Durée accomplie jusqu\'à 2030.', regle: '📌 Durée jusqu\'à un point futur → futur parfait.' },
+              { id: 'pp4-q4', enonce: '"The construction ___ by the end of the year."', choices: ['finishes', 'finished', 'will have finished', 'has finished'], answer: 2, explication: '✅ "will have finished" — "By the end of the year" = limite future.', regle: '📌 "By the end of [période future]" → futur parfait.' },
+              { id: 'pp4-q5', enonce: '"Before she retires, she ___ over 500 clients."', choices: ['served', 'serves', 'will have served', 'has served'], answer: 2, explication: '✅ "will have served" — Accompli avant la retraite (futur).', regle: '📌 "Before [futur]" → futur parfait dans la principale.' },
+              { id: 'pp4-q6', enonce: '"___ she ___ the review by Monday?"', choices: ['Has / finished', 'Will / have finished', 'Did / finish', 'Does / finish'], answer: 1, explication: '✅ "Will / have finished" — Question futur parfait.', regle: '📌 Question futur parfait : Will + sujet + have + V-pp ?' },
+              { id: 'pp4-q7', enonce: '"They ___ the summit before nightfall."', choices: ['reach', 'reached', 'will have reached', 'are reaching'], answer: 2, explication: '✅ "will have reached" — Accompli avant la nuit.', regle: '📌 Accompli avant une limite future → futur parfait.' },
+              { id: 'pp4-q8', enonce: '"By next month, I ___ this course."', choices: ['complete', 'completed', 'will have completed', 'have completed'], answer: 2, explication: '✅ "will have completed" — "By next month" → futur parfait.', regle: '📌 "By next [période]" → futur parfait.' },
+              { id: 'pp4-q9', enonce: '"She ___ (not/finish) the analysis by tomorrow morning."', choices: ["won't finish", "hasn't finished", "won't have finished", "didn't finish"], answer: 2, explication: '✅ "won\'t have finished" — Négatif futur parfait.', regle: '📌 Négatif futur parfait : won\'t have + V-pp.' },
+              { id: 'pp4-q10', enonce: '"By the time the guests arrive, we ___ all the preparations."', choices: ['make', 'made', 'will have made', 'have made'], answer: 2, explication: '✅ "will have made" — Préparatifs terminés avant l\'arrivée.', regle: '📌 "By the time [présent]" → futur parfait.' },
+            ],
           },
           {
-            id: 'parfait-q5',
-            enonce: '"This is the first time I ___ sushi." — Quel temps ?',
-            choices: ['eat', 'ate', 'have eaten', 'had eaten'],
-            answer: 2,
-            explication: '✅ Correct : "have eaten" → "It\'s the first time + présent parfait" est une structure fixe pour parler d\'une première expérience.',
-            regle: '📌 Structure fixe : "It\'s the first/second time + sujet + have/has + V-pp." Exemple : "It\'s the third time he has been late this week."',
+            id: 'parfait-exo5',
+            titre: 'Exercice 5 — Les 3 temps parfaits en contexte',
+            instructions: 'Choisissez le bon temps parfait.',
+            questions: [
+              { id: 'pp5-q1', enonce: '"I ___ this city three times." (expérience)', choices: ['visited', 'have visited', 'had visited', 'will have visited'], answer: 1, explication: '✅ "have visited" — Expérience sans moment précis → présent parfait.', regle: '📌 Expérience de vie → présent parfait.' },
+              { id: 'pp5-q2', enonce: '"When the police arrived, the thief ___."', choices: ['escaped', 'escapes', 'had escaped', 'has escaped'], answer: 2, explication: '✅ "had escaped" — Parti AVANT l\'arrivée → passé parfait.', regle: '📌 Action antérieure dans le passé → passé parfait.' },
+              { id: 'pp5-q3', enonce: '"By her 30th birthday, she ___ CEO."', choices: ['becomes', 'became', 'will have become', 'has become'], answer: 2, explication: '✅ "will have become" — Avant ses 30 ans (futur) → futur parfait.', regle: '📌 "By [moment futur]" → futur parfait.' },
+              { id: 'pp5-q4', enonce: '"He ___ (never/try) Thai food." (maintenant)', choices: ['never tried', 'has never tried', 'had never tried', 'will never try'], answer: 1, explication: '✅ "has never tried" — Expérience jusqu\'au présent.', regle: '📌 "Never" + expérience actuelle → présent parfait.' },
+              { id: 'pp5-q5', enonce: '"It\'s the first time I ___ such a difficult question."', choices: ['face', 'faced', 'have faced', 'had faced'], answer: 2, explication: '✅ "have faced" — "It\'s the first time + présent parfait" = structure fixe.', regle: '📌 "It\'s the first time + have/has + V-pp" = structure fixe.' },
+              { id: 'pp5-q6', enonce: '"Before she could say anything, he ___ already ___."', choices: ['has / left', 'had / left', 'is / leaving', 'was / leaving'], answer: 1, explication: '✅ "had / left" — Avant "before she could" → passé parfait.', regle: '📌 "Before [passé]" → passé parfait pour l\'action antérieure.' },
+              { id: 'pp5-q7', enonce: '"By 2035, renewable energy ___ coal as the main source."', choices: ['replaces', 'replaced', 'will have replaced', 'has replaced'], answer: 2, explication: '✅ "will have replaced" — Avant 2035 (futur) → futur parfait.', regle: '📌 "By [année future]" → futur parfait.' },
+              { id: 'pp5-q8', enonce: '"She ___ for this company for ten years when she was promoted."', choices: ['worked', 'had worked', 'has worked', 'was working'], answer: 1, explication: '✅ "had worked" — 10 ans AVANT la promotion → passé parfait.', regle: '📌 Durée accomplie avant un moment passé → passé parfait.' },
+              { id: 'pp5-q9', enonce: '"This is the most interesting book I ___ ever ___."', choices: ['read', 'have / read', 'had / read', 'will have / read'], answer: 1, explication: '✅ "have / read" — Superlatif + "ever" → présent parfait.', regle: '📌 "The most/best/worst... ever" → présent parfait.' },
+              { id: 'pp5-q10', enonce: '"___ you ever ___ to Japan?" (expérience)', choices: ['Did / go', 'Have / been', 'Did / been', 'Have / went'], answer: 1, explication: '✅ "Have / been" — "Have you ever been to [lieu]?" = formule standard.', regle: '📌 "Have you ever been to...?" = formule standard pour l\'expérience.' },
+            ],
           },
         ],
       },
- 
-      // ════════════════════════════════════════════════════════════════════════
-      // 4. TEMPS PARFAITS PROGRESSIFS
-      // ════════════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════════════════
+// 4. PARFAITS PROGRESSIFS
+// ══════════════════════════════════════════════════════════════════════
       {
         id: 'parfait-progressif',
         label: '④ Parfait Progressif',
@@ -376,81 +484,118 @@ Marqueurs du FUTUR PARFAIT : by the time, by [date], before, when (futur)`,
           {
             id: 'conj-parfaits-prog',
             titre: 'Les temps PARFAITS PROGRESSIFS',
-            contenu: `Ces temps combinent le parfait (lien entre deux moments) et le progressif (durée, continuité). Ils insistent sur la DURÉE d'une action en lien avec un autre moment. Formation : HAVE/HAS/HAD BEEN + V-ING.`,
+            contenu: `Combinent parfait (lien entre deux moments) et progressif (durée, continuité). Formation : HAVE/HAS/HAD BEEN + V-ING.`,
             tableaux: [
               {
                 titre: '3 temps parfaits progressifs',
                 colonnes: ['Temps', 'Formation', 'Usage', 'Exemple'],
                 lignes: [
-                  ['Présent parfait progressif', 'have/has been + V-ing', 'Action commencée dans le passé, qui CONTINUE jusqu\'à maintenant — ou qui vient de se terminer (traces visibles)', 'I have been working here for 5 years. / She looks tired — she has been running.'],
-                  ['Passé parfait progressif', 'had been + V-ing', 'Action en cours PENDANT une durée, AVANT un moment précis du passé', 'She had been waiting for 2 hours when he finally arrived.'],
-                  ['Futur parfait progressif', 'will have been + V-ing', 'Durée d\'une action jusqu\'à un moment précis du futur', 'By June, I will have been learning English for 3 years.'],
+                  ['Présent parfait progressif', 'have/has been + V-ing', 'Durée depuis le passé jusqu\'au présent / traces visibles', 'I have been working here for 5 years.'],
+                  ['Passé parfait progressif', 'had been + V-ing', 'Durée AVANT un moment précis du passé', 'She had been waiting for 2h when he arrived.'],
+                  ['Futur parfait progressif', 'will have been + V-ing', 'Durée jusqu\'à un moment précis du futur', 'By June, I will have been learning English for 3 years.'],
                 ],
               },
             ],
-            astuce: `💡 Présent parfait vs Présent parfait progressif :
-• "I have read this book." → Résultat : le livre EST lu (terminé)
-• "I have been reading this book all day." → Durée : j'ai passé toute la journée à le lire
+            astuce: `💡 Parfait vs Parfait progressif :
+• "I have read the report." → Résultat : c\'est terminé
+• "I have been reading the report." → Durée : j\'y ai passé du temps
  
-💡 Passé parfait vs Passé parfait progressif :
-• "She had waited for an hour." → Fait établi
-• "She had been waiting for an hour." → Durée vécue, processus insistant
- 
-Mots-clés : for (pendant), since (depuis), all day/week/morning, how long.`,
+Mots-clés : for, since, all day/morning/week, how long.
+⚠️ Stative verbs → jamais progressif : "I have been knowing him" ❌ → "I have known him" ✅`,
           },
         ],
-        questions: [
+        exercices: [
           {
-            id: 'parfprog-q1',
-            enonce: '"I ___ (work) in this company for 10 years." — L\'action continue encore aujourd\'hui.',
-            choices: ['worked', 'was working', 'have been working', 'had worked'],
-            answer: 2,
-            explication: '✅ Correct : "have been working" → Action commencée dans le passé qui CONTINUE jusqu\'au présent + durée exprimée avec "for" = présent parfait progressif.',
-            regle: '📌 Règle : have/has been + V-ing = action qui dure depuis le passé jusqu\'au présent. Avec "for" (durée) ou "since" (point de départ).',
-          },
-          {
-            id: 'parfprog-q2',
-            enonce: '"She looked exhausted — she ___ (run) for over an hour."',
-            choices: ['ran', 'has run', 'has been running', 'had run'],
-            answer: 2,
-            explication: '✅ Correct : "has been running" → Les traces visibles (épuisée) révèlent une activité continue qui vient de se terminer. Le présent parfait progressif montre la cause visible dans le présent.',
-            regle: '📌 Astuce : Quand le résultat visible d\'une activité continue est présent (sueur, fatigue...), on utilise souvent le présent parfait progressif.',
-          },
-          {
-            id: 'parfprog-q3',
-            enonce: '"The clients ___ (wait) for 45 minutes when the manager finally appeared."',
-            choices: ['waited', 'were waiting', 'had been waiting', 'have been waiting'],
-            answer: 2,
-            explication: '✅ Correct : "had been waiting" → Durée d\'une action AVANT un moment du passé = passé parfait progressif.',
-            regle: '📌 Règle : Passé parfait progressif = action en cours pendant une durée, AVANT un autre moment du passé. Structure : "had been + V-ing + for... + when + passé simple."',
-          },
-          {
-            id: 'parfprog-q4',
-            enonce: '"By next January, she ___ (teach) at this school for 20 years."',
-            choices: ['will teach', 'will have taught', 'will be teaching', 'will have been teaching'],
-            answer: 3,
-            explication: '✅ Correct : "will have been teaching" → Durée d\'une action jusqu\'à un moment précis du futur = futur parfait progressif.',
-            regle: '📌 Règle : Futur parfait progressif (will have been + V-ing) = insistance sur la durée d\'une action jusqu\'à un point futur. Marqueurs : by [date/moment futur], for, since.',
-          },
-          {
-            id: 'parfprog-q5',
-            enonce: 'Quelle phrase insiste le plus sur la DURÉE de l\'effort accompli ?',
-            choices: [
-              'She has written the report.',
-              'She was writing the report.',
-              'She wrote the report.',
-              'She has been writing the report all morning.',
+            id: 'parfprog-exo1',
+            titre: 'Exercice 1 — Présent parfait progressif',
+            instructions: 'Choisissez la forme correcte du présent parfait progressif.',
+            questions: [
+              { id: 'ppp1-q1', enonce: '"I ___ (wait) for you for half an hour!"', choices: ['waited', 'was waiting', 'have been waiting', 'had been waiting'], answer: 2, explication: '✅ "have been waiting" — Durée (half an hour) + continue → présent parfait progressif.', regle: '📌 Durée depuis le passé → have/has been + V-ing.' },
+              { id: 'ppp1-q2', enonce: '"She looks tired — she ___ all day."', choices: ['worked', 'has worked', 'has been working', 'was working'], answer: 2, explication: '✅ "has been working" — Traces (fatigue) d\'activité continue → présent parfait progressif.', regle: '📌 Traces d\'activité prolongée → présent parfait progressif.' },
+              { id: 'ppp1-q3', enonce: '"How long ___ you ___ English?"', choices: ['do / learn', 'have / learnt', 'have / been learning', 'did / learn'], answer: 2, explication: '✅ "have / been learning" — "How long" + action en cours → présent parfait progressif.', regle: '📌 "How long" + action en cours → présent parfait progressif.' },
+              { id: 'ppp1-q4', enonce: '"It ___ (rain) all morning — the streets are flooded."', choices: ['rained', 'has rained', 'has been raining', 'was raining'], answer: 2, explication: '✅ "has been raining" — Durée (all morning) + résultat visible.', regle: '📌 Durée + résultat visible → présent parfait progressif.' },
+              { id: 'ppp1-q5', enonce: '"She ___ for this promotion for two years."', choices: ['worked', 'works', 'has been working', 'had been working'], answer: 2, explication: '✅ "has been working" — Action continue depuis 2 ans, toujours en cours.', regle: '📌 "For [durée]" + toujours en cours → présent parfait progressif.' },
+              { id: 'ppp1-q6', enonce: '"Why are your clothes dirty? — I ___ (fix) my bike."', choices: ['fixed', 'have fixed', 'have been fixing', 'was fixing'], answer: 2, explication: '✅ "have been fixing" — Vêtements sales = trace d\'activité récente prolongée.', regle: '📌 Trace visible d\'activité récente → présent parfait progressif.' },
+              { id: 'ppp1-q7', enonce: '"They ___ (argue) since this morning — it\'s exhausting."', choices: ['argued', 'have argued', 'have been arguing', 'were arguing'], answer: 2, explication: '✅ "have been arguing" — "Since this morning" + état actuel.', regle: '📌 "Since [point du passé]" + toujours en cours → présent parfait progressif.' },
+              { id: 'ppp1-q8', enonce: '"I ___ (study) this chapter all morning and I still don\'t understand."', choices: ['studied', 'have studied', 'have been studying', 'was studying'], answer: 2, explication: '✅ "have been studying" — "All morning" + processus continu.', regle: '📌 "All morning/day" + processus continu → présent parfait progressif.' },
+              { id: 'ppp1-q9', enonce: '"He ___ (know) her since 2015." (relation durable)', choices: ['has been knowing', 'knew', 'knows', 'has known'], answer: 3, explication: '✅ "has known" — "Know" = stative → jamais progressif. Durée + stative → présent parfait simple.', regle: '📌 Stative verb + durée → présent parfait simple.' },
+              { id: 'ppp1-q10', enonce: '"The network ___ (slow down) recently — IT is investigating."', choices: ['slowed down', 'has slowed down', 'has been slowing down', 'was slowing down'], answer: 2, explication: '✅ "has been slowing down" — Tendance continue récente (recently).', regle: '📌 "Recently" + tendance continue → présent parfait progressif.' },
             ],
-            answer: 3,
-            explication: '✅ Correct : "She has been writing the report all morning." → "all morning" + présent parfait progressif = insistance sur la durée continue de l\'effort.',
-            regle: '📌 Règle : Pour insister sur la DURÉE d\'une activité continue, on utilise have/has been + V-ing. "She has written" parle du résultat ; "she has been writing" parle du processus et de la durée.',
+          },
+          {
+            id: 'parfprog-exo2',
+            titre: 'Exercice 2 — Passé parfait progressif',
+            instructions: 'Choisissez la forme correcte du passé parfait progressif.',
+            questions: [
+              { id: 'ppp2-q1', enonce: '"She ___ (wait) for an hour when the doctor finally called."', choices: ['waited', 'was waiting', 'had been waiting', 'has been waiting'], answer: 2, explication: '✅ "had been waiting" — Durée AVANT le moment passé.', regle: '📌 Durée avant un moment du passé → had been + V-ing.' },
+              { id: 'ppp2-q2', enonce: '"He was exhausted — he ___ (drive) for 12 hours."', choices: ['drove', 'had driven', 'had been driving', 'was driving'], answer: 2, explication: '✅ "had been driving" — Traces (épuisement) d\'activité longue AVANT.', regle: '📌 Traces d\'activité prolongée dans le passé → passé parfait progressif.' },
+              { id: 'ppp2-q3', enonce: '"Before she got the promotion, she ___ (work) extra hours for months."', choices: ['works', 'worked', 'had been working', 'was working'], answer: 2, explication: '✅ "had been working" — Durée avant la promotion.', regle: '📌 "Before + passé simple" → passé parfait progressif pour la durée antérieure.' },
+              { id: 'ppp2-q4', enonce: '"The project ___ (run over budget) for months before management intervened."', choices: ['ran', 'has been running', 'had been running', 'was running'], answer: 2, explication: '✅ "had been running" — Durée continue avant l\'intervention.', regle: '📌 Durée continue avant un événement passé → passé parfait progressif.' },
+              { id: 'ppp2-q5', enonce: '"When they found a solution, they ___ (struggle) for weeks."', choices: ['struggled', 'were struggling', 'had been struggling', 'have been struggling'], answer: 2, explication: '✅ "had been struggling" — Durée (weeks) avant la solution.', regle: '📌 "When [passé simple]" → passé parfait progressif pour la durée antérieure.' },
+              { id: 'ppp2-q6', enonce: '"She ___ (study) all night before she realised it was the wrong exam."', choices: ['studied', 'was studying', 'had been studying', 'has been studying'], answer: 2, explication: '✅ "had been studying" — Activité prolongée AVANT la réalisation.', regle: '📌 Activité prolongée avant une découverte → passé parfait progressif.' },
+              { id: 'ppp2-q7', enonce: '"The teams ___ (negotiate) for two weeks when the deal collapsed."', choices: ['negotiate', 'negotiated', 'had been negotiating', 'were negotiating'], answer: 2, explication: '✅ "had been negotiating" — Durée (two weeks) avant l\'effondrement.', regle: '📌 Durée avant un événement passé → passé parfait progressif.' },
+              { id: 'ppp2-q8', enonce: '"He was drenched because he ___ (run) in the rain."', choices: ['ran', 'had run', 'had been running', 'was running'], answer: 2, explication: '✅ "had been running" — Traces (trempé) d\'activité passée.', regle: '📌 Traces d\'activité passée prolongée → passé parfait progressif.' },
+              { id: 'ppp2-q9', enonce: '"How long ___ they ___ before the merger was announced?"', choices: ['did / talk', 'were / talking', 'had / been talking', 'have / been talking'], answer: 2, explication: '✅ "had / been talking" — "How long" + durée avant événement passé.', regle: '📌 "How long had they been...?" = durée avant un moment passé.' },
+              { id: 'ppp2-q10', enonce: '"By the time rescue arrived, survivors ___ (wait) for 48 hours."', choices: ['waited', 'were waiting', 'had been waiting', 'have been waiting'], answer: 2, explication: '✅ "had been waiting" — Durée (48h) AVANT l\'arrivée des secours.', regle: '📌 "By the time + passé simple" → passé parfait progressif pour la durée.' },
+            ],
+          },
+          {
+            id: 'parfprog-exo3',
+            titre: 'Exercice 3 — Futur parfait progressif',
+            instructions: 'Choisissez la forme correcte du futur parfait progressif.',
+            questions: [
+              { id: 'ppp3-q1', enonce: '"By June, I ___ (study) English for three years."', choices: ['study', 'will study', 'will have studied', 'will have been studying'], answer: 3, explication: '✅ "will have been studying" — Durée (3 ans) jusqu\'à June.', regle: '📌 Durée jusqu\'à un moment futur → will have been + V-ing.' },
+              { id: 'ppp3-q2', enonce: '"Next month, they ___ (work) on this project for a year."', choices: ['work', 'will work', 'will have worked', 'will have been working'], answer: 3, explication: '✅ "will have been working" — Durée (a year) jusqu\'à next month.', regle: '📌 "Next [période]" + durée → futur parfait progressif.' },
+              { id: 'ppp3-q3', enonce: '"By 2030, she ___ (teach) for 25 years."', choices: ['teaches', 'will teach', 'will have taught', 'will have been teaching'], answer: 3, explication: '✅ "will have been teaching" — Durée continue jusqu\'à un moment futur.', regle: '📌 Durée continue jusqu\'à un point futur → futur parfait progressif.' },
+              { id: 'ppp3-q4', enonce: 'Comparer — juste l\'accomplissement : "By Friday, she ___ the report."', choices: ['will finish', 'will have finished', 'will have been finishing', 'will be finishing'], answer: 1, explication: '✅ "will have finished" — Accomplissement simple → futur parfait simple (pas progressif).', regle: '📌 Accomplissement simple → futur parfait. Durée → futur parfait progressif.' },
+              { id: 'ppp3-q5', enonce: '"When she retires, she ___ (help) students for over 30 years."', choices: ['helps', 'will help', 'will have helped', 'will have been helping'], answer: 3, explication: '✅ "will have been helping" — Durée continue jusqu\'à la retraite.', regle: '📌 Durée continue jusqu\'à un événement futur → futur parfait progressif.' },
+              { id: 'ppp3-q6', enonce: '"By the time you read this, I ___ (travel) for 24 hours."', choices: ['travel', 'will travel', 'will have travelled', 'will have been travelling'], answer: 3, explication: '✅ "will have been travelling" — Durée (24h) jusqu\'à la lecture.', regle: '📌 "By the time + présent" + durée → futur parfait progressif.' },
+              { id: 'ppp3-q7', enonce: '"Next year at this time, they ___ (renovate) for two years."', choices: ['renovate', 'will renovate', 'will have renovated', 'will have been renovating'], answer: 3, explication: '✅ "will have been renovating" — Durée (two years) jusqu\'à l\'année prochaine.', regle: '📌 Durée + point futur → futur parfait progressif.' },
+              { id: 'ppp3-q8', enonce: '⚠️ Laquelle est FAUSSE ? "By next month, ___"', choices: ['she will have finished the project.', 'they will have been negotiating for six months.', 'I will have been knowing him for ten years.', 'we will have been working together for a decade.'], answer: 2, explication: '✅ "will have been knowing" est FAUX. "Know" = stative → "I will have known him for ten years."', regle: '📌 Stative + durée future → futur parfait simple.' },
+              { id: 'ppp3-q9', enonce: '"In 2040, renewable energy ___ (power) cities for 20 years."', choices: ['powers', 'will power', 'will have powered', 'will have been powering'], answer: 3, explication: '✅ "will have been powering" — Durée continue (20 ans) jusqu\'à 2040.', regle: '📌 Durée continue jusqu\'à un moment futur → futur parfait progressif.' },
+              { id: 'ppp3-q10', enonce: '"By the end of the marathon, the runners ___ (run) for over 4 hours."', choices: ['run', 'will run', 'will have run', 'will have been running'], answer: 3, explication: '✅ "will have been running" — Durée (4h) vécue jusqu\'à la fin → futur parfait progressif.', regle: '📌 Durée vécue jusqu\'à un point futur → futur parfait progressif.' },
+            ],
+          },
+          {
+            id: 'parfprog-exo4',
+            titre: 'Exercice 4 — Parfait vs Parfait Progressif : résultat ou durée ?',
+            instructions: 'Choisissez entre parfait simple et parfait progressif.',
+            questions: [
+              { id: 'ppp4-q1', enonce: '"She ___ three reports today." (quantité)', choices: ['has been writing', 'has written', 'was writing', 'had written'], answer: 1, explication: '✅ "has written" — Quantité précise = résultat → parfait simple.', regle: '📌 Quantité/nombre → parfait simple.' },
+              { id: 'ppp4-q2', enonce: '"She ___ all day." (durée, processus)', choices: ['has written', 'has been writing', 'wrote', 'was writing'], answer: 1, explication: '✅ "has been writing" — "All day" = durée → parfait progressif.', regle: '📌 "All day/morning" = durée → parfait progressif.' },
+              { id: 'ppp4-q3', enonce: '"I ___ the letter." (c\'est terminé, résultat)', choices: ['have been writing', 'have written', 'was writing', 'had written'], answer: 1, explication: '✅ "have written" — Résultat : la lettre est écrite → parfait simple.', regle: '📌 Résultat terminé → parfait simple.' },
+              { id: 'ppp4-q4', enonce: '"How many pages ___ you ___ so far?" (bilan)', choices: ['have / been writing', 'have / written', 'did / write', 'were / writing'], answer: 1, explication: '✅ "have / written" — "How many" = quantité → parfait simple.', regle: '📌 "How many" → parfait simple. "How long" → parfait progressif.' },
+              { id: 'ppp4-q5', enonce: '"How long ___ you ___ on this?" (durée)', choices: ['have / worked', 'have / been working', 'did / work', 'are / working'], answer: 1, explication: '✅ "have / been working" — "How long" = durée → parfait progressif.', regle: '📌 "How long" + en cours → présent parfait progressif.' },
+              { id: 'ppp4-q6', enonce: '"He ___ (know) her for years." (stative)', choices: ['has been knowing', 'has known', 'is knowing', 'knew'], answer: 1, explication: '✅ "has known" — "Know" = stative → parfait simple.', regle: '📌 Stative verb + durée → parfait simple.' },
+              { id: 'ppp4-q7', enonce: '"I\'m tired. I ___ (run) for two hours."', choices: ['ran', 'have run', 'have been running', 'was running'], answer: 2, explication: '✅ "have been running" — Fatigue = trace d\'activité prolongée.', regle: '📌 Trace d\'activité prolongée → présent parfait progressif.' },
+              { id: 'ppp4-q8', enonce: '"She ___ (finish) the book." (résultat)', choices: ['has been finishing', 'has finished', 'was finishing', 'is finishing'], answer: 1, explication: '✅ "has finished" — "Finish" = verbe de résultat → parfait simple.', regle: '📌 Verbes de résultat (finish, arrive, open...) → parfait simple.' },
+              { id: 'ppp4-q9', enonce: '"The team ___ (work) on the bug for hours before they found a fix."', choices: ['worked', 'had worked', 'had been working', 'were working'], answer: 2, explication: '✅ "had been working" — Durée (hours) avant la solution → passé parfait progressif.', regle: '📌 Durée avant événement passé → passé parfait progressif.' },
+              { id: 'ppp4-q10', enonce: '"By 2035, solar panels ___ (generate) power for two decades."', choices: ['generated', 'will generate', 'will have generated', 'will have been generating'], answer: 3, explication: '✅ "will have been generating" — Durée (two decades) jusqu\'à 2035.', regle: '📌 Durée + point futur → futur parfait progressif.' },
+            ],
+          },
+          {
+            id: 'parfprog-exo5',
+            titre: 'Exercice 5 — Tous les parfaits progressifs en contexte',
+            instructions: 'Choisissez le bon temps parfait progressif.',
+            questions: [
+              { id: 'ppp5-q1', enonce: '"She ___ (wait) for the results since Monday."', choices: ['waits', 'waited', 'has been waiting', 'had been waiting'], answer: 2, explication: '✅ "has been waiting" — "Since Monday" + continue jusqu\'au présent.', regle: '📌 "Since [point passé]" + continue → présent parfait progressif.' },
+              { id: 'ppp5-q2', enonce: '"He was out of breath — he ___ (sprint) to catch the train."', choices: ['sprinted', 'had sprinted', 'had been sprinting', 'was sprinting'], answer: 2, explication: '✅ "had been sprinting" — Traces (essoufflement) d\'activité passée.', regle: '📌 Traces d\'effort passé → passé parfait progressif.' },
+              { id: 'ppp5-q3', enonce: '"By summer, I ___ (save) money for a year."', choices: ['save', 'will save', 'will have saved', 'will have been saving'], answer: 3, explication: '✅ "will have been saving" — Durée (a year) jusqu\'à l\'été.', regle: '📌 Durée jusqu\'à moment futur → futur parfait progressif.' },
+              { id: 'ppp5-q4', enonce: '"Before the system crashed, engineers ___ (troubleshoot) for hours."', choices: ['troubleshoot', 'troubleshot', 'had been troubleshooting', 'were troubleshooting'], answer: 2, explication: '✅ "had been troubleshooting" — Durée avant la panne.', regle: '📌 Durée avant événement passé → passé parfait progressif.' },
+              { id: 'ppp5-q5', enonce: '"Your eyes are red. ___ you ___ (cry)?"', choices: ['Did / cry', 'Have / cried', 'Have / been crying', 'Were / crying'], answer: 2, explication: '✅ "Have / been crying" — Yeux rouges = trace → présent parfait progressif.', regle: '📌 Traces visibles → présent parfait progressif.' },
+              { id: 'ppp5-q6', enonce: '"Next year, this factory ___ (produce) cars for 50 years."', choices: ['produces', 'will produce', 'will have produced', 'will have been producing'], answer: 3, explication: '✅ "will have been producing" — Durée (50 ans) jusqu\'à l\'an prochain.', regle: '📌 Durée continue jusqu\'à point futur → futur parfait progressif.' },
+              { id: 'ppp5-q7', enonce: '"They ___ (negotiate) for months when the deal fell through."', choices: ['negotiated', 'were negotiating', 'had been negotiating', 'have been negotiating'], answer: 2, explication: '✅ "had been negotiating" — Durée (months) avant échec (passé).', regle: '📌 Durée avant événement passé → passé parfait progressif.' },
+              { id: 'ppp5-q8', enonce: '"I ___ (study) for hours — I need a break."', choices: ['studied', 'have studied', 'have been studying', 'was studying'], answer: 2, explication: '✅ "have been studying" — Durée + besoin présent.', regle: '📌 Durée + état présent résultant → présent parfait progressif.' },
+              { id: 'ppp5-q9', enonce: '"By the time he turns 40, he ___ (run) marathons for 15 years."', choices: ['runs', 'will run', 'will have run', 'will have been running'], answer: 3, explication: '✅ "will have been running" — Durée (15 ans) jusqu\'à ses 40 ans.', regle: '📌 "By the time + présent" + durée → futur parfait progressif.' },
+              { id: 'ppp5-q10', enonce: '"She was pale — she ___ (not/sleep) properly for weeks."', choices: ["didn't sleep", "hasn't been sleeping", "hadn't been sleeping", "wasn't sleeping"], answer: 2, explication: '✅ "hadn\'t been sleeping" — Durée (weeks) de manque de sommeil AVANT l\'observation.', regle: '📌 Négatif passé parfait progressif : hadn\'t been + V-ing.' },
+            ],
           },
         ],
       },
  
-      // ════════════════════════════════════════════════════════════════════════
-      // 5. DIFFÉRENCIATION : Simple vs Progressif
-      // ════════════════════════════════════════════════════════════════════════
+      // ══════════════════════════════════════════════════════════════════════
+      // 5. DIFF : Simple vs Progressif
+      // ══════════════════════════════════════════════════════════════════════
       {
         id: 'diff-simple-prog',
         label: '⚖️ Simple vs Progressif',
@@ -458,119 +603,119 @@ Mots-clés : for (pendant), since (depuis), all day/week/morning, how long.`,
           {
             id: 'diff-sp-lecon',
             titre: 'Quand choisir Simple ou Progressif ?',
-            contenu: `La clé : le temps SIMPLE parle de FAITS, d'habitudes ou de vérités. Le temps PROGRESSIF parle d'une action EN COURS à un moment donné.`,
+            contenu: `SIMPLE = faits, habitudes, vérités permanentes. PROGRESSIF = action en cours, durée, situation temporaire.`,
             tableaux: [
               {
-                titre: 'Simple vs Progressif — tableau comparatif',
-                colonnes: ['Critère', 'Temps SIMPLE', 'Temps PROGRESSIF'],
+                titre: 'Comparatif clé',
+                colonnes: ['Critère', 'SIMPLE', 'PROGRESSIF'],
                 lignes: [
-                  ['Nature', 'Fait, habitude, vérité, action ponctuelle', 'Action en cours à un moment donné'],
-                  ['Durée', 'Pas d\'insistance sur la durée', 'Durée ou caractère temporaire mis en avant'],
-                  ['Interruption', '—', '"I was reading WHEN she called." (action en cours interrompue)'],
-                  ['Simultanéité passé', '"She worked while he slept." (deux faits)', '"She was working while he was sleeping." (deux actions en cours)'],
-                  ['Stative verbs', 'Toujours simple : know / want / believe', 'Jamais progressif avec stative verbs'],
-                  ['Marqueurs clés', 'every day, always, yesterday, last week, tomorrow', 'now, right now, at the moment, at 5pm yesterday, currently'],
+                  ['Nature', 'Fait, habitude, vérité permanente', 'Action en cours à un moment précis'],
+                  ['Temporaire?', 'Non (permanent/habituel)', 'Oui (temporaire ou en cours)'],
+                  ['Interruption', '—', '"Was doing X when Y happened"'],
+                  ['Simultanéité', 'Deux faits (while)', '"While + deux progressifs" simultanés'],
+                  ['Stative verbs', 'Toujours simple', 'Jamais'],
+                  ['Marqueurs', 'every day, always, yesterday, last week', 'now, at the moment, at 5pm yesterday, this week'],
                 ],
               },
             ],
-            exemples: [
-              { fr: 'Habitude vs action du moment', en: '"She WORKS in London." (habituel, permanent)\n"She IS WORKING from home today." (temporaire, en cours)', note: 'Présent simple = permanent/habituel. Présent progressif = temporaire/en cours.' },
-              { fr: 'Action terminée vs en cours au passé', en: '"I READ the report." (simple → c\'est fait)\n"I WAS READING the report when he called." (interrompue)', note: 'Passé simple = action terminée. Passé progressif = action en cours au moment de l\'interruption.' },
-              { fr: 'Futur : décision vs action en cours', en: '"I WILL CALL you tomorrow." (décision/promesse)\n"I WILL BE CALLING clients all day." (action en cours toute la journée)', note: 'Futur simple = décision/prédiction. Futur progressif = action en cours à ce moment futur.' },
-            ],
             astuce: `⚠️ Pièges classiques :
-1. "She is knowing the answer." → ❌ Know = stative verb → "She knows."
-2. "I am working here since 2018." → ❌ Action qui dure depuis le passé → présent parfait progressif : "I have been working here since 2018."
-3. "What do you do right now?" → ❌ "Right now" → progressif : "What are you doing right now?"`,
+• "She is knowing" → ❌ → "She knows" ✅ (stative)
+• "I am working here since 2018" → ❌ → "I have been working here since 2018" ✅
+• "What do you do right now?" → ❌ → "What are you doing right now?" ✅`,
           },
         ],
-        questions: [
+        exercices: [
           {
-            id: 'diff-sp-q1',
-            enonce: '"___ you understand the instructions?" vs "___ you listening?"',
-            choices: ['Are / Do', 'Do / Are', 'Have / Are', 'Do / Do'],
-            answer: 1,
-            explication: '✅ Correct : "Do you understand?" (understand = stative verb → simple) / "Are you listening?" (action en cours = progressif).',
-            regle: '📌 Règle : Stative verbs (understand, know, believe, want...) → temps simple. Verbes d\'action (listen, work, run...) → peuvent être au progressif.',
+            id: 'diff-sp-exo1',
+            titre: 'Exercice 1 — Présent simple vs présent progressif',
+            instructions: 'Choisissez entre présent simple et présent progressif.',
+            questions: [
+              { id: 'dsp1-q1', enonce: '"She ___ to work every day." vs "She ___ from home this week."', choices: ['walks / works', 'is walking / is working', 'walks / is working', 'is walking / works'], answer: 2, explication: '✅ "walks" (habitude) / "is working" (situation temporaire cette semaine).', regle: '📌 Habitude → simple. Situation temporaire → progressif.' },
+              { id: 'dsp1-q2', enonce: '"Water ___ at 100°C." vs "Look — the water ___!"', choices: ['boils / is boiling', 'is boiling / boils', 'boils / boils', 'is boiling / is boiling'], answer: 0, explication: '✅ "boils" (vérité) / "is boiling" ("Look!" = en cours).', regle: '📌 "Look!" → progressif. Vérité générale → simple.' },
+              { id: 'dsp1-q3', enonce: '"She ___ (think) you\'re right." vs "She ___ (think) about the offer."', choices: ['thinks / is thinking', 'is thinking / thinks', 'thinks / thinks', 'is thinking / is thinking'], answer: 0, explication: '✅ "thinks" (opinion = stative) / "is thinking" (réfléchir activement = action).', regle: '📌 "Think" = opinion → simple. "Think" = réfléchir activement → progressif.' },
+              { id: 'dsp1-q4', enonce: '"I usually ___ coffee but today I ___ tea."', choices: ['drink / am drinking', 'am drinking / drink', 'drink / drink', 'am drinking / am drinking'], answer: 0, explication: '✅ "drink" (habitude) / "am drinking" (exception d\'aujourd\'hui = temporaire).', regle: '📌 Habitude → simple. Exception temporaire aujourd\'hui → progressif.' },
+              { id: 'dsp1-q5', enonce: '"The train ___ at 8 every morning." vs "Hurry! The train ___!"', choices: ['leaves / is leaving', 'is leaving / leaves', 'leaves / leaves', 'is leaving / is leaving'], answer: 0, explication: '✅ "leaves" (horaire fixe) / "is leaving" (en train de partir, urgence).', regle: '📌 Horaire régulier → simple. Action en cours maintenant → progressif.' },
+              { id: 'dsp1-q6', enonce: '"He ___ the company." (=possède) vs "He ___ the company." (=dirige activement)', choices: ['owns / is running', 'is owning / runs', 'owns / runs', 'is owning / is running'], answer: 0, explication: '✅ "owns" (posséder = stative) / "is running" (diriger = action en cours).', regle: '📌 "Own" (posséder) = stative → simple. "Run" (diriger) → progressif possible.' },
+              { id: 'dsp1-q7', enonce: '"I ___ what you mean." vs "I ___ (reconsider) my decision."', choices: ['understand / am reconsidering', 'am understanding / reconsider', 'understand / reconsider', 'am understanding / am reconsidering'], answer: 0, explication: '✅ "understand" (stative) / "am reconsidering" (action délibérée en cours).', regle: '📌 "Understand" = stative → simple. Actions délibérées → progressif.' },
+              { id: 'dsp1-q8', enonce: '"The company ___ 500 employees." vs "The company ___ rapidly."', choices: ['employs / is growing', 'is employing / grows', 'employs / grows', 'is employing / is growing'], answer: 0, explication: '✅ "employs" (fait permanent) / "is growing" (tendance temporaire en cours).', regle: '📌 Fait permanent → simple. Tendance temporaire → progressif.' },
+              { id: 'dsp1-q9', enonce: '"She ___ (not/work) this week — she\'s on sick leave."', choices: ["doesn't work", "isn't working", "didn't work", "wasn't working"], answer: 1, explication: '✅ "isn\'t working" — Situation temporaire actuelle → présent progressif négatif.', regle: '📌 Situation temporaire actuelle → présent progressif.' },
+              { id: 'dsp1-q10', enonce: '"I ___ what you mean." vs "I ___ you\'re right, but..."', choices: ['understand / think', 'am understanding / am thinking', 'understand / am thinking', 'am understanding / think'], answer: 0, explication: '✅ "understand" (stative) / "think" (opinion = stative). Les deux sont des stative verbs.', regle: '📌 "Understand" et "think" (=opinion) sont tous les deux statives → présent simple.' },
+            ],
           },
           {
-            id: 'diff-sp-q2',
-            enonce: '"I ___ (think) you\'re right." vs "She ___ (think) about changing jobs."',
-            choices: ['am thinking / thinks', 'think / is thinking', 'am thinking / is thinking', 'think / thinks'],
-            answer: 1,
-            explication: '✅ Correct : "I think" (opinion = stative → simple) / "She is thinking about" (réflexion active en cours = progressif). "Think" change de sens !',
-            regle: '📌 Piège classique : "think" a deux sens. Think = croire/opinion → simple. Think = réfléchir à → progressif. Même logique pour "see", "have", "be".',
+            id: 'diff-sp-exo2',
+            titre: 'Exercice 2 — Passé simple vs passé progressif',
+            instructions: 'Choisissez entre passé simple et passé progressif.',
+            questions: [
+              { id: 'dsp2-q1', enonce: '"I ___ a shower when the phone rang."', choices: ['had', 'was having', 'have had', 'am having'], answer: 1, explication: '✅ "was having" — Action en cours interrompue par le téléphone.', regle: '📌 "Was doing X when Y happened" = action interrompue.' },
+              { id: 'dsp2-q2', enonce: '"She ___ her keys and ___ home." (séquence rapide)', choices: ['grabbed / left', 'was grabbing / was leaving', 'grabs / leaves', 'had grabbed / left'], answer: 0, explication: '✅ "grabbed / left" — Séquence d\'actions passées terminées → passés simples.', regle: '📌 Actions successives passées → passé simple pour chacune.' },
+              { id: 'dsp2-q3', enonce: '"While she ___ the email, he ___ the presentation."', choices: ['wrote / prepared', 'was writing / was preparing', 'wrote / was preparing', 'was writing / prepared'], answer: 1, explication: '✅ "was writing / was preparing" — Deux actions simultanées avec "while".', regle: '📌 "While" + simultanéité passée → les deux au passé progressif.' },
+              { id: 'dsp2-q4', enonce: '"When I ___ (arrive), she ___ (cry)."', choices: ['arrived / cried', 'arrived / was crying', 'was arriving / cried', 'was arriving / was crying'], answer: 1, explication: '✅ "arrived / was crying" — Événement soudain + action de fond.', regle: '📌 Événement soudain → passé simple. Action de fond → passé progressif.' },
+              { id: 'dsp2-q5', enonce: '"He ___ the report every Monday." (habitude passée)', choices: ['submitted', 'was submitting', 'submit', 'has submitted'], answer: 0, explication: '✅ "submitted" — Habitude passée régulière → passé simple.', regle: '📌 Habitude passée → passé simple.' },
+              { id: 'dsp2-q6', enonce: '"At 3pm yesterday, they ___ in a conference call."', choices: ['were', 'are', 'had', 'be'], answer: 0, explication: '✅ "were" — "At 3pm yesterday" = moment précis, état en cours → passé progressif de "be".', regle: '📌 "At [heure] yesterday" → passé progressif.' },
+              { id: 'dsp2-q7', enonce: '"She ___ the contract and ___ it immediately." (séquence)', choices: ['signed / sent', 'was signing / was sending', 'signs / sends', 'had signed / sent'], answer: 0, explication: '✅ "signed / sent" — Actions rapides successives → passés simples.', regle: '📌 Actions successives rapides → passé simple.' },
+              { id: 'dsp2-q8', enonce: '"What ___ you ___ at midnight?" (hier)', choices: ['did / do', 'were / doing', 'do / do', 'are / doing'], answer: 1, explication: '✅ "were / doing" — "At midnight" = moment précis passé, activité en cours.', regle: '📌 Question sur activité en cours à un moment du passé → passé progressif.' },
+              { id: 'dsp2-q9', enonce: '"I ___ (read) while she ___ (cook) dinner."', choices: ['read / cooked', 'was reading / was cooking', 'was reading / cooked', 'read / was cooking'], answer: 1, explication: '✅ "was reading / was cooking" — "While" + deux activités simultanées.', regle: '📌 "While" + simultanéité → les deux au passé progressif.' },
+              { id: 'dsp2-q10', enonce: '"The storm suddenly ___ while we ___ in the park."', choices: ['starts / walked', 'started / were walking', 'was starting / were walking', 'started / walked'], answer: 1, explication: '✅ "started / were walking" — Événement soudain + activité de fond.', regle: '📌 Événement soudain → passé simple. Activité de fond → passé progressif.' },
+            ],
           },
           {
-            id: 'diff-sp-q3',
-            enonce: '"The train ___ (leave) at 8am every day." vs "Hurry! The train ___ (leave)!"',
-            choices: ['leaves / is leaving', 'is leaving / leaves', 'leaves / leaves', 'is leaving / is leaving'],
-            answer: 0,
-            explication: '✅ Correct : "leaves" (horaire fixe = présent simple) / "is leaving" (action en train de se passer maintenant = présent progressif).',
-            regle: '📌 Règle : Horaires/programmes fixes → présent simple. Action qui se passe en ce moment précis → présent progressif.',
+            id: 'diff-sp-exo3',
+            titre: 'Exercice 3 — Futur simple vs futur progressif',
+            instructions: 'Choisissez entre futur simple et futur progressif.',
+            questions: [
+              { id: 'dsp3-q1', enonce: '"This time next week, I ___ on the beach in Bali."', choices: ['sit', 'will sit', 'will be sitting', 'am sitting'], answer: 2, explication: '✅ "will be sitting" — "This time next week" = action en cours à un moment précis.', regle: '📌 "This time next [période]" → futur progressif.' },
+              { id: 'dsp3-q2', enonce: '"I ___ you tomorrow — that\'s my promise."', choices: ['call', 'called', 'will call', 'will be calling'], answer: 2, explication: '✅ "will call" — Promesse → futur simple.', regle: '📌 Promesse → futur simple (will).' },
+              { id: 'dsp3-q3', enonce: '"At 3pm tomorrow, she ___ in the boardroom."', choices: ['presents', 'presented', 'will present', 'will be presenting'], answer: 3, explication: '✅ "will be presenting" — "At 3pm tomorrow" = action en cours à un moment précis.', regle: '📌 "At [heure] tomorrow" → futur progressif.' },
+              { id: 'dsp3-q4', enonce: '"I\'m sure the results ___ positive."', choices: ['are', 'were', 'will be', 'will be being'], answer: 2, explication: '✅ "will be" — Prédiction → futur simple. "Be" + prédiction → will be.', regle: '📌 Prédiction avec "I\'m sure" → futur simple.' },
+              { id: 'dsp3-q5', enonce: '"Don\'t call me after 8pm — I ___ the kids to bed."', choices: ['put', 'will put', 'will be putting', 'am putting'], answer: 2, explication: '✅ "will be putting" — Action en cours à un moment précis du futur.', regle: '📌 Action en cours à un moment futur → futur progressif.' },
+              { id: 'dsp3-q6', enonce: '"I ___ probably need your help later."', choices: ['need', 'needed', 'will need', 'will be needing'], answer: 2, explication: '✅ "will need" — Prédiction + "need" = stative → pas de progressif.', regle: '📌 "Need" = stative → jamais progressif. Prédiction → will.' },
+              { id: 'dsp3-q7', enonce: '"She ___ in Paris next month for a conference." (activité de fond)', choices: ['stays', 'stayed', 'will stay', 'will be staying'], answer: 3, explication: '✅ "will be staying" — Activité continue pendant le mois prochain → futur progressif.', regle: '📌 Activité continue sur période future → futur progressif.' },
+              { id: 'dsp3-q8', enonce: '"If she ___ harder, she ___ pass the exam."', choices: ['studies / will', 'will study / will', 'studies / would', 'is studying / will'], answer: 0, explication: '✅ "studies / will" — Conditionnel réel : if + présent simple → will + V base.', regle: '📌 If + présent simple → will + V base.' },
+              { id: 'dsp3-q9', enonce: '"They ___ the new offices all of next week." (activité)', choices: ['test', 'tested', 'will test', 'will be testing'], answer: 3, explication: '✅ "will be testing" — Activité continue toute la semaine prochaine → futur progressif.', regle: '📌 Activité continue sur durée future → futur progressif.' },
+              { id: 'dsp3-q10', enonce: '"The company ___ its 10th anniversary next year." (événement)', choices: ['celebrates', 'celebrated', 'will celebrate', 'will be celebrating'], answer: 2, explication: '✅ "will celebrate" — Événement ponctuel futur → futur simple.', regle: '📌 Événement ponctuel → futur simple. Activité en cours → futur progressif.' },
+            ],
           },
           {
-            id: 'diff-sp-q4',
-            enonce: '"When I called, she ___ a shower — that\'s why she didn\'t hear."',
-            choices: ['took', 'takes', 'was taking', 'has taken'],
-            answer: 2,
-            explication: '✅ Correct : "was taking" → Action longue en cours au moment d\'une autre action dans le passé. La douche (longue) était en cours quand l\'appel (court) a eu lieu.',
-            regle: '📌 Règle : Action longue en cours (passé progressif) + action courte qui l\'interrompt (passé simple) : "was doing X when Y happened."',
+            id: 'diff-sp-exo4',
+            titre: 'Exercice 4 — Cas mixtes et pièges',
+            instructions: 'Exercices mêlant plusieurs temps et situations.',
+            questions: [
+              { id: 'dsp4-q1', enonce: '"She ___ (work) here since 2018." (toujours en cours)', choices: ['works', 'worked', 'is working', 'has been working'], answer: 3, explication: '✅ "has been working" — "Since" + durée jusqu\'au présent → présent parfait progressif.', regle: '📌 "Since" + durée continue → présent parfait progressif (pas présent simple).' },
+              { id: 'dsp4-q2', enonce: '"By the time she ___ (arrive), I ___ (finish)."', choices: ['arrives / will finish', 'will arrive / will finish', 'arrives / will have finished', 'arrived / finished'], answer: 2, explication: '✅ "arrives / will have finished" — Subordonnée temporelle : présent simple. Principale : futur parfait.', regle: '📌 "By the time + présent simple" → futur parfait dans la principale.' },
+              { id: 'dsp4-q3', enonce: '"Don\'t disturb me — I ___ (think) about it." vs "I ___ (think) we should leave."', choices: ['am thinking / think', 'think / am thinking', 'am thinking / am thinking', 'think / think'], answer: 0, explication: '✅ "am thinking" (réflexion active) / "think" (opinion = stative).', regle: '📌 "Think" actif → progressif. "Think" = opinion → simple.' },
+              { id: 'dsp4-q4', enonce: '"She ___ (not/speak) to anyone since the meeting."', choices: ["didn't speak", "doesn't speak", "hasn't spoken", "isn't speaking"], answer: 2, explication: '✅ "hasn\'t spoken" — "Since" + état continu → présent parfait.', regle: '📌 "Since" + état qui continue → présent parfait.' },
+              { id: 'dsp4-q5', enonce: '"He ___ (read) for an hour when his phone died."', choices: ['read', 'was reading', 'had been reading', 'has been reading'], answer: 2, explication: '✅ "had been reading" — Durée AVANT un événement passé → passé parfait progressif.', regle: '📌 Durée avant événement passé → passé parfait progressif.' },
+              { id: 'dsp4-q6', enonce: '"I ___ (work) every day — that\'s normal." vs "I ___ (work) a lot this week because of the deadline."', choices: ['work / am working', 'am working / work', 'work / work', 'am working / am working'], answer: 0, explication: '✅ "work" (habitude normale) / "am working" (plus intense que d\'habitude = temporaire).', regle: '📌 Habitude → simple. Plus intense que d\'habitude, temporaire → progressif.' },
+              { id: 'dsp4-q7', enonce: '"When I called her, she said she ___ (leave) in five minutes."', choices: ['leaves', 'left', 'was leaving', 'had left'], answer: 2, explication: '✅ "was leaving" — Discours indirect, futur proche dans le passé → passé progressif.', regle: '📌 Futur proche dans le discours indirect passé → passé progressif.' },
+              { id: 'dsp4-q8', enonce: '"She usually ___ (take) the bus but today she ___ (drive)."', choices: ['takes / is driving', 'is taking / drives', 'takes / drives', 'is taking / is driving'], answer: 0, explication: '✅ "takes" (habitude) / "is driving" (exception d\'aujourd\'hui).', regle: '📌 Habitude → simple. Exception du jour → progressif.' },
+              { id: 'dsp4-q9', enonce: '"I ___ (know) her for ten years but I ___ (not/know) she was married."', choices: ["have known / didn't know", "knew / don't know", "know / didn't know", "have known / don't know"], answer: 0, explication: '✅ "have known" (durée jusqu\'au présent) / "didn\'t know" (ignorance passée, découverte récente).', regle: '📌 "Know" (durée jusqu\'au présent) → présent parfait. "Didn\'t know" → passé simple.' },
+              { id: 'dsp4-q10', enonce: '"At this time next year, I ___ (sit) on a beach in Thailand."', choices: ['sit', 'will sit', 'will be sitting', 'am sitting'], answer: 2, explication: '✅ "will be sitting" — "At this time next year" → futur progressif.', regle: '📌 "At this time next [période]" → futur progressif.' },
+            ],
           },
           {
-            id: 'diff-sp-q5',
-            enonce: '"This time next week, I ___ on the beach in Bali."',
-            choices: ['sit', 'sat', 'will sit', 'will be sitting'],
-            answer: 3,
-            explication: '✅ Correct : "will be sitting" → "This time next week" = moment précis dans le futur. On imagine l\'action comme EN COURS à ce moment → futur progressif.',
-            regle: '📌 Règle : "This time tomorrow/next week/month" → futur progressif. L\'action sera en cours, pas juste une décision.',
-          },
-          {
-            id: 'diff-sp-q6',
-            enonce: '"She ___ (work) for this company since 2019." (Elle travaille toujours là-bas.)',
-            choices: ['works', 'worked', 'is working', 'has been working'],
-            answer: 3,
-            explication: '✅ Correct : "has been working" → Action commencée en 2019, toujours en cours + durée (since) = présent parfait progressif.',
-            regle: '📌 Règle : Action qui a commencé dans le passé et CONTINUE dans le présent avec "since/for" → présent parfait progressif (have been + V-ing).',
-          },
-          {
-            id: 'diff-sp-q7',
-            enonce: '"While he ___ (prepare) the slides, she ___ (call) the clients."',
-            choices: ['was preparing / called', 'prepared / was calling', 'was preparing / was calling', 'prepared / called'],
-            answer: 2,
-            explication: '✅ Correct : "was preparing / was calling" → Deux actions simultanées dans le passé = deux passés progressifs. "While" + simultanéité = deux progressifs.',
-            regle: '📌 Règle : "While" + simultanéité au passé → les deux actions au passé progressif. Si une interrompt l\'autre : was doing... when + passé simple.',
-          },
-          {
-            id: 'diff-sp-q8',
-            enonce: '"I usually ___ coffee but today I ___ tea."',
-            choices: ['drink / am drinking', 'am drinking / drink', 'drink / drink', 'am drinking / am drinking'],
-            answer: 0,
-            explication: '✅ Correct : "I usually drink" (habitude = présent simple) / "today I am drinking tea" (exception temporaire du jour = présent progressif).',
-            regle: '📌 Règle : Habitude → présent simple. Situation temporaire/exception du jour → présent progressif. Les deux peuvent coexister dans la même phrase.',
-          },
-          {
-            id: 'diff-sp-q9',
-            enonce: '"By the time she ___ (arrive), he ___ (already/leave)."',
-            choices: ['arrives / already left', 'will arrive / already left', 'arrives / will have already left', 'arrived / had already left'],
-            answer: 2,
-            explication: '✅ Correct : "By the time she arrives, he will have already left." → Présent simple dans la subordonnée temporelle + futur parfait pour l\'action accomplie avant.',
-            regle: '📌 Règle : "By the time + présent simple, sujet + will have + pp." Le présent simple remplace le futur dans les propositions temporelles.',
-          },
-          {
-            id: 'diff-sp-q10',
-            enonce: '"She ___ (not/speak) to him since their argument last week."',
-            choices: ['doesn\'t speak', 'wasn\'t speaking', 'hasn\'t spoken', 'hadn\'t spoken'],
-            answer: 2,
-            explication: '✅ Correct : "hasn\'t spoken" → "since" + passé = présent parfait. L\'absence de communication a commencé après la dispute et continue jusqu\'à maintenant.',
-            regle: '📌 Règle : "Since" (depuis un point du passé) + présent parfait. L\'état/action a commencé à ce moment et a un lien avec le présent.',
+            id: 'diff-sp-exo5',
+            titre: 'Exercice 5 — Contexte TOEIC : phrases authentiques',
+            instructions: 'Phrases de style Part 5 TOEIC. Choisissez la forme verbale correcte.',
+            questions: [
+              { id: 'dsp5-q1', enonce: '"The annual report ___ every March by the finance team."', choices: ['publishes', 'is published', 'is publishing', 'published'], answer: 1, explication: '✅ "is published" — Routine + voix passive → présent simple passif.', regle: '📌 Routine/habitude au passif → is/are + V-pp.' },
+              { id: 'dsp5-q2', enonce: '"Sales ___ steadily since the new product launch."', choices: ['increase', 'increased', 'are increasing', 'have been increasing'], answer: 3, explication: '✅ "have been increasing" — "Since" + tendance continue → présent parfait progressif.', regle: '📌 "Since" + tendance continue → présent parfait progressif.' },
+              { id: 'dsp5-q3', enonce: '"By the time the CEO ___ the room, the presentation had started."', choices: ['entered', 'enters', 'has entered', 'was entering'], answer: 0, explication: '✅ "entered" — "By the time + passé simple" + passé parfait → passé simple ici.', regle: '📌 "By the time + passé simple, had + V-pp."' },
+              { id: 'dsp5-q4', enonce: '"Please don\'t disturb Ms. Chen — she ___ an important call."', choices: ['takes', 'took', 'is taking', 'was taking'], answer: 2, explication: '✅ "is taking" — Action en cours maintenant → présent progressif.', regle: '📌 Action en cours maintenant → présent progressif.' },
+              { id: 'dsp5-q5', enonce: '"The client ___ the building when the fire alarm went off."', choices: ['enters', 'entered', 'was entering', 'has entered'], answer: 2, explication: '✅ "was entering" — En train d\'entrer (action de fond) quand l\'alarme a sonné.', regle: '📌 Action de fond interrompue → passé progressif.' },
+              { id: 'dsp5-q6', enonce: '"This time next month, the team ___ the new software."', choices: ['tests', 'tested', 'will test', 'will be testing'], answer: 3, explication: '✅ "will be testing" — "This time next month" → futur progressif.', regle: '📌 "This time next [période]" → futur progressif.' },
+              { id: 'dsp5-q7', enonce: '"She ___ over 200 clients since joining the firm."', choices: ['serves', 'served', 'has served', 'was serving'], answer: 2, explication: '✅ "has served" — Bilan (over 200 clients) depuis qu\'elle a rejoint → présent parfait.', regle: '📌 Bilan depuis le passé jusqu\'au présent → présent parfait.' },
+              { id: 'dsp5-q8', enonce: '"Mr. Kim ___ the company in 2010 after years of working for a competitor."', choices: ['joins', 'joined', 'has joined', 'was joining'], answer: 1, explication: '✅ "joined" — "In 2010" = date précise → passé simple.', regle: '📌 Date précise dans le passé → passé simple.' },
+              { id: 'dsp5-q9', enonce: '"The marketing department ___ on three campaigns simultaneously right now."', choices: ['works', 'worked', 'is working', 'has worked'], answer: 2, explication: '✅ "is working" — "Right now" = en cours → présent progressif.', regle: '📌 "Right now" → présent progressif.' },
+              { id: 'dsp5-q10', enonce: '"By the end of Q4, the project ___ over budget for six consecutive months."', choices: ['ran', 'has run', 'will have run', 'will be running'], answer: 2, explication: '✅ "will have run" — Bilan accompli avant fin Q4 → futur parfait.', regle: '📌 "By the end of [période future]" → futur parfait.' },
+            ],
           },
         ],
       },
  
-      // ════════════════════════════════════════════════════════════════════════
-      // 6. DIFFÉRENCIATION : Parfait vs Parfait Progressif
-      // ════════════════════════════════════════════════════════════════════════
+      // ══════════════════════════════════════════════════════════════════════
+      // 6. DIFF : Parfait vs Parfait Progressif
+      // ══════════════════════════════════════════════════════════════════════
       {
         id: 'diff-parfait-prog',
         label: '⚖️ Parfait vs Parfait Progressif',
@@ -578,128 +723,118 @@ Mots-clés : for (pendant), since (depuis), all day/week/morning, how long.`,
           {
             id: 'diff-pp-lecon',
             titre: 'Quand choisir Parfait ou Parfait Progressif ?',
-            contenu: `La différence est subtile mais logique : le parfait met en avant le RÉSULTAT ou l'expérience ; le parfait progressif met en avant la DURÉE ou le processus continu.`,
+            contenu: `PARFAIT = résultat, accomplissement, quantité. PARFAIT PROGRESSIF = durée, processus continu, traces visibles.`,
             tableaux: [
               {
-                titre: 'Parfait vs Parfait Progressif — tableau comparatif',
+                titre: 'Comparatif clé',
                 colonnes: ['Critère', 'PARFAIT (have + V-pp)', 'PARFAIT PROGRESSIF (have been + V-ing)'],
                 lignes: [
-                  ['Insistance sur', 'Le RÉSULTAT, l\'accomplissement', 'La DURÉE, le processus continu'],
-                  ['Action', 'Souvent TERMINÉE (le résultat reste)', 'Peut être encore EN COURS'],
-                  ['Quantité', '"She has written 3 reports." (combien)', '— (pas de quantité précise)'],
-                  ['Durée', '— (ou durée comme fait)', '"She has been writing for 3 hours." (durée vécue)'],
-                  ['Traces visibles', '"She has baked a cake." (le gâteau est là)', '"She has been baking." (elle a de la farine sur les mains)'],
-                  ['Stative verbs', 'Oui : "I have known him for years."', 'Non : ❌ "I have been knowing him."'],
+                  ['Insistance', 'Résultat, accomplissement', 'Durée, processus continu'],
+                  ['Action', 'Souvent terminée', 'Peut être encore en cours'],
+                  ['Quantité', '"3 reports" → parfait simple', '— (pas de quantité précise)'],
+                  ['Traces', '"She has baked a cake."', '"She has been baking." (mains pleines de farine)'],
+                  ['How many?', 'Parfait simple', '—'],
+                  ['How long?', '—', 'Parfait progressif'],
+                  ['Stative verbs', 'Toujours simple', 'Jamais progressif'],
                 ],
               },
             ],
-            exemples: [
-              { fr: 'Résultat vs Durée', en: '"I have read the report." → Je l\'ai lu (c\'est fait)\n"I have been reading the report." → Je le lis depuis un moment (durée)', note: 'La 1ère dit que c\'est terminé. La 2ème insiste sur le temps passé à le lire.' },
-              { fr: 'Accomplissement vs Processus', en: '"She has written the email." → L\'email est écrit (terminé)\n"She has been writing emails all morning." → Elle a passé la matinée à écrire', note: 'La 1ère = résultat précis. La 2ème = activité qui a duré.' },
-              { fr: 'Au passé aussi', en: '"He had eaten when I arrived." → Fait accompli avant mon arrivée\n"He had been eating for an hour when I arrived." → Il mangeait depuis 1h (durée)', note: 'Même logique au passé : had + pp = résultat ; had been + V-ing = durée.' },
-            ],
-            astuce: `💡 Test mental pour choisir :
-1. Tu veux dire "c'est terminé, voilà le résultat" ? → Parfait (have + pp)
-2. Tu veux dire "ça dure/ça durait depuis longtemps" ? → Parfait progressif (have been + V-ing)
-3. Le verbe est stative (know, want...) ? → Toujours parfait simple.
- 
-⚠️ Pièges :
-• "I have been finishing the report." → ❌ → "I have finished the report." ✅
-• "She has known him since 2010." → ✅ (know = stative, jamais progressif)`,
+            astuce: `💡 Test : "Est-ce que je veux parler du résultat/accomplissement ?" → parfait simple. "Est-ce que je veux parler de la durée ?" → parfait progressif.
+⚠️ "She has been finishing." → FAUX. "Finish" = résultat → "She has finished." ✅`,
           },
         ],
-        questions: [
+        exercices: [
           {
-            id: 'diff-pp-q1',
-            enonce: 'Laquelle insiste sur le RÉSULTAT plutôt que la durée ?',
-            choices: ['She has been cleaning the office.', 'She has cleaned the office.', 'She was cleaning the office.', 'She had been cleaning the office.'],
-            answer: 1,
-            explication: '✅ Correct : "She has cleaned the office." → Le résultat est là (le bureau est propre). "Has been cleaning" insisterait sur la durée du nettoyage.',
-            regle: '📌 Règle : Présent parfait (have + pp) = résultat/accomplissement. Présent parfait progressif (have been + V-ing) = durée/processus.',
-          },
-          {
-            id: 'diff-pp-q2',
-            enonce: '"Why are your hands dirty?" — Réponse qui explique par une activité récente prolongée :',
-            choices: ['I have fixed the car.', 'I fixed the car.', 'I have been fixing the car.', 'I was fixing the car.'],
-            answer: 2,
-            explication: '✅ Correct : "I have been fixing the car." → Les mains sales = trace visible d\'une activité continue récente → présent parfait progressif.',
-            regle: '📌 Règle : Traces visibles d\'une activité récente (sueur, mains sales, fatigue...) → présent parfait progressif.',
-          },
-          {
-            id: 'diff-pp-q3',
-            enonce: '"She ___ three cups of coffee this morning." (résultat, quantité)',
-            choices: ['has been drinking', 'has drunk', 'was drinking', 'had drunk'],
-            answer: 1,
-            explication: '✅ Correct : "has drunk" → Quantité précise (3 tasses) = résultat/accomplissement = présent parfait. "Has been drinking" n\'exprime pas la quantité.',
-            regle: '📌 Règle : Quantité ou nombre précis mentionné → parfait simple (have + pp). Le progressif ne peut pas indiquer de quantité accomplie.',
-          },
-          {
-            id: 'diff-pp-q4',
-            enonce: '"They ___ for the bus for 40 minutes when it finally came."',
-            choices: ['waited', 'had waited', 'had been waiting', 'have been waiting'],
-            answer: 2,
-            explication: '✅ Correct : "had been waiting" → Durée vécue (40 minutes) AVANT un moment du passé = passé parfait progressif.',
-            regle: '📌 Règle : Passé parfait progressif = insistance sur la durée d\'une activité avant un moment passé. "Had been + V-ing + for [durée] + when + passé simple."',
-          },
-          {
-            id: 'diff-pp-q5',
-            enonce: '"I have ___ him for over 20 years." (know)',
-            choices: ['been knowing', 'know', 'known', 'been known'],
-            answer: 2,
-            explication: '✅ Correct : "I have known him for over 20 years." → "Know" est stative → jamais au progressif. Présent parfait simple pour la durée avec un stative verb.',
-            regle: '📌 Règle : Stative verbs (know, want, believe, like, love, own...) → JAMAIS au progressif. Pour la durée avec un stative verb : have/has + pp + for/since.',
-          },
-          {
-            id: 'diff-pp-q6',
-            enonce: 'Quelle phrase est INCORRECTE ?',
-            choices: [
-              'I have been trying to reach you all day.',
-              'She has been finishing the project.',
-              'They have been arguing for hours.',
-              'He has been thinking about quitting.',
+            id: 'diff-pp-exo1',
+            titre: 'Exercice 1 — Résultat vs Durée : présent',
+            instructions: 'Choisissez entre présent parfait et présent parfait progressif.',
+            questions: [
+              { id: 'dpp1-q1', enonce: '"She ___ the report." (c\'est terminé, résultat)', choices: ['has been writing', 'has written', 'was writing', 'had been writing'], answer: 1, explication: '✅ "has written" — Résultat : le rapport est écrit → parfait simple.', regle: '📌 Résultat terminé → parfait simple.' },
+              { id: 'dpp1-q2', enonce: '"She ___ all morning." (processus)', choices: ['has written', 'has been writing', 'wrote', 'was writing'], answer: 1, explication: '✅ "has been writing" — "All morning" = durée → parfait progressif.', regle: '📌 "All morning/day/week" = durée → parfait progressif.' },
+              { id: 'dpp1-q3', enonce: '"Why are your hands dirty? — I ___ (fix) my car."', choices: ['fixed', 'have fixed', 'have been fixing', 'was fixing'], answer: 2, explication: '✅ "have been fixing" — Mains sales = trace d\'activité prolongée récente.', regle: '📌 Traces d\'activité récente → parfait progressif.' },
+              { id: 'dpp1-q4', enonce: '"She ___ three reports today." (quantité)', choices: ['has been writing', 'has written', 'writes', 'was writing'], answer: 1, explication: '✅ "has written" — Quantité (3 reports) → parfait simple.', regle: '📌 Quantité précise → parfait simple.' },
+              { id: 'dpp1-q5', enonce: '"I\'m exhausted. I ___ (run) for two hours."', choices: ['ran', 'have run', 'have been running', 'was running'], answer: 2, explication: '✅ "have been running" — Fatigue = résultat d\'activité prolongée.', regle: '📌 Trace visible d\'activité prolongée → parfait progressif.' },
+              { id: 'dpp1-q6', enonce: '"How long ___ you ___ for this company?" (durée)', choices: ['have / worked', 'have / been working', 'did / work', 'are / working'], answer: 1, explication: '✅ "have / been working" — "How long" = durée → parfait progressif.', regle: '📌 "How long" → présent parfait progressif.' },
+              { id: 'dpp1-q7', enonce: '"How many books ___ you ___ this year?" (quantité)', choices: ['have / been reading', 'have / read', 'did / read', 'are / reading'], answer: 1, explication: '✅ "have / read" — "How many" = quantité → parfait simple.', regle: '📌 "How many" → parfait simple.' },
+              { id: 'dpp1-q8', enonce: '"He ___ (know) her since 2010."', choices: ['has been knowing', 'has known', 'knew', 'knows'], answer: 1, explication: '✅ "has known" — "Know" = stative → jamais progressif.', regle: '📌 Stative verb + durée → parfait simple.' },
+              { id: 'dpp1-q9', enonce: '"The children ___ all afternoon. They\'re very dirty."', choices: ['played', 'have played', 'have been playing', 'were playing'], answer: 2, explication: '✅ "have been playing" — "All afternoon" + traces → parfait progressif.', regle: '📌 Durée + traces → parfait progressif.' },
+              { id: 'dpp1-q10', enonce: '"I ___ (finish) the project!" (annonce)', choices: ['have been finishing', 'have finished', 'am finishing', 'was finishing'], answer: 1, explication: '✅ "have finished" — Annonce d\'accomplissement → parfait simple. "Finish" = résultat.', regle: '📌 Verbe de résultat (finish, arrive, complete...) → parfait simple.' },
             ],
-            answer: 1,
-            explication: '✅ "She has been finishing the project." est INCORRECT. "Finish" implique un résultat → "She has finished the project." ou "She is still working on the project."',
-            regle: '📌 Règle : Certains verbes de résultat (finish, arrive, stop, open, close...) s\'utilisent au parfait simple plutôt qu\'au progressif.',
           },
           {
-            id: 'diff-pp-q7',
-            enonce: '"By next April, they ___ on this project for two years."',
-            choices: ['will work', 'will have worked', 'will be working', 'will have been working'],
-            answer: 3,
-            explication: '✅ Correct : "will have been working" → Durée (2 ans) jusqu\'à un point précis du futur + continuité = futur parfait progressif.',
-            regle: '📌 Règle : Futur parfait progressif (will have been + V-ing) = durée continue jusqu\'à un moment futur. Durée + point futur → futur parfait progressif.',
+            id: 'diff-pp-exo2',
+            titre: 'Exercice 2 — Passé : had + V-pp vs had been + V-ing',
+            instructions: 'Choisissez entre passé parfait et passé parfait progressif.',
+            questions: [
+              { id: 'dpp2-q1', enonce: '"When the guests arrived, she ___ three cakes." (quantité accomplie)', choices: ['had been baking', 'had baked', 'baked', 'was baking'], answer: 1, explication: '✅ "had baked" — Quantité (3 cakes) accomplie avant → passé parfait simple.', regle: '📌 Quantité accomplie avant moment passé → passé parfait simple.' },
+              { id: 'dpp2-q2', enonce: '"She was exhausted — she ___ all day." (durée)', choices: ['worked', 'had worked', 'had been working', 'was working'], answer: 2, explication: '✅ "had been working" — Durée (all day) avant son état → passé parfait progressif.', regle: '📌 Durée avant moment passé → passé parfait progressif.' },
+              { id: 'dpp2-q3', enonce: '"His eyes were red because he ___ (cry) for hours."', choices: ['cried', 'had cried', 'had been crying', 'was crying'], answer: 2, explication: '✅ "had been crying" — Traces (yeux rouges) + durée → passé parfait progressif.', regle: '📌 Traces + durée → passé parfait progressif.' },
+              { id: 'dpp2-q4', enonce: '"She found out she ___ for the wrong company for six months."', choices: ['worked', 'had worked', 'had been working', 'was working'], answer: 2, explication: '✅ "had been working" — Durée (six months) d\'activité continue avant la découverte.', regle: '📌 Durée continue avant découverte → passé parfait progressif.' },
+              { id: 'dpp2-q5', enonce: '"By the time they found shelter, they ___ in the rain for two hours."', choices: ['walked', 'had walked', 'had been walking', 'were walking'], answer: 2, explication: '✅ "had been walking" — Durée (two hours) avant de trouver un abri.', regle: '📌 Durée avant "by the time [passé]" → passé parfait progressif.' },
+              { id: 'dpp2-q6', enonce: '"When police arrived, the suspect ___." (résultat, déjà parti)', choices: ['escaped', 'had escaped', 'had been escaping', 'was escaping'], answer: 1, explication: '✅ "had escaped" — Résultat accompli avant l\'arrivée → passé parfait simple.', regle: '📌 Résultat accompli avant moment passé → passé parfait simple.' },
+              { id: 'dpp2-q7', enonce: '"The floor was wet — it ___ (rain) all morning."', choices: ['rained', 'had rained', 'had been raining', 'was raining'], answer: 2, explication: '✅ "had been raining" — Durée (all morning) + trace (sol mouillé).', regle: '📌 Durée + traces au passé → passé parfait progressif.' },
+              { id: 'dpp2-q8', enonce: '"She was nervous because she ___ (never/present) in front of such an audience."', choices: ['never presented', 'had never presented', 'had never been presenting', 'never presents'], answer: 1, explication: '✅ "had never presented" — "Never" + expérience jusqu\'à ce moment passé → passé parfait simple.', regle: '📌 "Never" + expérience avant moment passé → passé parfait simple.' },
+              { id: 'dpp2-q9', enonce: '"How long ___ they ___ before the deal closed?"', choices: ['did / negotiate', 'were / negotiating', 'had / been negotiating', 'have / been negotiating'], answer: 2, explication: '✅ "had / been negotiating" — "How long" + durée avant événement passé.', regle: '📌 "How long had they been...?" = durée avant moment passé.' },
+              { id: 'dpp2-q10', enonce: '"He couldn\'t enter the meeting because he ___ his badge."', choices: ['lost', 'had lost', 'had been losing', 'was losing'], answer: 1, explication: '✅ "had lost" — Résultat accompli (perte du badge) avant l\'impossibilité → passé parfait simple.', regle: '📌 Résultat avant conséquence passée → passé parfait simple.' },
+            ],
           },
           {
-            id: 'diff-pp-q8',
-            enonce: '"We ___ all the documents before the auditors arrived."',
-            choices: ['reviewed', 'had reviewed', 'had been reviewing', 'have reviewed'],
-            answer: 1,
-            explication: '✅ Correct : "had reviewed" → Résultat accompli AVANT un moment du passé. L\'accent est sur l\'accomplissement = passé parfait.',
-            regle: '📌 Règle : Passé parfait (had + pp) = résultat accompli avant un autre moment passé. "Had been reviewing" insisterait sur la durée du processus.',
+            id: 'diff-pp-exo3',
+            titre: 'Exercice 3 — Futur : will have vs will have been',
+            instructions: 'Choisissez entre futur parfait simple et futur parfait progressif.',
+            questions: [
+              { id: 'dpp3-q1', enonce: '"By Friday, she ___ the report." (accompli)', choices: ['will finish', 'will have finished', 'will be finishing', 'will have been finishing'], answer: 1, explication: '✅ "will have finished" — Accomplissement avant vendredi → futur parfait simple.', regle: '📌 Accomplissement avant point futur → futur parfait simple.' },
+              { id: 'dpp3-q2', enonce: '"By Friday, she ___ (work) on it for a week." (durée)', choices: ['will work', 'will have worked', 'will have been working', 'will be working'], answer: 2, explication: '✅ "will have been working" — Durée (a week) jusqu\'à vendredi.', regle: '📌 Durée jusqu\'à point futur → futur parfait progressif.' },
+              { id: 'dpp3-q3', enonce: '"By next year, they ___ two new offices." (nombre)', choices: ['open', 'will open', 'will have opened', 'will have been opening'], answer: 2, explication: '✅ "will have opened" — Nombre (2) + accompli avant → futur parfait simple.', regle: '📌 Quantité accomplie → futur parfait simple.' },
+              { id: 'dpp3-q4', enonce: '"By next year, she ___ (teach) for 30 years." (durée)', choices: ['teaches', 'will teach', 'will have taught', 'will have been teaching'], answer: 3, explication: '✅ "will have been teaching" — Durée (30 ans) jusqu\'à l\'an prochain.', regle: '📌 Durée + point futur → futur parfait progressif.' },
+              { id: 'dpp3-q5', enonce: 'Laquelle est INCORRECTE ?', choices: ['By Monday, she will have finished the analysis.', 'By 2035, he will have been working here for 20 years.', 'By next week, I will have been completing the course.', 'By tonight, they will have signed the contract.'], answer: 2, explication: '✅ "will have been completing" est FAUX. "Complete" = résultat → "I will have completed the course."', regle: '📌 Verbes de résultat (complete, finish, open...) → futur parfait simple.' },
+              { id: 'dpp3-q6', enonce: '"In 2040, renewables ___ (provide) clean energy for 20 years."', choices: ['provide', 'will provide', 'will have provided', 'will have been providing'], answer: 3, explication: '✅ "will have been providing" — Durée continue (20 ans) jusqu\'à 2040.', regle: '📌 Durée continue jusqu\'à point futur → futur parfait progressif.' },
+              { id: 'dpp3-q7', enonce: '"He ___ (know) her for 20 years by the time they retire."', choices: ['will know', 'will have known', 'will have been knowing', 'will be knowing'], answer: 1, explication: '✅ "will have known" — "Know" = stative → jamais progressif. Durée + stative → futur parfait simple.', regle: '📌 Stative verb + durée → futur parfait simple.' },
+              { id: 'dpp3-q8', enonce: '"How many clients ___ they ___ by end of quarter?"', choices: ['will / serve', 'will / have served', 'will / have been serving', 'will / be serving'], answer: 1, explication: '✅ "will / have served" — "How many" = quantité → futur parfait simple.', regle: '📌 "How many" futur → futur parfait simple.' },
+              { id: 'dpp3-q9', enonce: '"How long ___ she ___ on this by December?"', choices: ['will / work', 'will / have worked', 'will / have been working', 'will / be working'], answer: 2, explication: '✅ "will / have been working" — "How long" → futur parfait progressif.', regle: '📌 "How long" + point futur → futur parfait progressif.' },
+              { id: 'dpp3-q10', enonce: '"By the time she retires, she ___ over 10,000 students." (nombre)', choices: ['teaches', 'will teach', 'will have taught', 'will have been teaching'], answer: 2, explication: '✅ "will have taught" — Quantité (10,000) accomplie → futur parfait simple.', regle: '📌 Quantité accomplie avant point futur → futur parfait simple.' },
+            ],
           },
           {
-            id: 'diff-pp-q9',
-            enonce: '"She looked pale and exhausted — she ___ all night."',
-            choices: ['has studied', 'had studied', 'had been studying', 'studied'],
-            answer: 2,
-            explication: '✅ Correct : "had been studying" → Traces physiques (pâle, épuisée) d\'une activité prolongée AVANT le moment évoqué = passé parfait progressif.',
-            regle: '📌 Règle : Traces visibles d\'une activité prolongée avant un moment du passé → passé parfait progressif.',
+            id: 'diff-pp-exo4',
+            titre: 'Exercice 4 — Contexte mixte : choisir le bon parfait',
+            instructions: 'Phrases plus complexes mélangeant les 6 temps parfaits.',
+            questions: [
+              { id: 'dpp4-q1', enonce: '"The CEO announced that profits ___ by 20% that year."', choices: ['increase', 'increased', 'had increased', 'have increased'], answer: 2, explication: '✅ "had increased" — Discours indirect + résultat avant le passé → passé parfait simple.', regle: '📌 Discours indirect passé + résultat → passé parfait simple.' },
+              { id: 'dpp4-q2', enonce: '"She ___ (negotiate) all afternoon when she finally got an agreement."', choices: ['negotiated', 'was negotiating', 'had been negotiating', 'has been negotiating'], answer: 2, explication: '✅ "had been negotiating" — Durée (all afternoon) avant l\'accord (passé).', regle: '📌 Durée avant événement passé → passé parfait progressif.' },
+              { id: 'dpp4-q3', enonce: '"By the time the audit starts, we ___ all records."', choices: ['review', 'have reviewed', 'will have reviewed', 'will have been reviewing'], answer: 2, explication: '✅ "will have reviewed" — Travail accompli avant l\'audit (futur) → futur parfait simple.', regle: '📌 Travail accompli avant point futur → futur parfait simple.' },
+              { id: 'dpp4-q4', enonce: '"I ___ (try) to reach you for days — please call back!"', choices: ['tried', 'have tried', 'have been trying', 'was trying'], answer: 2, explication: '✅ "have been trying" — Durée (for days) + frustration actuelle → présent parfait progressif.', regle: '📌 Durée + état actuel → présent parfait progressif.' },
+              { id: 'dpp4-q5', enonce: '"She ___ 15 countries before she turned 30." (quantité, passé)', choices: ['visits', 'has visited', 'had visited', 'was visiting'], answer: 2, explication: '✅ "had visited" — Quantité accomplie avant ses 30 ans → passé parfait simple.', regle: '📌 Quantité accomplie avant moment passé → passé parfait simple.' },
+              { id: 'dpp4-q6', enonce: '"Next decade, this company ___ (exist) for a century."', choices: ['exists', 'will exist', 'will have existed', 'will have been existing'], answer: 2, explication: '✅ "will have existed" — "Exist" = stative-like → parfait simple. Durée jusqu\'à point futur.', regle: '📌 Stative verbs + durée future → futur parfait simple.' },
+              { id: 'dpp4-q7', enonce: '"She looks like she ___ (cry) — her eyes are red and puffy."', choices: ['cried', 'has cried', 'has been crying', 'was crying'], answer: 2, explication: '✅ "has been crying" — Traces visibles (yeux rouges) d\'activité récente prolongée.', regle: '📌 Traces d\'activité récente prolongée → présent parfait progressif.' },
+              { id: 'dpp4-q8', enonce: '"___ you ___ (sleep) well recently?" (habitude/pattern récent)', choices: ['Did / sleep', 'Have / slept', 'Have / been sleeping', 'Were / sleeping'], answer: 2, explication: '✅ "Have / been sleeping" — "Recently" + pattern/habitude récente → parfait progressif.', regle: '📌 "Recently" + pattern continu → présent parfait progressif.' },
+              { id: 'dpp4-q9', enonce: '"The company ___ (lose) money for three consecutive years before the turnaround."', choices: ['lost', 'had lost', 'had been losing', 'was losing'], answer: 2, explication: '✅ "had been losing" — Durée (3 years) continue avant le redressement (passé).', regle: '📌 Durée continue avant événement passé → passé parfait progressif.' },
+              { id: 'dpp4-q10', enonce: '"By Q4, the marketing team ___ 50 campaigns this year." (bilan futur)', choices: ['launched', 'will launch', 'will have launched', 'will have been launching'], answer: 2, explication: '✅ "will have launched" — Quantité (50 campaigns) accomplie avant fin Q4.', regle: '📌 Quantité accomplie avant point futur → futur parfait simple.' },
+            ],
           },
           {
-            id: 'diff-pp-q10',
-            enonce: '"How many pages ___ (write) so far?" (bilan de résultat)',
-            choices: ['have you been writing', 'have you written', 'did you write', 'were you writing'],
-            answer: 1,
-            explication: '✅ Correct : "have you written" → "How many" demande une quantité/résultat = présent parfait. "How long have you been writing?" demanderait la durée.',
-            regle: '📌 Règle : How much/many → résultat → présent parfait (have + pp). How long → durée/processus → présent parfait progressif (have been + V-ing).',
+            id: 'diff-pp-exo5',
+            titre: 'Exercice 5 — Les 6 parfaits : récapitulatif',
+            instructions: 'Exercice final couvrant tous les temps parfaits et leur distinction.',
+            questions: [
+              { id: 'dpp5-q1', enonce: '"I ___ this song before — what\'s it called?"', choices: ['heard', 'have heard', 'had heard', 'will have heard'], answer: 1, explication: '✅ "have heard" — Expérience sans moment précis → présent parfait simple.', regle: '📌 Expérience sans moment précis → présent parfait simple.' },
+              { id: 'dpp5-q2', enonce: '"She ___ (paint) for six hours straight — the mural is almost done."', choices: ['painted', 'has painted', 'has been painting', 'was painting'], answer: 2, explication: '✅ "has been painting" — Durée (six hours) + en cours ou venant de se terminer.', regle: '📌 Durée + activité récente → présent parfait progressif.' },
+              { id: 'dpp5-q3', enonce: '"By the time we arrived, he ___ the whole cake." (résultat)', choices: ['ate', 'had eaten', 'had been eating', 'was eating'], answer: 1, explication: '✅ "had eaten" — Résultat (gâteau fini) avant notre arrivée → passé parfait simple.', regle: '📌 Résultat avant moment passé → passé parfait simple.' },
+              { id: 'dpp5-q4', enonce: '"Before the solution was found, engineers ___ (test) different approaches for months."', choices: ['tested', 'had tested', 'had been testing', 'were testing'], answer: 2, explication: '✅ "had been testing" — Durée (months) avant la solution → passé parfait progressif.', regle: '📌 Durée avant événement passé → passé parfait progressif.' },
+              { id: 'dpp5-q5', enonce: '"By the deadline, she ___ the full analysis." (accomplissement)', choices: ['completes', 'will complete', 'will have completed', 'will have been completing'], answer: 2, explication: '✅ "will have completed" — Accomplissement avant deadline (futur) → futur parfait simple.', regle: '📌 Accomplissement avant point futur → futur parfait simple.' },
+              { id: 'dpp5-q6', enonce: '"By her retirement, she ___ (work) at this hospital for 40 years." (durée)', choices: ['works', 'will work', 'will have worked', 'will have been working'], answer: 3, explication: '✅ "will have been working" — Durée (40 ans) jusqu\'à la retraite.', regle: '📌 Durée jusqu\'à point futur → futur parfait progressif.' },
+              { id: 'dpp5-q7', enonce: '"The press release ___ already ___ before the CEO announced it publicly."', choices: ['has / leaked', 'had / leaked', 'had / been leaking', 'was / leaking'], answer: 1, explication: '✅ "had / leaked" — Résultat accompli avant l\'annonce (passé).', regle: '📌 Résultat accompli avant événement passé → passé parfait simple.' },
+              { id: 'dpp5-q8', enonce: '"She ___ (live) in five different countries by the time she was 30."', choices: ['lived', 'has lived', 'had lived', 'had been living'], answer: 2, explication: '✅ "had lived" — Bilan (5 pays) accompli avant ses 30 ans → passé parfait simple.', regle: '📌 Bilan accompli avant moment passé → passé parfait simple.' },
+              { id: 'dpp5-q9', enonce: '"I can\'t believe how long I ___ (wait) for this moment!"', choices: ['waited', 'have waited', 'have been waiting', 'was waiting'], answer: 2, explication: '✅ "have been waiting" — Durée de l\'attente jusqu\'à maintenant → présent parfait progressif.', regle: '📌 Durée jusqu\'au présent → présent parfait progressif.' },
+              { id: 'dpp5-q10', enonce: '"By 2040, this organisation ___ (help) communities for over 50 years." (durée, futur)', choices: ['helps', 'will help', 'will have helped', 'will have been helping'], answer: 3, explication: '✅ "will have been helping" — Durée continue (50+ ans) jusqu\'à 2040 → futur parfait progressif.', regle: '📌 Durée continue jusqu\'à point futur → futur parfait progressif.' },
+            ],
           },
         ],
       },
  
-      // ════════════════════════════════════════════════════════════════════════
+      // ══════════════════════════════════════════════════════════════════════
       // 7. PIÈGES TYPIQUES
-      // ════════════════════════════════════════════════════════════════════════
+      // ══════════════════════════════════════════════════════════════════════
       {
         id: 'pieges',
         label: '⚠️ Pièges typiques',
@@ -707,77 +842,70 @@ Mots-clés : for (pendant), since (depuis), all day/week/morning, how long.`,
           {
             id: 'pieges-lecon',
             titre: 'Les pièges les plus fréquents au TOEIC',
-            contenu: `Ces erreurs reviennent constamment dans les exercices TOEIC. Identifie-les, comprends pourquoi elles sont fausses, et tu éviteras des points perdus bêtement.`,
+            contenu: `Ces erreurs reviennent constamment. Identifie-les pour éviter des points perdus.`,
             tableaux: [
               {
                 titre: 'Pièges classiques',
                 colonnes: ['❌ Erreur fréquente', '✅ Correction', 'Raison'],
                 lignes: [
-                  ['"I have seen him yesterday."', '"I saw him yesterday."', '"Yesterday" = moment précis → passé simple obligatoire.'],
-                  ['"She doesn\'t knows."', '"She doesn\'t know."', 'Avec doesn\'t, le verbe reste à la BASE (sans s).'],
-                  ['"I am working here since 2019."', '"I have been working here since 2019."', '"Since" + action qui dure → présent parfait (progressif).'],
-                  ['"When she will arrive, call me."', '"When she arrives, call me."', 'Après when/if → présent simple, jamais will.'],
-                  ['"She is knowing the answer."', '"She knows the answer."', '"Know" = stative verb → jamais au progressif.'],
-                  ['"He has been finishing the report."', '"He has finished the report."', '"Finish" = résultat → parfait simple.'],
-                  ['"I was working here since 2019."', '"I have been working here since 2019."', 'Action qui CONTINUE → présent parfait, pas passé.'],
-                  ['"By the time she arrives, he will leave."', '"By the time she arrives, he will have left."', '"By the time" + futur → futur parfait.'],
+                  ['"I have seen him yesterday."', '"I saw him yesterday."', '"Yesterday" = moment précis → passé simple.'],
+                  ['"She doesn\'t knows."', '"She doesn\'t know."', 'doesn\'t + V BASE (pas de -s).'],
+                  ['"I am working here since 2019."', '"I have been working here since 2019."', '"Since" + durée jusqu\'au présent → présent parfait.'],
+                  ['"When she will arrive, call me."', '"When she arrives, call me."', 'Subordonnée temporelle → présent simple.'],
+                  ['"She is knowing."', '"She knows."', '"Know" = stative → jamais progressif.'],
+                  ['"She has been finishing."', '"She has finished."', '"Finish" = résultat → parfait simple.'],
+                  ['"I was working here since 2019."', '"I have been working here since 2019."', 'Action qui CONTINUE → présent parfait.'],
+                  ['"By the time she arrives, he will leave."', '"...he will have left."', '"By the time" → futur parfait.'],
                 ],
               },
             ],
-            astuce: `💡 Les 5 réflexes à avoir face à une question sur les temps :
-1. Y a-t-il un marqueur temporel ? (yesterday, since, already, when...) → il guide souvent le choix
-2. L'action est-elle terminée ou en cours ?
-3. Y a-t-il un lien avec un autre moment (passé/futur) ?
-4. Le verbe est-il stative ? (know, want, believe...) → jamais progressif
-5. S'agit-il d'un résultat ou d'une durée/processus ?`,
+            astuce: `💡 5 réflexes face à un choix de temps :
+1. Marqueur temporel ? (yesterday, since, already, when...)
+2. Action terminée ou en cours ?
+3. Lien avec un autre moment ?
+4. Verbe stative ? → jamais progressif
+5. Résultat ou durée/processus ?`,
           },
         ],
-        questions: [
+        exercices: [
           {
-            id: 'pieges-q1',
-            enonce: 'Trouvez l\'erreur : "She has visited her parents yesterday."',
-            choices: ['"has visited" → "visited"', '"visited" → "has visited"', '"her" → "hers"', '"yesterday" → "since yesterday"'],
-            answer: 0,
-            explication: '✅ Correct : "has visited" → "visited" (passé simple). "Yesterday" est un marqueur de temps passé précis → présent parfait interdit. "She visited her parents yesterday."',
-            regle: '📌 Règle d\'or : Présent parfait (have + pp) + yesterday/last week/in 2020/ago → IMPOSSIBLE. Ces marqueurs imposent le passé simple.',
+            id: 'pieges-exo1',
+            titre: 'Exercice 1 — Identifier et corriger les erreurs',
+            instructions: 'Trouvez et corrigez l\'erreur dans chaque phrase.',
+            questions: [
+              { id: 'pie1-q1', enonce: '"She has visited her parents yesterday."', choices: ['"has visited" → "visited"', '"visited" → "has visited"', '"yesterday" → "since yesterday"', 'La phrase est correcte.'], answer: 0, explication: '✅ "visited" — "Yesterday" = moment précis → passé simple.', regle: '📌 "Yesterday" → passé simple. Jamais présent parfait.' },
+              { id: 'pie1-q2', enonce: '"When the manager will arrive, please notify everyone."', choices: ['"will arrive" → "arrives"', '"notify" → "will notify"', '"please" → "kindly"', 'La phrase est correcte.'], answer: 0, explication: '✅ "arrives" — "When" = conjonction temporelle → présent simple.', regle: '📌 "When/if/as soon as/until" → présent simple pour le futur.' },
+              { id: 'pie1-q3', enonce: '"He doesn\'t understands the instructions."', choices: ['"doesn\'t" → "don\'t"', '"understands" → "understand"', '"the" → "some"', 'La phrase est correcte.'], answer: 1, explication: '✅ "understand" — Avec doesn\'t, le verbe reste à la BASE.', regle: '📌 Doesn\'t + V BASE (jamais V + s).' },
+              { id: 'pie1-q4', enonce: '"I am living here since 2020."', choices: ['"am living" → "live"', '"am living" → "have been living"', '"since" → "for"', 'La phrase est correcte.'], answer: 1, explication: '✅ "have been living" — "Since" + durée jusqu\'au présent → présent parfait progressif.', regle: '📌 "Since" + durée continue → présent parfait progressif.' },
+              { id: 'pie1-q5', enonce: '"She is knowing the answer."', choices: ['"is knowing" → "knows"', '"knowing" → "known"', '"is" → "has"', 'La phrase est correcte.'], answer: 0, explication: '✅ "knows" — "Know" = stative → jamais progressif.', regle: '📌 Stative verbs → jamais progressif.' },
+              { id: 'pie1-q6', enonce: '"By the time she arrives, he will leave."', choices: ['"arrives" → "will arrive"', '"will leave" → "will have left"', '"she" → "her"', 'La phrase est correcte.'], answer: 1, explication: '✅ "will have left" — "By the time" + futur → futur parfait.', regle: '📌 "By the time + présent simple" → futur parfait dans la principale.' },
+              { id: 'pie1-q7', enonce: '"I have met him last year at the conference."', choices: ['"have met" → "met"', '"met" → "have met"', '"at" → "in"', 'La phrase est correcte.'], answer: 0, explication: '✅ "met" — "Last year" = moment précis → passé simple.', regle: '📌 "Last year" → passé simple.' },
+              { id: 'pie1-q8', enonce: '"She has been finishing the project last week."', choices: ['"has been finishing" → "finished"', '"last week" → "this week"', '"the" → "a"', 'La phrase est correcte.'], answer: 0, explication: '✅ "finished" — "Last week" → passé simple. "Finish" = résultat → pas de progressif.', regle: '📌 "Last week" → passé simple. "Finish" = résultat → pas de progressif.' },
+              { id: 'pie1-q9', enonce: '"We don\'t saw the presentation yet."', choices: ['"don\'t saw" → "didn\'t see"', '"don\'t saw" → "haven\'t seen"', '"yet" → "already"', 'La phrase est correcte.'], answer: 1, explication: '✅ "haven\'t seen" — "Yet" dans négation → présent parfait.', regle: '📌 "Yet" dans négation → haven\'t/hasn\'t + V-pp.' },
+              { id: 'pie1-q10', enonce: '"She was working here since last April."', choices: ['"was working" → "has been working"', '"since" → "for"', '"working" → "worked"', 'La phrase est correcte.'], answer: 0, explication: '✅ "has been working" — Action qui CONTINUE jusqu\'au présent → présent parfait progressif.', regle: '📌 Action depuis le passé qui CONTINUE → présent parfait progressif.' },
+            ],
           },
           {
-            id: 'pieges-q2',
-            enonce: '"When the meeting will start, please turn off your phones."',
-            choices: ['La phrase est correcte.', '"will start" → "starts"', '"turn off" → "turning off"', '"please" → "kindly"'],
-            answer: 1,
-            explication: '✅ Correct : "will start" → "starts". Après "when" (conjonction temporelle), on utilise le présent simple — jamais le futur avec "will".',
-            regle: '📌 Règle : Après when / if / as soon as / until / before / after → présent simple pour exprimer le futur. "When she arrives" ✅ (jamais "when she will arrive").',
-          },
-          {
-            id: 'pieges-q3',
-            enonce: '"I am living in Paris since 2020." — Qu\'est-ce qui ne va pas ?',
-            choices: ['"am living" → "live"', '"am living" → "have been living"', '"since" → "for"', 'La phrase est correcte.'],
-            answer: 1,
-            explication: '✅ Correct : "have been living". L\'action a commencé en 2020 et CONTINUE jusqu\'au présent avec "since" → présent parfait progressif.',
-            regle: '📌 Règle : Action qui dure depuis un point du passé jusqu\'au présent → have/has been + V-ing + since. "I have been living in Paris since 2020."',
-          },
-          {
-            id: 'pieges-q4',
-            enonce: '"He doesn\'t understands what you mean."',
-            choices: ['"doesn\'t" → "don\'t"', '"understands" → "understand"', '"what" → "that"', 'La phrase est correcte.'],
-            answer: 1,
-            explication: '✅ Correct : "understands" → "understand". Avec "doesn\'t", le verbe principal reste à la forme BASE. "Doesn\'t" porte déjà la conjugaison.',
-            regle: '📌 Règle : doesn\'t / don\'t + verbe BASE. "He doesn\'t understand" ✅ / "He understands" ✅ / "He doesn\'t understands" ❌.',
-          },
-          {
-            id: 'pieges-q5',
-            enonce: '"By the time the manager arrives, the team will finish the presentation."',
-            choices: ['"arrives" → "will arrive"', '"will finish" → "will have finished"', '"the presentation" → "a presentation"', 'La phrase est correcte.'],
-            answer: 1,
-            explication: '✅ Correct : "will finish" → "will have finished". "By the time + présent simple" exprime qu\'une action sera TERMINÉE avant un moment futur → futur parfait.',
-            regle: '📌 Règle : "By the time + présent simple, sujet + will have + pp." L\'action sera accomplie avant l\'action de la subordonnée.',
+            id: 'pieges-exo2',
+            titre: 'Exercice 2 — Pièges avancés',
+            instructions: 'Exercices sur les pièges les plus subtils.',
+            questions: [
+              { id: 'pie2-q1', enonce: '"She ___ for this company for ten years." (elle y travaille encore)', choices: ['works', 'worked', 'is working', 'has been working'], answer: 3, explication: '✅ "has been working" — Durée + toujours en cours → présent parfait progressif.', regle: '📌 Durée depuis le passé, toujours en cours → présent parfait progressif.' },
+              { id: 'pie2-q2', enonce: 'Après "if" dans une condition réelle → ?', choices: ['If she will come, I tell her.', 'If she comes, I will tell her.', 'If she came, I will tell her.', 'If she will come, I will tell her.'], answer: 1, explication: '✅ "If she comes, I will tell her." — If + présent simple → will + V base.', regle: '📌 Conditionnel réel : If + présent simple, will + V base.' },
+              { id: 'pie2-q3', enonce: '"I ___ (not/see) this film yet."', choices: ["didn't see", "don't see", "haven't seen", "wasn't seeing"], answer: 2, explication: '✅ "haven\'t seen" — "Yet" + négation → présent parfait.', regle: '📌 "Yet" dans une négation → présent parfait.' },
+              { id: 'pie2-q4', enonce: '"The company ___ a new CEO two years ___."', choices: ['has appointed / ago', 'appointed / ago', 'appointed / since', 'has appointed / since'], answer: 1, explication: '✅ "appointed / ago" — "Two years ago" = passé précis → passé simple. "Ago" → jamais présent parfait.', regle: '📌 "Ago" → passé simple.' },
+              { id: 'pie2-q5', enonce: '"She ___ (believe) in working hard." (conviction)', choices: ['is believing', 'believes', 'believed', 'has been believing'], answer: 1, explication: '✅ "believes" — "Believe" = stative → présent simple.', regle: '📌 "Believe" = stative → simple.' },
+              { id: 'pie2-q6', enonce: '"As soon as she ___ (finish), let me know."', choices: ['will finish', 'finishes', 'finished', 'is finishing'], answer: 1, explication: '✅ "finishes" — "As soon as" = subordonnée temporelle → présent simple pour le futur.', regle: '📌 "As soon as/when/until/before/after" → présent simple pour le futur.' },
+              { id: 'pie2-q7', enonce: '"___ you ever ___ to Japan?" (expérience)', choices: ['Did / go', 'Have / been', 'Did / been', 'Have / went'], answer: 1, explication: '✅ "Have / been" — "Have you ever been to...?" = formule standard.', regle: '📌 "Have you ever been to [lieu]?" = formule standard pour l\'expérience.' },
+              { id: 'pie2-q8', enonce: '"I ___ (live) in Tokyo. It was great." (passé, fini)', choices: ['live', 'lived', 'have lived', 'was living'], answer: 1, explication: '✅ "lived" — Période passée et terminée ("it was great") → passé simple.', regle: '📌 Expérience passée terminée → passé simple.' },
+              { id: 'pie2-q9', enonce: '"She ___ (want) to become a doctor since she was 8."', choices: ['wants', 'wanted', 'has wanted', 'has been wanting'], answer: 2, explication: '✅ "has wanted" — "Since she was 8" + désir continu. "Want" = stative → parfait simple.', regle: '📌 Stative verb + "since" + continue → présent parfait simple.' },
+              { id: 'pie2-q10', enonce: '"By the time you ___ (read) this, I ___ (already/leave)."', choices: ['read / already left', 'will read / already leave', 'read / will have already left', 'will have read / left'], answer: 2, explication: '✅ "read / will have already left" — Subordonnée temporelle : présent simple. Principale : futur parfait.', regle: '📌 "By the time + présent simple" → futur parfait dans la principale.' },
+            ],
           },
         ],
       },
     ],
  
-    // Conservé pour la compatibilité avec les autres chapitres (CoursPage vérifie .lecon.length)
     lecon: [],
     questions: [],
   },
